@@ -153,10 +153,11 @@ async function resolveAudioOnITunes(
   const url = `https://itunes.apple.com/search?term=${term}&country=${countryCode}&media=music&entity=song&limit=8`;
 
   try {
-    const res = await fetch(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' },
-      signal: AbortSignal.timeout(3000),
-    });
+    const res = await fetchWithTimeout(
+      url,
+      { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' } },
+      3000
+    );
     if (!res.ok) {
       return null;
     }
@@ -254,10 +255,7 @@ async function fetchMusicBrainzYearCandidates(
   let status = 200;
 
   try {
-    const res = await fetch(releaseUrl, {
-      headers: MB_HEADERS,
-      signal: AbortSignal.timeout(2500),
-    });
+    const res = await fetchWithTimeout(releaseUrl, { headers: MB_HEADERS }, 2500);
     status = res.status;
 
     if (res.ok) {
@@ -323,11 +321,15 @@ async function fetchITunesExactYearSongs(
     const term = encodeURIComponent(artistName);
     const url = `https://itunes.apple.com/search?term=${term}&country=${countryCode}&media=music&entity=song&attribute=artistTerm&limit=35`;
     try {
-      const res = await fetch(url, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' },
-        signal: AbortSignal.timeout(3500),
-      });
-      if (!res.ok) return [];
+      const res = await fetchWithTimeout(
+        url,
+        { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' } },
+        3500
+      );
+      if (!res.ok) {
+        console.warn(`[iTunes Warning] HTTP ${res.status} al consultar ${artistName}`);
+        return [];
+      }
       const data = (await res.json()) as {
         resultCount?: number;
         results?: Array<{
@@ -369,7 +371,8 @@ async function fetchITunesExactYearSongs(
         artworkUrl: item.artworkUrl100?.replace('100x100', '600x600') ?? null,
         releaseYear: String(year),
       }));
-    } catch {
+    } catch (err) {
+      console.warn(`[iTunes Error] al consultar ${artistName}: ${err instanceof Error ? err.message : String(err)}`);
       return [];
     }
   });
@@ -473,8 +476,8 @@ export async function GET(request: Request) {
       }
     }
 
-    //let verifiedTracks = finalPlaylist.slice(0, 10);
-    let verifiedTracks: Track[] = []; // <--- FORZAR FALLBACK
+    let verifiedTracks = finalPlaylist.slice(0, 10);
+
 
     let responseSource: 'api' | 'seed-cache' = 'api';
 
