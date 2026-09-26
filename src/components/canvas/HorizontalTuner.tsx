@@ -15,7 +15,7 @@ interface HorizontalTunerProps {
   width?: number;
 }
 
-/** Sintonizador horizontal con 10 marcas del Top 10 y aguja digital luminosa */
+/** Sintonizador horizontal con marcas de estaciones (hasta 15) y aguja digital luminosa */
 export function HorizontalTuner({
   position = [0.9, 0.05, 0.635],
   trackCount = 0,
@@ -24,7 +24,7 @@ export function HorizontalTuner({
   width = 2.16,
 }: HorizontalTunerProps) {
   const needleRef = useRef<THREE.Group>(null);
-  const actualCount = Math.max(0, Math.min(10, trackCount));
+  const actualCount = Math.max(0, Math.min(15, trackCount));
   const hasTracks = actualCount > 0;
   const halfWidth = width / 2;
   const step = actualCount > 1 ? width / (actualCount - 1) : 0;
@@ -181,11 +181,12 @@ export function HorizontalTuner({
         Array.from({ length: actualCount }).map((_, i) => {
           const xPos = actualCount > 1 ? -halfWidth + i * step : 0;
           const isSelected = i === safeIndex;
+          const tickWidth = isSelected ? 0.018 : (actualCount > 10 ? 0.009 : 0.013);
           return (
             <group key={`main-${i}`} position={[xPos, 0, 0.008]}>
               {/* Marca superior */}
               <mesh position={[0, 0.06, 0]}>
-                <boxGeometry args={[isSelected ? 0.02 : 0.013, 0.068, 0.006]} />
+                <boxGeometry args={[tickWidth, 0.068, 0.006]} />
                 <meshStandardMaterial
                   color={isSelected ? '#ffaa44' : '#cc7722'}
                   emissive={isSelected ? '#ff7700' : '#994400'}
@@ -196,7 +197,7 @@ export function HorizontalTuner({
 
               {/* Marca inferior */}
               <mesh position={[0, -0.06, 0]}>
-                <boxGeometry args={[isSelected ? 0.02 : 0.013, 0.068, 0.006]} />
+                <boxGeometry args={[tickWidth, 0.068, 0.006]} />
                 <meshStandardMaterial
                   color={isSelected ? '#ffaa44' : '#cc7722'}
                   emissive={isSelected ? '#ff7700' : '#994400'}
@@ -208,7 +209,7 @@ export function HorizontalTuner({
               {/* Numeración digital 1..N debajo de cada marca */}
               <Text
                 position={[0, -0.115, 0.005]}
-                fontSize={0.052}
+                fontSize={actualCount > 10 ? 0.042 : 0.052}
                 color={isSelected ? '#ffaa44' : '#887766'}
                 anchorX="center"
                 anchorY="middle"

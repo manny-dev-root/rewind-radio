@@ -1,3 +1,9 @@
+export interface EraHit {
+  artist: string;
+  title: string;
+  year: number;
+}
+
 export interface Track {
   title: string;
   artist: string;
