@@ -1,790 +1,686 @@
 {
   "1970": [
-    [
-      "Mungo Jerry",
-      "In the Summertime"
-    ],
-    [
-      "Freda Payne",
-      "Band of Gold"
-    ],
-    [
-      "Christie",
-      "Yellow River"
-    ],
-    [
-      "Smokey Robinson",
-      "The Tears of a Clown"
-    ],
-    [
-      "Elvis Presley",
-      "The Wonder of You"
-    ],
-    [
-      "Simon & Garfunkel",
-      "Bridge Over Troubled Water"
-    ],
-    [
-      "Matthews Southern Comfort",
-      "Woodstock"
-    ],
-    [
-      "Norman Greenbaum",
-      "Spirit in the Sky"
-    ],
-    [
-      "The Jackson 5",
-      "I Want You Back"
-    ],
-    [
-      "Lee Marvin",
-      "Wand'rin' Star"
-    ],
-    [
-      "Edison Lighthouse",
-      "Love Grows (Where My Rosemary Goes)"
-    ],
-    [
-      "Free",
-      "All Right Now"
-    ],
-    [
-      "The Kinks",
-      "Lola"
-    ],
-    [
-      "Jimi Hendrix",
-      "Voodoo Chile"
-    ],
-    [
-      "Dave Edmunds",
-      "I Hear You Knocking"
-    ],
-    [
-      "Shirley Bassey",
-      "Something"
-    ],
-    [
-      "The Beatles",
-      "Let It Be"
-    ],
-    [
-      "Derek and the Dominos",
-      "Layla"
-    ]
+    ["Simon & Garfunkel", "Bridge Over Troubled Water"],
+    ["Christie", "Yellow River"],
+    ["Mungo Jerry", "In The Summertime"],
+    ["Elvis Presley", "The Wonder of You"],
+    ["Smokey Robinson & The Miracles", "Tears Of A Clown"],
+    ["Freda Payne", "Band Of Gold"],
+    ["Jimi Hendrix Experience", "Voodoo Chile"],
+    ["Matthews' Southern Comfort", "Woodstock"],
+    ["Dana", "All Kinds of Everything"],
+    ["Edison Lighthouse", "Love Grows (Where My Rosemary Goes)"]
   ],
   "1971": [
-    [
-      "T. Rex",
-      "Get It On"
-    ],
-    [
-      "T. Rex",
-      "Hot Love"
-    ],
-    [
-      "Slade",
-      "Coz I Luv You"
-    ],
-    [
-      "Dawn",
-      "Knock Three Times"
-    ],
-    [
-      "George Harrison",
-      "My Sweet Lord"
-    ],
-    [
-      "Rod Stewart",
-      "Maggie May"
-    ],
-    [
-      "Middle of the Road",
-      "Chirpy Chirpy Cheep Cheep"
-    ],
-    [
-      "The New Seekers",
-      "Never Ending Song of Love"
-    ],
-    [
-      "Diana Ross",
-      "I'm Still Waiting"
-    ],
-    [
-      "Benny Hill",
-      "Ernie (The Fastest Milkman in the West)"
-    ],
-    [
-      "Ashton, Gardner & Dyke",
-      "Resurrection Shuffle"
-    ],
-    [
-      "The Rolling Stones",
-      "Brown Sugar"
-    ],
-    [
-      "Elton John",
-      "Your Song"
-    ],
-    [
-      "John Lennon",
-      "Imagine"
-    ],
-    [
-      "The Who",
-      "Won't Get Fooled Again"
-    ],
-    [
-      "Led Zeppelin",
-      "Stairway to Heaven"
-    ]
+    ["George Harrison", "My Sweet Lord"],
+    ["Rod Stewart", "Maggie May"],
+    ["T. Rex", "Get It On"],
+    ["T. Rex", "Hot Love"],
+    ["Benny Hill", "Ernie (The Fastest Milkman in the West)"],
+    ["Diana Ross", "I'm Still Waiting"],
+    ["Dawn", "Knock Three Times"],
+    ["Dave and Ansell Collins", "Double Barrel"],
+    ["Mungo Jerry", "Baby Jump"],
+    ["Clive Dunn", "Grandad"]
   ],
   "1972": [
-    [
-      "Slade",
-      "Mama Weer All Crazee Now"
-    ],
-    [
-      "Slade",
-      "Take Me Bak 'Ome"
-    ],
-    [
-      "T. Rex",
-      "Telegram Sam"
-    ],
-    [
-      "T. Rex",
-      "Metal Guru"
-    ],
-    [
-      "Don McLean",
-      "American Pie"
-    ],
-    [
-      "Nilsson",
-      "Without You"
-    ],
-    [
-      "The Royal Scots Dragoon Guards",
-      "Amazing Grace"
-    ],
-    [
-      "Chicory Tip",
-      "Son of My Father"
-    ],
-    [
-      "Alice Cooper",
-      "School's Out"
-    ],
-    [
-      "Chuck Berry",
-      "My Ding-a-Ling"
-    ],
-    [
-      "Lieutenant Pigeon",
-      "Mouldy Old Dough"
-    ],
-    [
-      "Little Jimmy Osmond",
-      "Long Haired Lover from Liverpool"
-    ],
-    [
-      "Donny Osmond",
-      "Puppy Love"
-    ],
-    [
-      "David Bowie",
-      "Starman"
-    ],
-    [
-      "Elton John",
-      "Rocket Man"
-    ]
+    ["Nilsson", "Without You"],
+    ["Royal Scots Dragoon Guards", "Amazing Grace"],
+    ["T. Rex", "Metal Guru"],
+    ["Donny Osmond", "Puppy Love"],
+    ["Alice Cooper", "School's Out"],
+    ["Slade", "Mama Weer All Crazee Now"],
+    ["Chuck Berry", "My Ding-a-Ling"],
+    ["Lieutenant Pigeon", "Mouldy Old Dough"],
+    ["Gilbert O'Sullivan", "Clair"],
+    ["Little Jimmy Osmond", "Long Haired Lover from Liverpool"]
+  ],
+  "1973": [
+    ["The Sweet", "Blockbuster!"],
+    ["Slade", "Cum On Feel the Noize"],
+    ["Dawn", "Tie a Yellow Ribbon Round the Ole Oak Tree"],
+    ["Wizzard", "See My Baby Jive"],
+    ["Suzi Quatro", "Can the Can"],
+    ["10cc", "Rubber Bullets"],
+    ["Peters & Lee", "Welcome Home"],
+    ["Slade", "Merry Xmas Everybody"],
+    ["Gary Glitter", "I Love You Love Me Love"],
+    ["David Cassidy", "Daydreamer"]
+  ],
+  "1974": [
+    ["Mud", "Tiger Feet"],
+    ["Terry Jacks", "Seasons In The Sun"],
+    ["Abba", "Waterloo"],
+    ["The Rubettes", "Sugar Baby Love"],
+    ["Charles Aznavour", "She"],
+    ["George McCrae", "Rock Your Baby"],
+    ["Carl Douglas", "Kung Fu Fighting"],
+    ["Ken Boothe", "Everything I Own"],
+    ["David Essex", "Gonna Make You A Star"],
+    ["Mud", "Lonely This Christmas"]
   ],
   "1975": [
-    [
-      "Queen",
-      "Bohemian Rhapsody"
-    ],
-    [
-      "Pink Floyd",
-      "Wish You Were Here"
-    ]
+    ["The Bay City Rollers", "Bye Bye Baby"],
+    ["10cc", "I'm Not In Love"],
+    ["Queen", "Bohemian Rhapsody"],
+    ["Tammy Wynette", "Stand By Your Man"],
+    ["The Bay City Rollers", "Give A Little Love"],
+    ["Windsor Davies & Don Estelle", "Whispering Grass"],
+    ["Johnny Nash", "Tears On My Pillow"],
+    ["Mud", "Oh Boy"],
+    ["Pilot", "January"],
+    ["Steve Harley & Cockney Rebel", "Make Me Smile (Come Up And See Me)"]
   ],
   "1976": [
-    [
-      "Sex Pistols",
-      "Anarchy in the U.K."
-    ]
+    ["Abba", "Dancing Queen"],
+    ["Brotherhood of Man", "Save Your Kisses for Me"],
+    ["Elton John & Kiki Dee", "Don't Go Breaking My Heart"],
+    ["Showaddywaddy", "Under the Moon of Love"],
+    ["Pussycat", "Mississippi"],
+    ["Abba", "Fernando"],
+    ["The Real Thing", "You to Me Are Everything"],
+    ["Slik", "Forever and Ever"],
+    ["The Four Seasons", "December, 1963 (Oh, What a Night)"],
+    ["Tina Charles", "I Love to Love"]
   ],
   "1977": [
-    [
-      "David Bowie",
-      "Heroes"
-    ],
-    [
-      "Electric Light Orchestra",
-      "Mr. Blue Sky"
-    ],
-    [
-      "Bee Gees",
-      "How Deep Is Your Love"
-    ]
+    ["Paul McCartney & Wings", "Mull of Kintyre"],
+    ["David Soul", "Don't Give Up on Us"],
+    ["Abba", "Knowing Me, Knowing You"],
+    ["Donna Summer", "I Feel Love"],
+    ["Elvis Presley", "Way Down"],
+    ["David Soul", "Silver Lady"],
+    ["Abba", "The Name of the Game"],
+    ["Hot Chocolate", "So You Win Again"],
+    ["Manhattan Transfer", "Chanson D'Amour"],
+    ["Leo Sayer", "When I Need You"]
   ],
   "1978": [
-    [
-      "Kate Bush",
-      "Wuthering Heights"
-    ]
+    ["Boney M.", "Rivers of Babylon"],
+    ["John Travolta & Olivia Newton-John", "You're the One That I Want"],
+    ["John Travolta & Olivia Newton-John", "Summer Nights"],
+    ["Commodores", "Three Times a Lady"],
+    ["Bee Gees", "Night Fever"],
+    ["Boney M.", "Mary's Boy Child"],
+    ["Abba", "Take a Chance on Me"],
+    ["Brian and Michael", "Matchstalk Men and Matchstalk Cats and Dogs"],
+    ["Kate Bush", "Wuthering Heights"],
+    ["Village People", "Y.M.C.A."]
   ],
   "1979": [
-    [
-      "The Clash",
-      "London Calling"
-    ],
-    [
-      "Joy Division",
-      "Transmission"
-    ]
+    ["Art Garfunkel", "Bright Eyes"],
+    ["Blondie", "Heart of Glass"],
+    ["Cliff Richard", "We Don't Talk Anymore"],
+    ["Tubeway Army", "Are 'Friends' Electric?"],
+    ["Gloria Gaynor", "I Will Survive"],
+    ["Bee Gees", "Tragedy"],
+    ["Ian Dury and the Blockheads", "Hit Me with Your Rhythm Stick"],
+    ["Blondie", "Sunday Girl"],
+    ["Roxy Music", "Dance Away"],
+    ["Racey", "Some Girls"]
   ],
   "1980": [
-    [
-      "Queen",
-      "Another One Bites the Dust"
-    ],
-    [
-      "The Cure",
-      "Boys Don't Cry"
-    ],
-    [
-      "Joy Division",
-      "Love Will Tear Us Apart"
-    ]
+    ["The Police", "Don't Stand So Close to Me"],
+    ["Barbra Streisand", "Woman in Love"],
+    ["Kelly Marie", "Feels Like I'm in Love"],
+    ["Abba", "Super Trouper"],
+    ["Ottawan", "D.I.S.C.O."],
+    ["Blondie", "The Tide Is High"],
+    ["Dexys Midnight Runners", "Geno"],
+    ["Fern Kinney", "Together We Are Beautiful"],
+    ["The Spinners", "Working My Way Back to You"],
+    ["Blondie", "Call Me"]
   ],
   "1981": [
-    [
-      "Depeche Mode",
-      "Just Can't Get Enough"
-    ]
+    ["Soft Cell", "Tainted Love"],
+    ["Adam and the Ants", "Stand and Deliver"],
+    ["Adam and the Ants", "Prince Charming"],
+    ["Shakin' Stevens", "This Ole House"],
+    ["Ultravox", "Vienna"],
+    ["Bucks Fizz", "Making Your Mind Up"],
+    ["The Specials", "Ghost Town"],
+    ["Roxy Music", "Jealous Guy"],
+    ["The Human League", "Don't You Want Me"],
+    ["Altered Images", "Happy Birthday"]
+  ],
+  "1982": [
+    ["Dexys Midnight Runners", "Come On Eileen"],
+    ["Irene Cara", "Fame"],
+    ["Survivor", "Eye of the Tiger"],
+    ["Tight Fit", "The Lion Sleeps Tonight"],
+    ["Culture Club", "Do You Really Want to Hurt Me"],
+    ["Musical Youth", "Pass the Dutchie"],
+    ["Eddy Grant", "I Don't Wanna Dance"],
+    ["Goombay Dance Band", "Seven Tears"],
+    ["Paul McCartney and Stevie Wonder", "Ebony and Ivory"],
+    ["The Jam", "Town Called Malice"]
   ],
   "1983": [
-    [
-      "New Order",
-      "Blue Monday"
-    ],
-    [
-      "Eurythmics",
-      "Sweet Dreams (Are Made of This)"
-    ],
-    [
-      "The Police",
-      "Every Breath You Take"
-    ],
-    [
-      "Iron Maiden",
-      "The Trooper"
-    ],
-    [
-      "David Bowie",
-      "Let's Dance"
-    ]
+    ["Culture Club", "Karma Chameleon"],
+    ["Billy Joel", "Uptown Girl"],
+    ["UB40", "Red Red Wine"],
+    ["David Bowie", "Let's Dance"],
+    ["Bonnie Tyler", "Total Eclipse of the Heart"],
+    ["Spandau Ballet", "True"],
+    ["Men at Work", "Down Under"],
+    ["Michael Jackson", "Billie Jean"],
+    ["Eurythmics", "Sweet Dreams (Are Made of This)"],
+    ["Paul Young", "Wherever I Lay My Hat"]
   ],
   "1984": [
-    [
-      "Wham!",
-      "Careless Whisper"
-    ],
-    [
-      "Band Aid",
-      "Do They Know It's Christmas?"
-    ],
-    [
-      "Frankie Goes to Hollywood",
-      "Relax"
-    ],
-    [
-      "Sade",
-      "Smooth Operator"
-    ],
-    [
-      "The Smiths",
-      "How Soon Is Now?"
-    ],
-    [
-      "Queen",
-      "I Want to Break Free"
-    ],
-    [
-      "George Michael",
-      "Careless Whisper"
-    ],
-    [
-      "Frankie Goes to Hollywood",
-      "The Power of Love"
-    ],
-    [
-      "Duran Duran",
-      "The Reflex"
-    ],
-    [
-      "Spandau Ballet",
-      "Only When You Leave"
-    ],
-    [
-      "Eurythmics",
-      "Here Comes the Rain Again"
-    ],
-    [
-      "Depeche Mode",
-      "People Are People"
-    ],
-    [
-      "Bronski Beat",
-      "Smalltown Boy"
-    ],
-    [
-      "Tears for Fears",
-      "Mothers Talk"
-    ],
-    [
-      "Sade",
-      "Your Love Is King"
-    ]
+    ["Band Aid", "Do They Know It's Christmas?"],
+    ["Stevie Wonder", "I Just Called to Say I Love You"],
+    ["Frankie Goes to Hollywood", "Relax"],
+    ["Frankie Goes to Hollywood", "Two Tribes"],
+    ["George Michael", "Careless Whisper"],
+    ["Wham!", "Last Christmas"],
+    ["Lionel Richie", "Hello"],
+    ["Black Lace", "Agadoo"],
+    ["Wham!", "Freedom"],
+    ["Wham!", "Wake Me Up Before You Go-Go"]
   ],
   "1985": [
-    [
-      "Kate Bush",
-      "Running Up That Hill"
-    ],
-    [
-      "Dire Straits",
-      "Brothers in Arms"
-    ],
-    [
-      "The Cure",
-      "In Between Days"
-    ],
-    [
-      "The Smiths",
-      "The Boy with the Thorn in His Side"
-    ],
-    [
-      "Pet Shop Boys",
-      "West End Girls"
-    ],
-    [
-      "Marillion",
-      "Kayleigh"
-    ],
-    [
-      "Dead or Alive",
-      "You Spin Me Round (Like a Record)"
-    ],
-    [
-      "Eurythmics",
-      "There Must Be an Angel"
-    ],
-    [
-      "Phil Collins",
-      "One More Night"
-    ],
-    [
-      "Simple Minds",
-      "Alive and Kicking"
-    ],
-    [
-      "Elton John",
-      "Nikita"
-    ],
-    [
-      "Fine Young Cannibals",
-      "Johnny Come Home"
-    ],
-    [
-      "UB40",
-      "I Got You Babe"
-    ],
-    [
-      "Paul Young",
-      "Every Time You Go Away"
-    ],
-    [
-      "Level 42",
-      "Something About You"
-    ],
-    [
-      "Tears for Fears",
-      "Everybody Wants to Rule the World"
-    ]
+    ["Jennifer Rush", "The Power of Love"],
+    ["Elaine Paige and Barbara Dickson", "I Know Him So Well"],
+    ["Madonna", "Into the Groove"],
+    ["Paul Hardcastle", "19"],
+    ["Sister Sledge", "Frankie"],
+    ["David Bowie & Mick Jagger", "Dancing in the Street"],
+    ["Feargal Sharkey", "A Good Heart"],
+    ["Whitney Houston", "Saving All My Love for You"],
+    ["UB40 & Chrissie Hynde", "I Got You Babe"],
+    ["A-ha", "Take On Me"]
   ],
   "1986": [
-    [
-      "The Smiths",
-      "There Is a Light That Never Goes Out"
-    ]
+    ["The Communards", "Don't Leave Me This Way"],
+    ["Nick Berry", "Every Loser Wins"],
+    ["Boris Gardiner", "I Want to Wake Up with You"],
+    ["Cliff Richard & The Young Ones", "Living Doll"],
+    ["Cyndi Lauper", "True Colors"],
+    ["Europe", "The Final Countdown"],
+    ["Berlin", "Take My Breath Away"],
+    ["Madonna", "Papa Don't Preach"],
+    ["Jackie Wilson", "Reet Petite"],
+    ["Diana Ross", "Chain Reaction"]
   ],
   "1987": [
-    [
-      "Def Leppard",
-      "Pour Some Sugar on Me"
-    ],
-    [
-      "Rick Astley",
-      "Never Gonna Give You Up"
-    ]
+    ["Rick Astley", "Never Gonna Give You Up"],
+    ["Starship", "Nothing's Gonna Stop Us Now"],
+    ["Whitney Houston", "I Wanna Dance with Somebody"],
+    ["Bee Gees", "You Win Again"],
+    ["T'Pau", "China in Your Hand"],
+    ["Pet Shop Boys", "Always on My Mind"],
+    ["Mel and Kim", "Respectable"],
+    ["Ben E. King", "Stand by Me"],
+    ["Pet Shop Boys", "It's a Sin"],
+    ["MARRS", "Pump Up the Volume"]
+  ],
+  "1988": [
+    ["Cliff Richard", "Mistletoe and Wine"],
+    ["Yazz and the Plastic Population", "The Only Way Is Up"],
+    ["Kylie Minogue", "I Should Be So Lucky"],
+    ["Kylie Minogue and Jason Donovan", "Especially for You"],
+    ["Fairground Attraction", "Perfect"],
+    ["Wet Wet Wet", "With a Little Help from My Friends"],
+    ["Robin Beck", "First Time"],
+    ["Phil Collins", "A Groovy Kind of Love"],
+    ["The Hollies", "He Ain't Heavy, He's My Brother"],
+    ["Enya", "Orinoco Flow"]
+  ],
+  "1989": [
+    ["Black Box", "Ride on Time"],
+    ["Jive Bunny and the Mastermixers", "Swing the Mood"],
+    ["The Bangles", "Eternal Flame"],
+    ["Marc Almond feat. Gene Pitney", "Something's Gotten Hold of My Heart"],
+    ["Soul II Soul", "Back to Life (How Ever Do You Want Me)"],
+    ["Jive Bunny and the Mastermixers", "Let's Party"],
+    ["Band Aid II", "Do They Know It's Christmas?"],
+    ["Sonia", "You'll Never Stop Me Loving You"],
+    ["Lisa Stansfield", "All Around the World"],
+    ["Simply Red", "If You Don't Know Me by Now"]
   ],
   "1990": [
-    [
-      "Depeche Mode",
-      "Enjoy the Silence"
-    ]
+    ["The Righteous Brothers", "Unchained Melody"],
+    ["Sinead O'Connor", "Nothing Compares 2 U"],
+    ["Elton John", "Sacrifice"],
+    ["Vanilla Ice", "Ice Ice Baby"],
+    ["Madonna", "Vogue"],
+    ["Maria McKee", "Show Me Heaven"],
+    ["Adamski", "Killer"],
+    ["Snap!", "The Power"],
+    ["New Kids on the Block", "Step by Step"],
+    ["Roxette", "It Must Have Been Love"]
   ],
   "1991": [
-    [
-      "Massive Attack",
-      "Unfinished Sympathy"
-    ]
+    ["Bryan Adams", "(Everything I Do) I Do It for You"],
+    ["Queen", "Bohemian Rhapsody / These Are the Days of Our Lives"],
+    ["Cher", "The Shoop Shoop Song (It's in His Kiss)"],
+    ["Right Said Fred", "I'm Too Sexy"],
+    ["Chesney Hawkes", "The One and Only"],
+    ["Jason Donovan", "Any Dream Will Do"],
+    ["Michael Jackson", "Black or White"],
+    ["The Simpsons", "Do the Bartman"],
+    ["Vic Reeves & The Wonder Stuff", "Dizzy"],
+    ["The Clash", "Should I Stay or Should I Go"]
   ],
   "1992": [
-    [
-      "Radiohead",
-      "Creep"
-    ]
+    ["Whitney Houston", "I Will Always Love You"],
+    ["Snap!", "Rhythm Is a Dancer"],
+    ["Charles & Eddie", "Would I Lie to You?"],
+    ["Shakespears Sister", "Stay"],
+    ["KWS", "Please Don't Go"],
+    ["The Shamen", "Ebeneezer Goode"],
+    ["Tasmin Archer", "Sleeping Satellite"],
+    ["Boyz II Men", "End of the Road"],
+    ["Jimmy Nail", "Ain't No Doubt"],
+    ["Richard Marx", "Hazard"]
+  ],
+  "1993": [
+    ["Meat Loaf", "I'd Do Anything for Love (But I Won't Do That)"],
+    ["Culture Beat", "Mr Vain"],
+    ["Ace of Base", "All That She Wants"],
+    ["Gabrielle", "Dreams"],
+    ["Take That feat. Lulu", "Relight My Fire"],
+    ["2 Unlimited", "No Limit"],
+    ["Shaggy", "Oh Carolina"],
+    ["The Bluebells", "Young at Heart"],
+    ["Take That", "Babe"],
+    ["DJ Jazzy Jeff & The Fresh Prince", "Boom! Shake the Room"]
   ],
   "1994": [
-    [
-      "Blur",
-      "Parklife"
-    ]
+    ["Wet Wet Wet", "Love Is All Around"],
+    ["Whigfield", "Saturday Night"],
+    ["East 17", "Stay Another Day"],
+    ["Pato Banton", "Baby Come Back"],
+    ["All-4-One", "I Swear"],
+    ["Mariah Carey", "Without You"],
+    ["D:Ream", "Things Can Only Get Better"],
+    ["Stiltskin", "Inside"],
+    ["Let Loose", "Crazy for You"],
+    ["Enigma", "Return to Innocence"]
   ],
   "1995": [
-    [
-      "Oasis",
-      "Wonderwall"
-    ],
-    [
-      "Oasis",
-      "Don't Look Back in Anger"
-    ],
-    [
-      "Pulp",
-      "Common People"
-    ],
-    [
-      "Supergrass",
-      "Alright"
-    ]
+    ["Robson & Jerome", "Unchained Melody"],
+    ["Coolio feat. L.V.", "Gangsta's Paradise"],
+    ["Robson & Jerome", "I Believe / Up on the Roof"],
+    ["Take That", "Back for Good"],
+    ["Celine Dion", "Think Twice"],
+    ["Michael Jackson", "Earth Song"],
+    ["Simply Red", "Fairground"],
+    ["Michael Jackson", "You Are Not Alone"],
+    ["Everything but the Girl", "Missing"],
+    ["Oasis", "Wonderwall"]
   ],
   "1996": [
-    [
-      "Spice Girls",
-      "Wannabe"
-    ],
-    [
-      "The Prodigy",
-      "Firestarter"
-    ],
-    [
-      "Jamiroquai",
-      "Virtual Insanity"
-    ]
+    ["Fugees", "Killing Me Softly"],
+    ["Spice Girls", "Wannabe"],
+    ["Babylon Zoo", "Spaceman"],
+    ["Spice Girls", "Say You'll Be There"],
+    ["Mark Morrison", "Return of the Mack"],
+    ["Spice Girls", "2 Become 1"],
+    ["Oasis", "Don't Look Back in Anger"],
+    ["Gina G", "Ooh Aah... Just a Little Bit"],
+    ["Peter Andre", "Mysterious Girl"],
+    ["The Prodigy", "Breathe"]
   ],
   "1997": [
-    [
-      "Blur",
-      "Song 2"
-    ],
-    [
-      "Radiohead",
-      "Karma Police"
-    ],
-    [
-      "The Verve",
-      "Bitter Sweet Symphony"
-    ],
-    [
-      "Robbie Williams",
-      "Angels"
-    ]
+    ["Elton John", "Candle in the Wind 1997"],
+    ["Aqua", "Barbie Girl"],
+    ["Puff Daddy & Faith Evans", "I'll Be Missing You"],
+    ["Various Artists", "Perfect Day"],
+    ["Teletubbies", "Teletubbies say 'Eh-oh!'"],
+    ["Will Smith", "Men in Black"],
+    ["No Doubt", "Don't Speak"],
+    ["Natalie Imbruglia", "Torn"],
+    ["Spice Girls", "Spice Up Your Life"],
+    ["Chumbawamba", "Tubthumping"]
+  ],
+  "1998": [
+    ["Cher", "Believe"],
+    ["Celine Dion", "My Heart Will Go On"],
+    ["Run-DMC vs Jason Nevins", "It's Like That"],
+    ["Boyzone", "No Matter What"],
+    ["B*Witched", "C'est la Vie"],
+    ["LeAnn Rimes", "How Do I Live"],
+    ["Savage Garden", "Truly Madly Deeply"],
+    ["All Saints", "Never Ever"],
+    ["Steps", "Tragedy"],
+    ["Spice Girls", "Goodbye"]
+  ],
+  "1999": [
+    ["Britney Spears", "...Baby One More Time"],
+    ["Eiffel 65", "Blue (Da Ba Dee)"],
+    ["Lou Bega", "Mambo No. 5"],
+    ["Shania Twain", "That Don't Impress Me Much"],
+    ["Ricky Martin", "Livin' la Vida Loca"],
+    ["Shanks & Bigfoot", "Sweet Like Chocolate"],
+    ["S Club 7", "Bring It All Back"],
+    ["Ronan Keating", "When You Say Nothing at All"],
+    ["Christina Aguilera", "Genie in a Bottle"],
+    ["Five", "Keep On Movin'"]
   ],
   "2000": [
-    [
-      "Coldplay",
-      "Yellow"
-    ],
-    [
-      "Dido",
-      "Thank You"
-    ]
+    ["Bob the Builder", "Can We Fix It?"],
+    ["All Saints", "Pure Shores"],
+    ["Sonique", "It Feels So Good"],
+    ["Baha Men", "Who Let the Dogs Out?"],
+    ["Robbie Williams", "Rock DJ"],
+    ["Eminem", "Stan"],
+    ["S Club 7", "Never Had a Dream Come True"],
+    ["Samantha Mumba", "Gotta Tell You"],
+    ["Britney Spears", "Oops!... I Did It Again"],
+    ["Craig David", "Fill Me In"]
+  ],
+  "2001": [
+    ["Shaggy feat. Rikrok", "It Wasn't Me"],
+    ["Hear'Say", "Pure and Simple"],
+    ["Kylie Minogue", "Can't Get You Out of My Head"],
+    ["Atomic Kitten", "Whole Again"],
+    ["DJ Ötzi", "Hey Baby"],
+    ["Westlife", "Uptown Girl"],
+    ["S Club 7", "Don't Stop Movin'"],
+    ["Shaggy feat. Rayvon", "Angel"],
+    ["Destiny's Child", "Survivor"],
+    ["Afroman", "Because I Got High"]
+  ],
+  "2002": [
+    ["Will Young", "Anything Is Possible / Evergreen"],
+    ["Gareth Gates", "Unchained Melody"],
+    ["Enrique Iglesias", "Hero"],
+    ["Nelly feat. Kelly Rowland", "Dilemma"],
+    ["Elvis vs JXL", "A Little Less Conversation"],
+    ["Las Ketchup", "The Ketchup Song"],
+    ["Shakira", "Whenever, Wherever"],
+    ["Avril Lavigne", "Complicated"],
+    ["Girls Aloud", "Sound of the Underground"],
+    ["Liberty X", "Just a Little"]
+  ],
+  "2003": [
+    ["Black Eyed Peas", "Where Is the Love?"],
+    ["R. Kelly", "Ignition (Remix)"],
+    ["Blu Cantrell feat. Sean Paul", "Breathe"],
+    ["Michael Andrews feat. Gary Jules", "Mad World"],
+    ["Will Young", "Leave Right Now"],
+    ["50 Cent", "In Da Club"],
+    ["Evanescence", "Bring Me to Life"],
+    ["Justin Timberlake", "Cry Me a River"],
+    ["Beyoncé feat. Jay-Z", "Crazy in Love"],
+    ["Christina Aguilera", "Beautiful"]
   ],
   "2004": [
-    [
-      "Keane",
-      "Somewhere Only We Know"
-    ],
-    [
-      "Franz Ferdinand",
-      "Take Me Out"
-    ],
-    [
-      "The Libertines",
-      "Can't Stand Me Now"
-    ],
-    [
-      "Kaiser Chiefs",
-      "I Predict a Riot"
-    ]
+    ["Band Aid 20", "Do They Know It's Christmas?"],
+    ["Eamon", "F**k It (I Don't Want You Back)"],
+    ["DJ Casper", "Cha Cha Slide"],
+    ["Eric Prydz", "Call on Me"],
+    ["Usher feat. Lil Jon & Ludacris", "Yeah"],
+    ["Anastacia", "Left Outside Alone"],
+    ["Britney Spears", "Toxic"],
+    ["Usher", "Burn"],
+    ["Peter Andre", "Mysterious Girl"],
+    ["The Streets", "Dry Your Eyes"]
   ],
   "2005": [
-    [
-      "Arctic Monkeys",
-      "I Bet You Look Good on the Dancefloor"
-    ],
-    [
-      "Gorillaz",
-      "Feel Good Inc."
-    ]
+    ["Tony Christie feat. Peter Kay", "Is This the Way to Amarillo"],
+    ["Shayne Ward", "That's My Goal"],
+    ["James Blunt", "You're Beautiful"],
+    ["Pussycat Dolls", "Don't Cha"],
+    ["Daniel Powter", "Bad Day"],
+    ["Crazy Frog", "Axel F"],
+    ["Sugababes", "Push the Button"],
+    ["Gorillaz", "Feel Good Inc."],
+    ["Westlife", "You Raise Me Up"],
+    ["Madonna", "Hung Up"]
   ],
   "2006": [
-    [
-      "Amy Winehouse",
-      "Back to Black"
-    ],
-    [
-      "Amy Winehouse",
-      "Rehab"
-    ],
-    [
-      "Muse",
-      "Supermassive Black Hole"
-    ],
-    [
-      "Lily Allen",
-      "Smile"
-    ]
+    ["Gnarls Barkley", "Crazy"],
+    ["Leona Lewis", "A Moment Like This"],
+    ["Shakira feat. Wyclef Jean", "Hips Don't Lie"],
+    ["Sandi Thom", "I Wish I Was a Punk Rocker"],
+    ["Take That", "Patience"],
+    ["Akon feat. Eminem", "Smack That"],
+    ["Scissor Sisters", "I Don't Feel Like Dancin'"],
+    ["Corinne Bailey Rae", "Put Your Records On"],
+    ["Nelly Furtado", "Maneater"],
+    ["Rihanna", "SOS"]
   ],
   "2007": [
-    [
-      "M.I.A.",
-      "Paper Planes"
-    ]
+    ["Leona Lewis", "Bleeding Love"],
+    ["Rihanna feat. Jay-Z", "Umbrella"],
+    ["Mika", "Grace Kelly"],
+    ["The Fray", "How to Save a Life"],
+    ["Take That", "Rule the World"],
+    ["Mark Ronson feat. Amy Winehouse", "Valerie"],
+    ["Kaiser Chiefs", "Ruby"],
+    ["Plain White T's", "Hey There Delilah"],
+    ["Sean Kingston", "Beautiful Girls"],
+    ["Timbaland feat. OneRepublic", "Apologize"]
   ],
   "2008": [
-    [
-      "Coldplay",
-      "Viva La Vida"
-    ],
-    [
-      "Florence + the Machine",
-      "Dog Days Are Over"
-    ]
+    ["Alexandra Burke", "Hallelujah"],
+    ["The X Factor Finalists", "Hero"],
+    ["Duffy", "Mercy"],
+    ["Katy Perry", "I Kissed a Girl"],
+    ["Nickelback", "Rockstar"],
+    ["Estelle feat. Kanye West", "American Boy"],
+    ["Kings of Leon", "Sex on Fire"],
+    ["Dizzee Rascal", "Dance wiv Me"],
+    ["Adele", "Chasing Pavements"],
+    ["Coldplay", "Viva la Vida"]
+  ],
+  "2009": [
+    ["Lady Gaga", "Poker Face"],
+    ["Black Eyed Peas", "I Gotta Feeling"],
+    ["Lady Gaga", "Just Dance"],
+    ["Cheryl Cole", "Fight for This Love"],
+    ["Joe McElderry", "The Climb"],
+    ["La Roux", "In for the Kill"],
+    ["Black Eyed Peas", "Boom Boom Pow"],
+    ["Tinchy Stryder feat. N-Dubz", "Number 1"],
+    ["Alexandra Burke", "Bad Boys"],
+    ["Black Eyed Peas", "Meet Me Halfway"]
   ],
   "2010": [
-    [
-      "Adele",
-      "Rolling in the Deep"
-    ]
+    ["Eminem feat. Rihanna", "Love the Way You Lie"],
+    ["Matt Cardle", "When We Collide"],
+    ["Bruno Mars", "Just the Way You Are"],
+    ["Rihanna", "Only Girl (In the World)"],
+    ["Usher feat. Pitbull", "OMG"],
+    ["Owl City", "Fireflies"],
+    ["B.o.B feat. Hayley Williams", "Airplanes"],
+    ["Tinie Tempah", "Pass Out"],
+    ["Katy Perry", "California Gurls"],
+    ["Yolanda Be Cool", "We No Speak Americano"]
   ],
   "2011": [
-    [
-      "Adele",
-      "Someone Like You"
-    ],
-    [
-      "Calvin Harris",
-      "Feel So Close"
-    ],
-    [
-      "One Direction",
-      "What Makes You Beautiful"
-    ]
+    ["Adele", "Someone Like You"],
+    ["Maroon 5 feat. Christina Aguilera", "Moves Like Jagger"],
+    ["LMFAO", "Party Rock Anthem"],
+    ["Rihanna feat. Calvin Harris", "We Found Love"],
+    ["Pitbull", "Give Me Everything"],
+    ["Bruno Mars", "Grenade"],
+    ["Ed Sheeran", "The A Team"],
+    ["Jessie J", "Price Tag"],
+    ["Lady Gaga", "Born This Way"],
+    ["Christina Perri", "Jar of Hearts"]
   ],
   "2012": [
-    [
-      "Mumford & Sons",
-      "I Will Wait"
-    ]
+    ["Gotye feat. Kimbra", "Somebody That I Used to Know"],
+    ["Carly Rae Jepsen", "Call Me Maybe"],
+    ["fun. feat. Janelle Monae", "We Are Young"],
+    ["David Guetta feat. Sia", "Titanium"],
+    ["James Arthur", "Impossible"],
+    ["Nicki Minaj", "Starships"],
+    ["Jessie J", "Domino"],
+    ["Maroon 5 feat. Wiz Khalifa", "Payphone"],
+    ["Flo Rida feat. Sia", "Wild Ones"],
+    ["Rihanna", "Diamonds"]
   ],
   "2013": [
-    [
-      "Arctic Monkeys",
-      "Do I Wanna Know?"
-    ],
-    [
-      "Bastille",
-      "Pompeii"
-    ]
+    ["Robin Thicke", "Blurred Lines"],
+    ["Daft Punk feat. Pharrell Williams", "Get Lucky"],
+    ["Avicii", "Wake Me Up"],
+    ["Passenger", "Let Her Go"],
+    ["Naughty Boy feat. Sam Smith", "La La La"],
+    ["Katy Perry", "Roar"],
+    ["Macklemore & Ryan Lewis", "Thrift Shop"],
+    ["Pink", "Just Give Me a Reason"],
+    ["OneRepublic", "Counting Stars"],
+    ["Justin Timberlake", "Mirrors"]
   ],
   "2014": [
-    [
-      "Ed Sheeran",
-      "Thinking Out Loud"
-    ],
-    [
-      "Sam Smith",
-      "Stay with Me"
-    ],
-    [
-      "Clean Bandit ft. Jess Glynne",
-      "Rather Be"
-    ],
-    [
-      "Mark Ronson ft. Bruno Mars",
-      "Uptown Funk"
-    ]
+    ["Pharrell Williams", "Happy"],
+    ["Clean Bandit feat. Jess Glynne", "Rather Be"],
+    ["John Legend", "All of Me"],
+    ["Mr Probz", "Waves"],
+    ["Ed Sheeran", "Thinking Out Loud"],
+    ["Ella Henderson", "Ghost"],
+    ["Sam Smith", "Stay with Me"],
+    ["Meghan Trainor", "All About That Bass"],
+    ["Pitbull feat. Kesha", "Timber"],
+    ["George Ezra", "Budapest"]
+  ],
+  "2015": [
+    ["Mark Ronson feat. Bruno Mars", "Uptown Funk"],
+    ["OMI", "Cheerleader"],
+    ["Hozier", "Take Me to Church"],
+    ["Ellie Goulding", "Love Me Like You Do"],
+    ["Wiz Khalifa feat. Charlie Puth", "See You Again"],
+    ["Major Lazer & DJ Snake", "Lean On"],
+    ["James Bay", "Hold Back the River"],
+    ["Justin Bieber", "What Do You Mean?"],
+    ["Little Mix", "Black Magic"],
+    ["Justin Bieber", "Sorry"]
+  ],
+  "2016": [
+    ["Drake feat. Wizkid & Kyla", "One Dance"],
+    ["Lukas Graham", "7 Years"],
+    ["Sia", "Cheap Thrills"],
+    ["Mike Posner", "I Took a Pill in Ibiza"],
+    ["Calvin Harris feat. Rihanna", "This Is What You Came For"],
+    ["Zara Larsson", "Lush Life"],
+    ["The Chainsmokers feat. Halsey", "Closer"],
+    ["Justin Bieber", "Love Yourself"],
+    ["Rihanna feat. Drake", "Work"],
+    ["Justin Timberlake", "Can't Stop the Feeling!"]
   ],
   "2017": [
-    [
-      "Ed Sheeran",
-      "Shape of You"
-    ],
-    [
-      "Harry Styles",
-      "Sign of the Times"
-    ]
+    ["Ed Sheeran", "Shape of You"],
+    ["Luis Fonsi & Daddy Yankee", "Despacito"],
+    ["Ed Sheeran", "Castle on the Hill"],
+    ["French Montana feat. Swae Lee", "Unforgettable"],
+    ["Ed Sheeran with Beyoncé", "Perfect"],
+    ["Clean Bandit feat. Zara Larsson", "Symphony"],
+    ["The Chainsmokers & Coldplay", "Something Just Like This"],
+    ["Ed Sheeran", "Galway Girl"],
+    ["Dua Lipa", "New Rules"],
+    ["Camila Cabello", "Havana"]
   ],
   "2018": [
-    [
-      "George Ezra",
-      "Shotgun"
-    ]
+    ["Calvin Harris & Dua Lipa", "One Kiss"],
+    ["Drake", "God's Plan"],
+    ["George Ezra", "Shotgun"],
+    ["Keala Settle", "This Is Me"],
+    ["Rudimental", "These Days"],
+    ["Ed Sheeran", "Perfect"],
+    ["Drake", "Nice for What"],
+    ["George Ezra", "Paradise"],
+    ["Ariana Grande", "No Tears Left to Cry"],
+    ["Portugal. The Man", "Feel It Still"]
   ],
   "2019": [
-    [
-      "Dua Lipa",
-      "Don't Start Now"
-    ]
+    ["Lewis Capaldi", "Someone You Loved"],
+    ["Lil Nas X", "Old Town Road"],
+    ["Ed Sheeran & Justin Bieber", "I Don't Care"],
+    ["Billie Eilish", "Bad Guy"],
+    ["Calvin Harris & Rag'n'Bone Man", "Giant"],
+    ["Ava Max", "Sweet but Psycho"],
+    ["Stormzy", "Vossi Bop"],
+    ["Tones and I", "Dance Monkey"],
+    ["Mabel", "Don't Call Me Up"],
+    ["Shawn Mendes & Camila Cabello", "Senorita"]
   ],
   "2020": [
-    [
-      "Dua Lipa",
-      "Levitating"
-    ],
-    [
-      "Glass Animals",
-      "Heat Waves"
-    ]
+    ["The Weeknd", "Blinding Lights"],
+    ["Tones and I", "Dance Monkey"],
+    ["SAINt JHN", "Roses"],
+    ["Dua Lipa", "Don't Start Now"],
+    ["Lewis Capaldi", "Before You Go"],
+    ["Joel Corry feat. MNEK", "Head & Heart"],
+    ["Harry Styles", "Watermelon Sugar"],
+    ["DaBaby feat. Roddy Ricch", "Rockstar"],
+    ["Ariana Grande", "Positions"],
+    ["Jawsh 685 & Jason Derulo", "Savage Love"]
   ],
   "2021": [
-    [
-      "Ed Sheeran",
-      "Bad Habits"
-    ],
-    [
-      "Wet Leg",
-      "Chaise Longue"
-    ]
+    ["Ed Sheeran", "Bad Habits"],
+    ["Olivia Rodrigo", "Drivers License"],
+    ["Olivia Rodrigo", "Good 4 U"],
+    ["The Weeknd", "Save Your Tears"],
+    ["Lil Nas X", "Montero (Call Me by Your Name)"],
+    ["Dua Lipa", "Levitating"],
+    ["The Kid LAROI & Justin Bieber", "Stay"],
+    ["Elton John & Dua Lipa", "Cold Heart (Pnau Remix)"],
+    ["Nathan Evans", "Wellerman"],
+    ["Ed Sheeran", "Shivers"]
   ],
   "2022": [
-    [
-      "Harry Styles",
-      "As It Was"
-    ],
-    [
-      "Sam Smith & Kim Petras",
-      "Unholy"
-    ],
-    [
-      "PinkPantheress",
-      "Boy's a Liar"
-    ],
-    [
-      "Central Cee",
-      "Doja"
-    ],
-    [
-      "Fred again..",
-      "Delilah (pull me out of this)"
-    ],
-    [
-      "Raye ft. 070 Shake",
-      "Escapism."
-    ],
-    [
-      "Dave",
-      "Starlight"
-    ]
+    ["Harry Styles", "As It Was"],
+    ["Ed Sheeran", "Bad Habits"],
+    ["Fireboy DML & Ed Sheeran", "Peru"],
+    ["Cat Burns", "Go"],
+    ["Ed Sheeran", "Shivers"],
+    ["Kate Bush", "Running Up That Hill"],
+    ["Glass Animals", "Heat Waves"],
+    ["Lost Frequencies & Calum Scott", "Where Are You Now"],
+    ["LF System", "Afraid to Feel"],
+    ["Sam Fender", "Seventeen Going Under"]
   ],
   "2023": [
-    [
-      "Gorillaz ft. Stevie Nicks",
-      "Oil"
-    ],
-    [
-      "The Last Dinner Party",
-      "Nothing Matters"
-    ]
+    ["Miley Cyrus", "Flowers"],
+    ["Dave & Central Cee", "Sprinter"],
+    ["Raye", "Escapism"],
+    ["Taylor Swift", "Anti-Hero"],
+    ["Calvin Harris & Ellie Goulding", "Miracle"],
+    ["Rema", "Calm Down"],
+    ["SZA", "Kill Bill"],
+    ["PinkPantheress", "Boy's a Liar"],
+    ["Olivia Rodrigo", "Vampire"],
+    ["Taylor Swift", "Cruel Summer"]
   ],
   "2024": [
-    [
-      "Charli XCX",
-      "Von Dutch"
-    ],
-    [
-      "Coldplay",
-      "feelslikeimfallinginlove"
-    ]
+    ["Noah Kahan", "Stick Season"],
+    ["Teddy Swims", "Lose Control"],
+    ["Benson Boone", "Beautiful Things"],
+    ["Sabrina Carpenter", "Espresso"],
+    ["Hozier", "Too Sweet"],
+    ["Beyoncé", "Texas Hold 'Em"],
+    ["Sabrina Carpenter", "Please Please Please"],
+    ["Shaboozey", "A Bar Song (Tipsy)"],
+    ["Chappell Roan", "Good Luck, Babe!"],
+    ["Billie Eilish", "Birds of a Feather"]
+  ],
+  "2025": [
+    ["Alex Warren", "Emerald Eyes"],
+    ["Madonna & Sabrina Carpenter", "Bring Your Love"],
+    ["Ed Sheeran", "Sapphire (feat. Arijit Singh)"],
+    ["Alex Warren", "Ordinary"],
+    ["Bruno Mars", "I Just Might"],
+    ["Prospa, Cloonee, Sybil", "Free Your Mind"],
+    ["James Blunt", "Tastes Like Summer"],
+    ["Bruno Mars", "Risk It All"],
+    ["Ed Sheeran", "Azizam"],
+    ["Disco Lines, Tinashe", "No Broke Boys"]
   ],
   "2026": [
-    [
-      "Noah Kahan",
-      "Stick Season"
-    ],
-    [
-      "Benson Boone",
-      "Beautiful Things"
-    ],
-    [
-      "Teddy Swims",
-      "Lose Control"
-    ],
-    [
-      "Hozier",
-      "Too Sweet"
-    ],
-    [
-      "Sabrina Carpenter",
-      "Espresso"
-    ],
-    [
-      "Taylor Swift",
-      "Fortnight"
-    ],
-    [
-      "Dua Lipa",
-      "Houdini"
-    ],
-    [
-      "Cassö, Raye & D-Block Europe",
-      "Prada"
-    ],
-    [
-      "Ariana Grande",
-      "yes, and?"
-    ],
-    [
-      "Artemas",
-      "i like the way you kiss me"
-    ],
-    [
-      "Shaboozey",
-      "A Bar Song (Tipsy)"
-    ],
-    [
-      "Central Cee",
-      "Band4Band"
-    ],
-    [
-      "Eminem",
-      "Houdini"
-    ],
-    [
-      "Charli XCX",
-      "Von Dutch"
-    ],
-    [
-      "Billie Eilish",
-      "Birds of a Feather"
-    ]
+    ["SIENNA SPIRO", "Great Expectation"],
+    ["STELLA LEFTY", "Boston"],
+    ["Olivia Rodrigo", "the cure"],
+    ["Sam Fender & Olivia Dean", "Rein Me In"],
+    ["Malcolm Todd", "Earrings"],
+    ["sombr", "Homewrecker"],
+    ["Dave & Tems", "Raindance"],
+    ["Alyssa Grace", "bloodstream"],
+    ["RAYE", "WHERE IS MY HUSBAND!"],
+    ["PinkPantheress & Zara Larsson", "Stateside"]
   ]
 }
