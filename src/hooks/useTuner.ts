@@ -67,8 +67,9 @@ export function useTuner(): void {
 
         const data: TuneResponse = await response.json();
 
-        // Resiliencia total: si el backend en la nube no encontró canciones (o fue rate-limited), el navegador consulta directamente a iTunes (CORS abierto)
-        if ((!data.playlist || data.playlist.length === 0) && !data.track?.previewUrl) {
+        // Si el backend usó seed-cache (por rate-limit 429 de Apple a datacenters) o no tiene suficientes temas,
+        // el navegador consulta directamente a iTunes (CORS abierto nativo, sin bloqueos de IP residencial)
+        if (data.source === 'seed-cache' || !data.playlist || data.playlist.length < 3) {
           try {
             const clientUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(country + ' ' + year)}&country=${country}&media=music&entity=song&limit=10`;
             const clientRes = await fetch(clientUrl, { signal });
