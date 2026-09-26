@@ -8,6 +8,7 @@ import { NixieDisplay } from './NixieDisplay';
 import { AudioSpectrum } from './AudioSpectrum';
 import { HorizontalTuner } from './HorizontalTuner';
 import { RankingDisplay } from './RankingDisplay';
+import { RandomButton } from './RandomButton';
 import { EraEffects } from './EraEffects';
 import { AudioReactiveLights } from './AudioReactiveLights';
 import { useEraStore } from '@/store/useEraStore';
@@ -114,6 +115,9 @@ function SceneContent() {
         color="#242636"
         radius={0.30}
       />
+
+      {/* Botón rectangular táctil de reproducción aleatoria (Shuffle) */}
+      <RandomButton position={[0.90, -0.78, 0.64]} />
 
       {/* Dial de país compacto con pantalla LED integrada en el centro */}
       <Dial

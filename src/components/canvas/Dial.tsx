@@ -117,7 +117,19 @@ export function Dial({
 
   return (
     <group position={position}>
-      {/* Anillo exterior de marcas de calibración compacto (dentro del chasis) */}
+      {/* Marco exterior biselado (zócalo de inserción de la perilla en el chasis, idéntico al botón Random) */}
+      <mesh position={[0, 0, 0.005]}>
+        <ringGeometry args={[radius * 0.99, radius * 1.13, 64]} />
+        <meshStandardMaterial color="#14141e" roughness={0.7} metalness={0.4} />
+      </mesh>
+
+      {/* Bisel decorativo interior del zócalo */}
+      <mesh position={[0, 0, 0.012]}>
+        <ringGeometry args={[radius * 0.99, radius * 1.05, 64]} />
+        <meshStandardMaterial color="#0c0c14" roughness={0.9} metalness={0.2} />
+      </mesh>
+
+      {/* Anillo exterior de marcas de calibración compacto (alrededor del bisel) */}
       <group position={[0, 0, 0.015]}>
         {ticks.map((tick, i) => {
           const r = radius + 0.085;
@@ -149,16 +161,28 @@ export function Dial({
           document.body.style.cursor = 'auto';
         }}
       >
-        {/* Disco plano de la perilla (sin profundidad para eliminar la media luna) */}
+        {/* Disco base de la perilla */}
         <mesh position={[0, 0, 0.02]}>
-          <circleGeometry args={[radius, 48]} />
+          <circleGeometry args={[radius, 64]} />
           <meshStandardMaterial color={color} roughness={0.4} metalness={0.7} />
         </mesh>
 
+        {/* Bisel perimetral exterior de la perilla rotatoria */}
+        <mesh position={[0, 0, 0.023]}>
+          <ringGeometry args={[radius * 0.94, radius * 0.99, 64]} />
+          <meshStandardMaterial color="#14141e" roughness={0.7} metalness={0.4} />
+        </mesh>
+
         {/* Anillo de bisel metálico decorativo */}
-        <mesh position={[0, 0, 0.025]}>
-          <ringGeometry args={[radius * 0.76, radius * 0.98, 48]} />
+        <mesh position={[0, 0, 0.026]}>
+          <ringGeometry args={[radius * 0.77, radius * 0.94, 64]} />
           <meshStandardMaterial color="#2c2e40" roughness={0.3} metalness={0.8} />
+        </mesh>
+
+        {/* Bisel decorativo interior hacia la pantalla central */}
+        <mesh position={[0, 0, 0.028]}>
+          <ringGeometry args={[radius * 0.71, radius * 0.77, 64]} />
+          <meshStandardMaterial color="#0c0c14" roughness={0.9} metalness={0.2} />
         </mesh>
 
         {/* Muesca indicadora luminosa en el borde del anillo */}
@@ -173,12 +197,18 @@ export function Dial({
         </mesh>
       </group>
 
-      {/* Pantalla LED circular fija en el centro del dial (al ras del frente de la perilla para eliminar desfases de perspectiva) */}
+      {/* Pantalla LED circular fija en el centro del dial */}
       <group position={[0, 0, 0.042]}>
-        {/* Bisel interior oscuro al ras */}
+        {/* Bisel exterior de la pantalla */}
         <mesh position={[0, 0, 0.001]}>
-          <ringGeometry args={[radius * 0.70, radius * 0.76, 48]} />
-          <meshStandardMaterial color="#0b0b12" roughness={0.8} metalness={0.3} />
+          <ringGeometry args={[radius * 0.70, radius * 0.76, 64]} />
+          <meshStandardMaterial color="#14141e" roughness={0.7} metalness={0.4} />
+        </mesh>
+
+        {/* Bisel interior oscuro al ras */}
+        <mesh position={[0, 0, 0.0015]}>
+          <ringGeometry args={[radius * 0.68, radius * 0.72, 64]} />
+          <meshStandardMaterial color="#0c0c14" roughness={0.9} metalness={0.2} />
         </mesh>
 
         {/* Fondo pantalla LED oscura */}
