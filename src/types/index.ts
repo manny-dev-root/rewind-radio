@@ -29,6 +29,7 @@ export interface EraState {
   // Data
   tuneData: TuneResponse | null;
   error: string | null;
+  targetTrack?: { title: string; artist: string } | null;
   // Actions
   setYear: (year: number) => void;
   setCountry: (country: string) => void;
@@ -37,4 +38,5 @@ export interface EraState {
   setPlaying: (playing: boolean) => void;
   setTuneData: (data: TuneResponse | null) => void;
   setError: (error: string | null) => void;
+  setTargetTrack?: (track: { title: string; artist: string } | null) => void;
 }

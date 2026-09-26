@@ -7,6 +7,7 @@ import { Dial } from './Dial';
 import { NixieDisplay } from './NixieDisplay';
 import { AudioSpectrum } from './AudioSpectrum';
 import { HorizontalTuner } from './HorizontalTuner';
+import { RankingDisplay } from './RankingDisplay';
 import { EraEffects } from './EraEffects';
 import { AudioReactiveLights } from './AudioReactiveLights';
 import { useEraStore } from '@/store/useEraStore';
@@ -76,6 +77,9 @@ function SceneContent() {
 
       {/* Chasis de la radio */}
       <RadioBody />
+
+      {/* Pantalla LCD izquierda: Ranking Más Escuchadas */}
+      <RankingDisplay position={[-1.6, 0.495, 0.635]} />
 
       {/* Display LCD superior con Marquesina recortada por hardware */}
       <NixieDisplay

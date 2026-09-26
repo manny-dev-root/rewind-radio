@@ -16,18 +16,19 @@ export function RadioBody() {
         <meshStandardMaterial color="#242432" roughness={0.4} metalness={0.7} />
       </RoundedBox>
 
-      {/* Rejilla de altavoz izquierda */}
-      <group position={[-1.6, 0.15, 0.63]}>
-        {Array.from({ length: 9 }).map((_, i) => (
-          <mesh key={i} position={[0, (i - 4) * 0.24, 0]}>
-            <boxGeometry args={[1.4, 0.08, 0.02]} />
+      {/* Ventana visor izquierda (Pantalla LCD Más Escuchadas) */}
+      <RoundedBox args={[1.62, 1.33, 0.05]} radius={0.04} smoothness={4} position={[-1.6, 0.495, 0.6]}>
+        <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
+      </RoundedBox>
+
+      {/* Ranuras acústicas a nivel de los diales */}
+      <group position={[-1.6, -0.76, 0.63]}>
+        {[-0.08, 0, 0.08].map((yOffset, i) => (
+          <mesh key={i} position={[0, yOffset, 0]}>
+            <boxGeometry args={[1.3, 0.032, 0.015]} />
             <meshStandardMaterial color="#0a0a12" roughness={0.8} metalness={0.3} />
           </mesh>
         ))}
-        {/* Marco de la rejilla */}
-        <RoundedBox args={[1.6, 2.3, 0.04]} radius={0.03} smoothness={2} position={[0, 0, -0.01]}>
-          <meshStandardMaterial color="#1c1c26" roughness={0.5} metalness={0.6} />
-        </RoundedBox>
       </group>
 
       {/* Ventana visor superior (Pantalla LED Marquesina + Espectro Musical) */}
@@ -63,8 +64,8 @@ export function RadioBody() {
         REWIND RADIO
       </Text>
 
-      {/* Divisor del panel inferior */}
-      <mesh position={[0, -0.42, 0.63]}>
+      {/* Divisor del panel inferior (por encima de los diales) */}
+      <mesh position={[0, -0.27, 0.63]}>
         <boxGeometry args={[5.4, 0.008, 0.01]} />
         <meshStandardMaterial color="#2d2d3d" roughness={0.5} metalness={0.5} />
       </mesh>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
+import { PostHogProvider } from '@/components/providers/PostHogProvider';
 import './globals.css';
 
 const geistSans = Geist({
@@ -33,7 +34,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} font-sans bg-black text-white min-h-screen overflow-hidden antialiased`}
       >
-        {children}
+        <PostHogProvider>{children}</PostHogProvider>
       </body>
     </html>
   );

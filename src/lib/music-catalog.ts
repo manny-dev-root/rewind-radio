@@ -34,38 +34,52 @@ async function loadCountrySongs(
   }
 }
 
+function shuffleList<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 /**
  * Obtiene las canciones para un año específico. Si un año puntual aún no está cargado
  * en el archivo del país, busca automáticamente el año disponible más cercano.
+ * El orden se aleatoriza para una experiencia fresca en cada sintonización.
  */
 function getSongsForYear(
   countryData: Record<string, [string, string][]>,
   targetYear: number
 ): EraHit[] {
+  let list: [string, string][] = [];
+  let yearUsed = targetYear;
+
   const exact = countryData[String(targetYear)];
   if (exact && exact.length > 0) {
-    return exact.map(([artist, title]) => ({ artist, title, year: targetYear }));
+    list = exact;
+  } else {
+    const availableYears = Object.keys(countryData)
+      .map(Number)
+      .filter((y) => !isNaN(y) && countryData[String(y)]?.length > 0);
+
+    if (availableYears.length === 0) return [];
+
+    // Ordenar por cercanía matemática al año sintonizado
+    availableYears.sort((a, b) => Math.abs(a - targetYear) - Math.abs(b - targetYear));
+    yearUsed = availableYears[0];
+    list = countryData[String(yearUsed)] || [];
   }
 
-  const availableYears = Object.keys(countryData)
-    .map(Number)
-    .filter((y) => !isNaN(y) && countryData[String(y)]?.length > 0);
-
-  if (availableYears.length === 0) return [];
-
-  // Ordenar por cercanía matemática al año sintonizado
-  availableYears.sort((a, b) => Math.abs(a - targetYear) - Math.abs(b - targetYear));
-  const closestYear = availableYears[0];
-  const list = countryData[String(closestYear)] || [];
-
-  return list.map(([artist, title]) => ({ artist, title, year: closestYear }));
+  const randomized = shuffleList(list);
+  return randomized.map(([artist, title]) => ({ artist, title, year: yearUsed }));
 }
 
 /**
  * Limpia el título quitando aclaraciones entre paréntesis o corchetes
  * para maximizar la tasa de coincidencia en el buscador de Apple Music.
  */
-function cleanSongTitle(title: string): string {
+export function cleanSongTitle(title: string): string {
   return title
     .replace(/\s*[\(\[\{].*?[\)\]\}]/g, '')
     .replace(/\s+/g, ' ')
@@ -154,7 +168,8 @@ async function resolveEraTrack(
 export async function fetchCuratedTracks(
   countryCode: string,
   year: number,
-  signal?: AbortSignal
+  signal?: AbortSignal,
+  target?: { title: string; artist: string } | null
 ): Promise<TuneResponse> {
   const countryData = await loadCountrySongs(countryCode, signal);
   const hits = getSongsForYear(countryData, year);
@@ -174,8 +189,29 @@ export async function fetchCuratedTracks(
     };
   }
 
-  // Tomamos hasta 15 canciones del año
-  const targetHits = hits.slice(0, 15);
+  // Tomamos hasta 15 canciones del año, asegurando que el tema objetivo esté primero si se solicitó
+  let targetHits = hits.slice(0, 15);
+  if (target) {
+    const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
+    const targetArtistNorm = target.artist.toLowerCase();
+
+    const foundIdx = hits.findIndex((h) => {
+      const hTitle = cleanSongTitle(h.title).toLowerCase();
+      const hArtist = h.artist.toLowerCase();
+      return (
+        hTitle === targetTitleNorm ||
+        (hArtist.includes(targetArtistNorm) && hTitle.includes(targetTitleNorm))
+      );
+    });
+
+    if (foundIdx >= 0) {
+      const match = hits[foundIdx];
+      targetHits = [match, ...targetHits.filter((_, i) => i !== foundIdx)].slice(0, 15);
+    } else {
+      targetHits.unshift({ title: target.title, artist: target.artist, year });
+      if (targetHits.length > 15) targetHits.pop();
+    }
+  }
 
   // Consultar en paralelo
   const settled = await Promise.allSettled(
@@ -201,13 +237,29 @@ export async function fetchCuratedTracks(
     }
   }
 
-  const primaryTrack: Track = playlist[0] || {
+  // Si hay tema objetivo, intentar ubicarlo como primaryTrack
+  let primaryTrack: Track = playlist[0] || {
     title: 'SIN DATOS PARA ESTE AÑO',
     artist: '',
     previewUrl: null,
     artworkUrl: null,
     releaseYear: String(year),
   };
+
+  if (target && playlist.length > 0) {
+    const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
+    const match = playlist.find((t) => {
+      const tTitle = cleanSongTitle(t.title).toLowerCase();
+      return (
+        tTitle === targetTitleNorm ||
+        tTitle.includes(targetTitleNorm) ||
+        targetTitleNorm.includes(tTitle)
+      );
+    });
+    if (match) {
+      primaryTrack = match;
+    }
+  }
 
   return {
     track: primaryTrack,

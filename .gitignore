@@ -35,6 +35,14 @@ yarn-error.log*
 .pnpm-debug.log*
 *.log
 
+# Bases de datos locales
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
 # Archivos del sistema y del IDE
 .DS_Store
 Thumbs.db

@@ -270,9 +270,9 @@ export function HorizontalTuner({
         </mesh>
       </group>
 
-      {/* Etiqueta centrada debajo del visor del sintonizador */}
+      {/* Etiqueta centrada debajo del visor del sintonizador (con mayor padding top) */}
       <Text
-        position={[0, -0.22, 0.01]}
+        position={[0, -0.26, 0.01]}
         fontSize={0.052}
         color="#7a7d92"
         anchorX="center"

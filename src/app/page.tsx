@@ -5,7 +5,9 @@ import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
 import { TuningIndicator } from '@/components/overlay/TuningIndicator';
 import { TrackInfo } from '@/components/overlay/TrackInfo';
+import { RankingModal } from '@/components/overlay/RankingModal';
 import { useTuner } from '@/hooks/useTuner';
+import { useTrackTracker } from '@/hooks/useTrackTracker';
 import { audioEngine } from '@/lib/audio-engine';
 
 const DynamicScene = dynamic(
@@ -25,6 +27,7 @@ const DynamicScene = dynamic(
 
 export default function Home() {
   useTuner();
+  useTrackTracker();
 
   const [showOnboarding, setShowOnboarding] = useState(true);
 
@@ -51,6 +54,7 @@ export default function Home() {
       </div>
 
       {/* Capas Overlay 2D */}
+      <RankingModal />
       <TuningIndicator />
       <TrackInfo />
 
