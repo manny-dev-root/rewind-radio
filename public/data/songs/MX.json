@@ -1,802 +1,686 @@
 {
   "1970": [
-    [
-      "José José",
-      "El Triste"
-    ],
-    [
-      "Los Ángeles Negros",
-      "Y Volveré"
-    ],
-    [
-      "La Sonora Santanera",
-      "La Boa"
-    ],
-    [
-      "Vicente Fernández",
-      "Tu Camino y El Mío"
-    ],
-    [
-      "Leo Dan",
-      "Te He Prometido"
-    ],
-    [
-      "Roberto Carlos",
-      "Un Gato En La Oscuridad"
-    ],
-    [
-      "Sandro",
-      "Rosa Rosa"
-    ],
-    [
-      "Angélica María",
-      "A Dónde Va Nuestro Amor"
-    ],
-    [
-      "César Costa",
-      "Mi Pueblo"
-    ],
-    [
-      "Marco Antonio Muñiz",
-      "Celoso"
-    ],
-    [
-      "Julio Iglesias",
-      "Gwendolyne"
-    ],
-    [
-      "Raphael",
-      "Balada de la Trompeta"
-    ],
-    [
-      "Rocío Dúrcal",
-      "Acompañame"
-    ],
-    [
-      "Enrique Guzmán",
-      "Cien Kilos de Barro"
-    ],
-    [
-      "Los Babys",
-      "¿Por Qué?"
-    ],
-    [
-      "Raphael",
-      "Como Yo Te Amo"
-    ],
-    [
-      "Camilo Sesto",
-      "Algo de Mí"
-    ],
-    [
-      "Nino Bravo",
-      "Te Quiero, Te Quiero"
-    ],
-    [
-      "Juan Gabriel",
-      "No Tengo Dinero"
-    ],
-    [
-      "Antonio Aguilar",
-      "Triste Recuerdo"
-    ],
-    [
-      "Cornelio Reyna",
-      "Me Caí de la Nube"
-    ],
-    [
-      "Acapulco Tropical",
-      "Cangrejito Playero"
-    ]
+    ["Los Freddy's", "Qué ganas con llorar"],
+    ["Los Solitarios", "Hoy"],
+    ["Los Xochimilcas", "La bala"],
+    ["María del Rayo", "Te regalo mis ojos"],
+    ["Los Potros", "Yo contra mí"],
+    ["Los Sonor's", "Agua salada"],
+    ["Los Baby's", "He perdido una perla"],
+    ["Beatriz Adriana", "Es alto y bien parecido"],
+    ["Los Broncos de Reynosa", "El naranjo"],
+    ["Los Fantasmas", "Página blanca"]
   ],
   "1971": [
-    [
-      "Juan Gabriel",
-      "No Tengo Dinero"
-    ],
-    [
-      "José José",
-      "La Nave del Olvido"
-    ],
-    [
-      "Los Ángeles Negros",
-      "Murió la Flor"
-    ],
-    [
-      "Roberto Carlos",
-      "Detalles"
-    ],
-    [
-      "Leo Dan",
-      "Mary Es Mi Amor"
-    ],
-    [
-      "Sandro",
-      "Trigal"
-    ],
-    [
-      "Raphael",
-      "En Carne Viva"
-    ],
-    [
-      "Camilo Sesto",
-      "Ayudadme"
-    ],
-    [
-      "Julio Iglesias",
-      "Un Canto A Galicia"
-    ],
-    [
-      "Nino Bravo",
-      "Noelia"
-    ],
-    [
-      "Vicente Fernández",
-      "Volver, Volver"
-    ],
-    [
-      "Antonio Aguilar",
-      "El Cantador"
-    ],
-    [
-      "Los Tigres del Norte",
-      "Contrabando y Traición"
-    ],
-    [
-      "Los Babys",
-      "Jirón de Niebla"
-    ],
-    [
-      "Rigo Tovar",
-      "Matamoros Querido"
-    ],
-    [
-      "El Tri / Three Souls in My Mind",
-      "Abuso de Autoridad"
-    ]
+    ["Marco Antonio Vazquez", "Cara sucia"],
+    ["Los Lobos del Norte", "Cargando con mi cruz"],
+    ["Hermanos Zaizar", "Alma Angelina"],
+    ["Conjunto Africa", "Todos tienen una María"],
+    ["David Zaizar", "La mancornadora"],
+    ["Chucho Pinto", "El gitano señorón"],
+    ["Manolita Arreola", "Cantando"],
+    ["Trio Argentino", "Noche de reyes"],
+    ["José José", "La nave del olvido"],
+    ["Juan Gabriel", "No Tengo Dinero"]
   ],
   "1972": [
-    [
-      "Vicente Fernández",
-      "Volver, Volver"
-    ],
-    [
-      "Juan Gabriel",
-      "Se Me Olvidó Otra Vez"
-    ],
-    [
-      "José José",
-      "Gavilán o Paloma"
-    ],
-    [
-      "Los Ángeles Negros",
-      "Déjenme Si Estoy Llorando"
-    ],
-    [
-      "Roberto Carlos",
-      "Amada Amante"
-    ],
-    [
-      "Leo Dan",
-      "Pídeme la Luna"
-    ],
-    [
-      "Sandro",
-      "Penumbras"
-    ],
-    [
-      "Raphael",
-      "Mi Gran Noche"
-    ],
-    [
-      "Camilo Sesto",
-      "Fresa Salvaje"
-    ],
-    [
-      "Julio Iglesias",
-      "Río Rebelde"
-    ],
-    [
-      "Nino Bravo",
-      "Un Beso y Una Flor"
-    ],
-    [
-      "Antonio Aguilar",
-      "Albur de Amor"
-    ],
-    [
-      "Rigo Tovar",
-      "Lamento de Amor"
-    ],
-    [
-      "Los Babys",
-      "Cómo Un Duende"
-    ],
-    [
-      "La Sonora Santanera",
-      "Perfume de Gardenias"
-    ]
+    ["Vicente Fernández", "Volver Volver"],
+    ["Juan Gabriel", "Me He Quedado Solo"],
+    ["José José", "El Triste"],
+    ["Los Ángeles Negros", "Y Volveré"],
+    ["Los Muecas", "Qué ironía"],
+    ["Los Freddys", "Déjenme Llorar"],
+    ["Leo Dan", "Mary es mi amor"],
+    ["Estela Nuñez", "Una lágrima"],
+    ["Roberto Carlos", "Un gato en la oscuridad"],
+    ["Nelson Ned", "Déjame si estoy llorando"]
+  ],
+  "1973": [
+    ["Los Tigres del Norte", "Contrabando y Traición"],
+    ["Juan Gabriel", "Se Me Olvidó Otra Vez"],
+    ["José José", "Hasta que Vuelvas"],
+    ["Vicente Fernández", "El Rey"],
+    ["Los Panchos", "Lo Dudo"],
+    ["Camilo Sesto", "Amor Amar"],
+    ["Roberto Carlos", "La distancia"],
+    ["Julio Iglesias", "Río Rebelde"],
+    ["Rigo Tovar", "Matamoros Querido"],
+    ["Los Terricolas", "Te juro que te amo"]
+  ],
+  "1974": [
+    ["Rigo Tovar", "Lamento de amor"],
+    ["Juan Gabriel", "Esta Rosa Roja"],
+    ["Vicente Fernández", "Cruz de Olvido"],
+    ["José José", "Preso"],
+    ["Los Babys", "Cómo un Duende"],
+    ["Los Muecas", "Empapado de Sudor"],
+    ["Roberto Carlos", "Propuesta"],
+    ["Camilo Sesto", "¿Quieres ser mi amante?"],
+    ["Leo Dan", "Te he prometido"],
+    ["Los Freddys", "Lágrimas Son"]
   ],
   "1975": [
-    [
-      "Los Bukis",
-      "Falso Amor"
-    ],
-    [
-      "Lucha Villa",
-      "Resulta"
-    ]
+    ["Juan Gabriel", "Siempre En Mi Mente"],
+    ["José José", "Gavilán o Paloma"],
+    ["Vicente Fernández", "La Ley del Monte"],
+    ["Rigo Tovar", "Mi Matamoros Querido"],
+    ["Los Terricolas", "Luto en mi alma"],
+    ["Camilo Sesto", "Melina"],
+    ["Julio Iglesias", "Manuela"],
+    ["Roberto Carlos", "El Progreso"],
+    ["Los Bukis", "Falso Amor"],
+    ["Joan Sebastian", "El Camino del Amor"]
   ],
   "1976": [
-    [
-      "Rigo Tovar",
-      "La Sirenita"
-    ]
+    ["Juan Gabriel", "Juro Que Nunca Volveré"],
+    ["José José", "El Príncipe"],
+    ["Rigo Tovar", "Dos Tardes de Mi Vida"],
+    ["Los Baby's", "Triángulo"],
+    ["Vicente Fernández", "Las Llaves de mi Alma"],
+    ["Camilo Sesto", "Jamás"],
+    ["Los Bukis", "Te Tuve y Te Perdí"],
+    ["Grupo Yndio", "Sin Tu Amor"],
+    ["Los Terricolas", "Dos Cosas"],
+    ["Rocío Dúrcal", "Tarde"]
   ],
   "1977": [
-    [
-      "Los Yonics",
-      "Soy Yo"
-    ],
-    [
-      "Emmanuel",
-      "Al Final"
-    ],
-    [
-      "Rocío Dúrcal",
-      "Fue Un Placer Conocerte"
-    ],
-    [
-      "Napoleón",
-      "Pajarillo"
-    ]
+    ["Rocío Dúrcal", "Fue Tan Poco Tu Cariño"],
+    ["Juan Gabriel", "Inocente Pobre Amigo"],
+    ["José José", "Amar y Querer"],
+    ["Los Yonics", "Soy Yo"],
+    ["Rigo Tovar", "¡Oh, Qué Gusto de Volverte a Ver!"],
+    ["Vicente Fernández", "Hermoso Cariño"],
+    ["Camilo Sesto", "Vivir Así es Morir de Amor"],
+    ["Emmanuel", "Al Final"],
+    ["Napoleón", "Vive"],
+    ["Los Bukis", "Me Siento Solo"]
   ],
   "1978": [
-    [
-      "Juan Gabriel",
-      "Siempre en Mi Mente"
-    ],
-    [
-      "Yuri",
-      "Tú Es para Mí"
-    ]
+    ["Rocío Dúrcal", "Costumbres"],
+    ["Juan Gabriel", "Buenos Días Señor Sol"],
+    ["José José", "Volcán"],
+    ["Rigo Tovar", "El Sirenito"],
+    ["Vicente Fernández", "De Qué Manera Te Olvido"],
+    ["Los Yonics", "Palabras Tristes"],
+    ["Los Bukis", "Triste Imaginar"],
+    ["Camilo Sesto", "El Amor de Mi Vida"],
+    ["Napoleón", "Pajarillo"],
+    ["Roberto Carlos", "Amigo"]
   ],
   "1979": [
-    [
-      "Los Caminantes",
-      "Supe Perder"
-    ]
+    ["Juan Gabriel", "No Me Vuelvo A Enamorar"],
+    ["José José", "Lo Pasado, Pasado"],
+    ["Rocío Dúrcal", "Me Gustas Mucho"],
+    ["Vicente Fernández", "Que Te Vaya Bonito"],
+    ["Los Bukis", "Ilusión Pasajera"],
+    ["Rigo Tovar", "Quítate La Máscara"],
+    ["Camilo Sesto", "Has Nacido Libre"],
+    ["Miguel Bosé", "Linda"],
+    ["Emmanuel", "El Andariego"],
+    ["Los Yonics", "Rosas Blancas"]
+  ],
+  "1980": [
+    ["Juan Gabriel", "He Venido a Pedirte Perdón"],
+    ["José José", "Amor, Amor"],
+    ["Rocío Dúrcal", "La Guirnalda"],
+    ["Vicente Fernández", "El Tahúr"],
+    ["Los Bukis", "Mi Najayita"],
+    ["Rigo Tovar", "La Sirenita"],
+    ["Emmanuel", "Insoportablemente Bella"],
+    ["Camilo Sesto", "Perdóname"],
+    ["Yuri", "Esperanzas"],
+    ["Lupita D'Alessio", "Inocente Pobre Amiga"]
   ],
   "1981": [
-    [
-      "Yuri",
-      "Maldita Primavera"
-    ]
+    ["Emmanuel", "Quiero Dormir Cansado"],
+    ["Juan Gabriel", "Con Tu Amor"],
+    ["José José", "Almohada"],
+    ["Vicente Fernández", "Ni En Defensa Propia"],
+    ["Los Bukis", "Presiento Que Voy A Llorar"],
+    ["Luis Miguel", "1+1=2 Enamorados"],
+    ["Yuri", "Este Amor Ya No Se Toca"],
+    ["Timbiriche", "Hoy Tengo Que Decirte Papá"],
+    ["Daniela Romo", "Mentiras"],
+    ["Los Tigres del Norte", "La Banda del Carro Rojo"]
+  ],
+  "1982": [
+    ["Luis Miguel", "Directo Al Corazón"],
+    ["Juan Gabriel", "No Vale La Pena"],
+    ["José José", "Mi Vida"],
+    ["Rocío Dúrcal", "No Sirvo Para Estar Sin Ti"],
+    ["Vicente Fernández", "A Mi Manera"],
+    ["Los Bukis", "Yo Te Necesito"],
+    ["Emmanuel", "Toda La Vida"],
+    ["Yuri", "Maldita Primavera"],
+    ["Menudo", "Claridad"],
+    ["Timbiriche", "Somos Amigos"]
+  ],
+  "1983": [
+    ["Juan Gabriel", "Caray"],
+    ["José José", "Desesperado"],
+    ["Rocío Dúrcal", "Diferentes"],
+    ["Vicente Fernández", "De Un Rancho A Otro"],
+    ["Los Bukis", "Mi Fantasía"],
+    ["Luis Miguel", "Decídete"],
+    ["Emmanuel", "Detenedla Ya"],
+    ["Yuri", "Yo Te Amo, Te Amo"],
+    ["Menudo", "Súbete A Mi Moto"],
+    ["Daniela Romo", "La Ocasión Para Amarnos"]
   ],
   "1984": [
-    [
-      "El Tri",
-      "Triste Canción"
-    ],
-    [
-      "Juan Gabriel",
-      "Querida"
-    ],
-    [
-      "Daniela Romo",
-      "Yo No Te Pido la Luna"
-    ],
-    [
-      "Luis Miguel",
-      "Palabra de Honor"
-    ],
-    [
-      "Yuri",
-      "Esperanzas"
-    ],
-    [
-      "Emmanuel",
-      "Vamos a Estarnos Quietos"
-    ],
-    [
-      "José José",
-      "Payaso"
-    ],
-    [
-      "José José",
-      "Lo Dudo"
-    ],
-    [
-      "Timbiriche",
-      "Corro, Vuelo, Me Acelero"
-    ],
-    [
-      "Los Bukis",
-      "Mi Fantasía"
-    ],
-    [
-      "Lucerito",
-      "Con Tan Pocos Años"
-    ],
-    [
-      "Vicente Fernández",
-      "Ni en Defensa Propia"
-    ],
-    [
-      "Los Tigres del Norte",
-      "La Jaula de Oro"
-    ],
-    [
-      "Pedro Fernández",
-      "Coqueta"
-    ],
-    [
-      "Rocío Dúrcal",
-      "Costumbres"
-    ]
+    ["Juan Gabriel", "Querida"],
+    ["José José", "Payaso"],
+    ["Rocío Dúrcal", "Amor Eterno"],
+    ["Vicente Fernández", "Tu Camino y El Mío"],
+    ["Los Bukis", "Triste Imaginar"],
+    ["Luis Miguel", "Palabra de Honor"],
+    ["Emmanuel", "Tengo Mucho Que Aprender De Ti"],
+    ["Daniela Romo", "Yo No Te Pido La Luna"],
+    ["Mijares", "Soñador"],
+    ["Yuri", "Karma Kamaleon"]
   ],
   "1985": [
-    [
-      "Flans",
-      "No Controles"
-    ],
-    [
-      "Flans",
-      "Bazar"
-    ],
-    [
-      "Luis Miguel",
-      "Los Muchachos de Hoy"
-    ],
-    [
-      "Timbiriche",
-      "Teléfono"
-    ],
-    [
-      "Yuri",
-      "Dame un Beso"
-    ],
-    [
-      "Pandora",
-      "¿Cómo Te Va Mi Amor?"
-    ],
-    [
-      "José José",
-      "Me Basta"
-    ],
-    [
-      "Emmanuel",
-      "El Día Que Puedas"
-    ],
-    [
-      "Rocío Dúrcal",
-      "Amor Eterno"
-    ],
-    [
-      "Los Yonics",
-      "Palabras Tristes"
-    ],
-    [
-      "Laureano Brizuela",
-      "Sueños Compartidos"
-    ],
-    [
-      "Tatiana",
-      "Chicas de Hoy"
-    ],
-    [
-      "El Tri",
-      "Vicioso"
-    ],
-    [
-      "Los Bukis",
-      "A Donde Vas"
-    ],
-    [
-      "Amanda Miguel",
-      "El Pecado"
-    ]
+    ["Luis Miguel", "La Chica Del Bikini Azul"],
+    ["Juan Gabriel", "Déjame Vivir"],
+    ["José José", "Me Basta"],
+    ["Flans", "No Controles"],
+    ["Pandora", "Cómo Te Va Mi Amor"],
+    ["Vicente Fernández", "Mujeres Divinas"],
+    ["Los Bukis", "A Donde Vas"],
+    ["Emmanuel", "La Chica de Humo"],
+    ["Timbiriche", "Corro, Vuelo, Me Acelero"],
+    ["Yuri", "Yo Te Pido Amor"]
   ],
   "1986": [
-    [
-      "Juan Gabriel",
-      "Hasta Que Te Conocí"
-    ],
-    [
-      "Mecano",
-      "Hijo de la Luna"
-    ]
+    ["Juan Gabriel", "Hasta Que Te Conocí"],
+    ["José José", "¿Y Quién Puede Ser?"],
+    ["Flans", "Bazar"],
+    ["Pandora", "Sólo Él y Yo"],
+    ["Luis Miguel", "Soy Como Quiero Ser"],
+    ["Vicente Fernández", "Hoy Platiqué Con Mi Gallo"],
+    ["Los Bukis", "Me Volví A Acordar De Ti"],
+    ["Emmanuel", "Toda La Vida"],
+    ["Timbiriche", "Soy Un Desastre"],
+    ["Daniela Romo", "De Mí Enamórate"]
   ],
   "1987": [
-    [
-      "Luis Miguel",
-      "Ahora Te Puedes Marchar"
-    ],
-    [
-      "Timbiriche",
-      "Con Todos Menos Conmigo"
-    ],
-    [
-      "Los Bukis",
-      "Tu Cárcel"
-    ],
-    [
-      "Sasha Sökol",
-      "Rueda Mi Mente"
-    ]
+    ["Los Bukis", "Tu Cárcel"],
+    ["Luis Miguel", "Cuando Calienta El Sol"],
+    ["Juan Gabriel", "Te Lo Pido Por Favor"],
+    ["José José", "Soy Así"],
+    ["Flans", "Tímido"],
+    ["Timbiriche", "Con Todos Menos Conmigo"],
+    ["Vicente Fernández", "Motivos"],
+    ["Emmanuel", "La Última Luna"],
+    ["Caifanes", "Mátenme Porque Me Muero"],
+    ["Mijares", "No Se Murió El Amor"]
   ],
   "1988": [
-    [
-      "Luis Miguel",
-      "La Incondicional"
-    ],
-    [
-      "Mijares",
-      "Soldado del Amor"
-    ],
-    [
-      "Caifanes",
-      "Viento"
-    ]
+    ["Luis Miguel", "La Incondicional"],
+    ["Juan Gabriel", "Debo Hacerlo"],
+    ["José José", "Amnesia"],
+    ["Timbiriche", "Tú y Yo Somos Uno Mismo"],
+    ["Flans", "Alma Gemela"],
+    ["Los Bukis", "Y Ahora Te Vas"],
+    ["Vicente Fernández", "Acá Entre Nos"],
+    ["Caifanes", "Viento"],
+    ["Mijares", "Soldado del Amor"],
+    ["Yuri", "Hombres al Borde de un Ataque de Celos"]
   ],
   "1989": [
-    [
-      "Maldita Vecindad",
-      "Mojado"
-    ]
+    ["Luis Miguel", "Fría Como el Viento"],
+    ["Juan Gabriel", "Vienes o Voy"],
+    ["José José", "Como Tú"],
+    ["Los Bukis", "Cómo Fui A Enamorarme De Ti"],
+    ["Vicente Fernández", "Por Tu Maldito Amor"],
+    ["Timbiriche", "Ámame Hasta Con Los Dientes"],
+    ["Caifanes", "La Célula Que Explota"],
+    ["Alejandra Guzmán", "Hacer El Amor Con Otro"],
+    ["Gloria Trevi", "Dr. Psiquiatra"],
+    ["Lucero", "Cuéntame"]
   ],
   "1990": [
-    [
-      "Maná",
-      "Rayando el Sol"
-    ],
-    [
-      "Caifanes",
-      "La Célula Que Explota"
-    ]
+    ["Luis Miguel", "Tengo Todo Excepto A Ti"],
+    ["Juan Gabriel", "Hasta Que Te Conocí"],
+    ["Los Bukis", "A Través De Tus Ojos"],
+    ["Vicente Fernández", "Lástima Que Seas Ajena"],
+    ["Magneto", "Vuela Vuela"],
+    ["Alejandra Guzmán", "Eternamente Bella"],
+    ["Gloria Trevi", "Pelo Suelto"],
+    ["Caifanes", "Los Dioses Ocultos"],
+    ["Lucero", "Ya No"],
+    ["Ana Gabriel", "Quién Como Tú"]
   ],
   "1991": [
-    [
-      "Maldita Vecindad",
-      "Pachuco"
-    ]
+    ["Luis Miguel", "Romance"],
+    ["Cristian Castro", "No Podrás"],
+    ["Los Bukis", "Mi Mayor Necesidad"],
+    ["Vicente Fernández", "Mi Viejo"],
+    ["Magneto", "Para Siempre"],
+    ["Alejandra Guzmán", "Mírala, Míralo"],
+    ["Gloria Trevi", "Tu Ángel de la Guarda"],
+    ["Café Tacvba", "María"],
+    ["Juan Gabriel", "Mi Francotirador"],
+    ["Ana Gabriel", "Ahora"]
   ],
   "1992": [
-    [
-      "Maná",
-      "Oye Mi Amor"
-    ]
+    ["Luis Miguel", "No Sé Tú"],
+    ["Chalino Sánchez", "Baraja de Oro"],
+    ["Los Bukis", "Morenita"],
+    ["Vicente Fernández", "El Rey"],
+    ["Magneto", "Cambió Mi Vida"],
+    ["Alejandra Guzmán", "Llama Por Favor"],
+    ["Gloria Trevi", "Zapatos Viejos"],
+    ["Café Tacvba", "Las Persianas"],
+    ["Cristian Castro", "Agua Nueva"],
+    ["Thalía", "Sangre"]
   ],
   "1993": [
-    [
-      "Luis Miguel",
-      "Suave"
-    ]
+    ["Luis Miguel", "Ayer"],
+    ["Juan Gabriel", "Se Me Olvidó Otra Vez"],
+    ["Los Bukis", "Inalcanzable"],
+    ["Vicente Fernández", "Aunque Me Duela El Alma"],
+    ["Los Tigres del Norte", "Pacas de a Kilo"],
+    ["Alejandra Guzmán", "Mala Hierba"],
+    ["Gloria Trevi", "Con Los Ojos Cerrados"],
+    ["Caifanes", "No Dejes Que..."],
+    ["Cristian Castro", "Nunca Voy a Olvidarte"],
+    ["Thalía", "Love"]
   ],
   "1994": [
-    [
-      "Café Tacvba",
-      "La Ingrata"
-    ],
-    [
-      "Café Tacvba",
-      "Las Flores"
-    ],
-    [
-      "Selena",
-      "Amor Prohibido"
-    ]
+    ["Luis Miguel", "El Día Que Me Quieras"],
+    ["Juan Gabriel", "Pero Qué Necesidad"],
+    ["Selena", "Amor Prohibido"],
+    ["Vicente Fernández", "Que De Raro Tiene"],
+    ["Los Tigres del Norte", "La Mesa del Rincón"],
+    ["Alejandra Guzmán", "Loca"],
+    ["Gloria Trevi", "El Recuento de los Daños"],
+    ["Caifanes", "Afuera"],
+    ["Cristian Castro", "Mañana"],
+    ["Thalía", "Marimar"]
   ],
   "1995": [
-    [
-      "Alejandro Fernández",
-      "Como Quien Pierde Una Estrella"
-    ]
+    ["Bobby Pulido", "Desvelado"],
+    ["Caballo Dorado", "Payaso de Rodeo"],
+    ["Selena", "Como La Flor"],
+    ["Vicente Fernández", "Aunque Me Duela El Alma"],
+    ["Los Tigres del Norte", "Golpes En El Corazón"],
+    ["Luis Miguel", "Si Nos Dejan"],
+    ["Juan Gabriel", "Lentamente"],
+    ["Shakira", "Estoy Aquí"],
+    ["Enrique Iglesias", "Experiencia Religiosa"],
+    ["Ricky Martin", "María"]
   ],
   "1996": [
-    [
-      "Fey",
-      "Azúcar Amargo"
-    ],
-    [
-      "Control Machete",
-      "Comprendes Mendes?"
-    ]
+    ["Luis Miguel", "Dame"],
+    ["Juan Gabriel", "Así Fue"],
+    ["Selena", "Bidi Bidi Bom Bom"],
+    ["Vicente Fernández", "Nos Estorbó La Ropa"],
+    ["Los Tigres del Norte", "El Circo"],
+    ["Joan Sebastian", "Tatuajes"],
+    ["Caballo Dorado", "No Rompas Más"],
+    ["Shakira", "Pies Descalzos"],
+    ["Enrique Iglesias", "Por Amarte"],
+    ["Moenia", "No Puedo Estar Sin Ti"]
   ],
   "1997": [
-    [
-      "Molotov",
-      "Gimme Tha Power"
-    ],
-    [
-      "Onda Vaselina",
-      "Mírame a los Ojos"
-    ],
-    [
-      "Julieta Venegas",
-      "De Mis Pasos"
-    ]
+    ["Luis Miguel", "Por Debajo De La Mesa"],
+    ["Juan Gabriel", "El Destino"],
+    ["Alejandro Fernández", "Como Quien Pierde Una Estrella"],
+    ["Vicente Fernández", "Estatua De Marfil"],
+    ["Los Tigres del Norte", "Jefe de Jefes"],
+    ["Joan Sebastian", "Secreto De Amor"],
+    ["Maná", "En El Muelle De San Blas"],
+    ["Shakira", "Antología"],
+    ["Enrique Iglesias", "Enamorado Por Primera Vez"],
+    ["Moenia", "Manto Estelar"]
   ],
   "1998": [
-    [
-      "Plastilina Mosh",
-      "Mr. P.Mosh"
-    ]
+    ["Luis Miguel", "O Tú O Ninguna"],
+    ["Juan Gabriel", "Abrázame Muy Fuerte"],
+    ["Alejandro Fernández", "No Sé Olvidar"],
+    ["Vicente Fernández", "Me Voy A Quitar De En Medio"],
+    ["Los Tigres del Norte", "De Paisano A Paisano"],
+    ["Joan Sebastian", "Un Idiota"],
+    ["Maná", "Clavado en un Bar"],
+    ["Shakira", "Ciega, Sordomuda"],
+    ["Chayanne", "Dejaría Todo"],
+    ["Ricky Martin", "La Copa de la Vida"]
+  ],
+  "1999": [
+    ["Luis Miguel", "Sol, Arena y Mar"],
+    ["Juan Gabriel", "Todo Está Bien"],
+    ["Alejandro Fernández", "Loco"],
+    ["Vicente Fernández", "Sublime Mujer"],
+    ["Los Tigres del Norte", "El Mojado Acaudalado"],
+    ["Joan Sebastian", "Gracias Por Tanto Amor"],
+    ["Maná", "Se Me Olvidó Otra Vez"],
+    ["Shakira", "Ojos Así"],
+    ["Chayanne", "Salomé"],
+    ["Ricky Martin", "Livin' La Vida Loca"]
+  ],
+  "2000": [
+    ["Luis Miguel", "Te Propongo Esta Noche"],
+    ["Los Tucanes de Tijuana", "El Amor Soñado"],
+    ["Alejandro Fernández", "Quiéreme"],
+    ["Vicente Fernández", "Borracho Te Recuerdo"],
+    ["Joan Sebastian", "Secreto De Amor"],
+    ["Maná", "Corazón Espinado"],
+    ["Shakira", "Inevitable"],
+    ["Chayanne", "Atado A Tu Amor"],
+    ["Son by Four", "A Puro Dolor"],
+    ["Thalía", "Arrasando"]
   ],
   "2001": [
-    [
-      "Sin Bandera",
-      "Entra En Mi Vida"
-    ]
+    ["Luis Miguel", "Amor, Amor, Amor"],
+    ["Juan Gabriel", "Inocente Pobre Amigo"],
+    ["Alejandro Fernández", "Tantita Pena"],
+    ["Vicente Fernández", "Las Llaves De Mi Alma"],
+    ["Los Tigres del Norte", "De Rama En Rama"],
+    ["Joan Sebastian", "Rumores"],
+    ["Maná", "Ángel De Amor"],
+    ["Shakira", "Suerte"],
+    ["Chayanne", "Torero"],
+    ["Paulina Rubio", "Y Yo Sigo Aquí"]
   ],
   "2002": [
-    [
-      "Natalia Lafourcade",
-      "En el 2000"
-    ],
-    [
-      "Panteón Rococó",
-      "La Carencia"
-    ],
-    [
-      "Cartel de Santa",
-      "La Pelotona"
-    ]
+    ["Luis Miguel", "Hasta Que Vuelvas"],
+    ["Juan Gabriel", "Se Me Olvidó Otra Vez"],
+    ["Alejandro Fernández", "Me Dediqué A Perderte"],
+    ["Vicente Fernández", "La Diferencia"],
+    ["Los Tigres del Norte", "Somos Más Americanos"],
+    ["Joan Sebastian", "Maracas"],
+    ["Maná", "Mariposa Traicionera"],
+    ["Shakira", "Que Me Quedes Tú"],
+    ["Chayanne", "Y Tú Te Vas"],
+    ["Juanes", "A Dios Le Pido"]
   ],
   "2003": [
-    [
-      "Julieta Venegas",
-      "Andar Conmigo"
-    ],
-    [
-      "Ha*Ash",
-      "Estés Donde Estés"
-    ],
-    [
-      "Zoé",
-      "Soñé"
-    ]
+    ["Luis Miguel", "Te Necesito"],
+    ["Pepe Aguilar", "Miedo"],
+    ["Alejandro Fernández", "Niña Amada Mía"],
+    ["Vicente Fernández", "Para Siempre"],
+    ["Los Tigres del Norte", "La Reina Del Sur"],
+    ["Joan Sebastian", "Más Allá Del Sol"],
+    ["Maná", "Eres Mi Religión"],
+    ["Shakira", "Día de Enero"],
+    ["Ricky Martin", "Tal Vez"],
+    ["Juanes", "Fotografía"]
   ],
   "2004": [
-    [
-      "RBD",
-      "Sálvame"
-    ],
-    [
-      "RBD",
-      "Rebelde"
-    ],
-    [
-      "Moderatto",
-      "Muriendo de Amor"
-    ],
-    [
-      "Moenia",
-      "Ni Tú Ni Nadie"
-    ],
-    [
-      "Reik",
-      "Yo Quisiera"
-    ]
+    ["Luis Miguel", "El Viajero"],
+    ["Rebelde", "Rebelde"],
+    ["Alejandro Fernández", "Qué Lástima"],
+    ["Vicente Fernández", "El Hombre Que Más Te Amó"],
+    ["Los Tigres del Norte", "Pacté Con Dios"],
+    ["Joan Sebastian", "Bandido De Amores"],
+    ["Café Tacvba", "Eres"],
+    ["Shakira", "La Tortura"],
+    ["Julieta Venegas", "Andar Conmigo"],
+    ["Juanes", "Nada Valgo Sin Tu Amor"]
   ],
   "2005": [
-    [
-      "Belanova",
-      "Rosa Pastel"
-    ]
+    ["Kumbia Kings", "Mi Dulce Niña"],
+    ["Nigga", "Te Quiero"],
+    ["Belinda", "El Baile del Sapito"],
+    ["Rebelde", "Sálvame"],
+    ["Alejandro Fernández", "Canta Corazón"],
+    ["Vicente Fernández", "La Tragedia Del Vaquero"],
+    ["Joan Sebastian", "El Perdedor"],
+    ["Shakira", "Hips Don't Lie"],
+    ["Julieta Venegas", "Me Voy"],
+    ["El Chombo", "Chacarrón"]
   ],
   "2006": [
-    [
-      "Julieta Venegas",
-      "Me Voy"
-    ],
-    [
-      "Panda",
-      "Los Malaventurados No Lloran"
-    ]
+    ["K-Paz de la Sierra", "Mi Credo"],
+    ["Montez de Durango", "Lágrimas del Corazón"],
+    ["Luis Miguel", "Si Te Perdiera"],
+    ["Rebelde", "Ser O Parecer"],
+    ["Alejandro Fernández", "Te Voy A Perder"],
+    ["Vicente Fernández", "Estos Celos"],
+    ["Los Tigres del Norte", "Detalles Y Emociones"],
+    ["Joan Sebastian", "Eso Y Más"],
+    ["Maná", "Labios Compartidos"],
+    ["Camila", "Todo Cambió"]
+  ],
+  "2007": [
+    ["Patrulla 81", "Eres Divina"],
+    ["El Trono de México", "Te Ves Fatal"],
+    ["Luis Miguel", "Si Tú Te Atreves"],
+    ["Rebelde", "Inalcanzable"],
+    ["Alejandro Fernández", "Amor Gitano"],
+    ["Vicente Fernández", "Para Siempre"],
+    ["Los Tigres del Norte", "Raíces"],
+    ["Maná", "Manda Una Señal"],
+    ["Camila", "Sólo Para Ti"],
+    ["Belanova", "Baila Mi Corazón"]
+  ],
+  "2008": [
+    ["Gael García Bernal", "Quiero Que Me Quieras"],
+    ["La Arrolladora Banda El Limón", "Y Que Quede Claro"],
+    ["Luis Miguel", "Te Desean"],
+    ["Alejandro Fernández", "Eres"],
+    ["Vicente Fernández", "Millones de Gracias"],
+    ["Los Tigres del Norte", "La Granja"],
+    ["Maná", "Si No Te Hubieras Ido"],
+    ["Calle 13", "No Hay Nadie Como Tú"],
+    ["Camila", "Coleccionista de Canciones"],
+    ["Belanova", "Cada Que"]
+  ],
+  "2009": [
+    ["Espinoza Paz", "El Próximo Viernes"],
+    ["La Arrolladora Banda El Limón", "Ya Es Muy Tarde"],
+    ["Luis Miguel", "Ay Cariño"],
+    ["Alejandro Fernández", "Se Me Va La Voz"],
+    ["Vicente Fernández", "Necesito De Ti"],
+    ["Zoé", "Nada"],
+    ["Maná", "Arde El Cielo"],
+    ["Shakira", "Loba"],
+    ["Camila", "Mientes"],
+    ["Tito El Bambino", "El Amor"]
+  ],
+  "2010": [
+    ["Espinoza Paz", "Lo Intentamos"],
+    ["La Arrolladora Banda El Limón", "Niña De Mi Corazón"],
+    ["Luis Miguel", "Labios De Miel"],
+    ["Alejandro Fernández", "Bandida"],
+    ["Vicente Fernández", "Un Millón De Primaveras"],
+    ["Zoé", "Soñé"],
+    ["Enrique Iglesias", "Cuando Me Enamoro"],
+    ["Shakira", "Waka Waka"],
+    ["Camila", "Aléjate De Mí"],
+    ["Banda MS", "Sin Evidencias"]
   ],
   "2011": [
-    [
-      "Zoé",
-      "Labios Rotos"
-    ],
-    [
-      "Jesse & Joy",
-      "¡Corre!"
-    ]
+    ["Espinoza Paz", "Un Hombre Normal"],
+    ["La Arrolladora Banda El Limón", "Llamada De Mi Ex"],
+    ["Luis Fonsi", "Respira"],
+    ["Alejandro Fernández", "Estuve"],
+    ["Vicente Fernández", "Otra Vez"],
+    ["Zoé", "Labios Rotos"],
+    ["Enrique Iglesias", "Tonight"],
+    ["Shakira", "Rabiosa"],
+    ["Reik", "Peligro"],
+    ["Los Tucanes De Tijuana", "Soy Todo Tuyo"]
   ],
   "2012": [
-    [
-      "Carla Morrison",
-      "Disfruto"
-    ],
-    [
-      "Gerardo Ortíz",
-      "Dámaso"
-    ]
+    ["Jesse & Joy", "¡Corre!"],
+    ["Espinoza Paz", "Cabecita Dura"],
+    ["Alejandro Fernández", "Hoy Tengo Ganas De Ti"],
+    ["Vicente Fernández", "El Rey"],
+    ["La Arrolladora Banda El Limón", "Cabecita Dura"],
+    ["3BallMTY", "Inténtalo"],
+    ["Enrique Iglesias", "Finalmente"],
+    ["Shakira", "Addicted To You"],
+    ["Reik", "Creo En Ti"],
+    ["Banda MS", "Hermosa Experiencia"]
   ],
   "2013": [
-    [
-      "Zoé",
-      "Arrullo de Estrellas"
-    ]
+    ["Gerardo Ortíz", "Dámaso"],
+    ["La Arrolladora Banda El Limón", "El Ruido De Tus Zapatos"],
+    ["Jesse & Joy", "La De La Mala Suerte"],
+    ["Alejandro Fernández", "Me Hace Tanto Bien"],
+    ["Romeo Santos", "Propuesta Indecente"],
+    ["Prince Royce", "Darte Un Beso"],
+    ["Enrique Iglesias", "El Perdedor"],
+    ["Marc Anthony", "Vivir Mi Vida"],
+    ["Reik", "Te Fuiste De Aquí"],
+    ["Banda MS", "Mi Razón De Ser"]
   ],
   "2014": [
-    [
-      "Banda MS",
-      "Háblame de Ti"
-    ],
-    [
-      "Julión Álvarez y su Norteño Banda",
-      "Te Hubieras Ido Antes"
-    ]
+    ["Julión Álvarez", "Y Fue Así"],
+    ["Enrique Iglesias", "Bailando"],
+    ["J Balvin", "Ay Vamos"],
+    ["Romeo Santos", "Eres Mía"],
+    ["La Arrolladora Banda El Limón", "Mi Segunda Vida"],
+    ["Banda MS", "No Me Pidas Perdón"],
+    ["Nicky Jam", "Travesuras"],
+    ["Calibre 50", "Tus Latidos"],
+    ["Ricky Martin", "Adrenalina"],
+    ["Shakira", "Can't Remember to Forget You"]
   ],
   "2015": [
-    [
-      "Natalia Lafourcade",
-      "Hasta la Raíz"
-    ],
-    [
-      "Mon Laferte",
-      "Tu Falta De Querer"
-    ]
+    ["Julión Álvarez", "El Amor De Su Vida"],
+    ["Nicky Jam", "El Perdón"],
+    ["J Balvin", "Ginza"],
+    ["Romeo Santos", "Hilito"],
+    ["La Arrolladora Banda El Limón", "Ojos En Blanco"],
+    ["Banda MS", "Háblame De Ti"],
+    ["Maluma", "Borró Cassette"],
+    ["Calibre 50", "Contigo"],
+    ["Ricky Martin", "La Mordidita"],
+    ["Ariel Camacho", "Te Metiste"]
   ],
   "2016": [
-    [
-      "Calibre 50",
-      "Siempre Te Voy a Querer"
-    ],
-    [
-      "Siddhartha",
-      "Únicos"
-    ]
+    ["Julión Álvarez", "Afuera Está Lloviendo"],
+    ["Nicky Jam", "Hasta el Amanecer"],
+    ["J Balvin", "Bobo"],
+    ["Carlos Vives", "La Bicicleta"],
+    ["La Arrolladora Banda El Limón", "Me Va A Pesar"],
+    ["Banda MS", "Sólo Con Verte"],
+    ["Maluma", "El Perdedor"],
+    ["Calibre 50", "Amor Del Bueno"],
+    ["Reik", "Ya Me Enteré"],
+    ["Christian Nodal", "Adiós Amor"]
   ],
   "2017": [
-    [
-      "Christian Nodal",
-      "Adiós Amor"
-    ],
-    [
-      "Carlos Rivera",
-      "Recuérdame"
-    ]
+    ["Luis Fonsi", "Despacito"],
+    ["Christian Nodal", "Probablemente"],
+    ["J Balvin", "Mi Gente"],
+    ["Maluma", "Felices los 4"],
+    ["Banda MS", "El Color De Tus Ojos"],
+    ["Danny Ocean", "Me Rehúso"],
+    ["Ozuna", "Se Preparó"],
+    ["Calibre 50", "Siempre Te Voy A Querer"],
+    ["Shakira", "Chantaje"],
+    ["Los Plebes Del Rancho", "Que Caro Estoy Pagando"]
   ],
   "2018": [
-    [
-      "Los Ángeles Azules ft. Natalia Lafourcade",
-      "Nunca Es Suficiente"
-    ],
-    [
-      "Reik ft. Maluma",
-      "Amigos Con Derechos"
-    ]
+    ["Christian Nodal", "De Los Besos Que Te Di"],
+    ["Nio Garcia", "Te Boté (Remix)"],
+    ["J Balvin", "X"],
+    ["Maluma", "Corazón"],
+    ["Banda MS", "Tu Postura"],
+    ["Reik", "Me Niego"],
+    ["Ozuna", "Vaina Loca"],
+    ["Calibre 50", "Mitad y Mitad"],
+    ["Daddy Yankee", "Dura"],
+    ["Raymix", "Oye Mujer"]
+  ],
+  "2019": [
+    ["Christian Nodal", "No Te Contaron Mal"],
+    ["Daddy Yankee", "Con Calma"],
+    ["J Balvin", "La Canción"],
+    ["Maluma", "HP"],
+    ["Banda MS", "Por Siempre Mi Amor"],
+    ["Sech", "Otro Trago"],
+    ["Ozuna", "Baila Baila Baila"],
+    ["Calibre 50", "Simplemente Gracias"],
+    ["Los Ángeles Azules", "Amor A Primera Vista"],
+    ["Pedro Capó", "Calma"]
   ],
   "2020": [
-    [
-      "Natanael Cano",
-      "AMOR"
-    ],
-    [
-      "Banda MS & Snoop Dogg",
-      "Qué Maldición"
-    ],
-    [
-      "Santa Fe Klan",
-      "Así Soy"
-    ],
-    [
-      "Danna Paola",
-      "Oye Pablo"
-    ]
+    ["Christian Nodal", "Dime Cómo Quieres"],
+    ["Bad Bunny", "Dákiti"],
+    ["J Balvin", "Rojo"],
+    ["Maluma", "Hawái"],
+    ["Banda MS", "Cerrando Ciclos"],
+    ["Sech", "Relación"],
+    ["Ozuna", "Caramelo"],
+    ["Calibre 50", "Barquillero"],
+    ["Los Ángeles Azules", "El Listón De Tu Pelo"],
+    ["Karol G", "Tusa"]
+  ],
+  "2021": [
+    ["Christian Nodal", "Botella Tras Botella"],
+    ["Bad Bunny", "Yonaguni"],
+    ["Rauw Alejandro", "Todo De Ti"],
+    ["Maluma", "Sobrio"],
+    ["Banda MS", "La Casita"],
+    ["Grupo Firme", "Ya Supérame"],
+    ["Aventura", "Volví"],
+    ["Eslabon Armado", "Jugaste y Sufrí"],
+    ["Los Ángeles Azules", "Otra Noche"],
+    ["Karol G", "Bichota"]
   ],
   "2022": [
-    [
-      "Fuerza Regida",
-      "Bebe Dame"
-    ],
-    [
-      "Christian Nodal",
-      "Ya No Somos Ni Seremos"
-    ],
-    [
-      "Kenia OS",
-      "Malas Decisiones"
-    ]
+    ["Bad Bunny", "Me Porto Bonito"],
+    ["Christian Nodal", "Ya No Somos Ni Seremos"],
+    ["Grupo Frontera", "No Se Va"],
+    ["Fuerza Regida", "Bebe Dame"],
+    ["Eslabon Armado", "Ella Baila Sola"],
+    ["Quevedo", "Bzrp Music Sessions, Vol. 52"],
+    ["Karol G", "Provenza"],
+    ["Luis R Conriquez", "JGL"],
+    ["Peso Pluma", "AMG"],
+    ["Shakira", "Te Felicito"]
   ],
   "2023": [
-    [
-      "Peso Pluma & Eslabon Armado",
-      "Ella Baila Sola"
-    ],
-    [
-      "Grupo Frontera & Bad Bunny",
-      "un x100to"
-    ],
-    [
-      "Carin Leon",
-      "Primera Cita"
-    ],
-    [
-      "Peso Pluma & Bizarrap",
-      "Bzrp Music Sessions #55"
-    ],
-    [
-      "Junior H",
-      "Fin de Semana"
-    ],
-    [
-      "Xavi",
-      "La Diabla"
-    ],
-    [
-      "Gabito Ballesteros",
-      "LOU LOU"
-    ],
-    [
-      "Chino Pacas",
-      "El Gordo Trae Mando"
-    ]
+    ["Eslabon Armado & Peso Pluma", "Ella Baila Sola"],
+    ["Grupo Frontera & Bad Bunny", "un x100to"],
+    ["Yng Lvcas & Peso Pluma", "La Bebe (Remix)"],
+    ["Fuerza Regida", "Sabor Fresa"],
+    ["Peso Pluma & Natanael Cano", "PRC"],
+    ["Carin Leon", "Primera Cita"],
+    ["Xavi", "La Diabla"],
+    ["Shakira & Bizarrap", "Bzrp Music Sessions, Vol. 53"],
+    ["Karol G", "TQG"],
+    ["Natanael Cano", "Pacas De Billetes"]
+  ],
+  "2024": [
+    ["Luis R Conriquez", "Dembow Bélico"],
+    ["Natanael Cano", "Madonna"],
+    ["Xavi", "La Víctima"],
+    ["Fuerza Regida", "TQM"],
+    ["Peso Pluma", "Lady Gaga"],
+    ["Carin Leon", "Según Quién"],
+    ["Grupo Frontera", "El Amor De Su Vida"],
+    ["Marca Registrada", "El Rescate"],
+    ["Bad Bunny", "Monaco"],
+    ["Junior H", "Y Lloro"]
+  ],
+  "2025": [
+    ["Grupo Frontera & Bad Bunny", "Lo Mejor"],
+    ["Carin León", "Mix 2025"],
+    ["Fuerza Regida", "Exclusivo"],
+    ["Marca Registrada", "Blin Blin"],
+    ["Peso Pluma", "Rosa Pastel"],
+    ["Xavi", "Poco a Poco"],
+    ["Natanael Cano", "Entre Las de 20"],
+    ["Shakira", "Puntería"],
+    ["Bad Bunny", "Perro Negro"],
+    ["Luis R Conriquez", "Pikachu"]
   ],
   "2026": [
-    [
-      "Peso Pluma",
-      "Lady Gaga"
-    ],
-    [
-      "Xavi",
-      "La Diabla"
-    ],
-    [
-      "Fuerza Regida",
-      "Harley Quinn"
-    ],
-    [
-      "Kevin Kaarl",
-      "San Lucas"
-    ],
-    [
-      "Natanael Cano",
-      "Madonna"
-    ],
-    [
-      "Junior H",
-      "Y Lloro"
-    ],
-    [
-      "Grupo Frontera",
-      "El Amor de Su Vida"
-    ],
-    [
-      "Carin Leon",
-      "Primera Cita"
-    ],
-    [
-      "Gabito Ballesteros",
-      "LOU LOU"
-    ],
-    [
-      "Chino Pacas",
-      "El Gordo Trae Mando"
-    ],
-    [
-      "Luis R Conriquez",
-      "Si No Quieres No"
-    ],
-    [
-      "Eslabon Armado",
-      "Jugaste y Sufrí"
-    ],
-    [
-      "Bizarrap & Peso Pluma",
-      "Bzrp Music Sessions #55"
-    ],
-    [
-      "Christian Nodal",
-      "Ya No Somos Ni Seremos"
-    ],
-    [
-      "Julión Álvarez",
-      "Regalo de Dios"
-    ]
+    ["DeCalifornia Ft. Santa Fe Klan", "ARRIBA MEXICO"],
+    ["Fuerza Regida & Luis R Conriquez", "Corridos Tumbados 2026"],
+    ["Cumbias Perronas", "Ritmo Sonidero"],
+    ["Carlos y José", "Duelo de Corridos Inmortales"],
+    ["Vicente Fernández", "Le Pese a Quien Le Pese"],
+    ["Alejandro Fernández", "Timeless Love"],
+    ["Grupo Frontera", "Mix 2026"],
+    ["Peso Pluma", "Las Mejores 2026"],
+    ["Xavi", "Mix 2026"],
+    ["Natanael Cano", "Tumbados Mix 2026"]
   ]
 }
