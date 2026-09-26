@@ -1,850 +1,686 @@
 {
   "1970": [
-    [
-      "Keiko Fuji",
-      "Keiko no Yume wa Yoru Hiraku"
-    ],
-    [
-      "Kiyohiko Ozaki",
-      "Mata Au Hi Made"
-    ],
-    [
-      "Ryu Kōtarō",
-      "Shiretoko Ryojō"
-    ],
-    [
-      "Hiroshi Uchiyamada",
-      "Uwasa no Onna"
-    ],
-    [
-      "Masaki Sakai",
-      "Saraba Koibito"
-    ],
-    [
-      "Kōji Tsuruta",
-      "Kizudarake no Jinsei"
-    ],
-    [
-      "Yoichi Sugawara",
-      "Kyo de O-wakare"
-    ],
-    [
-      "Toi et Moi",
-      "Dare mo Inai Umi"
-    ],
-    [
-      "Hide and Rosanna",
-      "Ai no Kiseki"
-    ],
-    [
-      "Norihiko Hashida",
-      "Hanayome"
-    ],
-    [
-      "Kyu Sakamoto",
-      "Miagete Goran Yoru no Hoshi wo"
-    ],
-    [
-      "Chiyo Okumura",
-      "Koi no Dorei"
-    ],
-    [
-      "Hiroshi Minami",
-      "Kiri ni Musebu Yoru"
-    ],
-    [
-      "Mina Aoe",
-      "Isezakicho Blues"
-    ],
-    [
-      "Kiyoshi Maekawa",
-      "Nagasaki wa Kyo mo Ame Datta"
-    ],
-    [
-      "Hiroshi Uchiyamada and Cool Five",
-      "Uwasa no Onna"
-    ],
-    [
-      "Norihiko Hashida & The Shoebox",
-      "Hanayome"
-    ],
-    [
-      "Saori Minami",
-      "17-sai"
-    ],
-    [
-      "Rumiko Koyanagi",
-      "Watashi no Joka-machi"
-    ],
-    [
-      "Shigeru Matsuzaki",
-      "Ginza no Koi no Monogatari"
-    ],
-    [
-      "Yoichi Sugawara",
-      "Kyou de Owakare"
-    ],
-    [
-      "Akira Nishikino",
-      "Sora ni Taiyou ga Aru Kagiri"
-    ],
-    [
-      "Ouyang Fei Fei",
-      "Ame no Midosuji"
-    ],
-    [
-      "Mari Amachi",
-      "Mizuiro no Koi"
-    ],
-    [
-      "Hiroshi Itsuki",
-      "Yokohama Tasogare"
-    ],
-    [
-      "Masako Mori",
-      "Sensei"
-    ]
+    ["Osamu Minagawa", "Kuroneko no Tango"],
+    ["Hiroshi Uchiyamada and Cool Five", "Awazu ni Aishite"],
+    ["Kayoko Moriyama", "Shiroi Chō no Samba"],
+    ["Keiko Fuji", "Onna no Blues"],
+    ["Keiko Fuji", "Keiko no Yume wa Yoru Hiraku"],
+    ["Hide & Rosanna", "Ai wa Kizutsuki Yasuku"],
+    ["Saori Yuki", "Tegami"],
+    ["Jerry Wallace", "Otoko no Sekai"],
+    ["Yūko Nagisa", "Kyōto no Koi"],
+    ["Isao Bitō", "Ashita no Jō"]
   ],
   "1971": [
-    [
-      "Kiyohiko Ozaki",
-      "Mata Au Hi Made"
-    ],
-    [
-      "Rumiko Koyanagi",
-      "Watashi no Joka-machi"
-    ],
-    [
-      "Mari Amachi",
-      "Mizuiro no Koi"
-    ],
-    [
-      "Ouyang Fei Fei",
-      "Ame no Midosuji"
-    ],
-    [
-      "Hiroshi Itsuki",
-      "Yokohama Tasogare"
-    ],
-    [
-      "Saori Minami",
-      "17-sai"
-    ],
-    [
-      "Koji Tsuruta",
-      "Kizudarake no Jinsei"
-    ],
-    [
-      "Toi et Moi",
-      "Niji to Yuki no Ballad"
-    ],
-    [
-      "Billy BanBan",
-      "Shiroi Buranko"
-    ],
-    [
-      "Takuro Yoshida",
-      "Kekkon Shiyoyo"
-    ],
-    [
-      "Garo",
-      "Gakuseigai no Kissaten"
-    ],
-    [
-      "Fuji Keiko",
-      "Onna no Blues"
-    ],
-    [
-      "Mina Aoe",
-      "Isezakicho Blues"
-    ],
-    [
-      "Shinichi Mori",
-      "Minatomachi Blues"
-    ],
-    [
-      "Chiyoko Shimakura",
-      "Ai no Sazanami"
-    ],
-    [
-      "Happy End",
-      "Kaze wo Atsumete"
-    ]
+    ["Kiyohiko Ozaki", "Mata Au Hi Made"],
+    ["Rumiko Koyanagi", "Watashi no Jōkamachi"],
+    ["Ouyang Fei Fei", "Ame no Midōsuji"],
+    ["Kiyoko Suizenji", "365-ho no March"],
+    ["Akira Nishikino", "Sora ni Taiyō ga Aru Kagiri"],
+    ["Saori Minami", "17-sai"],
+    ["Hiroshi Itsuki", "Yokohama Tasogare"],
+    ["Masako Mori", "Sensei"],
+    ["Garo", "Gakuseigai no Kissaten"],
+    ["Takuro Yoshida", "Kekkon Shiyou Yo"]
   ],
   "1972": [
-    [
-      "Shiro Miya & Pinkara Trio",
-      "Onna no Michi"
-    ],
-    [
-      "Garo",
-      "Gakuseigai no Kissaten"
-    ],
-    [
-      "Rumiko Koyanagi",
-      "Seto no Hanayome"
-    ],
-    [
-      "Mari Amachi",
-      "Hitori Janaino"
-    ],
-    [
-      "Hiroshi Itsuki",
-      "Anata no Tomoshibi"
-    ],
-    [
-      "Agnes Chan",
-      "Hinageshi no Hana"
-    ],
-    [
-      "Miyoko Asada",
-      "Akai Fuusen"
-    ],
-    [
-      "Tulip",
-      "Kokoro no Tabi"
-    ],
-    [
-      "Kaguyahime",
-      "Kandagawa"
-    ],
-    [
-      "Yosui Inoue",
-      "Yume no Naka e"
-    ],
-    [
-      "Cherish",
-      "Tentoumushi no Samba"
-    ],
-    [
-      "Goro Noguchi",
-      "Aoi Ringo"
-    ],
-    [
-      "Hideki Saijo",
-      "Chigireta Ai"
-    ],
-    [
-      "Hiromi Go",
-      "Otokonoko Onnanoko"
-    ],
-    [
-      "Megumi Asaoka",
-      "Watashi no Kare wa Hidarikiki"
-    ],
-    [
-      "Shigeru Izumiya",
-      "Shunka Shuutou"
-    ]
+    ["Shiro Miya & Pinkara Trio", "Onna no Michi"],
+    ["Rumiko Koyanagi", "Seto no Hanayome"],
+    ["Billy BanBan", "Sayonara wo Suru Tame ni"],
+    ["Takuro Yoshida", "Tabi no Yado"],
+    ["Kenji Sawada", "Yurusarenai Ai"],
+    ["Mari Amachi", "Hitori Janai No"],
+    ["Eiji Miyoshi", "Ame"],
+    ["Garo", "Romance"],
+    ["Cheish Hō", "Soshite, Kōbe"],
+    ["Agnes Chan", "Hinageshi no Hana"]
   ],
   "1973": [
-    [
-      "Tulip",
-      "Kokoro no Tabi"
-    ],
-    [
-      "Kaguyahime",
-      "Kandagawa"
-    ],
-    [
-      "Yumi Arai",
-      "Hikoukigumo"
-    ]
+    ["Shiro Miya & Pinkara Trio", "Onna no Negai"],
+    ["Tulip", "Saboten no Hana"],
+    ["Kaguya-hime", "Kandagawa"],
+    ["Kenji Sawada", "Kiken na Futari"],
+    ["Garo", "Kimi no Tanjōbi"],
+    ["Momoe Yamaguchi", "Toshigoro"],
+    ["Junko Sakurada", "Watashi no Aoi Tori"],
+    ["Hiroshi Itsuki", "Yozora"],
+    ["Fingers 5", "Kojin Jugyō"],
+    ["Shinichi Mori", "Fuyu no Tabi"]
+  ],
+  "1974": [
+    ["Tonosama Kings", "Namida no Misao"],
+    ["Fingers 5", "Koi no Dial 6700"],
+    ["Fingers 5", "Gakuen Tengoku"],
+    ["Kenji Sawada", "Tsuioku"],
+    ["Rene Simard", "Midori Iro no Yane"],
+    ["Michiyo Azusa", "Futari de Osake o"],
+    ["Kiyoshi Nakajō", "Uso"],
+    ["Yosui Inoue", "Kōri no Sekai"],
+    ["Hideki Saijo", "Kizudarake no Lola"],
+    ["Momoe Yamaguchi", "Hito Natsu no Keiken"]
   ],
   "1975": [
-    [
-      "Yumi Arai",
-      "Rouge no Dengon"
-    ]
+    ["Masashi Sada (Grape)", "Muen Zaka"],
+    ["Shigeki Osawa", "Showa Karesusuki"],
+    ["Akira Fuse", "Cyclamen no Kahori"],
+    ["Kaze", "22-sai no Wakare"],
+    ["Hiroshi Kamayatsu", "Waga Yoki Tomo yo"],
+    ["Down Town Boogie Woogie Band", "Minato no Yoko, Yokohama, Yokosuka"],
+    ["Hiromi Iwasaki", "Romance"],
+    ["Takashi Hosokawa", "Kokoro Kori"],
+    ["Kenji Sawada", "Toki Sugite"],
+    ["Yumi Arai", "Ano Hi ni Kaeritai"]
   ],
   "1976": [
-    [
-      "Candies",
-      "Haru Ichiban"
-    ]
+    ["Daniel Boone", "Beautiful Sunday"],
+    ["Goro Noguchi", "Amai Seikatsu"],
+    ["Iruka", "Nagoriyuki"],
+    ["Kōsetsu Minami", "Yume Ichiya"],
+    ["Hiromi Ota", "Momen no Handkerchief"],
+    ["Pink Lady", "Pepper Keibu"],
+    ["Momoe Yamaguchi", "Yokosuka Story"],
+    ["Naomi Chiaki", "Kassai"],
+    ["Masato Shimon", "Oyoge! Taiyaki-kun"],
+    ["Yoshito Machida", "Senshi no Kyūsoku"]
   ],
   "1977": [
-    [
-      "Miyuki Nakajima",
-      "Wakareuta"
-    ],
-    [
-      "Pink Lady",
-      "UFO"
-    ]
+    ["Pink Lady", "Nagisa no Sindbad"],
+    ["Pink Lady", "Wanted (Shimei Tehai)"],
+    ["Pink Lady", "UFO"],
+    ["Kenji Sawada", "Katte ni Shiyagare"],
+    ["Momoe Yamaguchi", "Cosmos"],
+    ["Shigeru Matsuzaki", "Ai no Memory"],
+    ["Masashi Sada", "Amayadori"],
+    ["Hiromi Go", "Otoko no Ko Onna no Ko"],
+    ["Char", "Kizetsu Suru Hodo Nayamashii"],
+    ["Ishikawa Sayuri", "Tsugaru Kaikyō Fuyu Geshiki"]
   ],
   "1978": [
-    [
-      "Tatsuro Yamashita",
-      "Bomber"
-    ],
-    [
-      "Godiego",
-      "Gandhara"
-    ],
-    [
-      "Southern All Stars",
-      "Katte ni Sinbad"
-    ],
-    [
-      "Mariya Takeuchi",
-      "Let's Get Married"
-    ]
+    ["Pink Lady", "Southpaw"],
+    ["Pink Lady", "Monster"],
+    ["Masanori Sera & Twist", "Hikigane"],
+    ["Alice", "Fuyu no Inazuma"],
+    ["Candies", "Hohoemi Gaeshi"],
+    ["Kenji Sawada", "Darling"],
+    ["Momoe Yamaguchi", "Playback Part 2"],
+    ["Machiko Watanabe", "Kamome ga Tonda Hi"],
+    ["Yosui Inoue", "Yume no Naka e"],
+    ["Junko Ohashi", "Tasogare My Love"]
   ],
   "1979": [
-    [
-      "Mariya Takeuchi",
-      "September"
-    ],
-    [
-      "Yellow Magic Orchestra",
-      "Rydeen"
-    ],
-    [
-      "Miki Matsubara",
-      "Mayonaka no Door / Stay With Me"
-    ]
+    ["Monta & Brothers", "Dancing All Night"],
+    ["Godiego", "Monkey Magic"],
+    ["Godiego", "Gandhara"],
+    ["Saki Kubota", "Ihōjin"],
+    ["Judy Ongg", "Miserarete"],
+    ["Masashi Sada", "Sekihaku"],
+    ["Chiharu Matsuyama", "Kisetsu no Naka de"],
+    ["Momoe Yamaguchi", "Ii Hi Tabidachi"],
+    ["Hideki Saijo", "Young Man (Y.M.C.A.)"],
+    ["Hiroshi Itsuki", "Omae to Futari"]
   ],
   "1980": [
-    [
-      "Tatsuro Yamashita",
-      "Ride On Time"
-    ]
+    ["Tsuyoshi Nagabuchi", "Junko"],
+    ["Chanels", "Runaway"],
+    ["Crystal King", "Daitokai"],
+    ["Mayumi Itsuwa", "Koibito yo"],
+    ["Seiko Matsuda", "Aoi Sangoshō"],
+    ["Toshihiko Tahara", "Aishū Date"],
+    ["Kaientai", "Okuru Kotoba"],
+    ["Tetsurō Kasuya", "Boshō"],
+    ["Shinji Tanimura", "Subaru"],
+    ["Los Indios & Silvia", "Wakaretekumo Suki na Hito"]
+  ],
+  "1981": [
+    ["Akira Terao", "Ruby no Yubiwa"],
+    ["Kinki Kids", "Garasu no Shōnen"],
+    ["Toshihiko Tahara", "Kanashimi TOO YOUNG"],
+    ["Seiko Matsuda", "Cherry Blossom"],
+    ["Masahiko Kondo", "Sneaker Blues"],
+    ["Masahiko Kondo", "Blue Jeans Memory"],
+    ["Miyuki Nakajima", "Akujo"],
+    ["Yutaka Ozaki", "15 no Yoru"],
+    ["Ito Tsukasa", "Shōjo A"],
+    ["Hiroshi Itsuki", "Minato-machi Blues"]
   ],
   "1982": [
-    [
-      "Seiko Matsuda",
-      "Akai Sweet Pea"
-    ]
+    ["Aming", "Matsuwa"],
+    ["Hiroko Yakushimaru", "Sailor Fuku to Kikanjū"],
+    ["Masahiko Kondo", "Jōnetsu Neppū Serenade"],
+    ["Seiko Matsuda", "Akai Sweet Pea"],
+    ["Seiko Matsuda", "Nagisa no Balcony"],
+    ["Akina Nakamori", "Shōjo A"],
+    ["Toshihiko Tahara", "NINJIN Musume"],
+    ["Southern All Stars", "Ya Ya (Ano Toki wo Wasurenai)"],
+    ["Motoharu Sano", "Someday"],
+    ["Yumi Matsutoya", "Mamotte Agetai"]
   ],
   "1983": [
-    [
-      "Anri",
-      "Cat's Eye"
-    ],
-    [
-      "Anri",
-      "Remember Summer Days"
-    ],
-    [
-      "Tatsuro Yamashita",
-      "Christmas Eve"
-    ]
+    ["Takashi Hosokawa", "Yagiri no Watashi"],
+    ["Hiroko Yakushimaru", "Tantei Monogatari"],
+    ["Akina Nakamori", "Second Love"],
+    ["Seiko Matsuda", "Glass no Ringo"],
+    ["Seiko Matsuda", "Sweet Memories"],
+    ["YMO", "Kimi ni Mune Kyun"],
+    ["Irene Cara", "Flashdance... What a Feeling"],
+    ["Toshihiko Tahara", "Sharirara"],
+    ["Masahiko Kondo", "Midnight Station"],
+    ["Alfee", "Marie-Anne"]
   ],
   "1984": [
-    [
-      "Mariya Takeuchi",
-      "Plastic Love"
-    ],
-    [
-      "Yosui Inoue",
-      "Isso Serenade"
-    ],
-    [
-      "Akina Nakamori",
-      "Kita Wing"
-    ],
-    [
-      "Akina Nakamori",
-      "Jukkai"
-    ],
-    [
-      "Akina Nakamori",
-      "Kazari ja Nai no yo Namida wa"
-    ],
-    [
-      "Seiko Matsuda",
-      "Rock'n Rouge"
-    ],
-    [
-      "Seiko Matsuda",
-      "Jikan no Kuni no Alice"
-    ],
-    [
-      "Seiko Matsuda",
-      "Pink no Mozart"
-    ],
-    [
-      "The Checkers",
-      "Namida no Request"
-    ],
-    [
-      "The Checkers",
-      "Gizagiza Heart no Komoriuta"
-    ],
-    [
-      "The Checkers",
-      "Hoshikuzu no Stage"
-    ],
-    [
-      "Koji Kikkawa",
-      "Monica"
-    ],
-    [
-      "Tomoyo Harada",
-      "Tengoku ni Ichiban Chikai Shima"
-    ],
-    [
-      "Meiko Nakahara",
-      "Kimi-tachi Kiwi Papaya Mango da ne"
-    ],
-    [
-      "Kiyotaka Sugiyama & Omega Tribe",
-      "Kimi no Heart wa Marine Blue"
-    ]
+    ["Checkers", "Namida no Request"],
+    ["Checkers", "Hoshikuzu no Stage"],
+    ["Checkers", "Juliet"],
+    ["Akina Nakamori", "Kita Wing"],
+    ["Akina Nakamori", "Jikkai (1984)"],
+    ["Seiko Matsuda", "Rock'n Rouge"],
+    ["Toshihiko Tahara", "Kao ni Kaita Renai Shōsetsu"],
+    ["Koji Kikkawa", "Monica"],
+    ["Yui Asaka", "Star"],
+    ["Teresa Teng", "Tsugunai"]
   ],
   "1985": [
-    [
-      "Akina Nakamori",
-      "Mi Amore"
-    ],
-    [
-      "Akina Nakamori",
-      "Sand Beige"
-    ],
-    [
-      "Seiko Matsuda",
-      "Tenshi no Wink"
-    ],
-    [
-      "Seiko Matsuda",
-      "Boy no Kisetsu"
-    ],
-    [
-      "The Checkers",
-      "Julia ni Heartbreak"
-    ],
-    [
-      "The Checkers",
-      "Ano Ko to Scandal"
-    ],
-    [
-      "C-C-B",
-      "Romantic ga Tomaranai"
-    ],
-    [
-      "Teresa Teng",
-      "Aijin"
-    ],
-    [
-      "Onyanko Club",
-      "Sailor Fuku wo Nugasanaide"
-    ],
-    [
-      "Koji Kikkawa",
-      "You Gotta Chance"
-    ],
-    [
-      "Anzen Chitai",
-      "Kanashimi ni Sayonara"
-    ],
-    [
-      "Anzen Chitai",
-      "Hekireki"
-    ],
-    [
-      "Rebecca",
-      "Friends"
-    ],
-    [
-      "Kiyotaka Sugiyama & Omega Tribe",
-      "Futari no Natsu Monogatari"
-    ],
-    [
-      "Toshihiko Tahara",
-      "It's BAD"
-    ]
+    ["Checkers", "Ano Ko to Scandal"],
+    ["Akina Nakamori", "Meu Amor é..."],
+    ["Akina Nakamori", "Sand Beige"],
+    ["Seiko Matsuda", "Tenshi no Wink"],
+    ["C-C-B", "Romantic ga Tomaranai"],
+    ["Anzen Chitai", "Kanashimi ni Sayonara"],
+    ["Teresa Teng", "Aijin"],
+    ["Shonentai", "Kamen Butōkai"],
+    ["Onyanko Club", "Sailor Fuku o Nugasanaide"],
+    ["Kyohei Shibata", "Running Shot"]
   ],
   "1986": [
-    [
-      "Akina Nakamori",
-      "DESIRE -J情熱-"
-    ]
+    ["Kuwata Band", "Ban Ban Ban"],
+    ["Akina Nakamori", "Desire"],
+    ["Onyanko Club", "Jaa Ne"],
+    ["Shonentai", "Decameron Densetsu"],
+    ["Kome Kome Club", "Kimi ga Iru Dake de"],
+    ["Tube", "Season in the Sun"],
+    ["Teresa Teng", "Toki no Nagare ni Mi o Makase"],
+    ["Akira Senju", "Kaze no Tani no Nausicaa"],
+    ["Minako Honda", "Oneway Generation"],
+    ["Miho Nakayama", "Jingisukan"]
   ],
   "1987": [
-    [
-      "TM NETWORK",
-      "Get Wild"
-    ],
-    [
-      "THE BLUE HEARTS",
-      "Linda Linda"
-    ],
-    [
-      "Koji Tamaki",
-      "All I Do"
-    ]
+    ["Hikaru Genji", "Star Light"],
+    ["Hikaru Genji", "Glass no Jūdai"],
+    ["Akina Nakamori", "Tango Noir"],
+    ["Shizuka Kudo", "Kindan no Telepathy"],
+    ["Miho Nakayama", "Catch Me"],
+    ["Onyanko Club", "Katatsumuri Samba"],
+    ["Boøwy", "Marionette"],
+    ["TM Network", "Get Wild"],
+    ["Shonentai", "Kimi dake ni"],
+    ["Toshihiko Tahara", "Dakishimete Tonight"]
   ],
   "1988": [
-    [
-      "Kyosuke Himuro",
-      "Angel"
-    ]
+    ["Hikaru Genji", "Paradise Ginga"],
+    ["Hikaru Genji", "Diamond Hurricane"],
+    ["Hikaru Genji", "Tsurugi no Mai"],
+    ["Shizuka Kudo", "Mugon Iroppoi"],
+    ["Tsuyoshi Nagabuchi", "Kanpai"],
+    ["Kyosuke Himuro", "Angel"],
+    ["Akina Nakamori", "Al-Mauj"],
+    ["Miho Nakayama", "You're My Only Shinin' Star"],
+    ["Wink", "Ai ga Tomaranai (Turn It Into Love)"],
+    ["Princess Princess", "M"]
   ],
   "1989": [
-    [
-      "Princess Princess",
-      "Diamonds"
-    ]
+    ["Princess Princess", "Diamonds"],
+    ["Wink", "Samishii Nettaigyo"],
+    ["Shizuka Kudo", "Arashi no Sugao"],
+    ["Shizuka Kudo", "Kōsa ni Fukarete"],
+    ["Hikaru Genji", "Taiyō ga Ippai"],
+    ["X Japan", "Kurenai"],
+    ["Hibari Misora", "Kawa no Nagare no Yō ni"],
+    ["B'z", "Dakara Sono Te wo Hanashite"],
+    ["Kome Kome Club", "Roman Hikō"],
+    ["Kome Kome Club", "Shake Hip!"]
+  ],
+  "1990": [
+    ["B.B.Queens", "Odoru Pompokorin"],
+    ["Lindberg", "Imasugu Kiss Me"],
+    ["Southern All Stars", "Manatsu no Kajitsu"],
+    ["B'z", "Taiyō no Komachi Angel"],
+    ["Tama", "Sayonara Jinrui"],
+    ["Dreams Come True", "Egao no Yukue"],
+    ["Kazumasa Oda", "Oh! Yeah! / Love Story wa Totsuzen ni"],
+    ["Tatsuro Yamashita", "Christmas Eve"],
+    ["Midori Karashima", "Silent Eve"],
+    ["Diana Ross", "If We Hold On Together"]
+  ],
+  "1991": [
+    ["Kazumasa Oda", "Love Story wa Totsuzen ni"],
+    ["Chage and Aska", "Say Yes"],
+    ["Kan", "Ai wa Katsu"],
+    ["Noriyuki Makihara", "Donna Toki mo"],
+    ["Aska", "Hajimari wa Itsumo Ame"],
+    ["B'z", "LADY NAVIGATION"],
+    ["Miho Nakayama & Wands", "Sekaijū no Dare Yori Kitto"],
+    ["T-Bolan", "Hanashitaku wa Nai"],
+    ["Zard", "Good-bye My Loneliness"],
+    ["Dreams Come True", "Eyes to me"]
   ],
   "1992": [
-    [
-      "Kome Kome CLUB",
-      "Kimi ga Iru Dake de"
-    ]
+    ["Kome Kome Club", "Kimi ga Iru Dake de"],
+    ["Southern All Stars", "Namida no Kiss"],
+    ["B'z", "BLOWIN'"],
+    ["Zard", "Nemurenai Yoru wo Daite"],
+    ["T-Bolan", "Bye For Now"],
+    ["Miyuki Nakajima", "Asai Nemuri"],
+    ["Dreams Come True", "Kessen wa Kinyōbi"],
+    ["Mr. Children", "Dakishimetai"],
+    ["Wands", "Motto Tsuyoku Dakishimeta Nara"],
+    ["Kyosuke Himuro", "Kiss Me"]
   ],
   "1993": [
-    [
-      "ZARD",
-      "Makenaide"
-    ],
-    [
-      "CHAGE and ASKA",
-      "YAH YAH YAH"
-    ],
-    [
-      "Southern All Stars",
-      "Erotica Seven"
-    ]
+    ["Chage and Aska", "Yah Yah Yah"],
+    ["B'z", "Ai no Mama ni Wagamama ni Boku wa Kimi Dake o Kizutsukenai"],
+    ["Zard", "Makenaide"],
+    ["The Toraji Haiji", "Fantastipo"],
+    ["Class", "Natsu no Hi 1993"],
+    ["Zard", "Yureru Omoi"],
+    ["Wands", "Toki no Tobira"],
+    ["Southern All Stars", "Erotica Seven"],
+    ["T-Bolan", "Osaekirenai Kono Kimochi"],
+    ["Mr. Children", "Cross Road"]
   ],
   "1994": [
-    [
-      "Mr.Children",
-      "Tomorrow never knows"
-    ]
+    ["Mr. Children", "Innocent World"],
+    ["Koumi Hirose", "Romance no Kamisama"],
+    ["Miyuki Nakajima", "Sora to Kimi no Aida ni"],
+    ["TRF", "Survival Dance ~no no cry more~"],
+    ["TRF", "Boy Meets Girl"],
+    ["B'z", "Don't Leave Me"],
+    ["Zard", "Kono Ai ni Oyogi Tsukarete mo"],
+    ["Wands", "Sekai ga Owaru Made wa..."],
+    ["DREAMS COME TRUE", "Winter Song"],
+    ["Spitz", "Sora mo Toberu Hazu"]
   ],
   "1995": [
-    [
-      "B'z",
-      "LOVE PHANTOM"
-    ]
+    ["DREAMS COME TRUE", "Love Love Love"],
+    ["TRF", "CRAZY GONNA CRAZY"],
+    ["My Little Lover", "Hello, Again ~Mukashi Kara Aru Basho~"],
+    ["Mr. Children", "Tomorrow Never Knows"],
+    ["B'z", "Love Phantom"],
+    ["Zard", "My Friend"],
+    ["Spitz", "Robinson"],
+    ["Namie Amuro", "Body Feels EXIT"],
+    ["Tomomi Kahala", "I BELIEVE"],
+    ["Globe", "Feel Like dance"]
   ],
   "1996": [
-    [
-      "スピッツ",
-      "チェリー"
-    ],
-    [
-      "Globe",
-      "DEPARTURES"
-    ],
-    [
-      "Judy and Mary",
-      "Sobakasu"
-    ]
+    ["Mr. Children", "Namonaki Uta"],
+    ["Globe", "Departures"],
+    ["Kubo Ruriko", "Fuyu no Fantasy"],
+    ["Namie Amuro", "Don't wanna cry"],
+    ["Namie Amuro", "You're my sunshine"],
+    ["Tomomi Kahala", "I'm proud"],
+    ["Puffy", "Asia no Junshin"],
+    ["Spitz", "Cherry"],
+    ["B'z", "Real Thing Shakes"],
+    ["Glay", "Beloved"]
   ],
   "1997": [
-    [
-      "GLAY",
-      "HOWEVER"
-    ],
-    [
-      "Namie Amuro",
-      "CAN YOU CELEBRATE?"
-    ],
-    [
-      "SPEED",
-      "White Love"
-    ]
+    ["Namie Amuro", "Can You Celebrate?"],
+    ["Kinki Kids", "Garasu no Shōnen"],
+    ["Globe", "Face"],
+    ["Le Couple", "Hidamari no Uta"],
+    ["Mr. Children", "Everything (It's you)"],
+    ["T.M.Revolution", "White Breath"],
+    ["Glay", "However"],
+    ["L'Arc-en-Ciel", "Niji"],
+    ["B'z", "Calling"],
+    ["Speed", "White Love"]
   ],
   "1998": [
-    [
-      "L'Arc-en-Ciel",
-      "HONEY"
-    ]
+    ["Glay", "Yuuwaku"],
+    ["L'Arc-en-Ciel", "Honey"],
+    ["SMAP", "Yozora no Mukou"],
+    ["Kiroro", "Nagai Aida"],
+    ["Kinki Kids", "Zenbu Dakishimete"],
+    ["Black Biscuits", "Timing"],
+    ["Glay", "Soul Love"],
+    ["L'Arc-en-Ciel", "Snow Drop"],
+    ["Hide with Spread Beaver", "Pink Spider"],
+    ["Speed", "My Graduation"]
   ],
   "1999": [
-    [
-      "宇多田ヒカル",
-      "First Love"
-    ],
-    [
-      "Ayumi Hamasaki",
-      "Boys & Girls"
-    ]
+    ["Dango 3 Kyodai", "Dango 3 Kyodai"],
+    ["Glay", "Winter, again"],
+    ["Ayumi Hamasaki", "A (Monochrome, Too Late, Trauma, End Roll)"],
+    ["Utada Hikaru", "Automatic / time will tell"],
+    ["Utada Hikaru", "Addicted To You"],
+    ["L'Arc-en-Ciel", "Heaven's Drive"],
+    ["Ayumi Hamasaki", "Boys & Girls"],
+    ["Glay", "Kokodil"],
+    ["Dragon Ash", "Grateful Days"],
+    ["Morning Musume", "Love Machine"]
   ],
   "2000": [
-    [
-      "椎名林檎",
-      "Gips"
-    ],
-    [
-      "Southern All Stars",
-      "TSUNAMI"
-    ]
+    ["Southern All Stars", "Tsunami"],
+    ["Masaharu Fukuyama", "Sakura Zaka"],
+    ["Utada Hikaru", "Wait & See (Risk)"],
+    ["Mai Kuraki", "Love, Day After Tomorrow"],
+    ["Ayumi Hamasaki", "Seasons"],
+    ["SMAP", "Lion Heart"],
+    ["Morning Musume", "Koi no Dance Site"],
+    ["B'z", "Kon'ya Tsuki no Mieru Oka ni"],
+    ["Misia", "Everything"],
+    ["Morning Musume", "Happy Summer Wedding"]
   ],
   "2001": [
-    [
-      "BUMP OF CHICKEN",
-      "Tentai K観測"
-    ],
-    [
-      "MONGOL800",
-      "Chiisana Koi no Uta"
-    ]
+    ["Utada Hikaru", "Can You Keep A Secret?"],
+    ["Ayumi Hamasaki", "M"],
+    ["Chemistry", "Pieces of a Dream"],
+    ["B'z", "Ultra Soul"],
+    ["Kuwata Keisuke", "Naminori Johnny"],
+    ["Kuwata Keisuke", "Shiroi Koibitotachi"],
+    ["Ayumi Hamasaki", "Evolution"],
+    ["KinKi Kids", "Boku no Senaka ni wa Hane ga Aru"],
+    ["Dragon Ash", "Life goes on"],
+    ["Zone", "Secret Base ~Kimi ga Kureta Mono~"]
   ],
   "2002": [
-    [
-      "宇多田ヒカル",
-      "Hikari"
-    ]
+    ["Ayumi Hamasaki", "H"],
+    ["Utada Hikaru", "Traveling"],
+    ["Kousuke Atari", "Shima Uta"],
+    ["Mr. Children", "Any"],
+    ["Glay", "Way of Difference"],
+    ["Ayumi Hamasaki", "Voyage"],
+    ["B'z", "Atsuki Kodō no Hate"],
+    ["Mr. Children", "Hero"],
+    ["Ketsumeishi", "Tomodachi"],
+    ["SMAP", "Freebird"]
   ],
   "2003": [
-    [
-      "Asian Kung-Fu Generation",
-      "Haruka Kanata"
-    ],
-    [
-      "SMAP",
-      "Sekai ni Hitotsu Dake no Hana"
-    ],
-    [
-      "Mika Nakashima",
-      "Yuki no Hana"
-    ],
-    [
-      "Exile",
-      "Choo Choo TRAIN"
-    ]
+    ["SMAP", "Sekai ni Hitotsu Dake no Hana"],
+    ["Masaharu Fukuyama", "Niji / Himawari / Sore ga Subete sa"],
+    ["Mr. Children", "Tagatame"],
+    ["B'z", "It's Showtime!!"],
+    ["Ayumi Hamasaki", "No Way to Say"],
+    ["Naotaro Moriyama", "Sakura (Dokushō)"],
+    ["Utada Hikaru", "Colors"],
+    ["Ketsumeishi", "Natsu no Omoide"],
+    ["Exile", "Choo Choo Train"],
+    ["KinKi Kids", "Hakka Candy"]
   ],
   "2004": [
-    [
-      "Remioromen",
-      "Sangatsu Kokonoka"
-    ],
-    [
-      "ORANGE RANGE",
-      "Hana"
-    ]
+    ["Ken Hirai", "Hitomi o Tojite"],
+    ["Mr. Children", "Sign"],
+    ["Orange Range", "Locolotion"],
+    ["Mr. Children", "Kurumi"],
+    ["B'z", "Banzai"],
+    ["Glay", "Tenshi no Wakemae"],
+    ["Orange Range", "Hana"],
+    ["Utada Hikaru", "Dareka no Negai ga Kanau Koro"],
+    ["Porno Graffitti", "Sister"],
+    ["KinKi Kids", "Anniversary"]
+  ],
+  "2005": [
+    ["Shuuji to Akira", "Seishun Amigo"],
+    ["Ketsumeishi", "Sakura"],
+    ["Mr. Children", "Yojigen Four Dimensions"],
+    ["Orange Range", "Asterisk"],
+    ["O-Zone", "Dragostea Din Tei (Koi no Maiahi)"],
+    ["Kumi Koda", "Butterfly"],
+    ["B'z", "Ocean"],
+    ["Nana starring Mika Nakashima", "Glamorous Sky"],
+    ["Remioromen", "Konayuki"],
+    ["NANA starring Yuna Ito", "Endless Story"]
   ],
   "2006": [
-    [
-      "Yui",
-      "Good-bye Days"
-    ]
+    ["KAT-TUN", "Real Face"],
+    ["Kumi Koda", "4 Hot Wave"],
+    ["Tegomass", "Miso Soup"],
+    ["B'z", "Impulse"],
+    ["KinKi Kids", "Harmony of December"],
+    ["Glay", "Answer"],
+    ["Mr. Children", "Shirushi"],
+    ["Exile", "Lovers Again"],
+    ["Remioromen", "Taiyou no Shita"],
+    ["Utada Hikaru", "Keep Tryin'"]
   ],
   "2007": [
-    [
-      "Perfume",
-      "Polyrhythm"
-    ]
+    ["Masafumi Akikawa", "Sen no Kaze ni Natte"],
+    ["Utada Hikaru", "Flavor of Life"],
+    ["Arashi", "Love So Sweet"],
+    ["Mr. Children", "Fake"],
+    ["KAT-TUN", "Keep the Faith"],
+    ["Hey! Say! JUMP", "Ultra Music Power"],
+    ["B'z", "Eien no Tsubasa"],
+    ["NEWS", "Hoshi wo Mezashite"],
+    ["GReeeeN", "Ai Uta"],
+    ["Kumi Koda", "Freaky"]
   ],
   "2008": [
-    [
-      "GReeeeN",
-      "Kiseki"
-    ]
+    ["Arashi", "Truth / Kaze no Mukō e"],
+    ["Arashi", "One Love"],
+    ["Aoyama Thelma feat. SoulJa", "Soba ni Iru ne"],
+    ["GReeeeN", "Kiseki"],
+    ["Mr. Children", "Hanabi"],
+    ["KAT-TUN", "Don't U Ever Stop"],
+    ["B'z", "Burn (Fumetsu no Face)"],
+    ["Exile", "Ti Amo"],
+    ["Namie Amuro", "60s 70s 80s"],
+    ["KAT-TUN", "Lips"]
   ],
   "2009": [
-    [
-      "AKB48",
-      "Heavy Rotation"
-    ]
+    ["Arashi", "Believe / Kumori Nochi, Kaisei"],
+    ["Arashi", "Ashita no Kioku / Crazy Moon"],
+    ["Arashi", "My Girl"],
+    ["Arashi", "Everything"],
+    ["B'z", "Ichibu to Zenbu / Dive"],
+    ["KAT-TUN", "Rescue"],
+    ["EXILE", "Someday"],
+    ["GReeeeN", "Haruka"],
+    ["AKB48", "River"],
+    ["KinKi Kids", "Swan Song"]
+  ],
+  "2010": [
+    ["AKB48", "Beginner"],
+    ["AKB48", "Heavy Rotation"],
+    ["Arashi", "Troublemaker"],
+    ["Arashi", "Monster"],
+    ["AKB48", "Ponytail to Shushu"],
+    ["Arashi", "Løve Rainbow"],
+    ["Arashi", "Dear Snow"],
+    ["Arashi", "To be free"],
+    ["KAT-TUN", "Love Yourself"],
+    ["Arashi", "Hatenai Sora"]
   ],
   "2011": [
-    [
-      "Kyary Pamyu Pamyu",
-      "PonPonPon"
-    ]
+    ["AKB48", "Flying Get"],
+    ["AKB48", "Everyday, Katyusha"],
+    ["AKB48", "Kaze wa Fuiteiru"],
+    ["AKB48", "Ue kara Mariko"],
+    ["AKB48", "Sakura no Ki ni Narō"],
+    ["Arashi", "Lotus"],
+    ["Arashi", "Meikyū Love Song"],
+    ["SKE48", "Pareo wa Emerald"],
+    ["SKE48", "Oki Doki"],
+    ["KARA", "Go Go Summer!"]
   ],
   "2012": [
-    [
-      "ONE OK ROCK",
-      "The Beginning"
-    ]
+    ["AKB48", "Manatsu no Sounds Good!"],
+    ["AKB48", "Gingham Check"],
+    ["AKB48", "UZA"],
+    ["AKB48", "Eien Pressure"],
+    ["AKB48", "Give Me Five!"],
+    ["Nogizaka46", "Guru Guru Curtain"],
+    ["SKE48", "Kataomoi Finally"],
+    ["Arashi", "Wild at Heart"],
+    ["Arashi", "Face Down"],
+    ["NMB48", "Nagiichi"]
+  ],
+  "2013": [
+    ["AKB48", "Sayonara Crawl"],
+    ["AKB48", "Koisuru Fortune Cookie"],
+    ["AKB48", "Heart Ereki"],
+    ["AKB48", "So Long!"],
+    ["AKB48", "Suzukake no Ki no Michi de..."],
+    ["SKE48", "Choco no Dorei"],
+    ["SKE48", "Utsukushii Inazuma"],
+    ["SKE48", "Sansei Kawaii!"],
+    ["Arashi", "Calling / Breathless"],
+    ["Exile", "Exile Pride ~Konna Sekai o Aisuru Tame~"]
   ],
   "2014": [
-    [
-      "SEKAI NO OWARI",
-      "Dragon Night"
-    ],
-    [
-      "BABYMETAL",
-      "Gimme Chocolate!!"
-    ]
+    ["AKB48", "Labrador Retriever"],
+    ["AKB48", "Kibōteki Refrain"],
+    ["AKB48", "Mae Shika Mukanee"],
+    ["AKB48", "Suzukake no Ki no Michi de..."],
+    ["AKB48", "Kokoro no Placard"],
+    ["Arashi", "Guts!"],
+    ["Arashi", "Bittersweet"],
+    ["Nogizaka46", "Nandome no Aozora ka?"],
+    ["Nogizaka46", "Kizuitara Kataomoi"],
+    ["Sandaime J Soul Brothers", "R.Y.U.S.E.I."]
   ],
   "2015": [
-    [
-      "Kana Nishino",
-      "Torisetsu"
-    ],
-    [
-      "back number",
-      "Christmas Song"
-    ]
+    ["AKB48", "Bokutachi wa Tatakawanai"],
+    ["AKB48", "Halloween Night"],
+    ["AKB48", "Green Flash"],
+    ["AKB48", "Kuchibiru ni Be My Baby"],
+    ["SKE48", "Coquettish Jūtai Chū"],
+    ["Nogizaka46", "Ima, Hanashitai Dareka ga Iru"],
+    ["Nogizaka46", "Taiyō Knock"],
+    ["Arashi", "Aozora no Shita, Kimi no Tonari"],
+    ["Sandaime J Soul Brothers", "Summer Madness"],
+    ["Kenshi Yonezu", "Flowerwall"]
   ],
   "2016": [
-    [
-      "RADWIMPS",
-      "Zenzenzense"
-    ],
-    [
-      "Gen Hoshino",
-      "Koi"
-    ]
+    ["AKB48", "Tsubasa wa Iranai"],
+    ["AKB48", "Kimi wa Melody"],
+    ["AKB48", "Love Trip / Shiawase o Wakenasai"],
+    ["AKB48", "High Tension"],
+    ["Nogizaka46", "Sayonara no Imi"],
+    ["Nogizaka46", "Hadashi de Summer"],
+    ["Arashi", "I seek / Daylight"],
+    ["Keyakizaka46", "Silent Majority"],
+    ["Gen Hoshino", "Koi"],
+    ["Radwimps", "Zenzenzense"]
+  ],
+  "2017": [
+    ["AKB48", "Negaigoto no Mochigusare"],
+    ["AKB48", "#SukiNanda"],
+    ["AKB48", "11gatsu no Anklet"],
+    ["AKB48", "Shoot Sign"],
+    ["Nogizaka46", "Nigemizu"],
+    ["Nogizaka46", "Influencer"],
+    ["Nogizaka46", "Itsuka Dekirukara Kyō Dekiru"],
+    ["Keyakizaka46", "Fukyōwaon"],
+    ["Keyakizaka46", "Kaze ni Fukarete mo"],
+    ["Twice", "One More Time"]
   ],
   "2018": [
-    [
-      "米津玄師",
-      "Lemon"
-    ],
-    [
-      "DA PUMP",
-      "U.S.A."
-    ],
-    [
-      "Aimyon",
-      "Marigold"
-    ],
-    [
-      "Foorin",
-      "Paprika"
-    ]
+    ["AKB48", "Teacher Teacher"],
+    ["AKB48", "Sentimental Train"],
+    ["Nogizaka46", "Synchronicity"],
+    ["Nogizaka46", "Jikochū de Ikō!"],
+    ["AKB48", "No Way Man"],
+    ["AKB48", "Jabaja"],
+    ["Keyakizaka46", "Glass wo Ware!"],
+    ["Keyakizaka46", "Ambivalent"],
+    ["Nogizaka46", "Kaerimichi wa Tōmawari Shitaku Naru"],
+    ["Kenshi Yonezu", "Lemon"]
   ],
   "2019": [
-    [
-      "Official髭男dism",
-      "Pretender"
-    ],
-    [
-      "LiSA",
-      "Gurenge"
-    ],
-    [
-      "King Gnu",
-      "Hakujitsu"
-    ]
+    ["AKB48", "Sustainable"],
+    ["AKB48", "Jiwaru Days"],
+    ["Nogizaka46", "Sing Out!"],
+    ["Nogizaka46", "Yoake Made Tsuyogaranakute Ii"],
+    ["Hinatazaka46", "Kyun"],
+    ["Keyakizaka46", "Kuroi Hitsuji"],
+    ["Hinatazaka46", "Konna ni Suki ni Natchatte Ii no?"],
+    ["Hinatazaka46", "Do Re Mi Sol La Si Do"],
+    ["Official Hige Dandism", "Pretender"],
+    ["LiSA", "Gurenge"]
   ],
   "2020": [
-    [
-      "YOASOBI",
-      "Yoru ni Kakeru"
-    ],
-    [
-      "Ado",
-      "Usseewa"
-    ],
-    [
-      "Fujii Kaze",
-      "Shinunoga E-Wa"
-    ],
-    [
-      "LiSA",
-      "Homura"
-    ],
-    [
-      "Vaundy",
-      "Kaiju no Hanauta"
-    ],
-    [
-      "Yuuri",
-      "Dry Flower"
-    ],
-    [
-      "Da-iCE",
-      "CITRUS"
-    ]
+    ["SixTONES vs Snow Man", "Imitation Rain / D.D."],
+    ["Snow Man", "KISSIN' MY LIPS / Stories"],
+    ["AKB48", "Shitsuren, Arigatō"],
+    ["Arashi", "Kaito"],
+    ["Nogizaka46", "Shiawase no Hogoshoku"],
+    ["King & Prince", "Mazy Night"],
+    ["King & Prince", "I promise"],
+    ["Twenty★Twenty", "smile"],
+    ["YOASOBI", "Yoru ni Kakeru"],
+    ["LiSA", "Homura"]
   ],
   "2021": [
-    [
-      "Tani Yuuki",
-      "W/X/Y"
-    ]
+    ["Snow Man", "Grandeur"],
+    ["Snow Man", "Hello Hello"],
+    ["Naniwa Danshi", "Ubu Love"],
+    ["Snow Man", "Secret Touch"],
+    ["King & Prince", "Koifuru Tsukiyo ni Kimi Omou"],
+    ["Nogizaka46", "Gomen ne Fingers crossed"],
+    ["Nogizaka46", "Kimi ni Shikarareta"],
+    ["BTS", "Butter"],
+    ["YOASOBI", "Kaibutsu"],
+    ["Yuuri", "Dry Flower"]
   ],
   "2022": [
-    [
-      "Official髭男dism",
-      "Subtitle"
-    ],
-    [
-      "Kenshi Yonezu",
-      "KICK BACK"
-    ],
-    [
-      "Mrs. GREEN APPLE",
-      "Dancehall"
-    ],
-    [
-      "NewJeans",
-      "Ditto"
-    ],
-    [
-      "Ado",
-      "New Genesis"
-    ]
+    ["Snow Man", "Brother Beat"],
+    ["Snow Man", "Orange Kiss"],
+    ["King & Prince", "Tsukiyomi / Irodori"],
+    ["King & Prince", "TraceTrace"],
+    ["Nogizaka46", "Suki to Iu no wa Rock da ze!"],
+    ["Naniwa Danshi", "The Answer / Sachiare"],
+    ["Nogizaka46", "Koko ni wa Nai Mono"],
+    ["Ado", "Shin Jidai (New Genesis)"],
+    ["Official Hige Dandism", "Subtitle"],
+    ["Tani Yuuki", "W / X / Y"]
   ],
   "2023": [
-    [
-      "YOASOBI",
-      "Idol"
-    ]
+    ["King & Prince", "Life goes on / We are young"],
+    ["Snow Man", "Tapestry / W"],
+    ["Snow Man", "Dangerholic"],
+    ["Stray Kids", "Social Path (feat. LiSA) / Super Bowl -Japanese ver.-"],
+    ["Nogizaka46", "Ohitorisama Tengoku"],
+    ["Naniwa Danshi", "Special Kiss"],
+    ["YOASOBI", "Idol"],
+    ["Mrs. GREEN APPLE", "Dance Hall"],
+    ["Vaundy", "Kaiju no Hana Uta"],
+    ["Kenshi Yonezu", "Kick Back"]
   ],
   "2024": [
-    [
-      "Creepy Nuts",
-      "Bling-Bang-Bang-Born"
-    ]
+    ["Creepy Nuts", "Bling-Bang-Bang-Born"],
+    ["Mrs. GREEN APPLE", "Lilac"],
+    ["tuki.", "Bansanka"],
+    ["Creepy Nuts", "Otonoke"],
+    ["Number_i", "GOAT"],
+    ["Kenshi Yonezu", "Sayonara Mata Itsuka!"],
+    ["Snow Man", "LOVE TRIGGER / We'll go together"],
+    ["Nogizaka46", "Chance wa Byōdō"],
+    ["INI", "LEGIT"],
+    ["Ado", "Kikaijikake no Sanka"]
+  ],
+  "2025": [
+    ["Snow Man", "SERIOUS"],
+    ["INI", "THE WINTER MAGIC(Present)"],
+    ["Nogizaka46", "Same numbers"],
+    ["JO1", "Handz In My Pocket"],
+    ["Nogizaka46", "ビリヤニ"],
+    ["Sakurazaka46", "Unhappy birthday構文"],
+    ["Nogizaka46", "ネーブルオレンジ"],
+    ["ENHYPEN", "宵 -YOI-(Shine On Me)"],
+    ["&TEAM", "Go in Blind (月狼)"],
+    ["timelesz", "Steal The Show/レシピ"]
   ],
   "2026": [
-    [
-      "Creepy Nuts",
-      "Bling-Bang-Bang-Born"
-    ],
-    [
-      "tuki.",
-      "Bansanka"
-    ],
-    [
-      "Omoinotake",
-      "Ikuokukonen"
-    ],
-    [
-      "YOASOBI",
-      "Idol"
-    ],
-    [
-      "Mrs. GREEN APPLE",
-      "Que Sera Sera"
-    ],
-    [
-      "Vaundy",
-      "Kaiju no Hanauta"
-    ],
-    [
-      "Ado",
-      "Show"
-    ],
-    [
-      "Kenshi Yonezu",
-      "Sayonara Mata Itsuka!"
-    ],
-    [
-      "Number_i",
-      "GOAT"
-    ],
-    [
-      "Official髭男dism",
-      "Subtitle"
-    ],
-    [
-      "King Gnu",
-      "SPECIALZ"
-    ],
-    [
-      "SPYAIR",
-      "Orange"
-    ],
-    [
-      "Yorushika",
-      "Haru"
-    ],
-    [
-      "Fuji Kaze",
-      "Michi Teyu Ku (Overflowing)"
-    ],
-    [
-      "Yuuri",
-      "Dry Flower"
-    ]
+    ["YESUNG", "Sakihokoru Toki o Matsu no wa"],
+    ["milet", "The Story of Us"],
+    ["Ado", "Vivarium"],
+    ["King Gnu", "AIZO"],
+    ["YESUNG", "Utsushikagami ~Nikushimi no Hokosaki~"],
+    ["YESUNG", "Fire ~Hai ni Nattemo, Moetsuku Bokura~"],
+    ["Ado", "アイ・アイ・ア"],
+    ["Mrs. GREEN APPLE", "lulu."],
+    ["嵐", "Five"],
+    ["milet", "Trace"]
   ]
 }
