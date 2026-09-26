@@ -69,7 +69,7 @@ export default function Home() {
           <span>
             Desarrollado por{' '}
             <a
-              href="https://bit.ly/ln-manfred-camacho"
+              href="https://bit.ly/ln-rewind-radio"
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
