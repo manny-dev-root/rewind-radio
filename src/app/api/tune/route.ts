@@ -1,7 +1,4 @@
-export const runtime = 'edge';
-
-import { NextResponse } from 'next/server';
-import { COUNTRIES, YEAR_MIN, YEAR_MAX } from '@/lib/constants';
+import { YEAR_MIN, YEAR_MAX } from '@/lib/constants';
 import type { TuneResponse, Track } from '@/types';
 
 declare global {
@@ -385,13 +382,13 @@ export async function GET(request: Request) {
     yearNum = Number(rawYear);
 
     if (!rawYear || isNaN(yearNum) || yearNum < YEAR_MIN || yearNum > YEAR_MAX) {
-      return NextResponse.json(
+      return Response.json(
         { error: `El año debe estar entre ${YEAR_MIN} y ${YEAR_MAX}` },
         { status: 400 }
       );
     }
     if (!countryCode || !/^[A-Z]{2}$/.test(countryCode)) {
-      return NextResponse.json(
+      return Response.json(
         { error: 'El país debe ser un código ISO de 2 letras' },
         { status: 400 }
       );
@@ -400,11 +397,8 @@ export async function GET(request: Request) {
     const cacheKey = `v8-roundrobin-${yearNum}-${countryCode}`;
     const cache = getCache();
     if (cache.has(cacheKey)) {
-      return NextResponse.json(cache.get(cacheKey), { headers: CACHE_HEADERS });
+      return Response.json(cache.get(cacheKey), { headers: CACHE_HEADERS });
     }
-
-    const countryObj = COUNTRIES.find((c) => c.code === countryCode);
-    const countryFullName = countryObj ? `${countryObj.name} (${countryCode})` : countryCode;
 
     const [itunesExactTracks, mbResult] = await Promise.all([
       fetchITunesExactYearSongs(yearNum, countryCode),
@@ -487,10 +481,10 @@ export async function GET(request: Request) {
     };
 
     cache.set(cacheKey, data);
-    return NextResponse.json(data, { headers: CACHE_HEADERS });
+    return Response.json(data, { headers: CACHE_HEADERS });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Error de sintonización';
-    return NextResponse.json(
+    return Response.json(
       {
         error: message,
         track: {
