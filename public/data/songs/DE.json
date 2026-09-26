@@ -1,842 +1,692 @@
 {
   "1970": [
-    [
-      "Peter Maffay",
-      "Du"
-    ],
-    [
-      "Roy Black",
-      "Dein schönstes Geschenk"
-    ],
-    [
-      "Miguel Ríos",
-      "A Song of Joy"
-    ],
-    [
-      "Simon & Garfunkel",
-      "El Condor Pasa"
-    ],
-    [
-      "Christian Anders",
-      "Geh nicht vorbei"
-    ],
-    [
-      "Heintje",
-      "Deine Tränen sind auch meine"
-    ],
-    [
-      "Daliah Lavi",
-      "Oh, wann kommst du?"
-    ],
-    [
-      "Marianne Rosenberg",
-      "Mr. Paul McCartney"
-    ],
-    [
-      "Katja Ebstein",
-      "Wunder gibt es immer wieder"
-    ],
-    [
-      "Howard Carpendale",
-      "Das schöne Mädchen von Seite 1"
-    ],
-    [
-      "Udo Jürgens",
-      "Babuschkin"
-    ],
-    [
-      "Chris Roberts",
-      "Die Maschen der Mädchen"
-    ],
-    [
-      "Karel Gott",
-      "Einmal um die ganze Welt"
-    ],
-    [
-      "Rex Gildo",
-      "Love a little bit (Melina)"
-    ],
-    [
-      "Bata Illic",
-      "Candida"
-    ],
-    [
-      "The Beatles",
-      "Let It Be"
-    ],
-    [
-      "Soulful Dynamics",
-      "Mademoiselle Ninette"
-    ],
-    [
-      "Mungo Jerry",
-      "In the Summertime"
-    ],
-    [
-      "Chris Roberts",
-      "Ich bin verliebt in die Liebe"
-    ],
-    [
-      "Black Sabbath",
-      "Paranoid"
-    ],
-    [
-      "Deep Purple",
-      "Black Night"
-    ],
-    [
-      "Norman Greenbaum",
-      "Spirit in the Sky"
-    ],
-    [
-      "Christie",
-      "Yellow River"
-    ],
-    [
-      "Free",
-      "All Right Now"
-    ],
-    [
-      "Led Zeppelin",
-      "Whole Lotta Love"
-    ]
+    ["Peter Maffay", "Du"],
+    ["Roy Black", "Dein schönstes Geschenk"],
+    ["Christian Anders", "Geh nicht vorbei"],
+    ["Heintje", "Deine Tränen sind auch meine"],
+    ["Daliah Lavi", "Oh, wann kommst du?"],
+    ["Marianne Rosenberg", "Mr. Paul McCartney"],
+    ["Katja Ebstein", "Wunder gibt es immer wieder"],
+    ["Howard Carpendale", "Das schöne Mädchen von Seite 1"],
+    ["Udo Jürgens", "Babuschkin"],
+    ["Karel Gott", "Einmal um die ganze Welt"]
   ],
   "1971": [
-    [
-      "Danyel Gérard",
-      "Butterfly"
-    ],
-    [
-      "George Harrison",
-      "My Sweet Lord"
-    ],
-    [
-      "Middle of the Road",
-      "Chirpy Chirpy Cheep Cheep"
-    ],
-    [
-      "Tony Marshall",
-      "Schöne Maid"
-    ],
-    [
-      "T. Rex",
-      "Hot Love"
-    ],
-    [
-      "The Sweet",
-      "Co-Co"
-    ],
-    [
-      "Peret",
-      "Borriquito"
-    ],
-    [
-      "Chris Roberts",
-      "Hab' ich dir heute schon gesagt, daß ich dich liebe"
-    ],
-    [
-      "Udo Jürgens",
-      "Zeig mir den Platz an der Sonne"
-    ],
-    [
-      "Christian Anders",
-      "Es fährt ein Zug nach Nirgendwo"
-    ],
-    [
-      "Peter Maffay",
-      "Du bist anders"
-    ],
-    [
-      "T. Rex",
-      "Get It On"
-    ],
-    [
-      "Slade",
-      "Coz I Luv You"
-    ],
-    [
-      "The Rolling Stones",
-      "Brown Sugar"
-    ],
-    [
-      "Rod Stewart",
-      "Maggie May"
-    ]
+    ["Danyel Gérard", "Butterfly"],
+    ["Tony Marshall", "Schöne Maid"],
+    ["Chris Roberts", "Hab' ich dir heute schon gesagt, daß ich dich liebe"],
+    ["Udo Jürgens", "Zeig mir den Platz an der Sonne"],
+    ["Christian Anders", "Es fährt ein Zug nach Nirgendwo"],
+    ["Peter Maffay", "Du bist anders"],
+    ["Roy Black", "Schön ist es auf der Welt zu sein"],
+    ["Heino", "Mohikana Shalali"],
+    ["Bata Illic", "Judy, I Love You"],
+    ["Michael Holm", "Ein verrückter Tag"]
   ],
   "1972": [
-    [
-      "Christian Anders",
-      "Es fährt ein Zug nach Nirgendwo"
-    ],
-    [
-      "Tony Marshall",
-      "Komm gib mir deine Hand"
-    ],
-    [
-      "The Sweet",
-      "Poppa Joe"
-    ],
-    [
-      "The Sweet",
-      "Little Willy"
-    ],
-    [
-      "T. Rex",
-      "Metal Guru"
-    ],
-    [
-      "T. Rex",
-      "Children of the Revolution"
-    ],
-    [
-      "Julio Iglesias",
-      "Un Canto A Galicia"
-    ],
-    [
-      "Vicky Leandros",
-      "Dann kamst du"
-    ],
-    [
-      "Mouth & MacNeal",
-      "Hello-A"
-    ],
-    [
-      "Willem",
-      "Tarzan ist wieder da"
-    ],
-    [
-      "Bata Illic",
-      "Michaela"
-    ],
-    [
-      "Jürgen Marcus",
-      "Eine neue Liebe ist wie ein neues Leben"
-    ],
-    [
-      "Alice Cooper",
-      "School's Out"
-    ],
-    [
-      "Slade",
-      "Mama Weer All Crazee Now"
-    ],
-    [
-      "Don McLean",
-      "American Pie"
-    ],
-    [
-      "CAN",
-      "Spoon"
-    ],
-    [
-      "Neu!",
-      "Hallogallo"
-    ]
+    ["Vicky Leandros", "Dann kamst du"],
+    ["Jürgen Marcus", "Eine neue Liebe ist wie ein neues Leben"],
+    ["Bata Illic", "Michaela"],
+    ["Heino", "Blau blüht der Enzian"],
+    ["Rex Gildo", "Fiesta Mexicana"],
+    ["Udo Jürgens", "Vergiss die Liebe nicht"],
+    ["Roy Black", "Träume in Samt und Seide"],
+    ["Chris Roberts", "Love Me"],
+    ["Tony Marshall", "Komm gib mir deine Hand"],
+    ["Christian Anders", "Das Schiff der großen Illusionen"]
   ],
   "1973": [
-    [
-      "Udo Lindenberg",
-      "Alles klar auf der Andrea Doria"
-    ],
-    [
-      "Otto Waalkes",
-      "Dänemark"
-    ]
+    ["Bernd Clüver", "Der Junge mit der Mundharmonika"],
+    ["Demis Roussos", "Goodbye, My Love, Goodbye"],
+    ["Jürgen Marcus", "Ein Festival der Liebe"],
+    ["Heino", "Tampico"],
+    ["Chris Roberts", "Mein Name ist Hase"],
+    ["Udo Jürgens", "Der Teufel hat den Schnaps gemacht"],
+    ["Katja Ebstein", "Der Stern von Mykonos"],
+    ["Cindy & Bert", "Immer wieder sonntags"],
+    ["Rex Gildo", "Marie, der letzte Tanz ist nur für dich"],
+    ["Costa Cordalis", "Carolina, komm"]
   ],
   "1974": [
-    [
-      "Kraftwerk",
-      "Autobahn"
-    ],
-    [
-      "Tangerine Dream",
-      "Phaedra"
-    ],
-    [
-      "Michael Holm",
-      "Tränen lügen nicht"
-    ]
+    ["Kraftwerk", "Autobahn"],
+    ["Michael Holm", "Tränen lügen nicht"],
+    ["Carl Douglas", "Kung Fu Fighting"],
+    ["Udo Jürgens", "Geschiedene Frau"],
+    ["Jürgen Marcus", "Schmetterlinge können nicht weinen"],
+    ["Costa Cordalis", "Steig in das Boot heute Nacht, Anna Lena"],
+    ["Heino", "La Montanara"],
+    ["Rex Gildo", "Der Sommer ist vorbei"],
+    ["Chris Roberts", "Du kannst nicht immer 17 sein"],
+    ["Peter Maffay", "Samstag Abend in unserer Straße"]
   ],
   "1975": [
+    ["Udo Jürgens", "Griechischer Wein"],
+    ["Kraftwerk", "Radioaktivität"],
     [
-      "Marianne Rosenberg",
-      "Er gehört zu mir"
+      "Juliane Werding",
+      "Wenn du denkst, du denkst, dann denkst du nur, du denkst"
     ],
-    [
-      "Silver Convention",
-      "Fly, Robin, Fly"
-    ]
+    ["Penny McLean", "Lady Bump"],
+    ["Silver Convention", "Fly, Robin, Fly"],
+    ["Michael Holm", "Wart' auf mich"],
+    ["Costa Cordalis", "Anita"],
+    ["Jürgen Marcus", "Ein Lied zieht hinaus in die Welt"],
+    ["Howard Carpendale", "Deine Spuren im Sand"],
+    ["Rex Gildo", "Der letzte Sirtaki"]
+  ],
+  "1976": [
+    ["Boney M.", "Daddy Cool"],
+    ["Jürgen Drews", "Ein Bett im Kornfeld"],
+    ["Frank Farian", "Rocky"],
+    ["Penny McLean", "1, 2, 3, 4 ... Fire!"],
+    ["Silver Convention", "Get Up and Boogie"],
+    ["Udo Jürgens", "Aber bitte mit Sahne"],
+    ["Howard Carpendale", "Fremde oder Freunde"],
+    ["Costa Cordalis", "Die Blumen der Nacht"],
+    ["Rex Gildo", "Küsse von dir"],
+    ["Michael Holm", "Musst du jetzt gerade gehen, Lucille"]
   ],
   "1977": [
-    [
-      "Vader Abraham",
-      "Das Lied der Schlümpfe"
-    ]
+    ["Boney M.", "Ma Baker"],
+    ["Kraftwerk", "Trans Europa Express"],
+    ["Udo Jürgens", "Mit 66 Jahren"],
+    ["Howard Carpendale", "Ti amo"],
+    ["Costa Cordalis", "Don Pedro"],
+    ["Peter Maffay", "Und es war Sommer"],
+    ["Jürgen Drews", "Barfuß durch den Sommer"],
+    ["Frank Farian", "Spring über deinen Schatten, Tommy"],
+    ["Amanda Lear", "Queen of Chinatown"],
+    ["Baccara", "Yes Sir, I Can Boogie"]
   ],
   "1978": [
-    [
-      "Kraftwerk",
-      "Das Model"
-    ],
-    [
-      "Boney M.",
-      "Rasputin"
-    ],
-    [
-      "Boney M.",
-      "Rivers of Babylon"
-    ]
+    ["Boney M.", "Rasputin"],
+    ["Kraftwerk", "Das Model"],
+    ["Udo Lindenberg", "Wir wollen doch einfach nur zusammen sein"],
+    ["Nina Hagen Band", "TV-Glotzer"],
+    ["Supermax", "Lovemachine"],
+    ["Eruption", "I Can't Stand the Rain"],
+    ["Howard Carpendale", "Dann geh doch"],
+    ["Peter Maffay", "Tiefer"],
+    ["Udo Jürgens", "Buenos Dias, Argentina"],
+    ["Costa Cordalis", "Nimm das nächste Schiff nach Rhodos"]
   ],
   "1979": [
-    [
-      "Scorpions",
-      "Holiday"
-    ],
-    [
-      "Dschinghis Khan",
-      "Dschinghis Khan"
-    ]
+    ["Dschinghis Khan", "Dschinghis Khan"],
+    ["Boney M.", "Hooray! Hooray! It's a Holi-Holiday"],
+    ["Peter Maffay", "So bist du"],
+    ["Eruption", "One Way Ticket"],
+    ["Supermax", "It Ain't Easy"],
+    ["Udo Jürgens", "Ein ehrenwertes Haus"],
+    ["Howard Carpendale", "Nachts, wenn alles schläft"],
+    ["Costa Cordalis", "Der Wein von Samos"],
+    ["Roland Kaiser", "Schach-Matt"],
+    ["Hoffmann & Hoffmann", "Himbeereis zum Frühstück"]
   ],
   "1980": [
-    [
-      "Rheingold",
-      "Dreiklangs-Dimensionen"
-    ]
+    ["Roland Kaiser", "Santa Maria"],
+    ["Peter Maffay", "Weil es dich gibt"],
+    ["Dschinghis Khan", "Rom"],
+    ["Howard Carpendale", "Wie frei willst du sein"],
+    ["Udo Jürgens", "Ich weiß, was ich will"],
+    ["Gitte", "Freu dich bloß nicht zu früh"],
+    ["Costa Cordalis", "Pan"],
+    ["Karat", "Über sieben Brücken mußt du gehn"],
+    ["City", "Am Fenster"],
+    ["Puhdys", "Alt wie ein Baum"]
   ],
   "1981": [
-    [
-      "Spider Murphy Gang",
-      "Skandal im Sperrbezirk"
-    ],
-    [
-      "BAP",
-      "Verdamp lang her"
-    ]
+    ["Spider Murphy Gang", "Skandal im Sperrbezirk"],
+    ["Peter Maffay", "Lieber Gott"],
+    ["Roland Kaiser", "Lieb' mich ein letztes Mal"],
+    ["BAP", "Verdamp lang her"],
+    ["DAF", "Der Mussolini"],
+    ["Fehlfarben", "Ein Jahr (Es geht voran)"],
+    ["Ideal", "Blaue Augen"],
+    ["Rheingold", "Dreiklangsdimensionen"],
+    ["Trio", "Halt mich fest ich werd verrückt"],
+    ["Extrabreit", "Polizisten"]
   ],
   "1982": [
-    [
-      "Peter Schilling",
-      "Major Tom (Völlig losgelöst)"
-    ],
-    [
-      "Trio",
-      "Da Da Da"
-    ],
-    [
-      "Hubert Kah",
-      "Sternenhimmel"
-    ]
+    ["Trio", "Da Da Da"],
+    ["Nena", "Nur geträumt"],
+    ["Peter Schilling", "Major Tom (Völlig losgelöst)"],
+    ["Spider Murphy Gang", "Schickeria"],
+    ["Hubert Kah", "Sternenhimmel"],
+    ["Markus", "Ich will Spaß"],
+    ["Fräulein Menke", "Hohe Berge"],
+    ["UKW", "Sommersprossen"],
+    ["Geier Sturzflug", "Bruttosozialprodukt"],
+    ["Foyer des Arts", "Wissenswertes über Erlangen"]
   ],
   "1983": [
-    [
-      "Nena",
-      "99 Luftballons"
-    ]
+    ["Nena", "99 Luftballons"],
+    ["Peter Schilling", "Die Wüste lebt"],
+    ["Geier Sturzflug", "Besuchen Sie Europa"],
+    ["DÖF", "Codo (...düse im Sauseschritt)"],
+    ["Relax", "Weil i di mog"],
+    ["Hubert Kah", "Einmal nur mit Erika"],
+    ["Spider Murphy Gang", "Mir san a bayrische Band"],
+    ["Markus", "Kleine Taschenlampe brenn'"],
+    ["BAP", "Kristallnaach"],
+    ["Udo Lindenberg", "Sonderzug nach Pankow"]
   ],
   "1984": [
-    [
-      "Alphaville",
-      "Forever Young"
-    ],
-    [
-      "Alphaville",
-      "Big in Japan"
-    ],
-    [
-      "Modern Talking",
-      "You're My Heart, You're My Soul"
-    ],
-    [
-      "Scorpions",
-      "Rock You Like a Hurricane"
-    ],
-    [
-      "Scorpions",
-      "Still Loving You"
-    ],
-    [
-      "Herbert Grönemeyer",
-      "Männer"
-    ],
-    [
-      "Herbert Grönemeyer",
-      "Flugzeuge im Bauch"
-    ],
-    [
-      "Die Ärzte",
-      "Paul"
-    ],
-    [
-      "Klaus Lage Band",
-      "1000 und 1 Nacht (Zoom!)"
-    ],
-    [
-      "Spider Murphy Gang",
-      "Pfüati Gott Elisabeth"
-    ],
-    [
-      "Nena",
-      "Irgendwie, irgendwo, irgendwann"
-    ],
-    [
-      "Nena",
-      "Fragezeichen"
-    ],
-    [
-      "BAP",
-      "Alexandra, nit nur do"
-    ],
-    [
-      "Peter Schilling",
-      "Terra Titanic"
-    ],
-    [
-      "Hubert Kah",
-      "Engel 07"
-    ],
-    [
-      "Die Ärzte",
-      "Zu spät"
-    ]
+    ["Alphaville", "Big in Japan"],
+    ["Scorpions", "Still Loving You"],
+    ["Herbert Grönemeyer", "Männer"],
+    ["Modern Talking", "You're My Heart, You're My Soul"],
+    ["Klaus Lage Band", "1000 und 1 Nacht (Zoom!)"],
+    ["Nena", "Irgendwie, irgendwo, irgendwann"],
+    ["BAP", "Wellenaenge"],
+    ["Peter Schilling", "Terra Titanic"],
+    ["Hubert Kah", "Engel 07"],
+    ["Spider Murphy Gang", "Pfüati Gott, Elisabeth"]
   ],
   "1985": [
-    [
-      "Modern Talking",
-      "You Can Win If You Want"
-    ],
-    [
-      "Modern Talking",
-      "Cheri Cheri Lady"
-    ],
-    [
-      "Münchener Freiheit",
-      "Ohne dich (schlaf ich heut nacht nicht ein)"
-    ],
-    [
-      "Falco",
-      "Rock Me Amadeus"
-    ],
-    [
-      "Falco",
-      "Vienna Calling"
-    ],
-    [
-      "Sandra",
-      "Maria Magdalena"
-    ],
-    [
-      "Erste Allgemeine Verunsicherung",
-      "Ba-Ba-Banküberfall"
-    ],
-    [
-      "Die Ärzte",
-      "Wegen dir"
-    ],
-    [
-      "Klaus Lage Band",
-      "Faust auf Faust"
-    ],
-    [
-      "Heinz Rudolf Kunze",
-      "Dein ist mein ganzes Herz"
-    ],
-    [
-      "Nena",
-      "Feuer und Flamme"
-    ],
-    [
-      "Bad Boys Blue",
-      "You're a Woman"
-    ],
-    [
-      "Propaganda",
-      "p:Machinery"
-    ],
-    [
-      "Trio",
-      "Drei Mann im Doppelbett"
-    ],
-    [
-      "Udo Lindenberg",
-      "Horizont"
-    ]
+    ["Modern Talking", "Cheri Cheri Lady"],
+    ["Sandra", "Maria Magdalena"],
+    ["Münchener Freiheit", "Ohne dich (schlaf ich heut nacht nicht ein)"],
+    ["Klaus Lage", "Faust auf Faust"],
+    ["Heinz Rudolf Kunze", "Dein ist mein ganzes Herz"],
+    ["Nena", "Feuer und Flamme"],
+    ["Bad Boys Blue", "You're a Woman"],
+    ["Propaganda", "p:Machinery"],
+    ["Trio", "Drei Mann im Doppelbett"],
+    ["Udo Lindenberg", "Horizont"]
+  ],
+  "1986": [
+    ["Modern Talking", "Brother Louie"],
+    ["Sandra", "In the Heat of the Night"],
+    ["Münchener Freiheit", "Tausendmal du"],
+    ["Scorpions", "Rhythm of Love"],
+    ["Erste Allgemeine Verunsicherung", "Ba-Ba-Banküberfall"],
+    ["Falco", "Jeanny, Part I"],
+    ["Herbert Grönemeyer", "Kinder an die Macht"],
+    ["BAP", "Time Is Cash, Time Is Money"],
+    ["Die Toten Hosen", "Das Wort zum Sonntag"],
+    ["Die Ärzte", "Du willst mich küssen"]
   ],
   "1987": [
-    [
-      "Camouflage",
-      "The Great Commandment"
-    ]
+    ["Camouflage", "The Great Commandment"],
+    ["Modern Talking", "Geronimo's Cadillac"],
+    ["Sandra", "Everlasting Love"],
+    ["Münchener Freiheit", "So lang' man Träume noch leben kann"],
+    ["Bad Boys Blue", "Come Back and Stay"],
+    ["C.C. Catch", "Heartbreak Hotel"],
+    ["Blue System", "Sorry Little Sarah"],
+    ["Die Ärzte", "Gehn wie ein Ägypter"],
+    ["Die Toten Hosen", "Liebeslied"],
+    ["Herbert Grönemeyer", "Vollmond"]
   ],
   "1988": [
-    [
-      "Die Toten Hosen",
-      "Hier kommt Alex"
-    ]
+    ["Milli Vanilli", "Girl You Know It's True"],
+    ["Die Toten Hosen", "Hier kommt Alex"],
+    ["Scorpions", "Believe in Love"],
+    ["Sandra", "Secret Land"],
+    ["Blue System", "My Bed Is Too Big"],
+    ["C.C. Catch", "Backseat of Your Cadillac"],
+    ["Camouflage", "Strangers' Thoughts"],
+    ["Bad Boys Blue", "A World Without You"],
+    ["BAP", "Fortsetzung folgt"],
+    ["Herbert Grönemeyer", "Halt mich"]
+  ],
+  "1989": [
+    ["Milli Vanilli", "Blame It on the Rain"],
+    ["Scorpions", "I Can't Explain"],
+    ["David Hasselhoff", "Looking for Freedom"],
+    ["Sandra", "Hiroshima"],
+    ["Blue System", "Magic Symphony"],
+    ["Camouflage", "Love Is a Shield"],
+    ["Bad Boys Blue", "Hungry for Love"],
+    ["Die Ärzte", "Bitte bitte"],
+    ["Die Toten Hosen", "All die ganzen Jahre"],
+    ["Marius Müller-Westernhagen", "Sexy"]
   ],
   "1990": [
-    [
-      "Scorpions",
-      "Wind of Change"
-    ]
+    ["Scorpions", "Wind of Change"],
+    ["Snap!", "The Power"],
+    ["Enigma", "Sadeness (Part I)"],
+    ["Matthias Reim", "Verdammt, ich lieb' dich"],
+    ["Marius Müller-Westernhagen", "Freiheit"],
+    ["Erste Allgemeine Verunsicherung", "Ding Dong"],
+    ["Torfrock", "Beinhart"],
+    ["Die Toten Hosen", "Azzurro"],
+    ["BAP", "Vis a Vis"],
+    ["Herbert Grönemeyer", "Luxus"]
   ],
   "1991": [
-    [
-      "U96",
-      "Das Boot"
-    ]
+    ["Scorpions", "Send Me an Angel"],
+    ["Snap!", "Colour of Love"],
+    ["Enigma", "Mea Culpa (Part II)"],
+    ["U96", "Das Boot"],
+    ["Diether Krebs", "Martin, ne..."],
+    ["Hape Kerkeling", "Hurz!"],
+    ["Karl Dall", "Millionen Frauen lieben mich"],
+    ["Marius Müller-Westernhagen", "Krieg"],
+    ["Die Prinzen", "Gabi und Klaus"],
+    ["Pur", "Lena"]
   ],
   "1992": [
-    [
-      "Snap!",
-      "Rhythm Is a Dancer"
-    ],
-    [
-      "Die Fantastischen Vier",
-      "Die Da!?!"
-    ]
+    ["Snap!", "Rhythm Is a Dancer"],
+    ["Dr. Alban", "It's My Life"],
+    ["Die Fantastischen Vier", "Die Da!?!"],
+    ["U96", "I Wanna Be a Kennedy"],
+    ["Captain Hollywood Project", "More and More"],
+    ["Culture Beat", "No Deeper Meaning"],
+    ["Haddaway", "What Is Love"],
+    ["Die Prinzen", "Küssen verboten"],
+    ["Pur", "Abenteuerland"],
+    ["Marius Müller-Westernhagen", "Willenlos"]
   ],
   "1993": [
-    [
-      "Haddaway",
-      "What Is Love"
-    ],
-    [
-      "Culture Beat",
-      "Mr. Vain"
-    ]
+    ["Haddaway", "Life"],
+    ["Culture Beat", "Mr. Vain"],
+    ["Jam & Spoon", "Right in the Night"],
+    ["Captain Hollywood Project", "Only with You"],
+    ["Die Fantastischen Vier", "Zu geil für diese Welt"],
+    ["Die Prinzen", "Alles nur geklaut"],
+    ["Pur", "Hör gut zu"],
+    ["Die Toten Hosen", "Wünsch DIR was"],
+    ["Die Ärzte", "Schrei nach Liebe"],
+    ["BAP", "Widderlich"]
   ],
   "1994": [
-    [
-      "Scooter",
-      "Hyper Hyper"
-    ]
+    ["Scooter", "Hyper Hyper"],
+    ["Mark'Oh", "Tears Don't Lie"],
+    ["Marusha", "Somewhere Over the Rainbow"],
+    ["Mo-Do", "Eins, Zwei, Polizei"],
+    ["La Bouche", "Sweet Dreams"],
+    ["Magic Affair", "Omen III"],
+    ["Lucilectric", "Mädchen"],
+    ["Die Fantastischen Vier", "Tag am Meer"],
+    ["Pur", "Indianer"],
+    ["Kelly Family", "An Angel"]
   ],
   "1995": [
-    [
-      "Blümchen",
-      "Herz an Herz"
-    ]
+    ["La Bouche", "Be My Lover"],
+    ["Captain Jack", "Captain Jack"],
+    ["Mr. President", "Up'n Away"],
+    ["Fun Factory", "I Wanna B with U"],
+    ["Real McCoy", "Another Night"],
+    ["Sin With Sebastian", "Shut Up (and Sleep with Me)"],
+    ["Die Fantastischen Vier", "Sie ist weg"],
+    ["Fettes Brot", "Nordisch by Nature"],
+    ["Die Doofen", "Mief! (Nimm mich jetzt, auch wenn ich stinke!)"],
+    ["Pur", "Ich lieb' dich"]
   ],
   "1996": [
-    [
-      "Die Toten Hosen",
-      "Zehn kleine Jägermeister"
-    ]
+    ["Tic Tac Toe", "Verpiss' dich"],
+    ["Mr. President", "Coco Jamboo"],
+    ["Captain Jack", "Drill Instructor"],
+    ["Blümchen", "Herz an Herz"],
+    ["Scooter", "I'm Raving"],
+    ["Faithless", "Insomnia"],
+    ["Die Toten Hosen", "Zehn kleine Jägermeister"],
+    ["Die Ärzte", "3-Tage-Bart"],
+    ["Rammstein", "Seemann"],
+    ["Pur", "Geweint vor Glück"]
   ],
   "1997": [
-    [
-      "Rammstein",
-      "Du Hast"
-    ],
-    [
-      "Rammstein",
-      "Engel"
-    ],
-    [
-      "Guano Apes",
-      "Open Your Eyes"
-    ],
-    [
-      "Sash!",
-      "Ecuador"
-    ]
+    ["Rammstein", "Du Hast"],
+    ["Rammstein", "Engel"],
+    ["Bellini", "Samba de Janeiro"],
+    ["Sash!", "Ecuador"],
+    ["Scooter", "Fire"],
+    ["Nana", "Lonely"],
+    ["C-Block", "So Strung Out"],
+    ["Down Low", "Johnny B."],
+    ["Sabrina Setlur", "Du liebst mich nicht"],
+    ["Tic Tac Toe", "Warum?"]
   ],
   "1998": [
-    [
-      "Die Ärzte",
-      "Männer sind Schweine"
-    ]
+    ["Die Ärzte", "Männer sind Schweine"],
+    ["Rammstein", "Stripped"],
+    ["Scooter", "How Much Is the Fish?"],
+    ["Sash!", "La Primavera"],
+    ["Modern Talking", "You're My Heart, You're My Soul '98"],
+    ["Falco", "Out of the Dark"],
+    ["Oli.P", "Flugzeuge im Bauch"],
+    ["Xavier Naidoo", "Nicht von dieser Welt"],
+    ["Franka Potente", "Believe"],
+    ["Guano Apes", "Lords of the Boards"]
   ],
   "1999": [
-    [
-      "Lou Bega",
-      "Mambo No. 5"
-    ]
+    ["Lou Bega", "Mambo No. 5"],
+    ["Eiffel 65", "Blue (Da Ba Dee)"],
+    ["Bloodhound Gang", "The Bad Touch"],
+    ["Scooter", "Faster Harder Scooter"],
+    ["ATB", "9 PM (Till I Come)"],
+    ["Paul van Dyk", "For an Angel"],
+    ["Stefan Raab", "Maschen-Draht-Zaun"],
+    ["Xavier Naidoo", "Sie sieht mich nicht"],
+    ["Die Fantastischen Vier", "MfG"],
+    ["Rammstein", "Das Modell"]
   ],
   "2000": [
-    [
-      "Paul van Dyk",
-      "For an Angel"
-    ]
+    ["Anton feat. DJ Ötzi", "Anton aus Tirol"],
+    ["Zlatko", "Ich vermiss' dich... (wie die Hölle)"],
+    ["ATC", "Around the World (La La La La La)"],
+    ["Darude", "Sandstorm"],
+    ["Rammstein", "Asche zu Asche"],
+    ["Paul van Dyk", "We Are Alive"],
+    ["Scooter", "The Logical Song"],
+    ["Reamonn", "Supergirl"],
+    ["Die Ärzte", "Wie es geht"],
+    ["Die Toten Hosen", "Bayern"]
   ],
   "2001": [
-    [
-      "Rammstein",
-      "Sonne"
-    ],
-    [
-      "Scooter",
-      "The Logical Song"
-    ]
+    ["No Angels", "Daylight in Your Eyes"],
+    ["Rammstein", "Sonne"],
+    ["Scooter", "Posse (I Need You on the Floor)"],
+    ["Safri Duo", "Played-A-Live"],
+    ["Sarah Connor", "Let's Get Back to Bed - Boy!"],
+    ["Bro'Sis", "I Believe"],
+    ["Sylver", "Turn the Tide"],
+    ["Schiller", "Dream of You"],
+    ["Xavier Naidoo", "Wo willst du hin?"],
+    ["Pur", "Immer noch da"]
   ],
   "2002": [
-    [
-      "Groove Coverage",
-      "Moonlight Shadow"
-    ],
-    [
-      "Wir sind Helden",
-      "Guten Tag"
-    ]
+    ["Herbert Grönemeyer", "Mensch"],
+    ["No Angels", "Something About Us"],
+    ["Sarah Connor", "From Sarah with Love"],
+    ["Ben feat. Gim", "Engel"],
+    ["Las Ketchup", "The Ketchup Song (Aserejé)"],
+    ["Scooter", "Nessaja"],
+    ["Groove Coverage", "Moonlight Shadow"],
+    ["Novaspace", "Time After Time"],
+    ["Die Toten Hosen", "Steh auf, wenn du am Boden bist"],
+    ["Die Ärzte", "Unrockbar"]
+  ],
+  "2003": [
+    ["Deutschland sucht den Superstar", "We Have a Dream"],
+    ["Alexander Klaws", "Take Me Tonight"],
+    ["Daniel Küblböck", "You Drive Me Crazy"],
+    ["Yvonne Catterfeld", "Für dich"],
+    ["Buddy", "Ab in den Süden"],
+    ["Outlandish", "Aicha"],
+    ["Scooter", "Maria (I Like It Loud)"],
+    ["Rammstein", "Mutter"],
+    ["Wir sind Helden", "Guten Tag"],
+    ["Seeed", "Waterpumpee"]
   ],
   "2004": [
-    [
-      "Silbermond",
-      "Symphonie"
-    ],
-    [
-      "Juli",
-      "Perfekte Welle"
-    ],
-    [
-      "Sido",
-      "Mein Block"
-    ]
+    ["O-Zone", "Dragostea Din Tei"],
+    ["Haiducii", "Dragostea Din Tei"],
+    ["Juli", "Perfekte Welle"],
+    ["Silbermond", "Symphonie"],
+    ["Sido", "Mein Block"],
+    ["Rammstein", "Amerika"],
+    ["Scooter", "One (Always Hardcore)"],
+    ["Sarah Connor", "Living to Love You"],
+    ["Max Mutzke", "Can't Wait Until Tonight"],
+    ["Rosenstolz", "Liebe ist alles"]
   ],
   "2005": [
-    [
-      "Tokio Hotel",
-      "Durch den Monsun"
-    ],
-    [
-      "Seeed",
-      "Ding"
-    ],
-    [
-      "Cascada",
-      "Everytime We Touch"
-    ],
-    [
-      "Xavier Naidoo",
-      "Dieser Weg"
-    ]
+    ["Tokio Hotel", "Durch den Monsun"],
+    ["Rammstein", "Benzin"],
+    ["Schnappi", "Schnappi, das kleine Krokodil"],
+    ["Fettes Brot", "Emanuela"],
+    ["Seeed", "Aufstehn!"],
+    ["Wir sind Helden", "Nur ein Wort"],
+    ["Sido", "Mama ist stolz"],
+    ["Bushido", "Endgegner"],
+    ["Sarah Connor", "From Zero to Hero"],
+    ["US5", "Maria"]
   ],
   "2006": [
-    [
-      "Bushido",
-      "Sonnenbank Flavour"
-    ]
+    ["Texas Lightning", "No No Never"],
+    ["Sportfreunde Stiller", "'54, '74, '90, 2010"],
+    ["Silbermond", "Das Beste"],
+    ["Juli", "Dieses Leben"],
+    ["Rosenstolz", "Ich bin ich (Wir sind wir)"],
+    ["Bushido", "Sonnenbank Flavour"],
+    ["Sido", "Strassenjunge"],
+    ["LaFee", "Virus"],
+    ["Rammstein", "Mann gegen Mann"],
+    ["Scooter", "Apache Rocks the Bottom!"]
   ],
   "2007": [
-    [
-      "Ich + Ich",
-      "Vom selben Stern"
-    ]
+    ["DJ Ötzi & Nik P.", "Ein Stern (...der deinen Namen trägt)"],
+    ["Ich + Ich", "Vom selben Stern"],
+    ["Mark Medlock", "Now or Never"],
+    ["Bushido", "Alles verloren"],
+    ["Sido", "Schlechtes Vorbild"],
+    ["Culcha Candela", "Hamma!"],
+    ["K.I.Z.", "Geld essen"],
+    ["Rammstein", "Te quiero puta!"],
+    ["Scooter", "The Question Is What Is the Question?"],
+    ["Die Fantastischen Vier", "Ernten was wir säen"]
   ],
   "2008": [
+    ["Peter Fox", "Haus am See"],
+    ["Polarkreis 18", "Allein Allein"],
+    ["Ich + Ich", "Stark"],
+    ["Mark Medlock", "Summer Love"],
+    ["Stefanie Heinzmann", "My Man Is a Mean Man"],
+    ["Thomas Godoj", "Love Is You"],
+    ["Bushido", "Ching Ching"],
+    ["Sido", "Carmen"],
+    ["Fettes Brot", "Bettina, zieh dir bitte etwas an"],
+    ["Scooter", "Jumping All Over the World"]
+  ],
+  "2009": [
+    ["Cassandra Steen feat. Adel Tawil", "Stadt"],
+    ["Silbermond", "Irgendwas bleibt"],
+    ["Sportfreunde Stiller", "Ein Kompliment (Unplugged)"],
+    ["Frauenarzt & Manny Marc", "Das geht ab!"],
+    ["Emiliana Torrini", "Jungle Drum"],
+    ["Rammstein", "Pussy"],
+    ["Bushido", "Alles wird gut"],
+    ["Sido", "Hey du!"],
+    ["K.I.Z.", "Ein Affe und ein Pferd"],
+    ["Scooter", "J'adore Hardcore"]
+  ],
+  "2010": [
+    ["Lena", "Satellite"],
+    ["Unheilig", "Geboren um zu leben"],
+    ["Israel Kamakawiwo'ole", "Over the Rainbow"],
+    ["Shakira", "Waka Waka (This Time for Africa)"],
+    ["Rammstein", "Haifisch"],
+    ["Bushido", "Zeiten ändern dich"],
+    ["Sido", "Der Himmel soll warten"],
+    ["Marteria", "Sekunden Schlaf"],
     [
-      "Peter Fox",
-      "Haus am See"
-    ]
+      "Die Fantastischen Vier",
+      "Gebt uns ruhig die Schuld (den Rest könnt ihr behalten)"
+    ],
+    ["Scooter", "Stuck on Replay"]
   ],
   "2011": [
-    [
-      "Cro",
-      "Easy"
-    ]
+    ["Pietro Lombardi", "Call My Name"],
+    ["Tim Bendzko", "Nur noch kurz die Welt retten"],
+    ["Jupiter Jones", "Still"],
+    ["Casper", "So perfekt"],
+    ["Cro", "Easy"],
+    ["Rammstein", "Mein Land"],
+    ["Bushido", "Vergiss mich"],
+    ["Sido", "Hol doch die Polizei"],
+    ["Marteria", "Lila Wolken"],
+    ["Kraftklub", "Ich will nicht nach Berlin"]
   ],
   "2012": [
-    [
-      "Zedd",
-      "Clarity"
-    ],
-    [
-      "Sido",
-      "Bilder im Kopf"
-    ],
-    [
-      "Kraftklub",
-      "Songs für Liam"
-    ]
+    ["Die Toten Hosen", "Tage wie diese"],
+    ["Cro", "Einmal um die Welt"],
+    ["Kraftklub", "Songs für Liam"],
+    ["Seeed", "Augenbling"],
+    ["Marteria", "Kids (2 Finger an den Kopf)"],
+    ["Rammstein", "Mein Herz brennt"],
+    ["Bushido", "Theorie & Praxis"],
+    ["Sido", "Bilder im Kopf"],
+    ["Kollegah & Farid Bang", "Dynamit"],
+    ["Farid Bang", "Pusher"]
   ],
   "2013": [
-    [
-      "Milky Chance",
-      "Stolen Dance"
-    ],
-    [
-      "Helene Fischer",
-      "Atemlos durch die Nacht"
-    ]
+    ["Helene Fischer", "Atemlos durch die Nacht"],
+    ["Milky Chance", "Stolen Dance"],
+    ["Klingande", "Jubel"],
+    ["Rammstein", "Sonne (Piano Version)"],
+    ["Bushido", "Panamera Flow"],
+    ["Sido", "Einer dieser Steine"],
+    ["Kollegah & Farid Bang", "Stiernackenkommando"],
+    ["Farid Bang", "Bitte Spitte Toi Lab"],
+    ["Cro", "Whatever"],
+    ["Casper", "Im Ascheregen"]
   ],
   "2014": [
-    [
-      "Andreas Bourani",
-      "Auf uns"
-    ]
+    ["Andreas Bourani", "Auf uns"],
+    ["Helene Fischer", "Marathon"],
+    ["Mark Forster", "Au revoir"],
+    ["Cro", "Traum"],
+    ["Kollegah", "Alpha"],
+    ["Farid Bang", "Killa"],
+    ["Majoe", "Nur der Tod kann mich stoppen"],
+    ["Shindy", "JFK"],
+    ["Bushido", "Leben und Tod des Kenneth Glöckler"],
+    ["Sido", "Liebe"]
   ],
   "2015": [
-    [
-      "Robin Schulz",
-      "Sugar"
-    ],
-    [
-      "Felix Jaehn",
-      "Ain't Nobody (Loves Me Better)"
-    ],
-    [
-      "Alle Farben",
-      "Supergirl"
-    ]
+    ["Felix Jaehn feat. Jasmine Thompson", "Ain't Nobody (Loves Me Better)"],
+    ["Robin Schulz feat. Francesco Yates", "Sugar"],
+    ["Sido feat. Andreas Bourani", "Astronaut"],
+    ["Cro", "Bye Bye"],
+    ["Kollegah", "Zuhältertape Vol. 4 (Intro)"],
+    ["Farid Bang", "Asozialer Marokkaner"],
+    ["KC Rebell", "Bist du real"],
+    ["Kurdo", "Ya Salam"],
+    ["Majoe", "Fallschirm"],
+    ["Rammstein", "Ohne dich"]
   ],
   "2016": [
-    [
-      "RAF Camora & Bonez MC",
-      "Palmen aus Plastik"
-    ],
-    [
-      "AnnenMayKantereit",
-      "Pocahontas"
-    ]
+    ["Stereoact feat. Kerstin Ott", "Die immer lacht"],
+    ["Bonez MC & RAF Camora", "Palmen aus Plastik"],
+    ["Gzuz", "Ahnma"],
+    ["Maxwell", "Safari"],
+    ["LX & Maxwell", "Obststand"],
+    ["Rammstein", "Amerika (Live)"],
+    ["Sido", "Das Buch"],
+    ["Kollegah", "Nero"],
+    ["Farid Bang", "Blut"],
+    ["Capital Bra", "Kuku Bra"]
   ],
   "2017": [
-    [
-      "Bausa",
-      "Was du Liebe nennst"
-    ]
+    ["Bausa", "Was du Liebe nennst"],
+    ["Ed Sheeran", "Shape of You"],
+    ["Luis Fonsi feat. Daddy Yankee", "Despacito"],
+    ["Bonez MC & RAF Camora", "Millionär"],
+    ["RAF Camora", "Primo"],
+    ["Gzuz", "Kriminell"],
+    ["Capital Bra", "Nur noch Gucci"],
+    ["Ufo361", "Nice Girl 2.0"],
+    ["Rin", "Bros"],
+    ["Rammstein", "Engel (Live)"]
   ],
   "2018": [
-    [
-      "Capital Bra",
-      "One Night Stand"
-    ]
+    ["Capital Bra", "Neymar"],
+    ["Olexesh", "Magisch"],
+    ["Bonez MC & RAF Camora", "500 PS"],
+    ["RAF Camora", "Kokain"],
+    ["Gzuz", "Was hast du gedacht"],
+    ["Ufo361", "Balenciaga"],
+    ["Rin", "Dior 2001"],
+    ["Bausa", "Vagabund"],
+    ["Sido", "Tausend Tattoos"],
+    ["Rammstein", "Keine Lust"]
   ],
   "2019": [
-    [
-      "Rammstein",
-      "Deutschland"
-    ]
+    ["Rammstein", "Deutschland"],
+    ["Apache 207", "Roller"],
+    ["Capital Bra", "Prinzessa"],
+    ["Samra & Capital Bra", "Tilidin"],
+    ["Shirin David", "Gib ihm"],
+    ["Juju feat. Henning May", "Vermissen"],
+    ["Loredana", "Kein Plan"],
+    ["Bonez MC", "Honda Civic"],
+    ["RAF Camora", "Vendetta"],
+    ["Gzuz", "Vor der Tür"]
   ],
   "2020": [
-    [
-      "Purple Disco Machine",
-      "Hypnotized"
-    ],
-    [
-      "Apache 207",
-      "Roller"
-    ],
-    [
-      "Topic & A7S",
-      "Breaking Me"
-    ],
-    [
-      "Gzuz",
-      "Donuts"
-    ]
+    ["Apache 207", "Fame"],
+    ["Topic & A7S", "Breaking Me"],
+    ["Ufo361", "Emotions"],
+    ["Bonez MC", "Roadrunner"],
+    ["Capital Bra", "100k Cash"],
+    ["Loredana", "Kein Wort"],
+    ["Shirin David", "90-60-111"],
+    ["Luciano", "Late Night"],
+    ["Samra", "Weiss"],
+    ["KitschKrieg feat. Jamule", "Unterwegs"]
   ],
   "2021": [
-    [
-      "Shirin David",
-      "Lieben Wir"
-    ],
-    [
-      "Pashanim",
-      "Sommercheap"
-    ]
+    ["Nathan Evans", "Wellerman"],
+    ["Bausa feat. Apache 207", "Madonna"],
+    ["Apache 207", "Angst"],
+    ["Shirin David", "Ich darf das"],
+    ["Luciano", "Peppermint"],
+    ["Pashanim", "Sommergewitter"],
+    ["Kasimir1441 & Badmómzjay", "Ohne Dich"],
+    ["Zuna", "KMN"],
+    ["Bonez MC & RAF Camora", "Blaues Licht"],
+    ["Kontra K", "Aus dem Schatten ins Licht"]
   ],
   "2022": [
-    [
-      "Kim Petras & Sam Smith",
-      "Unholy"
-    ],
-    [
-      "Miksu / Macloud & tlow",
-      "Sehnsucht"
-    ],
-    [
-      "Luciano",
-      "Beautiful Girl"
-    ],
-    [
-      "Sido",
-      "Mit Dir"
-    ],
-    [
-      "Nina Chuba",
-      "Wildberry Lillet"
-    ]
+    ["DJ Robin & Schürze", "Layla"],
+    ["Luciano", "Bamba"],
+    ["Nina Chuba", "Wildberry Lillet"],
+    ["Miksu/Macloud & t-low", "Sehnsucht"],
+    ["Apache 207", "Fühlst du das auch"],
+    ["Shirin David", "Lieben wir"],
+    ["Domiziana", "Ohne Benzin"],
+    ["Peter Fox", "Zukunft Pink"],
+    ["Sido", "Mit Dir"],
+    ["Kontra K", "Follow"]
   ],
   "2023": [
-    [
-      "Apache 207 & Udo Lindenberg",
-      "Komet"
-    ],
-    [
-      "Ski Aggu & Joost & Otto Waalkes",
-      "Friesenjung"
-    ],
-    [
-      "Ayliva",
-      "Sie weiß"
-    ]
+    ["Apache 207 & Udo Lindenberg", "Komet"],
+    ["Ski Aggu", "Friesenjung"],
+    ["Ayliva", "Sie weiß"],
+    ["Shirin David", "Bauch Beine Po"],
+    ["Nina Chuba", "Mangos mit Chili"],
+    ["Luciano", "All Night"],
+    ["Pashanim", "Ms. Jackson"],
+    ["Sido", "Sterne"],
+    ["Bausa", "9 bis 9"],
+    ["RAF Camora", "All Night"]
   ],
   "2024": [
-    [
-      "Zartmann",
-      "Wie du's liebe nennst"
-    ]
+    ["Zartmann", "Wie du's liebe nennst"],
+    ["Ayliva", "Wunder"],
+    ["Ski Aggu", "Zornig"],
+    ["Shirin David", "It Girl"],
+    ["Nina Chuba", "Nina"],
+    ["Luciano", "Time"],
+    ["Pashanim", "Mittelmeer"],
+    ["Sido", "Gar nicht mal so glücklich"],
+    ["Bausa", "Einsam"],
+    ["Soho Bani", "Zeit dass sich was dreht"]
+  ],
+  "2025": [
+    ["Apache 207", "Sportwagen"],
+    ["Ayliva", "Traum"],
+    ["Ski Aggu", "Berliner Luft"],
+    ["Shirin David", "Boss"],
+    ["Nina Chuba", "Glas"],
+    ["Luciano", "Mailand"],
+    ["Pashanim", "Kreuzberg"],
+    ["RAF Camora", "Wien"],
+    ["Bonez MC", "Honda"],
+    ["Kontra K", "Wolf"]
   ],
   "2026": [
-    [
-      "Apache 207",
-      "Komet"
-    ],
-    [
-      "Ayliva",
-      "Wunder"
-    ],
-    [
-      "Ski Aggu",
-      "Friesenjung"
-    ],
-    [
-      "Shirin David",
-      "Bauch Beine Po"
-    ],
-    [
-      "Nina Chuba",
-      "Wildberry Lillet"
-    ],
-    [
-      "Luciano",
-      "Bamba"
-    ],
-    [
-      "Pashanim",
-      "Sommergewitter"
-    ],
-    [
-      "Sido",
-      "Mit Dir"
-    ],
-    [
-      "Bausa",
-      "Was du Liebe nennst"
-    ],
-    [
-      "Capital Bra",
-      "Neymar"
-    ],
-    [
-      "Zartmann",
-      "Wie du's liebe nennst"
-    ],
-    [
-      "Makko",
-      "Nachts wach"
-    ],
-    [
-      "Kontra K",
-      "Summertime"
-    ],
-    [
-      "CRO",
-      "Sie"
-    ],
-    [
-      "t-low",
-      "Sehnsucht"
-    ]
+    ["Apache 207", "Sonnenuntergang"],
+    ["Ayliva", "Sterne"],
+    ["Ski Aggu", "Party"],
+    ["Shirin David", "Königin"],
+    ["Nina Chuba", "Gold"],
+    ["Luciano", "Paris"],
+    ["Pashanim", "Sommer"],
+    ["RAF Camora", "Zukunft"],
+    ["Bonez MC", "Strasse"],
+    ["Kontra K", "Licht"]
   ]
 }
