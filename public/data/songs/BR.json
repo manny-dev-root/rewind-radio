@@ -1,800 +1,686 @@
 {
   "1970": [
-    [
-      "Jorge Ben Jor",
-      "Que Maravilha"
-    ],
-    [
-      "Tim Maia",
-      "Primavera"
-    ],
-    [
-      "Roberto Carlos",
-      "Jesus Cristo"
-    ],
-    [
-      "Chico Buarque",
-      "Apesar de Você"
-    ],
-    [
-      "Milton Nascimento",
-      "Para Lennon e McCartney"
-    ],
-    [
-      "Elis Regina",
-      "Madalena"
-    ],
-    [
-      "Caetano Veloso",
-      "London, London"
-    ],
-    [
-      "Gilberto Gil",
-      "Aquele Abraço"
-    ],
-    [
-      "Gal Costa",
-      "Meu Nome é Gal"
-    ],
-    [
-      "Os Mutantes",
-      "Ando Meio Desligado"
-    ],
-    [
-      "Jair Rodrigues",
-      "Festa Para Um Rei Negro"
-    ],
-    [
-      "Toquinho",
-      "Tarde em Itapoã"
-    ],
-    [
-      "Clara Nunes",
-      "Ilu Ayê"
-    ],
-    [
-      "Secos & Molhados",
-      "Sangue Latino"
-    ],
-    [
-      "Raul Seixas",
-      "Ouro de Tolo"
-    ],
-    [
-      "Jorge Ben Jor",
-      "Mas Que Nada"
-    ],
-    [
-      "Antônio Carlos Jobim",
-      "Garota de Ipanema"
-    ],
-    [
-      "Vinícius de Moraes",
-      "Tarde em Itapoã"
-    ],
-    [
-      "Paulinho da Viola",
-      "Foi Um Rio Que Passou em Minha Vida"
-    ],
-    [
-      "Martinho da Vila",
-      "Canta Canta, Minha Gente"
-    ],
-    [
-      "Wilson Simonal",
-      "País Tropical"
-    ]
+    ["Paulinho da Viola", "Foi Um Rio Que Passou Em Minha Vida"],
+    ["Coral Joab", "Pra Frente Brasil"],
+    ["Roberto Carlos", "Jesus Cristo"],
+    ["Elis Regina", "Madalena"],
+    ["Tim Maia", "Azul da Cor do Mar"],
+    ["Tony Tornado & Trio Ternura", "BR-3"],
+    ["Chico Buarque", "Apesar de Você"],
+    ["Taiguara", "Universo no Teu Corpo"],
+    ["Beth Carvalho", "Andança"],
+    ["Doris Monteiro", "Coqueiro Verde"]
   ],
   "1971": [
-    [
-      "Chico Buarque",
-      "Construção"
-    ],
-    [
-      "Roberto Carlos",
-      "Detalhes"
-    ],
-    [
-      "Tim Maia",
-      "Não Quero Dinheiro (Só Quero Amar)"
-    ],
-    [
-      "Jorge Ben Jor",
-      "Taj Mahal"
-    ],
-    [
-      "Elis Regina",
-      "Casa no Campo"
-    ],
-    [
-      "Os Mutantes",
-      "Top Top"
-    ],
-    [
-      "Dominguinhos",
-      "Lamento Sertanejo"
-    ],
-    [
-      "Luiz Gonzaga",
-      "Ovo de Codorna"
-    ],
-    [
-      "Secos & Molhados",
-      "O Vira"
-    ],
-    [
-      "Raul Seixas",
-      "Let Me Sing, Let Me Sing"
-    ],
-    [
-      "Novos Baianos",
-      "Preta Pretinha"
-    ],
-    [
-      "Marcos Valle",
-      "Com Mais de 30"
-    ],
-    [
-      "Gal Costa",
-      "Vapor Barato"
-    ],
-    [
-      "Maria Bethânia",
-      "Rosa dos Ventos"
-    ],
-    [
-      "Rita Lee",
-      "José (Joseph)"
-    ]
+    ["Antonio Carlos e Jocafi", "Você Abusou"],
+    ["Toquinho, Vinícius de Moraes e Marília Medalha", "Tarde em Itapoã"],
+    ["Roberto Carlos", "Debaixo dos Caracóis"],
+    ["Clara Nunes", "Ê Baiana"],
+    ["Chico Buarque", "Construção"],
+    ["Roberto Carlos", "Detalhes"],
+    ["Tim Maia", "Não Quero Dinheiro (Só Quero Amar)"],
+    ["Dom & Ravel", "Eu Te Amo Meu Brasil"],
+    ["Erasmo Carlos", "É Preciso Saber Viver"],
+    ["Elis Regina", "Na Baixa do Sapateiro"]
   ],
   "1972": [
-    [
-      "Novos Baianos",
-      "Preta Pretinha"
-    ],
-    [
-      "Raul Seixas",
-      "Ouro de Tolo"
-    ],
-    [
-      "Secos & Molhados",
-      "Sangue Latino"
-    ],
-    [
-      "Milton Nascimento",
-      "Clube da Esquina No. 2"
-    ],
-    [
-      "Lô Borges",
-      "O Trem Azul"
-    ],
-    [
-      "Roberto Carlos",
-      "Como Vai Você"
-    ],
-    [
-      "Tim Maia",
-      "Gostava Tanto de Você"
-    ],
-    [
-      "Jorge Ben Jor",
-      "Fio Maravilha"
-    ],
-    [
-      "Elis Regina",
-      "Águas de Março"
-    ],
-    [
-      "Chico Buarque",
-      "Partido Alto"
-    ],
-    [
-      "Gilberto Gil",
-      "Expresso 2222"
-    ],
-    [
-      "Caetano Veloso",
-      "Triste Bahia"
-    ],
-    [
-      "Clara Nunes",
-      "Conto de Areia"
-    ],
-    [
-      "Martinho da Vila",
-      "Mulheres"
-    ],
-    [
-      "Benito di Paula",
-      "Retalhos de Cetim"
-    ]
+    ["Maria Alcina", "Fio Maravilha"],
+    ["Clara Nunes", "Ilu Ayê"],
+    ["Elis Regina", "Casa no Campo"],
+    ["Milton Nascimento & Lô Borges", "Clube da Esquina 2"],
+    ["Gilberto Gil", "Expresso 2222"],
+    ["Raul Seixas", "Let Me Sing, Let Me Sing"],
+    ["Novos Baianos", "Preta Pretinha"],
+    ["Jorge Ben Jor", "Taj Mahal"],
+    ["Odair José", "Eu Vou Tirar Você Desse Lugar"],
+    ["Roberto Carlos", "Como Vai Você"]
   ],
   "1973": [
-    [
-      "Tim Maia",
-      "Gostava Tanto De Você"
-    ],
-    [
-      "Secos & Molhados",
-      "O Vira"
-    ],
-    [
-      "Raul Seixas",
-      "Metamorfose Ambulante"
-    ]
+    ["Secos e Molhados", "Sangue Latino"],
+    ["Benito Di Paula", "Retalhos de Cetim"],
+    ["Raul Seixas", "Ouro de Tolo"],
+    ["Tim Maia", "Gostava Tanto de Você"],
+    ["Secos e Molhados", "O Vira"],
+    ["Odair José", "Uma Vida Só (Pare de Tomar a Pílula)"],
+    ["Gilberto Gil", "Eu Só Quero Um Xodó"],
+    ["João Gilberto", "Águas de Março"],
+    ["Fagner", "Canteiros"],
+    ["Gonzaguinha", "Comportamento Geral"]
   ],
   "1974": [
-    [
-      "Elis Regina & Tom Jobim",
-      "Águas de Março"
-    ]
+    ["Raul Seixas", "Gita"],
+    ["Hyldon", "Na Rua, Na Chuva, Na Fazenda"],
+    ["Luiz Ayrão", "No Silêncio da Madrugada"],
+    ["Rita Lee & Tutti Frutti", "Ovelha Negra"],
+    ["Belchior", "A Palo Seco"],
+    ["Cartola", "As Rosas Não Falam"],
+    ["Roberto Carlos", "O Portão"],
+    ["Secos e Molhados", "Flores Astrais"],
+    ["Benito Di Paula", "Charlie Brown"],
+    ["Elis Regina & Tom Jobim", "Águas de Março"]
   ],
   "1975": [
-    [
-      "Clara Nunes",
-      "O Mar Serenou"
-    ]
+    ["Agepê", "Moro Onde Não Mora Ninguém"],
+    ["Vanusa", "Paralelas"],
+    ["Elis Regina", "O Mestre-Sala dos Mares"],
+    ["Wando", "Moça"],
+    ["Raul Seixas", "Tente Outra Vez"],
+    ["Belchior", "Apenas Um Rapaz Latino-Americano"],
+    ["Luiz Melodia", "Juventude Transviada"],
+    ["Chico Buarque", "Vai Passar"],
+    ["Rita Lee & Tutti Frutti", "Agora Só Falta Você"],
+    ["Djavan", "Fato Consumado"]
   ],
   "1976": [
-    [
-      "Cartola",
-      "O Mundo É Um Moinho"
-    ],
-    [
-      "Djavan",
-      "Flor de Lis"
-    ]
+    ["Guilherme Arantes", "Meu Mundo e Nada Mais"],
+    ["Chico Buarque", "Meu Caro Amigo"],
+    ["Hermes Aquino", "Nuvem Passageira"],
+    ["Elis Regina", "Como Nossos Pais"],
+    ["Milton Nascimento", "O Que Será (À Flor da Pele)"],
+    ["Elis Regina", "Fascinação"],
+    ["Novos Baianos", "A Menina Dança"],
+    ["Rita Lee", "Coisas da Vida"],
+    ["Tim Maia", "Rodésia"],
+    ["Alceu Valença", "Coração Bobo"]
   ],
   "1977": [
-    [
-      "Raul Seixas",
-      "Maluco Beleza"
-    ]
+    ["Roberto Carlos", "Amigo"],
+    ["Peninha", "Sonhos"],
+    ["Rita Lee & Tutti Frutti", "Arrombou A Festa"],
+    ["Caetano Veloso", "Tigresa"],
+    ["Elis Regina", "Romaria"],
+    ["Simone", "Jura Secreta"],
+    ["Oswaldo Montenegro", "Bandolins"],
+    ["Sueli Costa", "Açúcar Cândi"],
+    ["Gilberto Gil", "Aquele Abraço"],
+    ["Chico Buarque", "Gota d'Água"]
   ],
   "1978": [
-    [
-      "Caetano Veloso",
-      "Sampa"
-    ],
-    [
-      "Milton Nascimento",
-      "Maria, Maria"
-    ]
+    ["Roberto Carlos", "Outra Vez"],
+    ["Caetano Veloso", "Sampa"],
+    ["Ney Matogrosso", "Não Existe Pecado ao Sul do Equador"],
+    ["As Frenéticas", "Dancing Days"],
+    ["Raul Seixas", "Maluco Beleza"],
+    ["Agepê", "Menina de Cabelos Longos"],
+    ["Gal Costa", "Folhetim"],
+    ["Chico Buarque", "O Meu Amor"],
+    ["Belchior", "Medo de Avião"],
+    ["Tim Maia", "Sossego"]
   ],
   "1979": [
-    [
-      "Rita Lee",
-      "Mania de Você"
-    ],
-    [
-      "Gal Costa",
-      "Meu Nome é Gal"
-    ]
+    ["Elis Regina", "O Bêbado e A Equilibrista"],
+    ["Fábio Jr.", "Pai"],
+    ["Maria Bethânia", "Explode Coração"],
+    ["Gilberto Gil", "Superhomem (A Canção)"],
+    ["Rita Lee", "Mania de Você"],
+    ["Chico Buarque", "Chega de Mágoa"],
+    ["Zizi Possi", "Pedaço de Mim"],
+    ["Pepeu Gomes", "Meu Coração"],
+    ["Baby Consuelo", "Menino do Rio"],
+    ["Moraes Moreira", "Pombo Correio"]
+  ],
+  "1980": [
+    ["Rita Lee", "Lança Perfume"],
+    ["Daltony", "Dona de Casa"],
+    ["A Cor do Som", "Zanzibar"],
+    ["Oswaldo Montenegro", "Agonia"],
+    ["Ney Matogrosso", "Homem com H"],
+    ["Gal Costa", "Meu Nome É Gal"],
+    ["Caetano Veloso", "Leãozinho"],
+    ["Roberto Carlos", "A Guerra dos Meninos"],
+    ["Toquinho", "Aquarela"],
+    ["Roupa Nova", "Canção de Verão"]
   ],
   "1981": [
-    [
-      "Tim Maia",
-      "Do Leme Ao Pontal"
-    ]
+    ["Guilherme Arantes", "Planeta Água"],
+    ["Fábio Jr.", "Vinte e Poucos Anos"],
+    ["Djavan", "Sina"],
+    ["Gal Costa", "Festa do Interior"],
+    ["Rita Lee", "Mutante"],
+    ["Milton Nascimento", "Caçador de Mim"],
+    ["Roberto Carlos", "Emoções"],
+    ["Kleiton & Kledir", "Deu Pra Ti"],
+    ["Zé Ramalho", "Admirável Gado Novo"],
+    ["Amelinha", "Frevo Mulher"]
   ],
   "1982": [
-    [
-      "Blitz",
-      "Você Não Soube Me Amar"
-    ],
-    [
-      "Djavan",
-      "Sina"
-    ]
+    ["Blitz", "Você Não Soube Me Amar"],
+    ["Fagner", "Mucuripe"],
+    ["Tim Maia", "Do Leme ao Pontal"],
+    ["Barão Vermelho", "Down em Mim"],
+    ["Roupa Nova", "Clarear"],
+    ["Elis Regina", "Trem Azul"],
+    ["Rádio Táxi", "Garota Dourada"],
+    ["Gal Costa", "Pegando Fogo"],
+    ["Lulu Santos", "Tempos Modernos"],
+    ["Caetano Veloso", "Queixa"]
   ],
   "1983": [
-    [
-      "Barão Vermelho",
-      "Pro Dia Nascer Feliz"
-    ],
-    [
-      "Lulu Santos",
-      "Como Uma Onda"
-    ]
+    ["Paralamas do Sucesso", "Vital e Sua Moto"],
+    ["Ritchie", "Menina Veneno"],
+    ["Lulu Santos", "Como Uma Onda"],
+    ["Kid Abelha", "Pintura Íntima"],
+    ["Barão Vermelho", "Pro Dia Nascer Feliz"],
+    ["Pepeu Gomes", "Masculino e Feminino"],
+    ["Tim Maia", "Descobridor dos Sete Mares"],
+    ["João Penca", "Matinê no Rian"],
+    ["Roupa Nova", "Anjo"],
+    ["Gal Costa", "Baby"]
   ],
   "1984": [
-    [
-      "Os Paralamas do Sucesso",
-      "Meu Erro"
-    ],
-    [
-      "Os Paralamas do Sucesso",
-      "Óculos"
-    ],
-    [
-      "Kid Abelha",
-      "Pintura Íntima"
-    ],
-    [
-      "Roupa Nova",
-      "Whisky a Go-Go"
-    ],
-    [
-      "Lulu Santos",
-      "O Último Romântico"
-    ],
-    [
-      "Legião Urbana",
-      "Será"
-    ],
-    [
-      "Titãs",
-      "Sonífera Ilha"
-    ],
-    [
-      "Ultraje a Rigor",
-      "Inútil"
-    ],
-    [
-      "Barão Vermelho",
-      "Maior Abandonado"
-    ],
-    [
-      "Marina Lima",
-      "Fullgás"
-    ],
-    [
-      "Tim Maia",
-      "Me Dê Motivo"
-    ],
-    [
-      "Rita Lee",
-      "Desculpe o Auê"
-    ],
-    [
-      "RPM",
-      "Rádio Pirata"
-    ],
-    [
-      "Lobão",
-      "Me Chama"
-    ],
-    [
-      "João Penca e Seus Miquinhos Amestrados",
-      "Popstar"
-    ]
+    ["Legião Urbana", "Será"],
+    ["Titãs", "Sonífera Ilha"],
+    ["Lobão", "Me Chama"],
+    ["Marina Lima", "Fullgás"],
+    ["Lulu Santos", "O Último Romântico"],
+    ["Ultraje a Rigor", "Inútil"],
+    ["Paralamas do Sucesso", "Óculos"],
+    ["Biquini Cavadão", "Tédio"],
+    ["RPM", "Olhar 43"],
+    ["Roupa Nova", "Whisky a Go Go"]
   ],
   "1985": [
-    [
-      "Cazuza",
-      "Exagerado"
-    ],
-    [
-      "RPM",
-      "Olhar 43"
-    ],
-    [
-      "Legião Urbana",
-      "Geração Coca-Cola"
-    ],
-    [
-      "Legião Urbana",
-      "Ainda É Cedo"
-    ],
-    [
-      "Titãs",
-      "Televisão"
-    ],
-    [
-      "Ultraje a Rigor",
-      "Nós Vamos Invadir sua Praia"
-    ],
-    [
-      "Ira!",
-      "Núcleo Base"
-    ],
-    [
-      "Plebe Rude",
-      "Até Quando Esperar"
-    ],
-    [
-      "Camisa de Vênus",
-      "Eu Não Matei Joana D'Arc"
-    ],
-    [
-      "Os Paralamas do Sucesso",
-      "Melô do Marinheiro"
-    ],
-    [
-      "Lulu Santos",
-      "Tudo Azul"
-    ],
-    [
-      "Kid Abelha",
-      "Garotos"
-    ],
-    [
-      "Roupa Nova",
-      "Dona"
-    ],
-    [
-      "Barão Vermelho",
-      "Declare Guerra"
-    ],
-    [
-      "Guilherme Arantes",
-      "Cheia de Charme"
-    ]
+    ["RPM", "Rádio Pirata"],
+    ["Legião Urbana", "Ainda É Cedo"],
+    ["Titãs", "Televisão"],
+    ["Cazuza", "Exagerado"],
+    ["Paralamas do Sucesso", "Alagados"],
+    ["Capital Inicial", "Música Urbana"],
+    ["Ira!", "Núcleo Base"],
+    ["Plebe Rude", "Até Quando Esperar"],
+    ["Camisa de Vênus", "Eu Não Matei Joana D'Arc"],
+    ["Lulu Santos", "Tudo Azul"]
   ],
   "1986": [
-    [
-      "Legião Urbana",
-      "Tempo Perdido"
-    ],
-    [
-      "Legião Urbana",
-      "Eduardo e Mônica"
-    ],
-    [
-      "Titãs",
-      "Polícia"
-    ],
-    [
-      "Capital Inicial",
-      "Fátima"
-    ]
+    ["Legião Urbana", "Eduardo e Mônica"],
+    ["Titãs", "Epitáfio"],
+    ["Engenheiros do Hawaii", "Toda Forma de Poder"],
+    ["Nenhum de Nós", "Camila, Camila"],
+    ["Os Paralamas do Sucesso", "Selvagem"],
+    ["Cazuza", "O Tempo Não Pára"],
+    ["Marina Lima", "Pra Começar"],
+    ["Lulu Santos", "Condição"],
+    ["Capital Inicial", "Fátima"],
+    ["Roupa Nova", "Dona"]
   ],
   "1987": [
-    [
-      "Engenheiros do Hawaii",
-      "Infinita Highway"
-    ]
+    ["Legião Urbana", "Faroeste Caboclo"],
+    ["Titãs", "Marvin"],
+    ["Cazuza", "Ideologia"],
+    ["Os Paralamas do Sucesso", "A Novidade"],
+    ["Raça Negra", "Caroline"],
+    ["Rosana", "O Amor e o Poder"],
+    ["Engenheiros do Hawaii", "Infinita Highway"],
+    ["Biquini Cavadão", "Zé Ninguém"],
+    ["Capital Inicial", "Independência"],
+    ["Ira!", "Flores em Você"]
+  ],
+  "1988": [
+    ["Cazuza", "Brasil"],
+    ["Legião Urbana", "Há Tempos"],
+    ["Titãs", "Go Back"],
+    ["Os Paralamas do Sucesso", "Lanterna dos Afogados"],
+    ["Engenheiros do Hawaii", "Somos Quem Podemos Ser"],
+    ["Chitãozinho & Xororó", "Fio de Cabelo"],
+    ["Nenhum de Nós", "Astronauta de Mármore"],
+    ["Marina Lima", "Virgem"],
+    ["Lulu Santos", "Cura"],
+    ["Roupa Nova", "Volta Pra Mim"]
+  ],
+  "1989": [
+    ["Leandro & Leonardo", "Entre Tapas e Beijos"],
+    ["Legião Urbana", "Pais e Filhos"],
+    ["Marisa Monte", "Bem Que Se Quis"],
+    ["Cazuza", "Faz Parte do Meu Show"],
+    ["Xuxa", "Ilariê"],
+    ["Raça Negra", "Estou Mal"],
+    ["Engenheiros do Hawaii", "Alívio Imediato"],
+    ["Titãs", "Flores"],
+    ["Caetano Veloso", "O Estrangeiro"],
+    ["Roupa Nova", "A Viagem"]
+  ],
+  "1990": [
+    ["Zezé Di Camargo & Luciano", "É o Amor"],
+    ["Leandro & Leonardo", "Pense em Mim"],
+    ["Legião Urbana", "O Teatro dos Vampiros"],
+    ["Skank", "Tanto"],
+    ["Raça Negra", "Cigana"],
+    ["Daniela Mercury", "Swing da Cor"],
+    ["Engenheiros do Hawaii", "O Papa É Pop"],
+    ["Os Paralamas do Sucesso", "Caleidoscópio"],
+    ["Chitãozinho & Xororó", "Nuvem de Lágrimas"],
+    ["Lulu Santos", "Aviso aos Navegantes"]
+  ],
+  "1991": [
+    ["Daniela Mercury", "O Canto da Cidade"],
+    ["Raça Negra", "Cheia de Manias"],
+    ["Legião Urbana", "Vento no Litoral"],
+    ["Leandro & Leonardo", "Não Aprendi a Dizer Adeus"],
+    ["Zezé Di Camargo & Luciano", "Coração Está em Pedaços"],
+    ["Só Pra Contrariar", "Que Se Chama Amor"],
+    ["Skank", "Inidignação"],
+    ["Chitãozinho & Xororó", "Evidências"],
+    ["Os Paralamas do Sucesso", "Trac Trac"],
+    ["Banda Eva", "Adeus Bye Bye"]
   ],
   "1992": [
-    [
-      "Daniela Mercury",
-      "O Canto da Cidade"
-    ],
-    [
-      "Lulu Santos",
-      "Apenas Mais Uma de Amor"
-    ]
+    ["Raça Negra", "Me Leva Junto Com Você"],
+    ["Daniela Mercury", "Batuque"],
+    ["Legião Urbana", "Metal Contra as Nuvens"],
+    ["Skank", "O Homem Que Sabia Demais"],
+    ["Leandro & Leonardo", "Temporal de Amor"],
+    ["Zezé Di Camargo & Luciano", "Muda de Vida"],
+    ["Só Pra Contrariar", "Domingo"],
+    ["Olodum", "Avisa Lá"],
+    ["Banda Mel", "Prefixo de Verão"],
+    ["Chitãozinho & Xororó", "Brincar de Ser Feliz"]
+  ],
+  "1993": [
+    ["Skank", "Jackie Tequila"],
+    ["Gabriel O Pensador", "Tô Feliz (Matei o Presidente)"],
+    ["Raça Negra", "Quando Te Encontrei"],
+    ["Daniela Mercury", "Música de Rua"],
+    ["Zezé Di Camargo & Luciano", "Faz Mais Uma Vez Comigo"],
+    ["Leandro & Leonardo", "Mexe Mexe"],
+    ["Só Pra Contrariar", "A Barata"],
+    ["É o Tchan", "Segura o Tchan"],
+    ["Cidade Negra", "Aonde Você Mora?"],
+    ["Chitãozinho & Xororó", "Página de Amigos"]
   ],
   "1994": [
-    [
-      "Chico Science & Nação Zumbi",
-      "A Praieira"
-    ]
+    ["Raimundos", "Selim"],
+    ["Skank", "Pacato Cidadão"],
+    ["Cidade Negra", "Pensamento"],
+    ["Raça Negra", "Te Quero Comigo"],
+    ["Mamonas Assassinas", "Pelados em Santos"],
+    ["Só Pra Contrariar", "O Samba Não Tem Fronteiras"],
+    ["Leandro & Leonardo", "Dor de Amor Não Tem Jeito"],
+    ["Zezé Di Camargo & Luciano", "Você Vai Ver"],
+    ["Marisa Monte", "Segue o Seco"],
+    ["Banda Eva", "Flores (Sonho Épico)"]
   ],
   "1995": [
-    [
-      "Mamonas Assassinas",
-      "Pelados em Santos"
-    ],
-    [
-      "É o Tchan!",
-      "Segura o Tchan"
-    ]
+    ["Mamonas Assassinas", "Robocop Gay"],
+    ["Skank", "Garota Nacional"],
+    ["Raimundos", "I Saw You Saying"],
+    ["Titãs", "Domingo"],
+    ["É o Tchan", "Melô do Tchan"],
+    ["Só Pra Contrariar", "Tão Só"],
+    ["Zezé Di Camargo & Luciano", "Pão de Mel"],
+    ["Leandro & Leonardo", "Festa de Rodeio"],
+    ["Cidade Negra", "A Sombra da Maldade"],
+    ["Chitãozinho & Xororó", "Vez em Quando Vem Me Ver"]
   ],
   "1996": [
-    [
-      "Sepultura",
-      "Roots Bloody Roots"
-    ],
-    [
-      "Skank",
-      "Garota Nacional"
-    ]
+    ["Skank", "É Uma Partida de Futebol"],
+    ["Jota Quest", "Encontrar Alguém"],
+    ["Chico Science & Nação Zumbi", "Maracatu Atômico"],
+    ["Só Pra Contrariar", "Depois do Prazer"],
+    ["É o Tchan", "Dança da Cordinha"],
+    ["Zezé Di Camargo & Luciano", "Indiferença"],
+    ["Leandro & Leonardo", "Doce Mistério"],
+    ["Daniela Mercury", "Nobre Vagabundo"],
+    ["Carlinhos Brown", "A Namorada"],
+    ["O Rappa", "Pescador de Ilusões"]
   ],
   "1997": [
-    [
-      "Charlie Brown Jr.",
-      "Proibida Pra Mim"
-    ],
-    [
-      "Gabriel O Pensador",
-      "2345678"
-    ]
+    ["Só Pra Contrariar", "Mineirinho"],
+    ["Charlie Brown Jr.", "Proibida Pra Mim"],
+    ["Jota Quest", "Fácil"],
+    ["Skank", "Resposta"],
+    ["Titãs", "Pra Dizer Adeus"],
+    ["Zezé Di Camargo & Luciano", "Toma Juízo"],
+    ["É o Tchan", "Bambolê"],
+    ["Banda Eva", "Beleza Rara"],
+    ["Chitãozinho & Xororó", "Sistema Bruto"],
+    ["O Rappa", "Me Deixa"]
   ],
   "1998": [
-    [
-      "Jota Quest",
-      "Fácil"
-    ],
-    [
-      "Cidade Negra",
-      "A Estrada"
-    ]
+    ["Jota Quest", "Sempre Assim"],
+    ["Skank", "Mandrake e os Cubanos"],
+    ["Só Pra Contrariar", "Sai da Minha Aba"],
+    ["Banda Eva", "Arerê"],
+    ["Zezé Di Camargo & Luciano", "Pra Não Pensar em Você"],
+    ["Fat Family", "Jeito Sexy"],
+    ["Katinguelê", "Inaraí"],
+    ["Os Travessos", "Quando a Gente Ama"],
+    ["O Rappa", "Minha Alma (A Paz Que Eu Não Quero)"],
+    ["Charlie Brown Jr.", "Te Levar"]
   ],
   "1999": [
-    [
-      "Raimundos",
-      "Mulher de Fases"
-    ],
-    [
-      "O Rappa",
-      "Minha Alma (A Paz Que Eu Não Quero)"
-    ],
-    [
-      "Ivete Sangalo",
-      "Caranguejo"
-    ],
-    [
-      "Los Hermanos",
-      "Anna Julia"
-    ]
+    ["Los Hermanos", "Anna Júlia"],
+    ["Sandy & Junior", "As Quatro Estações"],
+    ["Skank", "Três Lados"],
+    ["Jota Quest", "Dias Melhores"],
+    ["Raimundos", "Mulher de Fases"],
+    ["Zezé Di Camargo & Luciano", "Será Que Foi Saudade"],
+    ["Ivete Sangalo", "Se Eu Não Te Amasse Tanto Assim"],
+    ["Thiaguinho", "Falta Você"],
+    ["Maurício Manieri", "Bem Querer"],
+    ["Charlie Brown Jr.", "Zóio de Lula"]
+  ],
+  "2000": [
+    ["Sandy & Junior", "A Lenda"],
+    ["Skank", "Balada do Amor Inabalável"],
+    ["Jota Quest", "O Que Eu Também Não Entendo"],
+    ["O Rappa", "O Sal da Terra"],
+    ["Raimundos", "A Mais Pedida"],
+    ["Ivete Sangalo", "Festa"],
+    ["Zezé Di Camargo & Luciano", "Antes de Voltar Pra Casa"],
+    ["Capital Inicial", "Primeiros Erros"],
+    ["KLB", "A Dor Desse Amor"],
+    ["CPM 22", "Regina Let's Go!"]
   ],
   "2001": [
-    [
-      "Seu Jorge",
-      "Carolina"
-    ],
-    [
-      "Titãs",
-      "Epitáfio"
-    ],
-    [
-      "Ivete Sangalo",
-      "Festa"
-    ]
+    ["Kelly Key", "Baba"],
+    ["Skank", "Acima do Sol"],
+    ["Jota Quest", "Na Moral"],
+    ["Ivete Sangalo", "Sorte Grande"],
+    ["Sandy & Junior", "Quando Você Passa (Turu Turu)"],
+    ["Zezé Di Camargo & Luciano", "Nem Mais Uma Dúvida"],
+    ["Bruno & Marrone", "Dormi na Praça"],
+    ["Charlie Brown Jr.", "Rubão"],
+    ["CPM 22", "Tarde de Outubro"],
+    ["Tribalistas", "Já Sei Namorar"]
   ],
   "2002": [
-    [
-      "Tribalistas",
-      "Já Sei Namorar"
-    ],
-    [
-      "Zeca Pagodinho",
-      "Deixa A Vida Me Levar"
-    ],
-    [
-      "CPM 22",
-      "Dias Atrás"
-    ]
+    ["Tribalistas", "Velha Infância"],
+    ["Skank", "Dois Rios"],
+    ["Jota Quest", "Só Hoje"],
+    ["Charlie Brown Jr.", "Papo Reto (Prazer É Sexo, o Resto É Negócio)"],
+    ["CPM 22", "Desconfio"],
+    ["Bruno & Marrone", "Choram as Rosas"],
+    ["Zezé Di Camargo & Luciano", "A Ferro e Fogo"],
+    ["Rouge", "Ragatanga"],
+    ["Pitty", "Máscara"],
+    ["Detonautas Roque Clube", "Quando o Sol Se For"]
   ],
   "2003": [
-    [
-      "Marcelo D2",
-      "Qual É?"
-    ],
-    [
-      "Los Hermanos",
-      "O Vencedor"
-    ],
-    [
-      "Claudia Leitte / Babado Novo",
-      "Amor Perfeito"
-    ]
+    ["Skank", "Vou Deixar"],
+    ["Jota Quest", "Amor Maior"],
+    ["Pitty", "Admirável Chip Novo"],
+    ["Charlie Brown Jr.", "Lutar Pelo Que É Meu"],
+    ["CPM 22", "Dias Atrás"],
+    ["Bruno & Marrone", "Ligação Urbana"],
+    ["Zezé Di Camargo & Luciano", "Pra Mudar Minha Vida"],
+    ["O Rappa", "Reza Vela"],
+    ["Marcelo D2", "Qual É?"],
+    ["Ana Carolina", "Garganta"]
+  ],
+  "2004": [
+    ["Pitty", "Equalize"],
+    ["Jota Quest", "Do Seu Lado"],
+    ["Skank", "Amores Imperfeitos"],
+    ["CPM 22", "Um Minuto Para o Fim do Mundo"],
+    ["Charlie Brown Jr.", "Tamo Aí Na Atividade"],
+    ["O Rappa", "O Salto"],
+    ["Bruno & Marrone", "Deixa"],
+    ["Zezé Di Camargo & Luciano", "Nosso Amor É Ouro"],
+    ["NX Zero", "Apenas Um Olhar"],
+    ["Fresno", "Onde Está"]
   ],
   "2005": [
-    [
-      "Pitty",
-      "Na Sua Estante"
-    ]
+    ["CPM 22", "Irreversível"],
+    ["Pitty", "Na Sua Estante"],
+    ["Jota Quest", "O Sol"],
+    ["Skank", "Mil Acasos"],
+    ["NX Zero", "Além de Mim"],
+    ["Fresno", "Quebre As Correntes"],
+    ["Bruno & Marrone", "Inévitavel"],
+    ["Victor & Leo", "Fada"],
+    ["César Menotti & Fabiano", "Leilão"],
+    ["Seu Jorge", "Burguesinha"]
   ],
   "2006": [
-    [
-      "NX Zero",
-      "Razões e Emoções"
-    ]
+    ["NX Zero", "Razões e Emoções"],
+    ["Pitty", "Memórias"],
+    ["Jota Quest", "Até Onde Vai"],
+    ["CPM 22", "Inevitável"],
+    ["Fresno", "Pólo"],
+    ["Victor & Leo", "Amigo Apaixonado"],
+    ["César Menotti & Fabiano", "Caso Marcado"],
+    ["Bruno & Marrone", "Por Um Minuto"],
+    ["Skank", "Seus Passos"],
+    ["Strike", "Paraíso Proibido"]
   ],
   "2007": [
-    [
-      "Vanessa da Mata & Ben Harper",
-      "Boa Sorte / Good Luck"
-    ],
-    [
-      "Seu Jorge",
-      "Burguesinha"
-    ]
+    ["NX Zero", "Pela Última Vez"],
+    ["Pitty", "De Você"],
+    ["Jota Quest", "La Plata"],
+    ["Fresno", "Uma Música"],
+    ["Victor & Leo", "Borboletas"],
+    ["Jorge & Mateus", "Pode Chorar"],
+    ["César Menotti & Fabiano", "Como Um Anjo"],
+    ["Luan Santana", "Meteoro"],
+    ["Sorriso Maroto", "Fica Combinado Assim"],
+    ["Exaltasamba", "Livre Pra Voar"]
   ],
   "2008": [
-    [
-      "Fresno",
-      "Desde Quando Você Se Foi"
-    ]
+    ["NX Zero", "Cedo ou Tarde"],
+    ["Victor & Leo", "Deus e Eu no Sertão"],
+    ["Jorge & Mateus", "De Tanto Te Querer"],
+    ["Luan Santana", "Tô de Cara"],
+    ["Fresno", "Alguém Que Te Faz Sorrir"],
+    ["Jota Quest", "Vem Andar Comigo"],
+    ["Exaltasamba", "Abandonado"],
+    ["Sorriso Maroto", "Ainda Gosto de Você"],
+    ["Fernando & Sorocaba", "Bala de Prata"],
+    ["João Bosco & Vinícius", "Chora, Me Liga"]
   ],
   "2009": [
-    [
-      "Natiruts",
-      "Sorri, Sou Rei"
-    ]
+    ["Luan Santana", "Sinais"],
+    ["Victor & Leo", "Estrela Cadente"],
+    ["Jorge & Mateus", "Amo Noite e Dia"],
+    ["João Bosco & Vinícius", "Curtição"],
+    ["Fernando & Sorocaba", "Paga Pau"],
+    ["Exaltasamba", "Fugidinha"],
+    ["Sorriso Maroto", "Sinais"],
+    ["NX Zero", "Espero a Minha Vez"],
+    ["Fresno", "Desde Quando Você Se Foi"],
+    ["Maria Cecília & Rodolfo", "Você de Volta"]
   ],
   "2010": [
-    [
-      "Luan Santana",
-      "Meteoro"
-    ]
+    ["Michel Teló", "Ai Se Eu Te Pego"],
+    ["Luan Santana", "Adrenalina"],
+    ["Jorge & Mateus", "Seu Astral"],
+    ["Victor & Leo", "Boa Sorte Pra Você"],
+    ["Fernando & Sorocaba", "Madri"],
+    ["Exaltasamba", "Tá Vendo Aquela Lua"],
+    ["Sorriso Maroto", "Na Cama"],
+    ["Paula Fernandes", "Pássaro de Fogo"],
+    ["Gusttavo Lima", "Inventor dos Amores"],
+    ["João Neto & Frederico", "Lê Lê Lê"]
   ],
   "2011": [
-    [
-      "Michel Teló",
-      "Ai Se Eu Te Pego"
-    ],
-    [
-      "Gusttavo Lima",
-      "Balada"
-    ]
+    ["Gusttavo Lima", "Balada (Tchê Tcherere Tchê Tchê)"],
+    ["Luan Santana", "Te Vivo"],
+    ["Jorge & Mateus", "Pra Que Entender?"],
+    ["Michel Teló", "Humilde Residência"],
+    ["Fernando & Sorocaba", "Teus Segredos"],
+    ["Paula Fernandes", "Pra Você"],
+    ["Thiaguinho", "Sou O Cara Pra Você"],
+    ["Sorriso Maroto", "Assim Você Mata o Papai"],
+    ["Munhoz & Mariano", "Camaro Amarelo"],
+    ["Thaeme & Thiago", "Ai Que Dó"]
+  ],
+  "2012": [
+    ["Anitta", "Show das Poderosas"],
+    ["Luan Santana", "Sogrão Caprichou"],
+    ["Jorge & Mateus", "A Hora É Agora"],
+    ["Gusttavo Lima", "Gatinha Assanhada"],
+    ["Fernando & Sorocaba", "As Mina Pira"],
+    ["Thiaguinho", "Ousadia & Alegria"],
+    ["Sorriso Maroto", "Vai e Chora"],
+    ["Lucas Lucco", "Princesinha"],
+    ["Cristiano Araújo", "Efeitos"],
+    ["Henrique & Juliano", "Não Tô Valendo Nada"]
   ],
   "2013": [
-    [
-      "Anitta",
-      "Show das Poderosas"
-    ]
+    ["Luan Santana", "Tudo Que Você Quiser"],
+    ["Anitta", "Zen"],
+    ["Jorge & Mateus", "Logo Eu"],
+    ["Gusttavo Lima", "Diz Pra Mim"],
+    ["Henrique & Juliano", "Cuida Bem Dela"],
+    ["Lucas Lucco", "Mozão"],
+    ["Cristiano Araújo", "Maus Bocados"],
+    ["Thiaguinho", "Desencana"],
+    ["Sorriso Maroto", "Fofinha Delícia"],
+    ["Marcos & Belutti", "Domingo de Manhã"]
   ],
   "2014": [
-    [
-      "Projota",
-      "Elas Gostam Assim"
-    ],
-    [
-      "Henrique & Juliano",
-      "Cuida Bem Dela"
-    ]
+    ["Henrique & Juliano", "Até Você Voltar"],
+    ["Luan Santana", "Cê Topa"],
+    ["Jorge & Mateus", "Nocaute"],
+    ["Gusttavo Lima", "Fui Fiel"],
+    ["Lucas Lucco", "Destino"],
+    ["Cristiano Araújo", "Cê Que Sabe"],
+    ["Anitta", "Blá Blá Blá"],
+    ["Ludmilla", "Hoje"],
+    ["Thiaguinho", "Caraca, Muleke!"],
+    ["Marcos & Belutti", "Aquele 1%"]
   ],
   "2015": [
-    [
-      "Jorge & Mateus",
-      "Sosseguei"
-    ],
-    [
-      "Tiago Iorc",
-      "Amei Te Ver"
-    ],
-    [
-      "Ludmilla",
-      "24 Horas por Dia"
-    ],
-    [
-      "Maiara & Maraisa",
-      "10%"
-    ]
+    ["Wesley Safadão", "Camarote"],
+    ["Henrique & Juliano", "Na Hora da Raiva"],
+    ["Jorge & Mateus", "Os Anjos Cantam"],
+    ["Luan Santana", "Escreve Aí"],
+    ["Marília Mendonça", "Infiel"],
+    ["Maiara & Maraisa", "10%"],
+    ["Zé Neto & Cristiano", "Seu Polícia"],
+    ["Anitta", "Bang"],
+    ["Ludmilla", "Te Ensinei Certin"],
+    ["Nego do Borel", "Não Me Deixe Sozinho"]
   ],
   "2016": [
-    [
-      "Alok",
-      "Hear Me Now"
-    ],
-    [
-      "Marília Mendonça",
-      "Infiel"
-    ]
+    ["Marília Mendonça", "Eu Sei de Cor"],
+    ["Maiara & Maraisa", "Medo Bobo"],
+    ["Zé Neto & Cristiano", "Sonha Comigo"],
+    ["Henrique & Juliano", "Vidinha de Balada"],
+    ["Jorge & Mateus", "Sosseguei"],
+    ["Wesley Safadão", "Meu Coração Deu PT"],
+    ["Luan Santana", "Eu, Você, O Mar e Ela"],
+    ["Anitta", "Sim ou Não"],
+    ["Simone & Simaria", "Loka"],
+    ["Matheus & Kauan", "O Nosso Santo Bateu"]
   ],
   "2017": [
-    [
-      "MC Fioti",
-      "Bum Bum Tam Tam"
-    ],
-    [
-      "Major Lazer ft. Anitta & Pabllo Vittar",
-      "Sua Cara"
-    ],
-    [
-      "IZA",
-      "Pesadão"
-    ]
+    ["Anitta", "Vai Malandra"],
+    ["Marília Mendonça", "Amante Não Tem Lar"],
+    ["Zé Neto & Cristiano", "Largado às Traças"],
+    ["Henrique & Juliano", "Aquela Pessoa"],
+    ["Jorge & Mateus", "Medida Certa"],
+    ["Wesley Safadão", "Ar Condicionado no 15"],
+    ["Maiara & Maraisa", "Sorte Que Cê Beija Bem"],
+    ["Matheus & Kauan", "Te Assumi Pro Brasil"],
+    ["Simone & Simaria", "Regime Fechado"],
+    ["Kevinho", "Olha a Explosão"]
+  ],
+  "2018": [
+    ["Zé Neto & Cristiano", "Notificação Preferida"],
+    ["Marília Mendonça", "Ciumeira"],
+    ["Henrique & Juliano", "Quem Pegou, Pegou"],
+    ["Jorge & Mateus", "Propaganda"],
+    ["Wesley Safadão", "Romance Com Safadeza"],
+    ["Gusttavo Lima", "Apelido Carinhoso"],
+    ["Anitta", "Medicina"],
+    ["Kevinho", "O Bebê"],
+    ["Ludmilla", "Din Din Din"],
+    ["Melim", "Meu Abrigo"]
+  ],
+  "2019": [
+    ["Marília Mendonça", "Todo Mundo Vai Sofrer"],
+    ["Zé Neto & Cristiano", "Ferida Curada"],
+    ["Henrique & Juliano", "Liberdade Provisória"],
+    ["Gusttavo Lima", "Cem Mil"],
+    ["Jorge & Mateus", "Tijolão"],
+    ["Wesley Safadão", "Igual Ela Só Uma"],
+    ["Dilsinho", "Péssimo Negócio"],
+    ["Anitta", "Onda Diferente"],
+    ["Lexa", "Sapequinha"],
+    ["Pedro Sampaio", "Sentadão"]
+  ],
+  "2020": [
+    ["Os Barões da Pisadinha", "Recairei"],
+    ["Henrique & Juliano", "Volta por Baixo"],
+    ["Gusttavo Lima", "A Gente Fez Amor"],
+    ["Zé Neto & Cristiano", "Barzinho Aleatório"],
+    ["Marília Mendonça", "Graveto"],
+    ["Jorge & Mateus", "Lance Individual"],
+    ["Tarcísio do Acordeon", "Meia Noite (Você Tem Meu Whatsapp)"],
+    ["Luísa Sonza", "Braba"],
+    ["Pedro Sampaio", "Chama Ela"],
+    ["Wesley Safadão", "Ele É Ele, Eu Sou Eu"]
   ],
   "2021": [
-    [
-      "Anitta",
-      "Envolver"
-    ],
-    [
-      "Marília Mendonça & Maiara & Maraisa",
-      "Esqueça-Me Se For Capaz"
-    ],
-    [
-      "Ludmilla",
-      "Socadona"
-    ],
-    [
-      "Gloria Groove",
-      "A Queda"
-    ],
-    [
-      "Marina Sena",
-      "Por Supuesto"
-    ],
-    [
-      "Jão",
-      "Idiota"
-    ],
-    [
-      "Dilsinho",
-      "Hollywood"
-    ]
+    ["João Gomes", "Meu Pedaço de Pecado"],
+    ["Os Barões da Pisadinha", "Zero Saudade"],
+    ["Zé Felipe", "Toma Toma Vapo Vapo"],
+    ["Gusttavo Lima", "Ficha Limpa"],
+    ["Henrique & Juliano", "Arranhão"],
+    ["Jorge & Mateus", "Paradão"],
+    ["Marília Mendonça", "Troca de Calçada"],
+    ["Israel & Rodolffo", "Batom de Cereja"],
+    ["Mari Fernandez", "Não, Não Vou"],
+    ["Pedro Sampaio", "Galopa"]
   ],
   "2022": [
-    [
-      "Pedro Sampaio",
-      "Dançarina"
-    ],
-    [
-      "Ana Castela",
-      "Pipoco"
-    ],
-    [
-      "L7NNON",
-      "Desenrola Bate Joga de Ladin"
-    ],
-    [
-      "Zé Felipe",
-      "Malvada"
-    ],
-    [
-      "MC Ryan SP",
-      "Casei Com Putaria"
-    ]
+    ["Ana Castela", "Pipoco"],
+    ["Zé Felipe", "Malvada"],
+    ["João Gomes", "Dengo"],
+    ["Henrique & Juliano", "A Maior Saudade"],
+    ["Gusttavo Lima", "Bloqueado"],
+    ["Jorge & Mateus", "Todo Seu"],
+    ["Marília Mendonça", "Te Amo Demais"],
+    ["Maiara & Maraisa", "A Culpa É Nossa"],
+    ["Pedro Sampaio", "Dançarina"],
+    ["Luan Santana", "Abalo Emocional"]
   ],
   "2023": [
-    [
-      "Luísa Sonza",
-      "Chico"
-    ],
-    [
-      "Veigh",
-      "Novo Balanço"
-    ],
-    [
-      "Simone Mendes",
-      "Erro Gostoso"
-    ]
+    ["Simone Mendes", "Erro Gostoso"],
+    ["Ana Castela", "Nosso Quadro"],
+    ["Zé Neto & Cristiano", "Oi Balde"],
+    ["Henrique & Juliano", "Traumatismo Íntimo"],
+    ["Gusttavo Lima", "Desejo Imortal"],
+    ["Luan Santana", "Solteiro Forçado"],
+    ["Léo Santana", "Zona de Perigo"],
+    ["Israel & Rodolffo", "Bombonzinho"],
+    ["MC Ryan SP", "Tubarão Te Amo"],
+    ["Mari Fernandez", "Seu Brilho Sumiu"]
+  ],
+  "2024": [
+    ["Lauana Prado", "Me Leva Pra Casa / Escrito Nas Estrelas"],
+    ["Ana Castela", "Fronteira"],
+    ["Simone Mendes", "Dois Tristes"],
+    ["Zé Neto & Cristiano", "Barulho do Foguete"],
+    ["Henrique & Juliano", "Rancorosa"],
+    ["Pedro Sampaio", "PocPoc"],
+    ["MC IG & MC Ryan SP", "Let's Go 4"],
+    ["Gusttavo Lima", "Canudinho"],
+    ["Luísa Sonza", "Chico"],
+    ["Jorge & Mateus", "Haverá Sinais"]
+  ],
+  "2025": [
+    ["Grupo Menos É Mais & Simone Mendes", "P Do Pecado (Ao Vivo)"],
+    ["Diego & Victor Hugo", "Tubarões (Ao Vivo)"],
+    ["Grupo Menos É Mais", "Coração Partido (Corazón Partío) (Ao Vivo)"],
+    ["Danilo & Davi", "Apaga Apaga Apaga (Ao Vivo)"],
+    ["Henrique & Juliano", "Última Saudade (Ao Vivo)"],
+    ["Nilo, Dj Di Marques & Mc Paiva Zs", "Fui Mlk"],
+    ["Dj Caio Vieira, Mc Meno K, Mc Rodrigo Do Cn", "Famosinha"],
+    ["Matheus & Kauan, Ana Castela", "Ilusão De Ótica (Ao Vivo)"],
+    ["Léo Foguete", "Cópia Proibida"],
+    ["Lauana Prado & Simone Mendes", "Saudade Burra (Ao Vivo)"]
   ],
   "2026": [
-    [
-      "Ana Castela",
-      "Nosso Quadro"
-    ],
-    [
-      "Dennis DJ & MC Kevin o Chris",
-      "Tá OK"
-    ],
-    [
-      "Luan Santana",
-      "Coração Cigano"
-    ],
-    [
-      "Gusttavo Lima",
-      "Desejo Imortal"
-    ],
-    [
-      "Marília Mendonça",
-      "Leão"
-    ],
-    [
-      "Zé Neto & Cristiano",
-      "Oi Balde"
-    ],
-    [
-      "Simone Mendes",
-      "Erro Gostoso"
-    ],
-    [
-      "Pedro Sampaio",
-      "POCPOC"
-    ],
-    [
-      "Anitta",
-      "Funk Rave"
-    ],
-    [
-      "Luísa Sonza",
-      "Chico"
-    ],
-    [
-      "Ludmilla",
-      "Sintomas de Prazer"
-    ],
-    [
-      "MC Ryan SP",
-      "Dentro da Hilux"
-    ],
-    [
-      "Henrique & Juliano",
-      "Traumatismo Indiano"
-    ],
-    [
-      "Maiara & Maraisa",
-      "A Culpa é Nossa"
-    ],
-    [
-      "Veigh",
-      "Novo Balanço"
-    ]
+    ["Marisa Monte x Seu Jorge", "Fogo Lindo"],
+    ["Paula Fernandes", "Coração Acelerado"],
+    ["Luísa Sonza, Toquinho, Roberto Menescal", "Projeto Bossa 2026"],
+    ["Ana Castela", "Boiadeira 2026"],
+    ["Simone Mendes", "Erro Gostoso 2"],
+    ["Henrique & Juliano", "Nova Saudade"],
+    ["Luan Santana", "Solteiro Forçado (Ao Vivo)"],
+    ["Maiara & Maraisa", "Esquece Ele"],
+    ["Zé Felipe & MC Ryan SP", "Paredão Novo"],
+    ["MC Daniel", "Revoada do Tubarão"]
   ]
 }
