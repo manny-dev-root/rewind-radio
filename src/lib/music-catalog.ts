@@ -174,21 +174,6 @@ export async function fetchCuratedTracks(
   const countryData = await loadCountrySongs(countryCode, signal);
   const hits = getSongsForYear(countryData, year);
 
-  if (hits.length === 0) {
-    const seed = getSeedTracks(countryCode, year) || [];
-    return {
-      track: seed[0] || {
-        title: 'SIN DATOS PARA ESTE AÑO',
-        artist: '',
-        previewUrl: null,
-        artworkUrl: null,
-        releaseYear: String(year),
-      },
-      playlist: seed,
-      source: 'seed-cache',
-    };
-  }
-
   // Tomamos hasta 15 canciones del año, asegurando que el tema objetivo esté primero si se solicitó
   let targetHits = hits.slice(0, 15);
   if (target) {
@@ -208,9 +193,25 @@ export async function fetchCuratedTracks(
       const match = hits[foundIdx];
       targetHits = [match, ...targetHits.filter((_, i) => i !== foundIdx)].slice(0, 15);
     } else {
+      // Aunque la canción haya desaparecido del JSON, se resuelve dinámicamente en vivo
       targetHits.unshift({ title: target.title, artist: target.artist, year });
       if (targetHits.length > 15) targetHits.pop();
     }
+  }
+
+  if (targetHits.length === 0) {
+    const seed = getSeedTracks(countryCode, year) || [];
+    return {
+      track: seed[0] || {
+        title: 'SIN DATOS PARA ESTE AÑO',
+        artist: '',
+        previewUrl: null,
+        artworkUrl: null,
+        releaseYear: String(year),
+      },
+      playlist: seed,
+      source: 'seed-cache',
+    };
   }
 
   // Consultar en paralelo

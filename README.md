@@ -2,7 +2,7 @@
 
 > **La máquina del tiempo musical.** Sintonizá las canciones reales que marcaron cada año y país alrededor del mundo a través de una radio 3D interactiva con audio procedural, espectro reactivo en tiempo real y ranking global en el Edge.
 
-Desarrollado para el **Challenge de Webflow en Nerdearla 2026** por [**Manfred Camacho**](https://www.linkedin.com/in/manfred-camacho).
+Desarrollado para el **Challenge de Webflow en Nerdearla 2026** por [**Manfred Camacho**](https://bit.ly/ln-rewind-radio).
 
 ---
 
@@ -157,5 +157,5 @@ npm run build
 
 ## 👤 Autor
 
-- **Manfred Camacho** — [LinkedIn](https://www.linkedin.com/in/manfred-camacho)
+- **Manfred Camacho** — [LinkedIn](https://bit.ly/ln-rewind-radio)
 - Desarrollado con pasión para el **Challenge de Webflow en Nerdearla 2026**.
