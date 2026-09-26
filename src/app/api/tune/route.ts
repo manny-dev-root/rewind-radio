@@ -1,4 +1,5 @@
 import { YEAR_MIN, YEAR_MAX } from '@/lib/constants';
+import { getSeedTracks } from '@/lib/seed-cache';
 import type { TuneResponse, Track } from '@/types';
 
 declare global {
@@ -141,7 +142,10 @@ async function resolveAudioOnITunes(
   const url = `https://itunes.apple.com/search?term=${term}&country=${countryCode}&media=music&entity=song&limit=8`;
 
   try {
-    const res = await fetch(url);
+    const res = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' },
+      signal: AbortSignal.timeout(3000),
+    });
     if (!res.ok) {
       return null;
     }
@@ -239,7 +243,10 @@ async function fetchMusicBrainzYearCandidates(
   let status = 200;
 
   try {
-    const res = await fetch(releaseUrl, { headers: MB_HEADERS });
+    const res = await fetch(releaseUrl, {
+      headers: MB_HEADERS,
+      signal: AbortSignal.timeout(2500),
+    });
     status = res.status;
 
     if (res.ok) {
@@ -299,13 +306,16 @@ async function fetchITunesExactYearSongs(
   const rotatedArtists = [
     ...baseArtists.slice(offset),
     ...baseArtists.slice(0, offset),
-  ].slice(0, 8); // Topamos en 8 consultas para evitar HTTP 429 Too Many Requests en iTunes
+  ].slice(0, 4); // Topamos en 4 consultas concurrentes para evitar 429 y límite de subrequests en Cloudflare Workers
 
   const promises = rotatedArtists.map(async (artistName) => {
     const term = encodeURIComponent(artistName);
     const url = `https://itunes.apple.com/search?term=${term}&country=${countryCode}&media=music&entity=song&attribute=artistTerm&limit=35`;
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' },
+        signal: AbortSignal.timeout(3500),
+      });
       if (!res.ok) return [];
       const data = (await res.json()) as {
         resultCount?: number;
@@ -441,7 +451,15 @@ export async function GET(request: Request) {
       }
     }
 
-    const verifiedTracks = finalPlaylist.slice(0, 10);
+    let verifiedTracks = finalPlaylist.slice(0, 10);
+
+    // Fallback garantizado a Seed Cache si las APIs externas no devolvieron canciones
+    if (verifiedTracks.length === 0) {
+      const seedFallback = getSeedTracks(countryCode, yearNum);
+      if (seedFallback && seedFallback.length > 0) {
+        verifiedTracks = [...seedFallback];
+      }
+    }
 
     // Evitar que el puesto #1 repita el mismo título base que el #1 del año adyacente (ej. "Oncemil" en 2016 y "Oncemil (feat. Malú)" en 2017)
     if (verifiedTracks.length > 1) {
@@ -480,7 +498,10 @@ export async function GET(request: Request) {
       playlist: verifiedTracks,
     };
 
-    cache.set(cacheKey, data);
+    // Solo guardar en caché si obtuvimos canciones reales (evita cachear respuestas vacías)
+    if (verifiedTracks.length > 0 && verifiedTracks[0].previewUrl) {
+      cache.set(cacheKey, data);
+    }
     return Response.json(data, { headers: CACHE_HEADERS });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Error de sintonización';
