@@ -328,7 +328,7 @@ async function fetchITunesExactYearSongs(
         }>;
       };
 
-      const exactYearItems = (data.results || []).filter((item) => {
+      let exactYearItems = (data.results || []).filter((item) => {
         if (!item.previewUrl || !item.trackName || !item.artistName || !item.releaseDate) {
           return false;
         }
@@ -337,6 +337,17 @@ async function fetchITunesExactYearSongs(
         }
         return isExactOrPrimaryArtist(item.artistName, artistName);
       });
+
+      // Si la fecha de catálogo en iTunes no empieza con el año exacto (por remasterizaciones/re-ediciones), relajar a la misma década
+      if (exactYearItems.length === 0) {
+        exactYearItems = (data.results || []).filter((item) => {
+          if (!item.previewUrl || !item.trackName || !item.artistName || !item.releaseDate) {
+            return false;
+          }
+          const itemYear = Number(item.releaseDate.slice(0, 4));
+          return isExactOrPrimaryArtist(item.artistName, artistName) && itemYear > 0 && Math.abs(itemYear - year) <= 4;
+        });
+      }
 
       const firstMatch = exactYearItems[0];
 
@@ -452,14 +463,54 @@ export async function GET(request: Request) {
     }
 
     let verifiedTracks = finalPlaylist.slice(0, 10);
+    let responseSource: 'api' | 'seed-cache' = 'api';
 
     // Fallback garantizado a Seed Cache si las APIs externas no devolvieron canciones
     if (verifiedTracks.length === 0) {
       const seedFallback = getSeedTracks(countryCode, yearNum);
       if (seedFallback && seedFallback.length > 0) {
         verifiedTracks = [...seedFallback];
+        responseSource = 'seed-cache';
       }
     }
+
+    // Búsqueda directa en iTunes por país y año si el sintonizador de artistas no arrojó resultados
+    if (verifiedTracks.length === 0) {
+      try {
+        const directUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(countryCode + ' ' + yearNum)}&country=${countryCode}&media=music&entity=song&limit=10`;
+        const resDirect = await fetch(directUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0 (compatible; RewindRadio/1.0)' },
+          signal: AbortSignal.timeout(3500),
+        });
+        if (resDirect.ok) {
+          const dataDirect = (await resDirect.json()) as {
+            results?: Array<{
+              trackName?: string;
+              artistName?: string;
+              previewUrl?: string;
+              artworkUrl100?: string;
+            }>;
+          };
+          const directTracks: Track[] = (dataDirect.results || [])
+            .filter((r) => Boolean(r.previewUrl && r.trackName && r.artistName))
+            .slice(0, 10)
+            .map((r) => ({
+              title: r.trackName!,
+              artist: r.artistName!,
+              previewUrl: r.previewUrl!,
+              artworkUrl: r.artworkUrl100 ? r.artworkUrl100.replace('100x100', '600x600') : null,
+              releaseYear: String(yearNum),
+            }));
+          if (directTracks.length > 0) {
+            verifiedTracks = directTracks;
+            responseSource = 'api';
+          }
+        }
+      } catch {}
+    }
+
+    // Log conciso para la consola de runtime de Webflow Cloud
+    console.log(`[Rewind Radio Server] ${countryCode} ${yearNum} -> ${verifiedTracks.length} canciones (${responseSource})`);
 
     // Evitar que el puesto #1 repita el mismo título base que el #1 del año adyacente (ej. "Oncemil" en 2016 y "Oncemil (feat. Malú)" en 2017)
     if (verifiedTracks.length > 1) {
@@ -496,6 +547,7 @@ export async function GET(request: Request) {
     const data: TuneResponse = {
       track: primaryTrack,
       playlist: verifiedTracks,
+      source: responseSource,
     };
 
     // Solo guardar en caché si obtuvimos canciones reales (evita cachear respuestas vacías)

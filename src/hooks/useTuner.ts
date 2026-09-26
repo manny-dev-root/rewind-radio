@@ -12,6 +12,7 @@ export function useTuner(): void {
   const setTuning = useEraStore((state) => state.setTuning);
   const setPlaying = useEraStore((state) => state.setPlaying);
   const setTuneData = useEraStore((state) => state.setTuneData);
+  const setTrackIndex = useEraStore((state) => state.setTrackIndex);
   const setError = useEraStore((state) => state.setError);
 
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -21,7 +22,19 @@ export function useTuner(): void {
     audioEngine?.setPlaybackCallback((playing) => {
       setPlaying(playing);
     });
-  }, [setPlaying]);
+    audioEngine?.setErrorCallback(() => {
+      const state = useEraStore.getState();
+      const playlist = state.tuneData?.playlist;
+      if (playlist && playlist.length > 1) {
+        const nextIdx = (state.trackIndex + 1) % playlist.length;
+        setTrackIndex(nextIdx);
+        const nextSong = playlist[nextIdx];
+        if (nextSong?.previewUrl) {
+          audioEngine?.stopTuning(nextSong.previewUrl);
+        }
+      }
+    });
+  }, [setPlaying, setTrackIndex]);
 
   const performTune = useCallback(
     async (year: number, country: string, signal: AbortSignal) => {
@@ -64,12 +77,23 @@ export function useTuner(): void {
               if (clientTracks.length > 0) {
                 data.playlist = clientTracks;
                 data.track = clientTracks[0];
+                data.source = 'client-fallback';
               }
             }
           } catch {
             // Ignorar errores del fallback secundario
           }
         }
+
+        const count = data.playlist?.length || (data.track?.previewUrl ? 1 : 0);
+        const sourceLabel =
+          data.source === 'seed-cache'
+            ? 'Catálogo de Respaldo (Seed Cache)'
+            : data.source === 'client-fallback'
+            ? 'Fallback Navegador'
+            : 'API Backend';
+
+        console.log(`[Rewind Radio] 📻 ${country} ${year} -> ${count} canción(es) sintonizada(s) [${sourceLabel}]`);
 
         setTuneData(data);
         const firstTrackUrl = data.playlist?.[0]?.previewUrl ?? data.track.previewUrl ?? '';

@@ -12,6 +12,7 @@ export class AudioEngine {
   private musicSource: MediaElementAudioSourceNode | null = null;
   private freqData: Uint8Array<ArrayBuffer> = new Uint8Array(new ArrayBuffer(64));
   private onPlaybackStateChange: ((playing: boolean) => void) | null = null;
+  private onAudioErrorCallback: (() => void) | null = null;
   private pendingTrackUrl: string | null = null;
   private userHasInteracted = false;
 
@@ -82,9 +83,17 @@ export class AudioEngine {
     this.audio.addEventListener('play', () => this.onPlaybackStateChange?.(true));
     this.audio.addEventListener('pause', () => this.onPlaybackStateChange?.(false));
     this.audio.addEventListener('ended', () => this.onPlaybackStateChange?.(false));
+    this.audio.addEventListener('error', () => {
+      this.onPlaybackStateChange?.(false);
+      this.onAudioErrorCallback?.();
+    });
 
     this.musicSource = this.ctx.createMediaElementSource(this.audio);
     this.musicSource.connect(this.musicGain);
+  }
+
+  public setErrorCallback(cb: () => void): void {
+    this.onAudioErrorCallback = cb;
   }
 
   private createPinkNoiseBuffer(ctx: AudioContext): AudioBuffer {

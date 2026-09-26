@@ -9,6 +9,7 @@ export interface Track {
 export interface TuneResponse {
   track: Track;
   playlist?: Track[];
+  source?: 'api' | 'seed-cache' | 'client-fallback';
 }
 
 export interface EraState {
