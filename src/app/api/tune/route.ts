@@ -20,6 +20,17 @@ function getCache(): Map<string, unknown> {
   return globalThis.__ERA_CACHE__;
 }
 
+async function fetchWithTimeout(url: string, options: RequestInit = {}, timeoutMs = 3500): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const res = await fetch(url, { ...options, signal: controller.signal });
+    return res;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 // Artistas representativos por país y década para consultar en iTunes filtrando ESTRICTAMENTE por releaseDate === year
 const COUNTRY_ERA_ARTISTS: Record<string, Record<string, string[]>> = {
   AR: {
@@ -462,7 +473,9 @@ export async function GET(request: Request) {
       }
     }
 
-    let verifiedTracks = finalPlaylist.slice(0, 10);
+    //let verifiedTracks = finalPlaylist.slice(0, 10);
+    let verifiedTracks: Track[] = []; // <--- FORZAR FALLBACK
+
     let responseSource: 'api' | 'seed-cache' = 'api';
 
     // Fallback garantizado a Seed Cache si las APIs externas no devolvieron canciones

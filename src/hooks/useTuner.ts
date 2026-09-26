@@ -17,6 +17,7 @@ export function useTuner(): void {
 
   const debounceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+  const failedUrlsRef = useRef<Set<string>>(new Set());
 
   useEffect(() => {
     audioEngine?.setPlaybackCallback((playing) => {
@@ -25,20 +26,36 @@ export function useTuner(): void {
     audioEngine?.setErrorCallback(() => {
       const state = useEraStore.getState();
       const playlist = state.tuneData?.playlist;
-      if (playlist && playlist.length > 1) {
-        const nextIdx = (state.trackIndex + 1) % playlist.length;
-        setTrackIndex(nextIdx);
-        const nextSong = playlist[nextIdx];
+      if (!playlist || playlist.length === 0) return;
+
+      const currentTrack = playlist[state.trackIndex];
+      if (currentTrack?.previewUrl) {
+        failedUrlsRef.current.add(currentTrack.previewUrl);
+      }
+
+      // Buscar la siguiente canción en la playlist cuya URL no haya fallado
+      const validNextIdx = playlist.findIndex(
+        (t) => Boolean(t.previewUrl) && !failedUrlsRef.current.has(t.previewUrl!)
+      );
+
+      if (validNextIdx >= 0 && validNextIdx !== state.trackIndex) {
+        setTrackIndex(validNextIdx);
+        const nextSong = playlist[validNextIdx];
         if (nextSong?.previewUrl) {
           audioEngine?.stopTuning(nextSong.previewUrl);
         }
+      } else {
+        // Todas las canciones de la lista fallaron (404), detener de forma limpia sin bucles
+        audioEngine?.stopTuning('');
+        setTuning(false);
       }
     });
-  }, [setPlaying, setTrackIndex]);
+  }, [setPlaying, setTrackIndex, setTuning]);
 
   const performTune = useCallback(
     async (year: number, country: string, signal: AbortSignal) => {
       try {
+        failedUrlsRef.current.clear();
         const apiUrl = `${window.location.origin}/api/tune?year=${year}&country=${encodeURIComponent(country)}`;
 
         const response = await fetch(apiUrl, { signal });

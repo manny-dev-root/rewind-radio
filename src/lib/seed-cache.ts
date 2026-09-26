@@ -1,7 +1,6 @@
 import type { Track } from '@/types';
 
 export const SEED_TRACKS: Record<string, Track[]> = {
-  // Argentina 1990
   'AR-1990': [
     {
       title: 'De Música Ligera',
@@ -18,86 +17,68 @@ export const SEED_TRACKS: Record<string, Track[]> = {
       releaseYear: '1990',
     },
     {
-      title: 'Y Dale Alegría a Mi Corazón',
-      artist: 'Fito Páez',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/05/28/f1/0528f111-f606-b8fa-4909-03148f7e95ac/mzaf_17890745911930218646.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music/14/66/00/mzi.rjbkvlxb.jpg/600x600bb.jpg',
-      releaseYear: '1990',
-    },
-    {
-      title: 'Fue Amor',
-      artist: 'Fito Páez',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/e8/cf/0ce8cf74-8327-339c-1c74-819c46b6a3cf/mzaf_1447680710343932630.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music/14/66/00/mzi.rjbkvlxb.jpg/600x600bb.jpg',
-      releaseYear: '1990',
-    },
-    {
-      title: 'Pic Nic en el 4° B',
+      title: 'Canción Animal',
       artist: 'Soda Stereo',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/9c/13/3b9c1388-05b5-0925-9aca-4bf6e6ee196d/mzaf_5447078016340750960.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/46/99/42/469942d2-3f7d-32cc-8d9f-f0ee7844cd7b/mzi.rpicvdyw.jpg/600x600bb.jpg',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/37/2e/92372e97-0637-dc1e-9449-bff98fdc8f23/mzaf_13178004437846398910.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/60/18/68/601868f7-68ba-9416-af42-b26b2f68035f/mzi.qyqtvoxs.jpg/600x600bb.jpg',
       releaseYear: '1990',
-    },
-    {
-      title: 'Fanky',
-      artist: 'Charly Garcia',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/f9/80/acf980b1-5af8-88d1-aeff-d4203f5541a5/mzaf_9144673669954238663.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music/c0/f0/a4/mzi.lfapujua.jpg/600x600bb.jpg',
-      releaseYear: '1989',
     },
   ],
-  // Estados Unidos (US)
   'US-1990': [
     {
       title: 'Billie Jean',
       artist: 'Michael Jackson',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/bf/1a/f6/bf1af69e-8c38-89c0-6b21-4f36aa6203cf/mzaf_10014073385750058864.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e6/78/e2/e678e2b7-1c39-299a-3604-586b450f38b1/886443546264.jpg/600x600bb.jpg',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg',
       releaseYear: '1982',
     },
     {
-      title: 'Beat It',
-      artist: 'Michael Jackson',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fe/b4/0c/feb40c74-a698-0c68-07e0-240e8bfa17aa/mzaf_14959146522543949363.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e6/78/e2/e678e2b7-1c39-299a-3604-586b450f38b1/886443546264.jpg/600x600bb.jpg',
-      releaseYear: '1982',
+      title: 'Smells Like Teen Spirit',
+      artist: 'Nirvana',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/49/4e/65494e02-b6d3-26d8-6b0c-9bd98dcf4d5d/mzaf_7665413316386155700.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/600x600bb.jpg',
+      releaseYear: '1991',
     },
     {
-      title: 'Smooth Criminal',
-      artist: 'Michael Jackson',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/e1/9b/cde19b53-06a3-a75d-3574-8b6b158c3db0/mzaf_13401586551609117621.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/62/31/0a/62310a20-6650-23d2-bd22-13e23a413335/886447012215.jpg/600x600bb.jpg',
-      releaseYear: '1987',
+      title: 'I Will Always Love You',
+      artist: 'Whitney Houston',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/03/d2/1a/03d21aca-c69e-09af-03ef-118004e68ab5/mzaf_17408932698913708736.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/82/f3/e9/82f3e968-8174-c5eb-7fc5-36384d050129/dj.mdauihuy.jpg/600x600bb.jpg',
+      releaseYear: '1992',
     },
   ],
-  // Reino Unido (GB)
   'GB-1990': [
-    {
-      title: 'Bohemian Rhapsody',
-      artist: 'Queen',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f4/ef/52/f4ef5212-be00-24ad-3236-dc3d8b5840d2/mzaf_13508493010376725838.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/05/92/7e/05927e0a-5a9d-b4b6-a42e-1317e3a20722/00602527718004.rgb.jpg/600x600bb.jpg',
-      releaseYear: '1975',
-    },
     {
       title: 'Don\'t Stop Me Now',
       artist: 'Queen',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/2c/3f/192c3fa5-ea78-5777-628a-796507a213bc/mzaf_13994363297120760460.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/05/92/7e/05927e0a-5a9d-b4b6-a42e-1317e3a20722/00602527718004.rgb.jpg/600x600bb.jpg',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/e3/7d/dae37dde-bad4-2eff-50b2-de40dd731602/mzaf_13150549085984037908.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/c7/55/15c755bc-7603-3ce3-e243-e59f1f9863ea/602527724171.jpg/600x600bb.jpg',
       releaseYear: '1978',
     },
+    {
+      title: 'Wonderwall',
+      artist: 'Oasis',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/87/0a/e5870a8d-f2dc-21c8-69e1-60c0c71e8687/mzaf_7712698886992647642.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d1/26/e9/d126e933-54fd-a269-2ae1-f68c49a53cda/5051961066197.jpg/600x600bb.jpg',
+      releaseYear: '1995',
+    },
+    {
+      title: 'Yellow',
+      artist: 'Coldplay',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg',
+      releaseYear: '2000',
+    },
   ],
-  // Japón (JP)
   'JP-1990': [
     {
-      title: 'First Love',
-      artist: 'Hikaru Utada',
-      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/4b/f5/db4bf54c-cbfe-9799-a864-fb5e0c5f4ea5/mzaf_8471556834165682855.plus.aac.p.m4a',
-      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/8a/7e/be8a7e0e-91ef-c88f-1a97-9e451b68fb0d/886444855181.jpg/600x600bb.jpg',
+      title: 'First Love (Remastered 2014)',
+      artist: '宇多田ヒカル',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/b8/23/d0b823d5-e55b-6ee8-c1ec-2c91fd43aba3/mzaf_706648209162590351.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/77/67/00/77670013-e2ed-437a-dc30-e9cb74056cbe/00600406427052.rgb.jpg/600x600bb.jpg',
       releaseYear: '1999',
     },
   ],
-  // Francia (FR)
   'FR-1990': [
     {
       title: 'One More Time',
@@ -107,7 +88,6 @@ export const SEED_TRACKS: Record<string, Track[]> = {
       releaseYear: '2000',
     },
   ],
-  // Brasil (BR)
   'BR-1990': [
     {
       title: 'Gostava Tanto De Você',
@@ -117,7 +97,6 @@ export const SEED_TRACKS: Record<string, Track[]> = {
       releaseYear: '1973',
     },
   ],
-  // Alemania (DE)
   'DE-1990': [
     {
       title: 'Das Modell (2009 Remaster)',
@@ -127,7 +106,6 @@ export const SEED_TRACKS: Record<string, Track[]> = {
       releaseYear: '1978',
     },
   ],
-  // México (MX)
   'MX-1990': [
     {
       title: 'Tengo Todo Excepto a Ti',
@@ -135,6 +113,13 @@ export const SEED_TRACKS: Record<string, Track[]> = {
       previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/e6/65/03e6655e-2380-b010-a273-7aa8b9a16ff8/mzaf_897083397525137078.plus.aac.p.m4a',
       artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cd/b2/cb/cdb2cb8f-265f-f1af-acb7-d298122fa869/090317153520.jpg/600x600bb.jpg',
       releaseYear: '1990',
+    },
+    {
+      title: 'Oye Mi Amor',
+      artist: 'Maná',
+      previewUrl: 'https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/90/ca/ae/90caae3e-906e-e180-87f9-5e6595e91104/mzaf_14056589342577674040.plus.aac.p.m4a',
+      artworkUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/06/c9/43/06c94353-cee9-4a85-a29a-13b19bd62c4c/dj.eyflhvkj.jpg/600x600bb.jpg',
+      releaseYear: '1992',
     },
   ],
 };
@@ -146,7 +131,6 @@ export function getSeedTracks(countryCode: string, year: number): Track[] | null
   const prefix = `${countryCode}-`;
   const matchingKeys = Object.keys(SEED_TRACKS).filter((k) => k.startsWith(prefix));
   if (matchingKeys.length === 0) {
-    // NUNCA devolver el seed de Argentina si el país pedido es distinto
     return null;
   }
 
