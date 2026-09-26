@@ -1,792 +1,686 @@
 {
   "1970": [
-    [
-      "Joe Dassin",
-      "Les Champs-Élysées"
-    ],
-    [
-      "Johnny Hallyday",
-      "Jésus Christ"
-    ],
-    [
-      "Michel Sardou",
-      "Les Bals populaires"
-    ],
-    [
-      "Claude François",
-      "Le Lundi au soleil"
-    ],
-    [
-      "Serge Gainsbourg",
-      "Je t'aime... moi non plus"
-    ],
-    [
-      "Charles Aznavour",
-      "Mourir d'aimer"
-    ],
-    [
-      "Nino Ferrer",
-      "Le Sud"
-    ],
-    [
-      "Michel Polnareff",
-      "Je suis un homme"
-    ],
-    [
-      "Sylvie Vartan",
-      "La Maritza"
-    ],
-    [
-      "Dalida",
-      "Darla dirladada"
-    ],
-    [
-      "Georges Moustaki",
-      "Le Métèque"
-    ],
-    [
-      "Christophe",
-      "Aline"
-    ],
-    [
-      "Françoise Hardy",
-      "Comment te dire adieu"
-    ],
-    [
-      "Enrico Macias",
-      "Le Mendiant de l'amour"
-    ],
-    [
-      "Julien Clerc",
-      "La Californie"
-    ],
-    [
-      "Nino Ferrer",
-      "Mirza"
-    ],
-    [
-      "Sheila",
-      "Les Rois Mages"
-    ],
-    [
-      "Richard Anthony",
-      "Amoureux de ma femme"
-    ],
-    [
-      "Michel Polnareff",
-      "Dans la maison vide"
-    ],
-    [
-      "Mike Brant",
-      "Laisse-moi t'aimer"
-    ]
+    ["Johnny Hallyday", "Jésus Christ"],
+    ["Michel Sardou", "Les Bals populaires"],
+    ["Joe Dassin", "L'Amérique"],
+    ["Claude François", "Le monde est grand, les gens sont beaux"],
+    ["Barbara", "L'Aigle noir"],
+    ["Serge Gainsbourg", "En Melody"],
+    ["Michel Polnareff", "Je suis un homme"],
+    ["Dalida", "Darla dirladada"],
+    ["Georges Moustaki", "Le Métèque"],
+    ["Julien Clerc", "La Californie"]
   ],
   "1971": [
-    [
-      "Michel Delpech",
-      "Pour un flirt"
-    ],
-    [
-      "Joan Baez",
-      "Here's to You"
-    ],
-    [
-      "Martin Circus",
-      "Je m'éclate au Sénégal"
-    ],
-    [
-      "Esther Galil",
-      "Le jour se lève"
-    ],
-    [
-      "Johnny Hallyday",
-      "Oh ma jolie Sarah"
-    ],
-    [
-      "Claude François",
-      "Il fait beau, il fait bon"
-    ],
-    [
-      "Michel Sardou",
-      "Le Rire du sergent"
-    ],
-    [
-      "Julien Clerc",
-      "Ce n'est rien"
-    ],
-    [
-      "Stone et Charden",
-      "L'Avventura"
-    ],
-    [
-      "Mike Brant",
-      "Qui saura"
-    ],
-    [
-      "Poppys",
-      "Non, non, rien n'a changé"
-    ],
-    [
-      "C. Jérôme",
-      "Kiss Me"
-    ],
-    [
-      "Gérard Palaprat",
-      "Fais-moi un signe"
-    ],
-    [
-      "Michel Fugain",
-      "Une belle histoire"
-    ],
-    [
-      "Joe Dassin",
-      "L'Équipe à Jojo"
-    ]
+    ["Michel Delpech", "Pour un flirt"],
+    ["Serge Gainsbourg", "Ballade de Melody Nelson"],
+    ["Johnny Hallyday", "Oh ma jolie Sarah"],
+    ["Claude François", "Il fait beau, il fait bon"],
+    ["Michel Sardou", "Le Rire du sergent"],
+    ["Stone et Charden", "L'Avventura"],
+    ["Mike Brant", "Qui saura"],
+    ["C. Jérôme", "Kiss Me"],
+    ["Nicoletta", "Mamy Blue"],
+    ["Michel Fugain", "Soleil"]
   ],
   "1972": [
-    [
-      "Michel Fugain",
-      "Une belle histoire"
-    ],
-    [
-      "Claude François",
-      "Le Lundi au soleil"
-    ],
-    [
-      "Vicky Leandros",
-      "Après toi"
-    ],
-    [
-      "Stone et Charden",
-      "L'Avventura"
-    ],
-    [
-      "Mike Brant",
-      "C'est ma prière"
-    ],
-    [
-      "Michel Sardou",
-      "La Maladie d'amour"
-    ],
-    [
-      "Johnny Hallyday",
-      "Toute la musique que j'aime"
-    ],
-    [
-      "Joe Dassin",
-      "Taka takata"
-    ],
-    [
-      "Mort Shuman",
-      "Le Lac Majeur"
-    ],
-    [
-      "Maxime Le Forestier",
-      "San Francisco"
-    ],
-    [
-      "Véronique Sanson",
-      "Besoin de personne"
-    ],
-    [
-      "Christophe",
-      "Aline"
-    ],
-    [
-      "Gérard Lenorman",
-      "Les Matins d'hiver"
-    ],
-    [
-      "Alain Chamfort",
-      "Signe de vie, signe d'amour"
-    ],
-    [
-      "C. Jérôme",
-      "Himalaya"
-    ],
-    [
-      "Michel Polnareff",
-      "On ira tous au paradis"
-    ]
+    ["Michel Fugain", "Une belle histoire"],
+    ["Claude François", "Le Lundi au soleil"],
+    ["Maxime Le Forestier", "San Francisco"],
+    ["Mike Brant", "C'est ma prière"],
+    ["Johnny Hallyday", "Toute la musique que j'aime"],
+    ["Mort Shuman", "Le Lac Majeur"],
+    ["Joe Dassin", "Taka takata"],
+    ["Véronique Sanson", "Amoureuse"],
+    ["Christophe", "Main dans la main"],
+    ["Gérard Lenorman", "Les matins d'hiver"]
   ],
   "1973": [
-    [
-      "Michel Sardou",
-      "La maladie d'amour"
-    ]
+    ["Michel Sardou", "La Maladie d'amour"],
+    ["Serge Lama", "Je suis malade"],
+    ["Johnny Hallyday", "Le feu"],
+    ["Claude François", "Chanson populaire"],
+    ["Marie Laforêt", "Viens, viens"],
+    ["Dalida", "Il venait d'avoir 18 ans"],
+    ["Sylvie Vartan", "J'ai un problème"],
+    ["Mike Brant", "Rien qu'une larme"],
+    ["Julien Clerc", "Niagara"],
+    ["Joe Dassin", "Salut les amoureux"]
   ],
   "1974": [
-    [
-      "Alain Souchon",
-      "J'ai 10 ans"
-    ]
+    ["Claude François", "Le Mal-aimé"],
+    ["Michel Sardou", "Une fille aux yeux clairs"],
+    ["Sylvie Vartan", "L'amour au diapason"],
+    ["Dave", "Dansez maintenant"],
+    ["Alain Souchon", "J'ai dix ans"],
+    ["Gérard Lenorman", "Quelque chose et moi"],
+    ["C. Jérôme", "C'est moi"],
+    ["Dalida", "Gigi l'amoroso"],
+    ["Daniel Guichard", "Mon vieux"],
+    ["Nino Ferrer", "Le Sud"]
   ],
   "1975": [
-    [
-      "Nino Ferrer",
-      "Le Sud"
-    ],
-    [
-      "Gérard Lenorman",
-      "La ballade des gens heureux"
-    ],
-    [
-      "Joe Dassin",
-      "L'Été indien"
-    ]
+    ["Joe Dassin", "L'Été indien"],
+    ["Michel Sardou", "Le France"],
+    ["Dave", "Du côté de chez Swann"],
+    ["Gérard Lenorman", "La ballade des gens heureux"],
+    ["Claude François", "Toi et moi contre le monde entier"],
+    ["Sylvie Vartan", "La drôle de fin"],
+    ["Nicolas Peyrac", "So Far Away From L.A."],
+    ["Martin Circus", "Marylène"],
+    ["Christophe", "Les mots bleus"],
+    ["Il était une fois", "J'ai encore rêvé d'elle"]
   ],
   "1976": [
-    [
-      "Jean-Michel Jarre",
-      "Oxygène, Pt. 4"
-    ]
+    ["Jean-Michel Jarre", "Oxygène, Pt. 4"],
+    ["Michel Sardou", "Je vais t'aimer"],
+    ["Johnny Hallyday", "Derrière l'amour"],
+    ["Claude François", "Cette année-là"],
+    ["Gérard Lenorman", "Gentil dauphin triste"],
+    ["Michèle Torr", "Je m'appelle Michèle"],
+    ["Alain Souchon", "Bidon"],
+    ["Jane Birkin", "Ex-fan des sixties"],
+    ["Michel Fugain", "Le Printemps"],
+    ["Nicolas Peyrac", "Et mon père"]
   ],
   "1977": [
-    [
-      "Claude François",
-      "Alexandrie Alexandra"
-    ],
-    [
-      "Patrick Juvet",
-      "Où sont les femmes ?"
-    ],
-    [
-      "Laurent Voulzy",
-      "Rockollection"
-    ],
-    [
-      "Mireille Mathieu",
-      "Mille colombes"
-    ]
+    ["Laurent Voulzy", "Rockollection"],
+    ["Claude François", "Alexandrie Alexandra"],
+    ["Patrick Juvet", "Où sont les femmes ?"],
+    ["Michel Sardou", "Dix ans plus tôt"],
+    ["Marie Myriam", "L'oiseau et l'enfant"],
+    ["Space", "Magic Fly"],
+    ["Johnny Hallyday", "J'ai oublié de vivre"],
+    ["Sheila", "Love Me Baby"],
+    ["Cerrone", "Supernature"],
+    ["Julien Clerc", "Ma préférence"]
   ],
   "1978": [
-    [
-      "Daniel Balavoine",
-      "Le Chanteur"
-    ]
+    ["Claude François", "Magnolias for Ever"],
+    ["Daniel Balavoine", "Le Chanteur"],
+    ["Plastic Bertrand", "Ça plane pour moi"],
+    ["Renaud", "Laisse béton"],
+    ["Michel Sardou", "En chantant"],
+    ["Alain Souchon", "Allo maman bobo"],
+    ["Karen Cheryl", "Sing to Me Mama"],
+    ["Patrick Juvet", "I Love America"],
+    ["Jeane Manson", "Fais-moi danser"],
+    ["Julio Iglesias", "Aimer la vie"]
   ],
   "1979": [
-    [
-      "Téléphone",
-      "Hygiaphone"
-    ],
-    [
-      "Francis Cabrel",
-      "Je l'aime à mourir"
-    ],
-    [
-      "Sheila",
-      "Spacer"
-    ]
+    ["Francis Cabrel", "Je l'aime à mourir"],
+    ["Téléphone", "La Bombe humaine"],
+    ["Lio", "Le Banana Split"],
+    ["Sheila", "Spacer"],
+    ["Michel Sardou", "Je ne suis pas mort, je dors"],
+    ["Johnny Hallyday", "Ma gueule"],
+    ["Renaud", "Ma gonzesse"],
+    ["Daniel Balavoine", "Me laisse pas m'en aller"],
+    ["Alain Barrière", "Amoco"],
+    ["Dalida", "Laissez-moi danser"]
+  ],
+  "1980": [
+    ["Michel Berger", "La Groupie du pianiste"],
+    ["Renaud", "Marche à l'ombre"],
+    ["Téléphone", "Argent trop cher"],
+    ["Richard Gotainer", "Primitif"],
+    ["Lio", "Amoureux solitaires"],
+    ["Daniel Balavoine", "Mon fils ma bataille"],
+    ["Julien Clerc", "Femmes, je vous aime"],
+    ["Francis Cabrel", "L'encre de tes yeux"],
+    ["Johnny Hallyday", "Ma gueule (Live)"],
+    ["Michel Sardou", "Être une femme"]
+  ],
+  "1981": [
+    ["Chagrin d'amour", "Chacun fait (c'qui lui plaît)"],
+    ["Jean-Jacques Goldman", "Il suffira d'un signe"],
+    ["Téléphone", "Ça (c'est vraiment toi)"],
+    ["Renaud", "Manu"],
+    ["Daniel Balavoine", "Vivre ou survivre"],
+    ["France Gall", "Résiste"],
+    ["Alain Bashung", "Vertige de l'amour"],
+    ["Michel Sardou", "Les Lacs du Connemara"],
+    ["Francis Cabrel", "La Dame de Haute-Savoie"],
+    ["Richard Gotainer", "Le Sampa"]
   ],
   "1982": [
-    [
-      "Indochine",
-      "L'aventurier"
-    ]
+    ["Indochine", "L'aventurier"],
+    ["Jean-Jacques Goldman", "Quand la musique est bonne"],
+    ["F.R. David", "Words"],
+    ["Téléphone", "Cendrillon"],
+    ["Renaud", "Dès que le vent soufflera"],
+    ["Michel Berger", "Mademoiselle Chang"],
+    ["France Gall", "Tout pour la musique"],
+    ["Rose Laurens", "Africa"],
+    ["Dorothée", "Hou ! La menteuse"],
+    ["Thierry Pastor", "Le Coup de folie"]
+  ],
+  "1983": [
+    ["Jean-Jacques Goldman", "Envole-moi"],
+    ["Renaud", "Morgane de toi"],
+    ["Eurythmics", "Sweet Dreams"],
+    ["Claude Barzotti", "Le Rital"],
+    ["Daniel Balavoine", "Pour la femme veuve qui s'éveille"],
+    ["Isabelle Adjani", "Pull marine"],
+    ["Julien Clerc", "Cœur de rocker"],
+    ["France Gall", "Débranche"],
+    ["Righeira", "Vamos a la playa"],
+    ["Mireille Mathieu", "Bravo tu as gagné"]
   ],
   "1984": [
-    [
-      "Les Rita Mitsouko",
-      "Marcia Baïla"
-    ],
-    [
-      "Jean-Jacques Goldman",
-      "Envole-moi"
-    ],
-    [
-      "Téléphone",
-      "Un autre monde"
-    ],
-    [
-      "Etienne Daho",
-      "Week-end à Rome"
-    ],
-    [
-      "Jeanne Mas",
-      "Toute première fois"
-    ],
-    [
-      "France Gall",
-      "Débranche"
-    ],
-    [
-      "Michel Berger",
-      "Chanter pour ceux qui sont loin de chez eux"
-    ],
-    [
-      "Renaud",
-      "Morgane de toi"
-    ],
-    [
-      "Cookie Dingler",
-      "Femme libérée"
-    ],
-    [
-      "Peter et Sloane",
-      "Besoin de rien, envie de toi"
-    ],
-    [
-      "Gilbert Montagné",
-      "Les Sunlights des tropiques"
-    ],
-    [
-      "Daniel Balavoine",
-      "Dieu que c'est beau"
-    ],
-    [
-      "Indochine",
-      "Kao Bang"
-    ],
-    [
-      "Julien Clerc",
-      "La fille aux bas nylon"
-    ],
-    [
-      "Alain Souchon",
-      "Somerset Maugham"
-    ]
+    ["Les Rita Mitsouko", "Marcia Baïla"],
+    ["Téléphone", "Un autre monde"],
+    ["Jeanne Mas", "Toute première fois"],
+    ["Etienne Daho", "Week-end à Rome"],
+    ["Cookie Dingler", "Femme libérée"],
+    ["Peter et Sloane", "Besoin de rien, envie de toi"],
+    ["Gilbert Montagné", "Les Sunlights des tropiques"],
+    ["Daniel Balavoine", "Dieu que c'est beau"],
+    ["Jean-Jacques Goldman", "Encore un matin"],
+    ["Indochine", "Kao Bang"]
   ],
   "1985": [
-    [
-      "Daniel Balavoine",
-      "L'Aziza"
-    ],
-    [
-      "Partenaire Particulier",
-      "Partenaire Particulier"
-    ],
-    [
-      "Niagara",
-      "Tchiki boum"
-    ],
-    [
-      "Gold",
-      "Capitaine abandonné"
-    ],
-    [
-      "Sabine Paturel",
-      "Les Bêtises"
-    ],
-    [
-      "Jean-Jacques Goldman",
-      "Je marche seul"
-    ],
-    [
-      "Jean-Jacques Goldman",
-      "Je te donne"
-    ],
-    [
-      "Johnny Hallyday",
-      "Quelque chose de Tennessee"
-    ],
-    [
-      "Johnny Hallyday",
-      "Le Chanteur abandonné"
-    ],
-    [
-      "Renaud",
-      "Miss Maggie"
-    ],
-    [
-      "Marc Lavoine",
-      "Elle a les yeux revolver"
-    ],
-    [
-      "C. Jérôme",
-      "Et tu danses avec lui"
-    ],
-    [
-      "Mylène Farmer",
-      "Plus grandir"
-    ],
-    [
-      "Indochine",
-      "3e sexe"
-    ],
-    [
-      "Indochine",
-      "Canary Bay"
-    ]
+    ["Daniel Balavoine", "L'Aziza"],
+    ["Partenaire Particulier", "Partenaire Particulier"],
+    ["Niagara", "Tchiki boum"],
+    ["Gold", "Capitaine abandonné"],
+    ["Sabine Paturel", "Les Bêtises"],
+    ["Jean-Jacques Goldman", "Je marche seul"],
+    ["Johnny Hallyday", "Quelque chose de Tennessee"],
+    ["Renaud", "Miss Maggie"],
+    ["Marc Lavoine", "Elle a les yeux revolver"],
+    ["Indochine", "3e sexe"]
   ],
   "1986": [
-    [
-      "Desireless",
-      "Voyage Voyage"
-    ],
-    [
-      "Images",
-      "Les Démons de minuit"
-    ]
+    ["Desireless", "Voyage Voyage"],
+    ["Images", "Les Démons de minuit"],
+    ["Stéphanie", "Ouragan"],
+    ["Jean-Jacques Goldman", "Je te donne"],
+    ["Lio", "Les brunes comptent pas pour des prunes"],
+    ["Mylène Farmer", "Libertine"],
+    ["Niagara", "L'Amour à la plage"],
+    ["Rita Mitsouko", "C'est comme ça"],
+    ["Julie Pietri", "Ève lève-toi"],
+    ["Caroline Loeb", "C'est la ouate"]
   ],
   "1987": [
-    [
-      "France Gall",
-      "Ella, elle l'a"
-    ],
-    [
-      "Mylène Farmer",
-      "Sans contrefaçon"
-    ]
+    ["Mylène Farmer", "Sans contrefaçon"],
+    ["France Gall", "Ella, elle l'a"],
+    ["Guesch Patti", "Etienne"],
+    ["Vanessa Paradis", "Joe le taxi"],
+    ["Los Lobos", "La Bamba"],
+    ["Jean-Jacques Goldman", "Là-bas"],
+    ["Florent Pagny", "N'importe quoi"],
+    ["Kassav'", "Syé bwa"],
+    ["Léopold Nord & Vous", "C'est l'amour"],
+    ["Marc Lavoine", "Le monde est tellement con"]
   ],
   "1988": [
-    [
-      "Mylène Farmer",
-      "Pourvu qu'elles soient douces"
-    ]
+    ["Mylène Farmer", "Pourvu qu'elles soient douces"],
+    ["Paco", "Amor de mis amores"],
+    ["Début de Soirée", "Nuit de folie"],
+    ["David et Jonathan", "Est-ce que tu viens pour les vacances ?"],
+    ["Elsa", "Un roman d'amitié"],
+    ["Renaud", "Putain de camion"],
+    ["Patricia Kaas", "Mon mec à moi"],
+    ["François Feldman", "Slave"],
+    ["Jean-Jacques Goldman", "Puisque tu pars"],
+    ["Niagara", "Assez !"]
+  ],
+  "1989": [
+    ["Kaoma", "Lambada"],
+    ["Roch Voisine", "Hélène"],
+    ["Mylène Farmer", "Sans logique"],
+    ["Philippe Lafontaine", "Cœur de loup"],
+    ["François Feldman", "Les Valses de Vienne"],
+    ["Patrick Bruel", "Casser la voix"],
+    ["Mano Negra", "Mala Vida"],
+    ["Jil Caplan", "Tout c'qui nous sépare"],
+    ["Jean-Jacques Goldman", "Il changeait la vie"],
+    ["Liane Foly", "Au fur et à mesure"]
+  ],
+  "1990": [
+    ["Mylène Farmer", "Désenchantée"],
+    ["Patrick Bruel", "Alors regarde"],
+    ["Zouk Machine", "Maldòn"],
+    ["Thierry Hazard", "Le Jerk"],
+    ["MECANO", "Une femme avec une femme"],
+    ["François Feldman", "Petit Frank"],
+    ["Liane Foly", "Doucement"],
+    ["Elsa", "Rien que pour ça"],
+    ["Jean-Jacques Goldman", "Nuit"],
+    ["Félix Gray & Didier Barbelivien", "À toutes les filles"]
   ],
   "1991": [
-    [
-      "MC Solaar",
-      "Caroline"
-    ],
-    [
-      "Mylène Farmer",
-      "Désenchantée"
-    ]
+    ["MC Solaar", "Caroline"],
+    ["Mylène Farmer", "Regrets"],
+    ["Les Inconnus", "Auteuil, Neuilly, Passy"],
+    ["Patrick Bruel", "Qui a le droit"],
+    ["Luc De Larochellière", "Sauvez mon âme"],
+    ["Yannick Noah", "Saga Africa"],
+    ["Jil Caplan", "Natalie Wood"],
+    ["François Feldman", "Joy"],
+    ["Stephan Eicher", "Déjeuner en paix"],
+    ["Jean-Jacques Goldman", "Un, deux, trois"]
+  ],
+  "1992": [
+    ["Khaled", "Didi"],
+    ["Jordy", "Dur dur d'être bébé"],
+    ["Pow Wow", "Le Chat"],
+    ["Céline Dion", "L'amour existe encore"],
+    ["Laurent Voulzy", "Paradoxal Système"],
+    ["Vanessa Paradis", "Be My Baby"],
+    ["MC Solaar", "Qui sème le vent récolte le tempo"],
+    ["Pascal Obispo", "Plus que tout au monde"],
+    ["Alain Bashung", "Osez Joséphine"],
+    ["Zazie", "Sucré salé"]
+  ],
+  "1993": [
+    ["Regg'Lyss", "Mets de l'huile"],
+    ["Alain Souchon", "Foule sentimentale"],
+    ["Hélène Rollès", "Je m'appelle Hélène"],
+    ["Johnny Hallyday", "Je serai là"],
+    ["Les Rita Mitsouko", "Y'a d'la haine"],
+    ["Zazie", "Je, tu, ils"],
+    ["MC Solaar", "Nouveau western"],
+    ["Stephan Eicher", "Pas d'ami (comme toi)"],
+    ["Céline Dion", "Un garçon pas comme les autres"],
+    ["Florent Pagny", "Est-ce que tu me suis ?"]
+  ],
+  "1994": [
+    ["IAM", "Je danse le mia"],
+    ["Youssou N'Dour & Neneh Cherry", "7 Seconds"],
+    ["Axelle Red", "Sensualité"],
+    ["Francis Cabrel", "La Corrida"],
+    ["Alain Souchon", "L'Amour à la machine"],
+    ["Pascal Obispo", "Tombé pour elle"],
+    ["Enigma", "Return to Innocence"],
+    ["Mylène Farmer", "Diabolique mon ange"],
+    ["Céline Dion", "Pour que tu m'aimes encore"],
+    ["Ophélie Winter", "Dieu m'a donné la foi"]
   ],
   "1995": [
-    [
-      "Daft Punk",
-      "Da Funk"
-    ]
+    ["Céline Dion", "Je sais pas"],
+    ["Mylène Farmer", "XXL"],
+    ["Daft Punk", "Da Funk"],
+    ["Florent Pagny", "Savoir aimer"],
+    ["Zazie", "Larsen"],
+    ["Alliance Ethnik", "Respect"],
+    ["Ophélie Winter", "Le feu qui m'attise"],
+    ["Johnny Hallyday", "L'Envie"],
+    ["MC Solaar", "Obsolète"],
+    ["Pascal Obispo", "Tu compliques tout"]
   ],
   "1996": [
-    [
-      "Khaled",
-      "Aïcha"
-    ]
+    ["Khaled", "Aïcha"],
+    ["Boris", "Soirée disco"],
+    ["Fugees", "Killing Me Softly"],
+    ["Gala", "Freed from Desire"],
+    ["Zazie", "Un point c'est toi"],
+    ["Mylène Farmer", "California"],
+    ["Doc Gynéco", "Viens voir le docteur"],
+    ["Teri Moïse", "Les poèmes de Michelle"],
+    ["Céline Dion", "Les derniers seront les premiers"],
+    ["Noir Désir", "Un jour en France"]
   ],
   "1997": [
-    [
-      "Daft Punk",
-      "Around the World"
-    ],
-    [
-      "IAM",
-      "Demain, c'est loin"
-    ],
-    [
-      "Louise Attaque",
-      "J't'emmène au vent"
-    ]
+    ["Daft Punk", "Around the World"],
+    ["Andrea Bocelli & Hélène Ségara", "Vivo per lei"],
+    ["Will Smith", "Men in Black"],
+    ["Lara Fabian", "Tout"],
+    ["Louise Attaque", "J't'emmène au vent"],
+    ["IAM", "Demain, c'est loin"],
+    ["Florent Pagny", "Savoir aimer"],
+    ["Zazie", "Tout le monde"],
+    ["MC Solaar", "Les temps changent"],
+    ["Pascal Obispo", "Lucie"]
   ],
   "1998": [
-    [
-      "Air",
-      "Sexy Boy"
-    ],
-    [
-      "Manu Chao",
-      "Clandestino"
-    ],
-    [
-      "Manau",
-      "La Tribu de Dana"
-    ],
-    [
-      "Suprême NTM",
-      "Seine Saint-Denis Style"
-    ],
-    [
-      "Zebda",
-      "Tomber la chemise"
-    ],
-    [
-      "Stardust",
-      "Music Sounds Better With You"
-    ]
+    ["Manau", "La Tribu de Dana"],
+    ["Daniel Lavoie, Garou, Patrick Fiori", "Belle"],
+    ["Stardust", "Music Sounds Better With You"],
+    ["Manu Chao", "Clandestino"],
+    ["Lââm", "Chanter pour ceux qui sont loin de chez eux"],
+    ["Air", "Sexy Boy"],
+    ["Suprême NTM", "Seine Saint-Denis Style"],
+    ["Zebda", "Tomber la chemise"],
+    ["Mylène Farmer", "L'Âme-stram-gram"],
+    ["Lara Fabian", "Je t'aime"]
   ],
   "1999": [
-    [
-      "Cassius",
-      "Cassius 1999"
-    ],
-    [
-      "Phoenix",
-      "Too Young"
-    ]
+    ["Lou Bega", "Mambo No. 5"],
+    ["Larusso", "Tu m'oublieras"],
+    ["Cassius", "Cassius 1999"],
+    ["Moos", "Au nom de la rose"],
+    ["David Hallyday", "Tu ne m'as pas laissé le temps"],
+    ["Phoenix", "Too Young"],
+    ["Eiffel 65", "Blue (Da Ba Dee)"],
+    ["Mylène Farmer", "Je te rends ton amour"],
+    ["Zebda", "Y'a pas d'arrangement"],
+    ["Lara Fabian", "La Différence"]
   ],
   "2000": [
-    [
-      "Daft Punk",
-      "One More Time"
-    ],
-    [
-      "Alizée",
-      "Moi... Lolita"
-    ],
-    [
-      "Modjo",
-      "Lady (Hear Me Tonight)"
-    ]
+    ["Alizée", "Moi... Lolita"],
+    ["Daft Punk", "One More Time"],
+    ["Modjo", "Lady (Hear Me Tonight)"],
+    ["Saïan Supa Crew", "Angela"],
+    ["Yannick", "Ces soirées-là"],
+    ["Romeo et Juliette", "Aimer"],
+    ["Isabelle Boulay", "Parle-moi"],
+    ["Hélène Ségara", "Il y a trop de gens qui t'aiment"],
+    ["Mylène Farmer", "Innamoramento"],
+    ["Pascal Obispo", "L'important c'est d'aimer"]
   ],
   "2001": [
-    [
-      "Daft Punk",
-      "Harder, Better, Faster, Stronger"
-    ],
-    [
-      "Yann Tiersen",
-      "Comptine d'un autre été: L'Après-Midi"
-    ]
+    ["Lorie", "Près de moi"],
+    ["Mary J. Blige", "Family Affair"],
+    ["Daft Punk", "Harder, Better, Faster, Stronger"],
+    ["Kylie Minogue", "Can't Get You Out of My Head"],
+    ["Geri Halliwell", "It's Raining Men"],
+    ["Garou", "Seul"],
+    ["Star Academy", "La Musique"],
+    ["Noir Désir", "Le vent nous portera"],
+    ["Manu Chao", "Me Gustas Tu"],
+    ["MC Solaar", "Solaar pleure"]
   ],
   "2002": [
-    [
-      "David Guetta",
-      "Love Don't Let Me Go"
-    ]
+    ["Las Ketchup", "The Ketchup Song (Aserejé)"],
+    ["Bratisla Boys", "Stach Stach"],
+    ["Jenifer", "Au soleil"],
+    ["Renaud", "Manhattan-Kaboul"],
+    ["Indochine", "J'ai demandé à la lune"],
+    ["David Guetta", "Love Don't Let Me Go"],
+    ["Lorie", "Toute seule"],
+    ["Kyo", "Le Chemin"],
+    ["Rohff", "Qui est l'exemple ?"],
+    ["Magic System", "1er Gaou"]
+  ],
+  "2003": [
+    ["Kyo", "Dernière Danse"],
+    ["Diam's", "DJ"],
+    ["Lorie", "Sur un air latino"],
+    ["Jocelyne Labylle & Cheela", "Laisse parler les gens"],
+    ["Evanescence", "Bring Me To Life"],
+    ["Hermes House Band", "Live Is Life"],
+    ["Chimène Badi", "Entre nous"],
+    ["Tragédie", "Hey Oh"],
+    ["Céline Dion", "Tout l'or des hommes"],
+    ["Mylène Farmer", "Fuck Them All"]
   ],
   "2004": [
-    [
-      "M. Pokora",
-      "Elle me contrôle"
-    ],
-    [
-      "Sébastien Tellier",
-      "La Ritournelle"
-    ]
+    ["O-Zone", "Dragostea Din Tei"],
+    ["K.Maro", "Femme Like U"],
+    ["Aventura", "Obsesión"],
+    ["Amel Bent", "Ma philosophie"],
+    ["Calogero", "Face à la mer"],
+    ["Sébastien Tellier", "La Ritournelle"],
+    ["M. Pokora", "Elle me contrôle"],
+    ["Corneille", "Parce qu'on vient de loin"],
+    ["Nadiya", "Et c'est parti..."],
+    ["Yannick Noah", "Ose"]
   ],
   "2005": [
-    [
-      "Camille",
-      "Ta Douleur"
-    ]
+    ["Crazy Frog", "Axel F"],
+    ["Pinocchio", "T'es pas cap Pinocchio"],
+    ["Raphaël", "Caravane"],
+    ["Gage", "Pense à moi"],
+    ["Bob Sinclar", "Love Generation"],
+    ["Camille", "Ta Douleur"],
+    ["Amine", "Ma vie"],
+    ["Diam's", "La Boulette"],
+    ["Gregory Lemarchal", "Écris l'histoire"],
+    ["Mylène Farmer", "Slipping Away (Crier la vie)"]
   ],
   "2006": [
-    [
-      "Bob Sinclar",
-      "World, Hold On"
-    ]
+    ["Faf Larage", "Pas le temps"],
+    ["Bob Sinclar", "World, Hold On"],
+    ["David Guetta", "Love Is Gone"],
+    ["Fatal Bazooka", "Fous ta cagoule"],
+    ["Olivia Ruiz", "La Femme Chocolat"],
+    ["Diam's", "Jeune demoiselle"],
+    ["Superbus", "Butterfly"],
+    ["Najoua Belyzel", "Gabriel"],
+    ["Christophe Maé", "On s'attache"],
+    ["Mika", "Relax, Take It Easy"]
   ],
   "2007": [
-    [
-      "Justice",
-      "D.A.N.C.E."
-    ],
-    [
-      "Yelle",
-      "A cause des garçons"
-    ],
-    [
-      "Christophe Maé",
-      "On s'attache"
-    ]
+    ["Justice", "D.A.N.C.E."],
+    ["Mika", "Grace Kelly"],
+    ["Christophe Willem", "Double je"],
+    ["Rihanna", "Umbrella"],
+    ["Koxie", "Garçon"],
+    ["Yelle", "A cause des garçons"],
+    ["Sheryfa Luna", "Quelque part"],
+    ["David Guetta", "Baby When The Light"],
+    ["Fatal Bazooka", "Parle à ma main"],
+    ["Renan Luce", "La Lettre"]
+  ],
+  "2008": [
+    ["Laurent Wolf", "No Stress"],
+    ["Katy Perry", "I Kissed a Girl"],
+    ["Madcon", "Beggin'"],
+    ["William Baldé", "Rayon de soleil"],
+    ["Enrique Iglesias", "Tired of Being Sorry (Laisse le destin l'emporter)"],
+    ["Mylène Farmer", "Appelle mon numéro"],
+    ["Christophe Maé", "C'est ma terre"],
+    ["Julien Doré", "Les Limites"],
+    ["Zaho", "C'est chelou"],
+    ["Martin Solveig", "C'est la vie"]
   ],
   "2009": [
-    [
-      "Phoenix",
-      "1901"
-    ],
-    [
-      "David Guetta ft. Akon",
-      "Sexy Bitch"
-    ]
+    ["Helmut Fritz", "Ça m'énerve"],
+    ["David Guetta", "Sexy Bitch"],
+    ["Black Eyed Peas", "I Gotta Feeling"],
+    ["Phoenix", "1901"],
+    ["Stromae", "Alors on danse"],
+    ["Cœur de Pirate", "Comme des enfants"],
+    ["Jena Lee", "J'aimerais tellement"],
+    ["Pony Pony Run Run", "Hey You"],
+    ["Gossip", "Heavy Cross"],
+    ["Mozart l'Opéra Rock", "L'Assasymphonie"]
   ],
   "2010": [
-    [
-      "Kavinsky",
-      "Nightcall"
-    ]
+    ["Shakira", "Waka Waka (This Time for Africa)"],
+    ["René la Taupe", "Mignon Mignon"],
+    ["Stromae", "Te Quiero"],
+    ["Sexion d'Assaut", "Désolé"],
+    ["Zaz", "Je veux"],
+    ["Kavinsky", "Nightcall"],
+    ["David Guetta", "Memories"],
+    ["Martin Solveig", "Hello"],
+    ["Ben l'Oncle Soul", "Soulman"],
+    ["Mylène Farmer", "Oui mais... non"]
+  ],
+  "2011": [
+    ["LMFAO", "Party Rock Anthem"],
+    ["Adele", "Someone Like You"],
+    ["Rihanna", "We Found Love"],
+    ["Mika", "Elle me dit"],
+    ["Snoop Dogg & David Guetta", "Sweat"],
+    ["Keen'V", "J'aimerais trop"],
+    ["Inna", "Sun Is Up"],
+    ["Magic System", "Chérie coco"],
+    ["Pitbull", "Give Me Everything"],
+    ["Orelsan", "La terre est ronde"]
+  ],
+  "2012": [
+    ["Gotye", "Somebody That I Used to Know"],
+    ["Michel Teló", "Ai Se Eu Te Pego"],
+    ["Carly Rae Jepsen", "Call Me Maybe"],
+    ["Psy", "Gangnam Style"],
+    ["Sexion d'Assaut", "Avant qu'elle parte"],
+    ["Tal", "Le sens de la vie"],
+    ["Shaka Ponk", "My Name Is Stain"],
+    ["C2C", "Down the Road"],
+    ["David Guetta", "Titanium"],
+    ["Birdy", "Skinny Love"]
   ],
   "2013": [
-    [
-      "Daft Punk ft. Pharrell Williams",
-      "Get Lucky"
-    ],
-    [
-      "Stromae",
-      "Papaoutai"
-    ],
-    [
-      "Stromae",
-      "Tous les mêmes"
-    ],
-    [
-      "Indila",
-      "Dernière danse"
-    ],
-    [
-      "DJ Snake ft. Lil Jon",
-      "Turn Down for What"
-    ],
-    [
-      "Maitre Gims",
-      "Bella"
-    ]
+    ["Daft Punk", "Get Lucky"],
+    ["Stromae", "Papaoutai"],
+    ["Avicii", "Wake Me Up"],
+    ["Robin Thicke", "Blurred Lines"],
+    ["Maitre Gims", "Bella"],
+    ["Stromae", "Tous les mêmes"],
+    ["Indila", "Dernière danse"],
+    ["DJ Snake", "Turn Down for What"],
+    ["Keen'V", "La vie du bon côté"],
+    ["Katy Perry", "Roar"]
   ],
   "2014": [
-    [
-      "Christine and the Queens",
-      "Tilted"
-    ],
-    [
-      "Soprano",
-      "Clown"
-    ]
+    ["Pharrell Williams", "Happy"],
+    ["Lilly Wood & The Prick", "Prayer In C"],
+    ["Sia", "Chandelier"],
+    ["Kendji Girac", "Andalouse"],
+    ["Christine and the Queens", "Tilted"],
+    ["Maitre Gims", "Zombie"],
+    ["Black M", "Sur ma route"],
+    ["Soprano", "Clown"],
+    ["Indila", "Tourner dans le vide"],
+    ["David Guetta", "Dangerous"]
   ],
   "2015": [
-    [
-      "Jain",
-      "Makeba"
-    ],
-    [
-      "Petit Biscuit",
-      "Sunset Lover"
-    ]
+    ["Major Lazer & DJ Snake", "Lean On"],
+    ["OMI", "Cheerleader"],
+    ["Nekfeu", "On verra"],
+    ["Maitre Gims", "Sapés comme jamais"],
+    ["Kendji Girac", "Conmigo"],
+    ["Louane", "Avenir"],
+    ["Jain", "Makeba"],
+    ["Petit Biscuit", "Sunset Lover"],
+    ["Marina Kaye", "Homeless"],
+    ["Jul", "Wesh alors"]
   ],
   "2016": [
-    [
-      "Kungs vs Cookin' on 3 Burners",
-      "This Girl"
-    ],
-    [
-      "Ofenbach",
-      "Be Mine"
-    ]
+    ["Sia", "Cheap Thrills"],
+    ["Kungs vs Cookin' on 3 Burners", "This Girl"],
+    ["Drake", "One Dance"],
+    ["Claudio Capéo", "Un homme debout"],
+    ["Jul", "Tchikita"],
+    ["MHD", "Afro Trap Part.3 (Champions League)"],
+    ["Ofenbach", "Be Mine"],
+    ["LP", "Lost on You"],
+    ["PNL", "Naha"],
+    ["Soprano", "En feu"]
+  ],
+  "2017": [
+    ["Ed Sheeran", "Shape of You"],
+    ["Luis Fonsi", "Despacito"],
+    ["Niska", "Réseaux"],
+    ["Damso", "Macarena"],
+    ["Lartiste", "Chocolat"],
+    ["Orelsan", "Basique"],
+    ["Ninho", "Mamacita"],
+    ["Dadju", "Reine"],
+    ["Kalash", "Mwaka Moon"],
+    ["Booba", "DKR"]
   ],
   "2018": [
-    [
-      "Aya Nakamura",
-      "Djadja"
-    ]
+    ["Aya Nakamura", "Djadja"],
+    ["Vegedream", "Ramenez la coupe à la maison"],
+    ["Lartiste", "Mafiosa"],
+    ["Vald", "Désaccordé"],
+    ["Dadju", "Bob Marley"],
+    ["Ninho", "Goutte d'eau"],
+    ["Jul", "Toto et Ninetta"],
+    ["Angèle", "Tout oublier"],
+    ["Maitre Gims", "La Même"],
+    ["DJ Snake", "Taki Taki"]
   ],
   "2019": [
-    [
-      "PNL",
-      "Au DD"
-    ]
+    ["PNL", "Au DD"],
+    ["Ninho", "La vie qu'on mène"],
+    ["Angèle", "Balance ton quoi"],
+    ["Aya Nakamura", "Pookie"],
+    ["Heuss L'Enfoiré", "Moulaga"],
+    ["Gims", "Hola Señorita"],
+    ["Niska", "Médicament"],
+    ["Bosh", "Djomb"],
+    ["Eva", "On Fleek"],
+    ["Soprano", "Le Coach"]
   ],
   "2020": [
-    [
-      "Aya Nakamura",
-      "Jolie nana"
-    ],
-    [
-      "Jul",
-      "Bande Organisée"
-    ]
+    ["Jul", "Bande Organisée"],
+    ["Aya Nakamura", "Jolie nana"],
+    ["Ninho", "Lettre à une femme"],
+    ["Soolking", "Melegim"],
+    ["Hatik", "Angela"],
+    ["Bosh", "Djomb (Bien ou quoi)"],
+    ["Grand Corps Malade", "Mais je t'aime"],
+    ["Tayc", "N'y pense plus"],
+    ["Wejdene", "Anissa"],
+    ["Gims", "Jusqu'ici tout va bien"]
   ],
   "2021": [
-    [
-      "Stromae",
-      "Santé"
-    ],
-    [
-      "Ninho",
-      "Jefe"
-    ],
-    [
-      "Orelsan",
-      "Jour meilleur"
-    ],
-    [
-      "Pierre de Maere",
-      "Un jour je marierai un ange"
-    ],
-    [
-      "Koba LaD",
-      "Daddy chocolat"
-    ],
-    [
-      "Gazo",
-      "HAINE&SEX"
-    ]
+    ["Ninho", "Jefe"],
+    ["Tayc", "Le temps"],
+    ["Stromae", "Santé"],
+    ["Orelsan", "L'odeur de l'essence"],
+    ["Gazo", "HAINE&SEX"],
+    ["Soso Maness", "Petrouchka"],
+    ["Jul", "Pic et pic, alcool et drame"],
+    ["Koba LaD", "Daddy chocolat"],
+    ["Clara Luciani", "Le reste"],
+    ["Pierre de Maere", "Un jour je marierai un ange"]
   ],
   "2022": [
-    [
-      "Santa",
-      "Popcorn Salé"
-    ],
-    [
-      "Soolking ft. Niska",
-      "Balader"
-    ],
-    [
-      "SDM",
-      "Bolide Germanique"
-    ]
+    ["Gazo", "DIE"],
+    ["SDM", "Bolide Allemand"],
+    ["Ziak", "Akimbo"],
+    ["Tiakola", "Meleda"],
+    ["Orelsan", "La Quête"],
+    ["Soolking", "Suavemente"],
+    ["Alonzo", "Tout va bien"],
+    ["Rema", "Calm Down"],
+    ["Lomepal", "Decrescendo"],
+    ["Aya Nakamura", "SMS"]
   ],
   "2023": [
-    [
-      "Zaho de Sagazan",
-      "La symphonie des éclairs"
-    ],
-    [
-      "Luidji",
-      "Giselle"
-    ],
-    [
-      "Werenoi",
-      "Laboratoire"
-    ]
+    ["Werenoi", "Laboratoire"],
+    ["Tiakola", "Meridian"],
+    ["SDM", "Mr. Ocho"],
+    ["Heuss L'Enfoiré", "Saiyan"],
+    ["Aya Nakamura", "Baby"],
+    ["Zaho de Sagazan", "La symphonie des éclairs"],
+    ["Luidji", "Giselle"],
+    ["Ninho", "Eurostar"],
+    ["Jul", "La Faille"],
+    ["Gazo", "Casanova"]
   ],
   "2024": [
-    [
-      "Gims",
-      "Spider"
-    ]
+    ["Pierre Garnier", "Ceux qu'on était"],
+    ["Gims", "Spider"],
+    ["Jungeli", "Petit génie"],
+    ["Werenoi", "Pyramide"],
+    ["Santa", "Popcorn Salé"],
+    ["Aya Nakamura", "Hypé"],
+    ["Dadju & Tayc", "I love you"],
+    ["PLK", "Il pleut à Paris"],
+    ["Ninho", "37"],
+    ["Slimane", "Mon amour"]
+  ],
+  "2025": [
+    ["Aya Nakamura", "Chérie"],
+    ["Gazo", "Dior"],
+    ["Werenoi", "Téléphone"],
+    ["Tiakola", "Solo"],
+    ["SDM", "Pour elle"],
+    ["Jul", "Sous le soleil"],
+    ["Ninho", "Binks"],
+    ["Tayc", "Room 69"],
+    ["Pierre Garnier", "Demain"],
+    ["Zaho de Sagazan", "L'orage"]
   ],
   "2026": [
-    [
-      "Gims",
-      "Spider"
-    ],
-    [
-      "Pierre Garnier",
-      "Ceux qu'on était"
-    ],
-    [
-      "Aya Nakamura",
-      "Hypé"
-    ],
-    [
-      "Dadju & Tayc",
-      "I love you"
-    ],
-    [
-      "Jungeli",
-      "Petit génie"
-    ],
-    [
-      "Werenoi",
-      "Pyramide"
-    ],
-    [
-      "Ninho",
-      "Jefe"
-    ],
-    [
-      "Jul",
-      "J'fais que danser"
-    ],
-    [
-      "PLK",
-      "Il pleut à Paris"
-    ],
-    [
-      "Zaho de Sagazan",
-      "La symphonie des éclairs"
-    ],
-    [
-      "Santa",
-      "Popcorn Salé"
-    ],
-    [
-      "Slimane",
-      "Mon amour"
-    ],
-    [
-      "Heuss L'enfoiré",
-      "Moulaga"
-    ],
-    [
-      "Orelsan",
-      "La Quête"
-    ],
-    [
-      "Soolking",
-      "Casanova"
-    ]
+    ["Gims", "Loco"],
+    ["Aya Nakamura", "Fuego"],
+    ["Werenoi", "Bâtiment"],
+    ["SDM", "TMax"],
+    ["Tiakola", "Toute la nuit"],
+    ["Jul", "En bande"],
+    ["Ninho", "Ghetto"],
+    ["Tayc", "Pardon"],
+    ["Pierre Garnier", "Ensemble"],
+    ["Angèle", "Sempre"]
   ]
 }
