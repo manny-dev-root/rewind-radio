@@ -43,8 +43,12 @@ export function RankingModal() {
   }, [isOpen, selectedCountry, fetchRanking]);
 
   const handleTuneToTrack = (track: TrackPlayRecord) => {
-    setCountry(track.country);
-    setYear(track.year);
+    useEraStore.getState().triggerGlitch?.(500);
+    useEraStore.setState({
+      currentCountry: track.country,
+      currentYear: track.year,
+      targetTrack: { title: track.title, artist: track.artist },
+    });
     setIsOpen(false);
   };
 

@@ -30,6 +30,7 @@ export interface EraState {
   tuneData: TuneResponse | null;
   error: string | null;
   targetTrack?: { title: string; artist: string } | null;
+  isGlitching?: boolean;
   // Actions
   setYear: (year: number) => void;
   setCountry: (country: string) => void;
@@ -39,4 +40,5 @@ export interface EraState {
   setTuneData: (data: TuneResponse | null) => void;
   setError: (error: string | null) => void;
   setTargetTrack?: (track: { title: string; artist: string } | null) => void;
+  triggerGlitch?: (durationMs?: number) => void;
 }

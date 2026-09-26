@@ -20,6 +20,7 @@ function SceneContent() {
   const currentCountry = useEraStore((s) => s.currentCountry);
   const trackIndex = useEraStore((s) => s.trackIndex);
   const isTuning = useEraStore((s) => s.isTuning);
+  const isGlitching = useEraStore((s) => s.isGlitching ?? false);
   const tuneData = useEraStore((s) => s.tuneData);
   const setYear = useEraStore((s) => s.setYear);
   const setCountry = useEraStore((s) => s.setCountry);
@@ -56,6 +57,7 @@ function SceneContent() {
   const activeTrack = playlist[trackIndex] || playlist[0];
 
   const handleTrackChange = (newIndex: number) => {
+    useEraStore.getState().triggerGlitch?.(350);
     setTrackIndex(newIndex);
     const selected = playlist[newIndex];
     if (selected?.previewUrl) {
@@ -130,7 +132,7 @@ function SceneContent() {
         radius={0.30}
       />
 
-      <EraEffects year={currentYear} isTuning={isTuning} />
+      <EraEffects year={currentYear} isGlitching={isGlitching} />
     </>
   );
 }

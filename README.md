@@ -26,7 +26,7 @@ Desarrollado para el **Challenge de Webflow en Nerdearla 2026** por [**Manfred C
 - **Coreografía de Sintonización:** Crossfade suave entre estática de radio FM al mover los diales y la pista musical al estabilizar la sintonía.
 
 ### 💾 Base de Datos Edge (Cloudflare D1 / SQLite en Webflow Cloud)
-- **Registro Atómico de Reproducciones:** Endpoint `POST /api/play` que registra una reproducción cuando el usuario escucha una canción por al menos 10 segundos continuos.
+- **Registro Atómico de Reproducciones:** Endpoint `POST /api/play` que registra una reproducción cuando el usuario escucha una canción por al menos 5 segundos continuos.
 - **Ranking Global en Tiempo Real:** Endpoint `GET /api/ranking` con soporte para límite y filtros geográficos.
 - **Persistencia Híbrida:** Utiliza Cloudflare D1 en producción (Webflow Cloud) y SQLite local en desarrollo.
 

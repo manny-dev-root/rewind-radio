@@ -117,6 +117,8 @@ export function RandomButton({ position = [0.90, -0.80, 0.63] }: RandomButtonPro
       randomYear = randomYear < maxYear ? randomYear + 1 : randomYear - 1;
     }
 
+    useEraStore.getState().triggerGlitch?.(500);
+
     useEraStore.setState({
       currentCountry: randomCountry,
       currentYear: randomYear,

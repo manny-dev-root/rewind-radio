@@ -5,14 +5,15 @@ import { GlitchMode } from 'postprocessing';
 
 export interface EraEffectsProps {
   year?: number;
-  isTuning: boolean;
+  isGlitching: boolean;
 }
 
 /**
- * Post-procesado limpio sin filtros por rangos de años.
- * Conserva únicamente el brillo de los displays LED y el efecto Glitch al cambiar de año/sintonizar.
+ * Post-procesado reactivo de la radio.
+ * Mantiene el resplandor cálido de los visores LED y activa el efecto Glitch
+ * únicamente en saltos directos (Random, cambio de pista en sintonizador, o click en Top).
  */
-export function EraEffects({ isTuning }: EraEffectsProps) {
+export function EraEffects({ isGlitching }: EraEffectsProps) {
   return (
     <EffectComposer multisampling={0}>
       <Bloom
@@ -22,8 +23,8 @@ export function EraEffects({ isTuning }: EraEffectsProps) {
         mipmapBlur
       />
       <Glitch
-        active={isTuning}
-        mode={GlitchMode.SPORADIC}
+        active={isGlitching}
+        mode={GlitchMode.CONSTANT_MILD}
       />
     </EffectComposer>
   );

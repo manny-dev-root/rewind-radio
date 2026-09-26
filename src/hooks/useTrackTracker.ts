@@ -6,7 +6,7 @@ import { trackEvent } from '@/lib/analytics';
 
 /**
  * Hook que registra de forma atómica la reproducción de una canción
- * si el usuario la escucha durante al menos 10 segundos continuos.
+ * si el usuario la escucha durante al menos 5 segundos continuos.
  */
 export function useTrackTracker(): void {
   const isPlaying = useEraStore((state) => state.isPlaying);
@@ -40,7 +40,7 @@ export function useTrackTracker(): void {
       clearTimeout(timerRef.current);
     }
 
-    // Registrar reproducción si el usuario la escucha al menos 10 segundos
+    // Registrar reproducción si el usuario la escucha al menos 5 segundos
     timerRef.current = setTimeout(() => {
       recordedTrackRef.current = trackKey;
       const trackYear = Number(activeTrack.releaseYear || currentYear);
@@ -63,7 +63,7 @@ export function useTrackTracker(): void {
           artworkUrl: activeTrack.artworkUrl,
         }),
       }).catch(() => {});
-    }, 10000);
+    }, 5000);
 
     return () => {
       if (timerRef.current) {

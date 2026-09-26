@@ -94,6 +94,7 @@ export function RankingDisplay({
       year: track.year,
       plays: track.play_count,
     });
+    useEraStore.getState().triggerGlitch?.(500);
     useEraStore.setState({
       currentCountry: track.country,
       currentYear: track.year,
