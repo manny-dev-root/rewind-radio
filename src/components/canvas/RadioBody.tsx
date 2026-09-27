@@ -32,12 +32,12 @@ export function RadioBody() {
       </group>
 
       {/* Ventana visor superior (Pantalla LED Marquesina + Espectro Musical) */}
-      <RoundedBox args={[2.5, 0.82, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.72, 0.6]}>
+      <RoundedBox args={[2.5, 0.68, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.73, 0.6]}>
         <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
       </RoundedBox>
 
       {/* Ventana visor inferior (Sintonizador Horizontal de Tracks) */}
-      <RoundedBox args={[2.5, 0.38, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.05, 0.6]}>
+      <RoundedBox args={[2.5, 0.34, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.16, 0.6]}>
         <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
       </RoundedBox>
 

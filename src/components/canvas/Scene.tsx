@@ -9,6 +9,7 @@ import { AudioSpectrum } from './AudioSpectrum';
 import { HorizontalTuner } from './HorizontalTuner';
 import { RankingDisplay } from './RankingDisplay';
 import { RandomButton } from './RandomButton';
+import { PlaybackButtons } from './PlaybackButtons';
 import { EraEffects } from './EraEffects';
 import { AudioReactiveLights } from './AudioReactiveLights';
 import { useEraStore } from '@/store/useEraStore';
@@ -105,16 +106,19 @@ function SceneContent() {
       />
 
       {/* Espectro musical 3D debajo del texto dentro del visor LCD */}
-      <AudioSpectrum position={[0.9, 0.49, 0.64]} barsCount={20} width={2.2} maxHeight={0.19} />
+      <AudioSpectrum position={[0.9, 0.51, 0.64]} barsCount={20} width={2.2} maxHeight={0.14} />
 
       {/* Sintonizador horizontal con marcas adaptativas (1..N, tope 10) y aguja digital */}
       <HorizontalTuner
-        position={[0.9, 0.05, 0.635]}
+        position={[0.9, 0.16, 0.635]}
         trackCount={playlist.length}
         currentIndex={trackIndex}
         onChange={handleTrackChange}
         width={2.16}
       />
+
+      {/* Trío de botones físicos táctiles estilo vintage: Anterior, Play/Pausa, Siguiente */}
+      <PlaybackButtons position={[0.90, -0.14, 0.635]} />
 
       {/* Dial de año compacto con pantalla LED integrada en el centro */}
       <Dial

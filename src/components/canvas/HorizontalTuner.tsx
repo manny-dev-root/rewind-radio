@@ -269,20 +269,6 @@ export function HorizontalTuner({
           />
         </mesh>
       </group>
-
-      {/* Etiqueta centrada debajo del visor del sintonizador (con mayor padding top) */}
-      <Text
-        position={[0, -0.26, 0.01]}
-        fontSize={0.052}
-        color="#7a7d92"
-        anchorX="center"
-        anchorY="middle"
-        letterSpacing={0.14}
-      >
-        {hasTracks
-          ? `SINTONIZADOR · ${actualCount} ${actualCount === 1 ? 'TEMA' : 'TEMAS'} ENCONTRADOS`
-          : 'SIN FRECUENCIAS REGISTRADAS'}
-      </Text>
     </group>
   );
 }
