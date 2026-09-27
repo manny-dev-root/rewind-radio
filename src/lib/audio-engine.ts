@@ -17,11 +17,12 @@ export class AudioEngine {
   private transitionTimer: ReturnType<typeof setTimeout> | null = null;
   private pendingTrackUrl: string | null = null;
   private userHasInteracted = false;
+  private isExplicitlyPaused = false;
 
   public init(): AudioContext {
     this.userHasInteracted = true;
     const context = this.ensureContext();
-    if (this.audio && this.pendingTrackUrl && this.audio.paused) {
+    if (this.audio && this.pendingTrackUrl && this.audio.paused && !this.isExplicitlyPaused) {
       if (this.audio.src !== this.pendingTrackUrl) {
         this.audio.src = this.pendingTrackUrl;
       }
@@ -147,6 +148,7 @@ export class AudioEngine {
     if (!this.audio) return false;
 
     if (this.audio.paused) {
+      this.isExplicitlyPaused = false;
       if (this.audio.src || this.pendingTrackUrl) {
         if ((!this.audio.src || this.audio.src !== this.pendingTrackUrl) && this.pendingTrackUrl) {
           this.audio.src = this.pendingTrackUrl;
@@ -162,6 +164,7 @@ export class AudioEngine {
       }
       return false;
     } else {
+      this.isExplicitlyPaused = true;
       this.audio.pause();
       this.onPlaybackStateChange?.(false);
       return false;
@@ -192,6 +195,7 @@ export class AudioEngine {
       clearTimeout(this.transitionTimer);
       this.transitionTimer = null;
     }
+    this.isExplicitlyPaused = false;
     this.ensureContext();
     this.pendingTrackUrl = newUrl || null;
 
@@ -233,6 +237,7 @@ export class AudioEngine {
       this.transitionTimer = null;
     }
 
+    this.isExplicitlyPaused = false;
     this.ensureContext();
     this.pendingTrackUrl = newUrl || null;
 

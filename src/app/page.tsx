@@ -39,17 +39,8 @@ export default function Home() {
     setShowOnboarding(false);
   };
 
-  const handleGlobalClick = () => {
-    if (!showOnboarding) {
-      audioEngine?.init();
-    }
-  };
-
   return (
-    <main
-      onClick={handleGlobalClick}
-      className="w-screen h-screen relative overflow-hidden bg-black select-none"
-    >
+    <main className="w-screen h-screen relative overflow-hidden bg-black select-none">
       {/* Canvas WebGL 3D */}
       <div className="absolute inset-0 z-0">
         <DynamicScene />

@@ -144,12 +144,12 @@ export function RandomButton({ position = [0.90, -0.80, 0.63] }: RandomButtonPro
       <group
         ref={buttonMeshRef}
         onClick={handleClick}
-        onPointerOver={(e) => {
+        onPointerEnter={(e) => {
           e.stopPropagation();
           setIsHovered(true);
           document.body.style.cursor = 'pointer';
         }}
-        onPointerOut={(e) => {
+        onPointerLeave={(e) => {
           e.stopPropagation();
           setIsHovered(false);
           document.body.style.cursor = 'auto';
@@ -166,9 +166,9 @@ export function RandomButton({ position = [0.90, -0.80, 0.63] }: RandomButtonPro
           />
         </RoundedBox>
 
-        {/* Ícono de Shuffle / Random */}
+        {/* Ícono de Shuffle / Random (raycast null para evitar parpadeos) */}
         {shuffleTexture && (
-          <mesh position={[0, 0.022, 0.032]}>
+          <mesh position={[0, 0.022, 0.032]} raycast={() => null}>
             <planeGeometry args={[0.09, 0.09]} />
             <meshStandardMaterial
               map={shuffleTexture}
@@ -182,7 +182,7 @@ export function RandomButton({ position = [0.90, -0.80, 0.63] }: RandomButtonPro
           </mesh>
         )}
 
-        {/* Etiqueta de texto: RANDOM */}
+        {/* Etiqueta de texto: RANDOM (raycast null para evitar parpadeos) */}
         <Text
           position={[0, -0.038, 0.032]}
           fontSize={0.030}
@@ -190,6 +190,7 @@ export function RandomButton({ position = [0.90, -0.80, 0.63] }: RandomButtonPro
           anchorX="center"
           anchorY="middle"
           letterSpacing={0.14}
+          raycast={() => null}
         >
           RANDOM
           <meshStandardMaterial

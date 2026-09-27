@@ -56,12 +56,12 @@ function PhysicalButton({ position, iconTexture, onClick, title }: PhysicalButto
       <group
         ref={buttonMeshRef}
         onClick={handleClick}
-        onPointerOver={(e) => {
+        onPointerEnter={(e) => {
           e.stopPropagation();
           setIsHovered(true);
           document.body.style.cursor = 'pointer';
         }}
-        onPointerOut={(e) => {
+        onPointerLeave={(e) => {
           e.stopPropagation();
           setIsHovered(false);
           document.body.style.cursor = 'auto';
@@ -78,9 +78,9 @@ function PhysicalButton({ position, iconTexture, onClick, title }: PhysicalButto
           />
         </RoundedBox>
 
-        {/* Ícono vectorial iluminado */}
+        {/* Ícono vectorial iluminado (raycast={null} para no interferir con el hover del botón) */}
         {iconTexture && (
-          <mesh position={[0, 0, 0.027]}>
+          <mesh position={[0, 0, 0.027]} raycast={() => null}>
             <planeGeometry args={[0.07, 0.07]} />
             <meshStandardMaterial
               map={iconTexture}
