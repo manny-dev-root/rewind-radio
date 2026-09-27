@@ -14,6 +14,7 @@ import { AudioReactiveLights } from './AudioReactiveLights';
 import { useEraStore } from '@/store/useEraStore';
 import { COUNTRIES, YEAR_MIN, YEAR_MAX } from '@/lib/constants';
 import { audioEngine } from '@/lib/audio-engine';
+import { trackEvent } from '@/lib/analytics';
 
 function SceneContent() {
   const currentYear = useEraStore((s) => s.currentYear);
@@ -57,11 +58,19 @@ function SceneContent() {
   const activeTrack = playlist[trackIndex] || playlist[0];
 
   const handleTrackChange = (newIndex: number) => {
+    if (newIndex === trackIndex) return;
+    const selected = playlist[newIndex];
+    trackEvent('tuner_track_selected', {
+      track_index: newIndex + 1,
+      title: selected?.title,
+      artist: selected?.artist,
+      year: currentYear,
+      country: currentCountry,
+    });
     useEraStore.getState().triggerGlitch?.(350);
     setTrackIndex(newIndex);
-    const selected = playlist[newIndex];
     if (selected?.previewUrl) {
-      audioEngine?.stopTuning(selected.previewUrl);
+      audioEngine?.transitionBetweenTracks(selected.previewUrl);
     }
   };
 
@@ -112,7 +121,13 @@ function SceneContent() {
         position={[0.26, -0.78, 0.64]}
         values={years}
         currentIndex={yearIndex}
-        onChange={(idx) => setYear(years[idx])}
+        onChange={(idx) => {
+          const selectedYear = years[idx];
+          if (selectedYear !== currentYear) {
+            trackEvent('dial_year_changed', { year: selectedYear, country: currentCountry });
+            setYear(selectedYear);
+          }
+        }}
         label="AÑO"
         color="#242636"
         radius={0.30}
@@ -126,7 +141,13 @@ function SceneContent() {
         position={[1.54, -0.78, 0.64]}
         values={countryCodes}
         currentIndex={countryIndex}
-        onChange={(idx) => setCountry(countryCodes[idx])}
+        onChange={(idx) => {
+          const selectedCountry = countryCodes[idx];
+          if (selectedCountry !== currentCountry) {
+            trackEvent('dial_country_changed', { country: selectedCountry, year: currentYear });
+            setCountry(selectedCountry);
+          }
+        }}
         label="PAÍS"
         color="#242636"
         radius={0.30}

@@ -13,6 +13,8 @@ export class AudioEngine {
   private freqData: Uint8Array<ArrayBuffer> = new Uint8Array(new ArrayBuffer(64));
   private onPlaybackStateChange: ((playing: boolean) => void) | null = null;
   private onAudioErrorCallback: (() => void) | null = null;
+  private onEndedCallback: (() => void) | null = null;
+  private transitionTimer: ReturnType<typeof setTimeout> | null = null;
   private pendingTrackUrl: string | null = null;
   private userHasInteracted = false;
 
@@ -78,11 +80,14 @@ export class AudioEngine {
 
     this.audio = new Audio();
     this.audio.crossOrigin = 'anonymous';
-    this.audio.loop = true;
+    this.audio.loop = false;
 
     this.audio.addEventListener('play', () => this.onPlaybackStateChange?.(true));
     this.audio.addEventListener('pause', () => this.onPlaybackStateChange?.(false));
-    this.audio.addEventListener('ended', () => this.onPlaybackStateChange?.(false));
+    this.audio.addEventListener('ended', () => {
+      this.onPlaybackStateChange?.(false);
+      this.onEndedCallback?.();
+    });
     this.audio.addEventListener('error', () => {
       this.onPlaybackStateChange?.(false);
       this.onAudioErrorCallback?.();
@@ -94,6 +99,10 @@ export class AudioEngine {
 
   public setErrorCallback(cb: () => void): void {
     this.onAudioErrorCallback = cb;
+  }
+
+  public setEndedCallback(cb: () => void): void {
+    this.onEndedCallback = cb;
   }
 
   private createPinkNoiseBuffer(ctx: AudioContext): AudioBuffer {
@@ -160,6 +169,10 @@ export class AudioEngine {
   }
 
   public startTuning(): void {
+    if (this.transitionTimer) {
+      clearTimeout(this.transitionTimer);
+      this.transitionTimer = null;
+    }
     this.pendingTrackUrl = null;
     if (this.audio && !this.audio.paused) {
       this.audio.pause();
@@ -171,10 +184,14 @@ export class AudioEngine {
     this.startStaticLoop();
 
     if (this.musicGain) this.fade(this.musicGain, 0, 0.1);
-    if (this.staticGain) this.fade(this.staticGain, 0.05, 0.2);
+    if (this.staticGain) this.fade(this.staticGain, 0.10, 0.2);
   }
 
   public stopTuning(newUrl: string): void {
+    if (this.transitionTimer) {
+      clearTimeout(this.transitionTimer);
+      this.transitionTimer = null;
+    }
     this.ensureContext();
     this.pendingTrackUrl = newUrl || null;
 
@@ -206,6 +223,61 @@ export class AudioEngine {
     }
   }
 
+  /**
+   * Transición suave con sonido de estática FM audible (~600ms) y click mecánico
+   * al pasar de una canción a la siguiente automáticamente o por sintonizador.
+   */
+  public transitionBetweenTracks(newUrl: string, onTransitionStart?: () => void): void {
+    if (this.transitionTimer) {
+      clearTimeout(this.transitionTimer);
+      this.transitionTimer = null;
+    }
+
+    this.ensureContext();
+    this.pendingTrackUrl = newUrl || null;
+
+    // 1. Iniciar estática FM procedural claramente audible y click mecánico
+    this.startStaticLoop();
+    if (this.musicGain) this.fade(this.musicGain, 0, 0.12);
+    if (this.staticGain) this.fade(this.staticGain, 0.13, 0.15);
+    this.playClick();
+
+    onTransitionStart?.();
+
+    if (this.audio) {
+      this.audio.pause();
+      this.audio.currentTime = 0;
+      this.onPlaybackStateChange?.(false);
+    }
+
+    // 2. Mantener la estática ~600ms para que se perciba claramente el cambio de emisora/música
+    this.transitionTimer = setTimeout(() => {
+      this.transitionTimer = null;
+      if (this.staticGain) this.fade(this.staticGain, 0, 0.35);
+
+      if (this.audio) {
+        if (newUrl) {
+          this.audio.src = newUrl;
+          this.audio.load();
+          if (this.userHasInteracted) {
+            this.audio
+              .play()
+              .then(() => {
+                this.onPlaybackStateChange?.(true);
+                if (this.musicGain) this.fade(this.musicGain, 0.85, 0.35);
+              })
+              .catch(() => {
+                this.onPlaybackStateChange?.(false);
+              });
+          }
+        } else {
+          this.audio.removeAttribute('src');
+          this.onPlaybackStateChange?.(false);
+        }
+      }
+    }, 600);
+  }
+
   public playClick(): void {
     this.userHasInteracted = true;
     const ctx = this.ensureContext();
@@ -235,6 +307,10 @@ export class AudioEngine {
   }
 
   public dispose(): void {
+    if (this.transitionTimer) {
+      clearTimeout(this.transitionTimer);
+      this.transitionTimer = null;
+    }
     if (this.staticSource) {
       try {
         this.staticSource.stop();

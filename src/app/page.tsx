@@ -9,6 +9,7 @@ import { RankingModal } from '@/components/overlay/RankingModal';
 import { useTuner } from '@/hooks/useTuner';
 import { useTrackTracker } from '@/hooks/useTrackTracker';
 import { audioEngine } from '@/lib/audio-engine';
+import { trackEvent } from '@/lib/analytics';
 
 const DynamicScene = dynamic(
   () =>
@@ -33,6 +34,7 @@ export default function Home() {
 
   const handleStartRadio = (e?: React.MouseEvent) => {
     e?.stopPropagation();
+    trackEvent('onboarding_started');
     audioEngine?.init();
     setShowOnboarding(false);
   };
@@ -69,10 +71,13 @@ export default function Home() {
           <span>
             Desarrollado por{' '}
             <a
-              href="https://bit.ly/ln-rewind-radio"
+              href="https://bit.ly/ln-manfred-camacho"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e) => {
+                e.stopPropagation();
+                trackEvent('creator_link_clicked', { platform: 'linkedin', url: 'https://bit.ly/ln-manfred-camacho' });
+              }}
               className="text-amber-400 hover:text-amber-300 underline decoration-amber-500/40 hover:decoration-amber-300 transition-colors font-semibold"
             >
               Manfred Camacho

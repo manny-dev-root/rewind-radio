@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Trophy, Flame, X, Radio, Globe } from 'lucide-react';
 import { useEraStore } from '@/store/useEraStore';
 import { COUNTRIES } from '@/lib/constants';
+import { trackEvent } from '@/lib/analytics';
 import type { TrackPlayRecord } from '@/lib/db';
 
 export function RankingModal() {
@@ -43,6 +44,13 @@ export function RankingModal() {
   }, [isOpen, selectedCountry, fetchRanking]);
 
   const handleTuneToTrack = (track: TrackPlayRecord) => {
+    trackEvent('ranking_modal_track_clicked', {
+      title: track.title,
+      artist: track.artist,
+      country: track.country,
+      year: track.year,
+      plays: track.play_count,
+    });
     useEraStore.getState().triggerGlitch?.(500);
     useEraStore.setState({
       currentCountry: track.country,
@@ -52,13 +60,28 @@ export function RankingModal() {
     setIsOpen(false);
   };
 
+  const handleCountryFilter = (countryCode: string) => {
+    setSelectedCountry(countryCode);
+    trackEvent('ranking_modal_country_filtered', { country: countryCode });
+  };
+
+  const handleOpen = () => {
+    setIsOpen(true);
+    trackEvent('ranking_modal_opened');
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+    trackEvent('ranking_modal_closed');
+  };
+
   return (
     <>
       {/* Botón flotante superior para abrir el Ranking */}
       <div className="fixed top-5 left-5 z-40 pointer-events-auto">
         <button
           type="button"
-          onClick={() => setIsOpen(true)}
+          onClick={handleOpen}
           className="flex items-center gap-2 bg-black/75 hover:bg-black/90 active:scale-95 transition-all text-amber-400 hover:text-amber-300 font-mono text-xs uppercase tracking-wider px-3.5 py-2 rounded-full border border-amber-500/35 hover:border-amber-500/70 shadow-lg backdrop-blur-md group"
           title="Ver canciones más reproducidas"
         >
@@ -74,7 +97,7 @@ export function RankingModal() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setIsOpen(false)}
+            onClick={handleClose}
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 pointer-events-auto select-none"
           >
             <motion.div
@@ -102,7 +125,7 @@ export function RankingModal() {
                 </div>
                 <button
                   type="button"
-                  onClick={() => setIsOpen(false)}
+                  onClick={handleClose}
                   className="p-1.5 rounded-lg text-zinc-400 hover:text-white hover:bg-white/10 transition-colors"
                 >
                   <X className="w-5 h-5" />
@@ -113,7 +136,7 @@ export function RankingModal() {
               <div className="flex items-center gap-1.5 overflow-x-auto py-3 no-scrollbar shrink-0 border-b border-white/5">
                 <button
                   type="button"
-                  onClick={() => setSelectedCountry('ALL')}
+                  onClick={() => handleCountryFilter('ALL')}
                   className={`px-3 py-1 rounded-full text-xs font-mono shrink-0 transition-all flex items-center gap-1.5 ${
                     selectedCountry === 'ALL'
                       ? 'bg-amber-500 text-black font-bold shadow'
@@ -127,7 +150,7 @@ export function RankingModal() {
                   <button
                     key={c.code}
                     type="button"
-                    onClick={() => setSelectedCountry(c.code)}
+                    onClick={() => handleCountryFilter(c.code)}
                     className={`px-3 py-1 rounded-full text-xs font-mono shrink-0 transition-all ${
                       selectedCountry === c.code
                         ? 'bg-amber-500 text-black font-bold shadow'

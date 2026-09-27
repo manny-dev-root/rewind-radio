@@ -3,7 +3,7 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useEraStore } from '@/store/useEraStore';
 import { audioEngine } from '@/lib/audio-engine';
-import { DEBOUNCE_MS } from '@/lib/constants';
+import { COUNTRIES, YEAR_MIN, YEAR_MAX, DEBOUNCE_MS } from '@/lib/constants';
 import { fetchCuratedTracks, cleanSongTitle } from '@/lib/music-catalog';
 import { trackEvent } from '@/lib/analytics';
 import type { TuneResponse, Track } from '@/types';
@@ -12,6 +12,7 @@ export function useTuner(): void {
   const currentYear = useEraStore((state) => state.currentYear);
   const currentCountry = useEraStore((state) => state.currentCountry);
   const targetTrack = useEraStore((state) => state.targetTrack);
+  const setYear = useEraStore((state) => state.setYear);
   const setTuning = useEraStore((state) => state.setTuning);
   const setPlaying = useEraStore((state) => state.setPlaying);
   const setTuneData = useEraStore((state) => state.setTuneData);
@@ -69,7 +70,66 @@ export function useTuner(): void {
         setTuning(false);
       }
     });
-  }, [setPlaying, setTrackIndex, setTuning]);
+    audioEngine?.setEndedCallback(() => {
+      const state = useEraStore.getState();
+      if (state.isTuning) return;
+
+      const playlist = state.tuneData?.playlist?.filter((t) => Boolean(t.previewUrl)) ?? [];
+      const currentIdx = state.trackIndex;
+
+      // 1. Siguiente canción dentro del top 10 del año actual
+      if (playlist.length > 0 && currentIdx + 1 < playlist.length) {
+        const nextIdx = currentIdx + 1;
+        const nextTrack = playlist[nextIdx];
+
+        trackEvent('auto_advance_track', {
+          from_index: currentIdx + 1,
+          to_index: nextIdx + 1,
+          title: nextTrack?.title,
+          artist: nextTrack?.artist,
+          year: state.currentYear,
+          country: state.currentCountry,
+        });
+
+        useEraStore.getState().triggerGlitch?.(450);
+        audioEngine?.transitionBetweenTracks(nextTrack?.previewUrl || '', () => {
+          setTrackIndex(nextIdx);
+        });
+        return;
+      }
+
+      // 2. Terminó el top 10 del año -> avanzar al siguiente año
+      if (state.currentYear < YEAR_MAX) {
+        const nextYear = state.currentYear + 1;
+        trackEvent('auto_advance_year', {
+          from_year: state.currentYear,
+          to_year: nextYear,
+          country: state.currentCountry,
+        });
+        useEraStore.getState().triggerGlitch?.(600);
+        setYear(nextYear);
+      } else {
+        // 3. Llegó al último año (YEAR_MAX) -> cambiar de país y volver a YEAR_MIN (1970)
+        const currentCountryIndex = COUNTRIES.findIndex((c) => c.code === state.currentCountry);
+        const nextCountryIndex = (currentCountryIndex + 1) % COUNTRIES.length;
+        const nextCountry = COUNTRIES[nextCountryIndex].code;
+
+        trackEvent('auto_advance_country', {
+          from_country: state.currentCountry,
+          to_country: nextCountry,
+          year: YEAR_MIN,
+        });
+
+        useEraStore.getState().triggerGlitch?.(750);
+        useEraStore.setState({
+          currentCountry: nextCountry,
+          currentYear: YEAR_MIN,
+          trackIndex: 0,
+          targetTrack: null,
+        });
+      }
+    });
+  }, [setPlaying, setTrackIndex, setTuning, setYear]);
 
   const performTune = useCallback(
     async (
@@ -84,7 +144,8 @@ export function useTuner(): void {
         // Sintonización directa en vivo desde el navegador usando el catálogo curado por país y época
         const data = await fetchCuratedTracks(country, year, signal, target);
 
-        // Si hay una canción objetivo (top inicial o clickeada), ubicar la aguja exactamente en ella; sino al medio
+        // Por defecto la aguja se ubica en la canción nro 1 (índice 0).
+        // Si hay una canción objetivo (top inicial o clickeada), se ubica exactamente en ella.
         let selectedIdx = 0;
         if (target && data.playlist && data.playlist.length > 0) {
           const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
@@ -99,10 +160,9 @@ export function useTuner(): void {
               (tArtist.includes(targetArtistNorm) && tTitle.length > 0)
             );
           });
-          selectedIdx = foundIdx >= 0 ? foundIdx : Math.floor(data.playlist.length / 2);
+          selectedIdx = foundIdx >= 0 ? foundIdx : 0;
         } else {
-          selectedIdx =
-            data.playlist && data.playlist.length > 0 ? Math.floor(data.playlist.length / 2) : 0;
+          selectedIdx = 0;
         }
 
         setTrackIndex(selectedIdx);

@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEraStore } from '@/store/useEraStore';
 import { audioEngine } from '@/lib/audio-engine';
+import { trackEvent } from '@/lib/analytics';
 
 const EQ_BARS = [
   { duration: 0.6, heights: ['4px', '16px', '6px', '14px', '4px'] },
@@ -29,6 +30,14 @@ export function TrackInfo() {
 
   const handleTogglePlay = (e: React.MouseEvent) => {
     e.stopPropagation();
+    const willPlay = !isPlaying;
+    trackEvent('playback_toggled', {
+      action: willPlay ? 'play' : 'pause',
+      title: activeTrack?.title,
+      artist: activeTrack?.artist,
+      year: useEraStore.getState().currentYear,
+      country: useEraStore.getState().currentCountry,
+    });
     audioEngine?.togglePlayPause();
   };
 
