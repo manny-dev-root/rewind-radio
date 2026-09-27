@@ -10,6 +10,7 @@ export interface Track {
   previewUrl: string | null;
   artworkUrl: string | null;
   releaseYear?: number | string;
+  trackViewUrl?: string | null;
 }
 
 export interface TuneResponse {

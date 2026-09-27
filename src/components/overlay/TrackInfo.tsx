@@ -41,20 +41,44 @@ export function TrackInfo() {
     audioEngine?.togglePlayPause();
   };
 
+  const cleanQuery = encodeURIComponent(
+    `${activeTrack?.artist || ''} ${activeTrack?.title || ''}`.trim()
+  );
+  const spotifyUrl = `https://open.spotify.com/search/${cleanQuery}`;
+  const youtubeUrl = `https://www.youtube.com/results?search_query=${cleanQuery}`;
+  const appleMusicUrl =
+    activeTrack?.trackViewUrl || `https://music.apple.com/search?term=${cleanQuery}`;
+
+  const handleExternalClick = (
+    e: React.MouseEvent,
+    platform: 'apple_music' | 'spotify' | 'youtube',
+    url: string
+  ) => {
+    e.stopPropagation();
+    trackEvent('external_player_clicked', {
+      platform,
+      title: activeTrack?.title,
+      artist: activeTrack?.artist,
+      year: useEraStore.getState().currentYear,
+      country: useEraStore.getState().currentCountry,
+      url,
+    });
+  };
+
   return (
-    <div className="fixed bottom-6 right-6 z-50 pointer-events-auto select-none">
+    <div className="fixed top-5 right-5 z-40 pointer-events-auto select-none">
       <AnimatePresence>
         {showTrack && activeTrack && (
           <motion.div
-            initial={{ opacity: 0, x: 24 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: 24 }}
-            transition={{ duration: 0.4, ease: 'easeOut' }}
+            initial={{ opacity: 0, y: -16 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -16 }}
+            transition={{ duration: 0.35, ease: 'easeOut' }}
             onClick={handleTogglePlay}
             role="button"
             tabIndex={0}
             title={isPlaying ? 'Click para pausar' : 'Click para reproducir'}
-            className="flex items-center gap-3 bg-black/85 hover:bg-black/95 transition-colors cursor-pointer backdrop-blur-md rounded-xl p-3 w-[320px] sm:w-[340px] h-[78px] border border-amber-500/30 hover:border-amber-500/60 shadow-2xl group"
+            className="flex items-center gap-3 bg-black/85 hover:bg-black/95 transition-colors cursor-pointer backdrop-blur-md rounded-xl p-3 w-[320px] sm:w-[340px] h-[82px] border border-amber-500/30 hover:border-amber-500/60 shadow-2xl group"
           >
             {/* Contenedor de carátula de tamaño fijo */}
             <div className="relative w-14 h-14 rounded-md overflow-hidden shrink-0 border border-white/10 shadow">
@@ -95,31 +119,61 @@ export function TrackInfo() {
               </div>
             </div>
 
-            {/* Datos de la pista con ancho flexible truncado fijo */}
+            {/* Datos de la pista */}
             <div className="flex-1 min-w-0 flex flex-col justify-center text-left">
-              <div className="text-[10px] font-mono tracking-wider text-amber-400/90 uppercase mb-0.5 flex items-center gap-1.5">
-                <span
-                  className={`w-1.5 h-1.5 rounded-full shrink-0 ${
-                    isPlaying ? 'bg-emerald-400 animate-pulse' : 'bg-zinc-500'
-                  }`}
-                />
-                <span className="truncate">
-                  {isPlaying
-                    ? `EN EL AIRE • #${trackIndex + 1} DE ${playlist.length}`
-                    : `EN PAUSA • #${trackIndex + 1} DE ${playlist.length}`}
-                </span>
-              </div>
-              <div className="font-bold text-sm text-white truncate">
+              <div className="font-bold text-sm text-white truncate leading-tight">
                 {activeTrack.title || 'Tema Desconocido'}
               </div>
-              <div className="text-xs text-zinc-400 truncate mt-0.5">
+              <div className="text-xs text-zinc-400 truncate mt-0.5 leading-tight">
                 {activeTrack.artist || 'Artista Desconocido'}
+              </div>
+
+              {/* Botones de plataformas de streaming externas (canción completa) */}
+              <div className="flex items-center gap-2 mt-1.5">
+                {/* Spotify */}
+                <a
+                  href={spotifyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => handleExternalClick(e, 'spotify', spotifyUrl)}
+                  title="Escuchar completa en Spotify"
+                  className="w-5 h-5 rounded-full hover:scale-125 transition-transform shrink-0 opacity-80 hover:opacity-100 drop-shadow"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/icons/spotify.png" alt="Spotify" className="w-full h-full object-contain" />
+                </a>
+
+                {/* Apple Music */}
+                <a
+                  href={appleMusicUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => handleExternalClick(e, 'apple_music', appleMusicUrl)}
+                  title="Escuchar completa en Apple Music"
+                  className="w-5 h-5 rounded-full hover:scale-125 transition-transform shrink-0 opacity-80 hover:opacity-100 drop-shadow"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/icons/apple-music.png" alt="Apple Music" className="w-full h-full object-contain" />
+                </a>
+
+                {/* YouTube */}
+                <a
+                  href={youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => handleExternalClick(e, 'youtube', youtubeUrl)}
+                  title="Escuchar completa en YouTube"
+                  className="w-5 h-5 rounded-full hover:scale-125 transition-transform shrink-0 opacity-80 hover:opacity-100 drop-shadow"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/icons/youtube.png" alt="YouTube" className="w-full h-full object-contain" />
+                </a>
               </div>
             </div>
 
-            {/* Indicador ecualizador a la derecha con ancho fijo */}
-            <div className="flex items-center justify-end w-8 shrink-0">
-              <div className="flex items-end gap-1 h-5 w-6 shrink-0">
+            {/* Indicador ecualizador a la derecha */}
+            <div className="flex items-center justify-end w-7 shrink-0">
+              <div className="flex items-end gap-1 h-5 w-5 shrink-0">
                 {EQ_BARS.map((bar, i) => (
                   <motion.span
                     key={i}

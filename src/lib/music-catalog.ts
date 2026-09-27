@@ -93,7 +93,13 @@ async function queryItunes(
   query: string,
   countryCode?: string,
   signal?: AbortSignal
-): Promise<{ previewUrl?: string; artworkUrl100?: string; trackName?: string; artistName?: string } | null> {
+): Promise<{
+  previewUrl?: string;
+  artworkUrl100?: string;
+  trackViewUrl?: string;
+  trackName?: string;
+  artistName?: string;
+} | null> {
   const countryParam = countryCode ? `&country=${countryCode}` : '';
   const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}${countryParam}&media=music&entity=song&limit=1`;
 
@@ -105,6 +111,7 @@ async function queryItunes(
       results?: Array<{
         previewUrl?: string;
         artworkUrl100?: string;
+        trackViewUrl?: string;
         trackName?: string;
         artistName?: string;
       }>;
@@ -155,6 +162,7 @@ async function resolveEraTrack(
     previewUrl: item.previewUrl,
     artworkUrl: item.artworkUrl100 ? item.artworkUrl100.replace('100x100', '600x600') : null,
     releaseYear: String(hit.year),
+    trackViewUrl: item.trackViewUrl || null,
   };
 
   trackPreviewCache.set(cacheKey, track);
