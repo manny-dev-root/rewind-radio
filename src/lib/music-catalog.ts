@@ -71,8 +71,8 @@ function getSongsForYear(
     list = countryData[String(yearUsed)] || [];
   }
 
-  const randomized = shuffleList(list);
-  return randomized.map(([artist, title]) => ({ artist, title, year: yearUsed }));
+  // Mantener el orden canónico del ranking del año (top 10)
+  return list.map(([artist, title]) => ({ artist, title, year: yearUsed }));
 }
 
 /**
@@ -87,7 +87,8 @@ export function cleanSongTitle(title: string): string {
 }
 
 /**
- * Consulta a la API de iTunes para un término específico.
+ * Consulta a la API de iTunes para un término específico buscando hasta 5 resultados
+ * para maximizar la probabilidad de encontrar uno con previewUrl funcional.
  */
 async function queryItunes(
   query: string,
@@ -101,7 +102,7 @@ async function queryItunes(
   artistName?: string;
 } | null> {
   const countryParam = countryCode ? `&country=${countryCode}` : '';
-  const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}${countryParam}&media=music&entity=song&limit=1`;
+  const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}${countryParam}&media=music&entity=song&limit=5`;
 
   try {
     const res = await fetch(itunesUrl, { signal });
@@ -117,7 +118,8 @@ async function queryItunes(
       }>;
     };
 
-    const item = data.results?.[0];
+    const items = data.results || [];
+    const item = items.find((it) => Boolean(it.previewUrl));
     return item?.previewUrl ? item : null;
   } catch (err: unknown) {
     if ((err as { name?: string })?.name === 'AbortError') {
@@ -128,8 +130,7 @@ async function queryItunes(
 }
 
 /**
- * Resuelve una canción histórica específica consultando iTunes directamente
- * desde el navegador (CORS libre, IP residencial sin bloqueos 429).
+ * Resuelve una canción histórica consultando iTunes con múltiples niveles de búsqueda.
  */
 async function resolveEraTrack(
   hit: EraHit,
@@ -140,18 +141,24 @@ async function resolveEraTrack(
   const cached = trackPreviewCache.get(cacheKey);
   if (cached) return cached;
 
-  // 1. Intento principal: Artista + Título exacto en el catálogo del país
-  let item = await queryItunes(`${hit.artist} ${hit.title}`, countryCode, signal);
-
-  // 2. Si falló (común con paréntesis como "(El momento en que estás)"), probar con título limpio
   const cleanedTitle = cleanSongTitle(hit.title);
+
+  // 1. Intento principal: Artista + Título limpio en el catálogo global de Apple Music
+  let item = await queryItunes(`${hit.artist} ${cleanedTitle}`, undefined, signal);
+
+  // 2. Si no apareció, intentar con el título original completo en catálogo global
   if (!item && cleanedTitle !== hit.title) {
+    item = await queryItunes(`${hit.artist} ${hit.title}`, undefined, signal);
+  }
+
+  // 3. Si no apareció, probar en el catálogo específico del país
+  if (!item) {
     item = await queryItunes(`${hit.artist} ${cleanedTitle}`, countryCode, signal);
   }
 
-  // 3. Si aún no aparece, buscar en el catálogo global de Apple Music (sin restricción de país)
+  // 4. Último intento: solo título limpio global (si el artista tenía ortografía diferente)
   if (!item) {
-    item = await queryItunes(`${hit.artist} ${cleanedTitle}`, undefined, signal);
+    item = await queryItunes(cleanedTitle, undefined, signal);
   }
 
   if (!item || !item.previewUrl) return null;
@@ -171,7 +178,7 @@ async function resolveEraTrack(
 
 /**
  * Obtiene la playlist histórica curada para un país y año.
- * Carga el JSON del país (ej: /data/songs/AR.json) y resuelve hasta 15 canciones en paralelo.
+ * Garantiza que cada canción tenga su propio audio único y nunca se repita la misma canción.
  */
 export async function fetchCuratedTracks(
   countryCode: string,
@@ -179,75 +186,27 @@ export async function fetchCuratedTracks(
   signal?: AbortSignal,
   target?: { title: string; artist: string } | null
 ): Promise<TuneResponse> {
-  const countryData = await loadCountrySongs(countryCode, signal);
-  const hits = getSongsForYear(countryData, year);
-
-  // Tomamos hasta 15 canciones del año, asegurando que el tema objetivo esté primero si se solicitó
-  let targetHits = hits.slice(0, 15);
-  if (target) {
-    const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
-    const targetArtistNorm = target.artist.toLowerCase();
-
-    const foundIdx = hits.findIndex((h) => {
-      const hTitle = cleanSongTitle(h.title).toLowerCase();
-      const hArtist = h.artist.toLowerCase();
-      return (
-        hTitle === targetTitleNorm ||
-        (hArtist.includes(targetArtistNorm) && hTitle.includes(targetTitleNorm))
-      );
-    });
-
-    if (foundIdx >= 0) {
-      const match = hits[foundIdx];
-      targetHits = [match, ...targetHits.filter((_, i) => i !== foundIdx)].slice(0, 15);
-    } else {
-      // Aunque la canción haya desaparecido del JSON, se resuelve dinámicamente en vivo
-      targetHits.unshift({ title: target.title, artist: target.artist, year });
-      if (targetHits.length > 15) targetHits.pop();
+  const code = countryCode.toUpperCase();
+  try {
+    const targetParams = target
+      ? `&targetTitle=${encodeURIComponent(target.title)}&targetArtist=${encodeURIComponent(target.artist)}`
+      : '';
+    const res = await fetch(`/api/tune?year=${year}&country=${code}${targetParams}`, { signal });
+    if (res.ok) {
+      const data = (await res.json()) as TuneResponse;
+      if (data && Array.isArray(data.playlist) && data.playlist.length > 0) {
+        return data;
+      }
+    }
+  } catch (err: unknown) {
+    if ((err as { name?: string })?.name === 'AbortError') {
+      throw err;
     }
   }
 
-  if (targetHits.length === 0) {
-    const seed = getSeedTracks(countryCode, year) || [];
-    return {
-      track: seed[0] || {
-        title: 'SIN DATOS PARA ESTE AÑO',
-        artist: '',
-        previewUrl: null,
-        artworkUrl: null,
-        releaseYear: String(year),
-      },
-      playlist: seed,
-      source: 'seed-cache',
-    };
-  }
-
-  // Consultar en paralelo
-  const settled = await Promise.allSettled(
-    targetHits.map((hit) => resolveEraTrack(hit, countryCode, signal))
-  );
-
-  const playlist: Track[] = [];
-  for (const item of settled) {
-    if (item.status === 'fulfilled' && item.value && item.value.previewUrl) {
-      playlist.push(item.value);
-    }
-  }
-
-  // Si todas fallan o el usuario está offline, usar Seed Cache
-  if (playlist.length === 0) {
-    const seed = getSeedTracks(countryCode, year) || [];
-    if (seed.length > 0) {
-      return {
-        track: seed[0],
-        playlist: seed,
-        source: 'seed-cache',
-      };
-    }
-  }
-
-  // Si hay tema objetivo, intentar ubicarlo como primaryTrack
-  let primaryTrack: Track = playlist[0] || {
+  // Fallback seguro a canciones pre-calculadas en seed-cache
+  const seed = getSeedTracks(code, year) || [];
+  const primaryTrack: Track = seed[0] || {
     title: 'SIN DATOS PARA ESTE AÑO',
     artist: '',
     previewUrl: null,
@@ -255,24 +214,9 @@ export async function fetchCuratedTracks(
     releaseYear: String(year),
   };
 
-  if (target && playlist.length > 0) {
-    const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
-    const match = playlist.find((t) => {
-      const tTitle = cleanSongTitle(t.title).toLowerCase();
-      return (
-        tTitle === targetTitleNorm ||
-        tTitle.includes(targetTitleNorm) ||
-        targetTitleNorm.includes(tTitle)
-      );
-    });
-    if (match) {
-      primaryTrack = match;
-    }
-  }
-
   return {
     track: primaryTrack,
-    playlist,
-    source: 'api',
+    playlist: seed,
+    source: 'seed-cache',
   };
 }

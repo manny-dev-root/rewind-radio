@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
+import { RadioChassis } from '@/components/radio/RadioChassis';
 import { TuningIndicator } from '@/components/overlay/TuningIndicator';
 import { TrackInfo } from '@/components/overlay/TrackInfo';
 import { RankingModal } from '@/components/overlay/RankingModal';
@@ -10,21 +10,6 @@ import { useTuner } from '@/hooks/useTuner';
 import { useTrackTracker } from '@/hooks/useTrackTracker';
 import { audioEngine } from '@/lib/audio-engine';
 import { trackEvent } from '@/lib/analytics';
-
-const DynamicScene = dynamic(
-  () =>
-    import('@/components/canvas/Scene').then((mod) => ({
-      default: mod.default ?? mod.Scene,
-    })),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="w-full h-full flex items-center justify-center text-amber-500/50 font-mono text-xs tracking-widest uppercase">
-        Iniciando motor 3D de Rewind Radio...
-      </div>
-    ),
-  }
-);
 
 export default function Home() {
   useTuner();
@@ -40,10 +25,10 @@ export default function Home() {
   };
 
   return (
-    <main className="w-screen h-screen relative overflow-hidden bg-black select-none">
-      {/* Canvas WebGL 3D */}
-      <div className="absolute inset-0 z-0">
-        <DynamicScene />
+    <main className="w-screen h-screen relative overflow-hidden bg-[#07070c] select-none flex items-center justify-center">
+      {/* Radio vintage analógica construida en CSS puro */}
+      <div className="w-full h-full flex items-center justify-center z-10 py-6 px-4">
+        <RadioChassis />
       </div>
 
       {/* Capas Overlay 2D */}

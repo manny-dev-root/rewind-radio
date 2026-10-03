@@ -145,7 +145,8 @@ export function useTuner(): void {
         const data = await fetchCuratedTracks(country, year, signal, target);
 
         // Por defecto la aguja se ubica en la canción nro 1 (índice 0).
-        // Si hay una canción objetivo (top inicial o clickeada), se ubica exactamente en ella.
+        // Si hay una canción objetivo o un índice aleatorio solicitado (botón Random), se ubica allí.
+        const pendingRandomIdx = useEraStore.getState().targetTrackIndex;
         let selectedIdx = 0;
         if (target && data.playlist && data.playlist.length > 0) {
           const targetTitleNorm = cleanSongTitle(target.title).toLowerCase();
@@ -161,6 +162,9 @@ export function useTuner(): void {
             );
           });
           selectedIdx = foundIdx >= 0 ? foundIdx : 0;
+        } else if (typeof pendingRandomIdx === 'number' && data.playlist && data.playlist.length > 0) {
+          selectedIdx = Math.max(0, Math.min(data.playlist.length - 1, pendingRandomIdx));
+          useEraStore.setState({ targetTrackIndex: null });
         } else {
           selectedIdx = 0;
         }

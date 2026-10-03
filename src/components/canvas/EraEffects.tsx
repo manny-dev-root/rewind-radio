@@ -1,19 +1,18 @@
 'use client';
 
-import { EffectComposer, Bloom, Glitch } from '@react-three/postprocessing';
-import { GlitchMode } from 'postprocessing';
+import { EffectComposer, Bloom } from '@react-three/postprocessing';
 
 export interface EraEffectsProps {
   year?: number;
-  isGlitching: boolean;
+  isGlitching?: boolean;
 }
 
 /**
- * Post-procesado reactivo de la radio.
- * Mantiene el resplandor cálido de los visores LED y activa el efecto Glitch
- * únicamente en saltos directos (Random, cambio de pista en sintonizador, o click en Top).
+ * Post-procesado de iluminación de la radio.
+ * Mantiene el resplandor cálido (Bloom) de los visores LED, botones e indicador de volumen,
+ * garantizando una imagen limpia, sólida y sin desgarros ni cortes horizontales.
  */
-export function EraEffects({ isGlitching }: EraEffectsProps) {
+export function EraEffects({}: EraEffectsProps) {
   return (
     <EffectComposer multisampling={0}>
       <Bloom
@@ -22,10 +21,7 @@ export function EraEffects({ isGlitching }: EraEffectsProps) {
         luminanceSmoothing={0.9}
         mipmapBlur
       />
-      <Glitch
-        active={isGlitching}
-        mode={GlitchMode.CONSTANT_MILD}
-      />
     </EffectComposer>
   );
 }
+

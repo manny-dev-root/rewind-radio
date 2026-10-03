@@ -10,6 +10,7 @@ import { HorizontalTuner } from './HorizontalTuner';
 import { RankingDisplay } from './RankingDisplay';
 import { RandomButton } from './RandomButton';
 import { PlaybackButtons } from './PlaybackButtons';
+import { VerticalVolumeSlider } from './VerticalVolumeSlider';
 import { EraEffects } from './EraEffects';
 import { AudioReactiveLights } from './AudioReactiveLights';
 import { useEraStore } from '@/store/useEraStore';
@@ -116,6 +117,9 @@ function SceneContent() {
         onChange={handleTrackChange}
         width={2.16}
       />
+
+      {/* Selector de volumen vertical analógico (0 a 10, predeterminado al 50%) */}
+      <VerticalVolumeSlider position={[2.44, 0.53, 0.635]} />
 
       {/* Trío de botones físicos táctiles estilo vintage: Anterior, Play/Pausa, Siguiente */}
       <PlaybackButtons position={[0.90, -0.14, 0.635]} />

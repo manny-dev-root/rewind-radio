@@ -32,17 +32,22 @@ export function RadioBody() {
       </group>
 
       {/* Ventana visor superior (Pantalla LED Marquesina + Espectro Musical) */}
-      <RoundedBox args={[2.5, 0.68, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.73, 0.6]}>
+      <RoundedBox args={[2.5, 0.68, 0.055]} radius={0.025} smoothness={8} position={[0.9, 0.73, 0.605]}>
         <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
       </RoundedBox>
 
       {/* Ventana visor inferior (Sintonizador Horizontal de Tracks) */}
-      <RoundedBox args={[2.5, 0.34, 0.05]} radius={0.04} smoothness={4} position={[0.9, 0.16, 0.6]}>
+      <RoundedBox args={[2.5, 0.34, 0.055]} radius={0.025} smoothness={8} position={[0.9, 0.16, 0.605]}>
         <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
       </RoundedBox>
 
-      {/* LED de encendido */}
-      <mesh position={[2.55, 1.15, 0.65]}>
+      {/* Ventana visor derecha (Selector de Volumen Vertical 0 a 10) - Mismo borde y acabado que la pantalla */}
+      <RoundedBox args={[0.34, 1.08, 0.055]} radius={0.025} smoothness={8} position={[2.44, 0.53, 0.605]}>
+        <meshStandardMaterial color="#08080f" roughness={0.9} metalness={0.1} />
+      </RoundedBox>
+
+      {/* LED de encendido centrado sobre el control de volumen */}
+      <mesh position={[2.44, 1.18, 0.65]}>
         <sphereGeometry args={[0.045, 16, 16]} />
         <meshStandardMaterial
           color="#00ff88"

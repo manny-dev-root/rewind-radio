@@ -11,6 +11,8 @@ export class AudioEngine {
   private audio: HTMLAudioElement | null = null;
   private musicSource: MediaElementAudioSourceNode | null = null;
   private freqData: Uint8Array<ArrayBuffer> = new Uint8Array(new ArrayBuffer(64));
+  private masterGain: GainNode | null = null;
+  private currentVolume = 0.5; // 50% por defecto
   private onPlaybackStateChange: ((playing: boolean) => void) | null = null;
   private onAudioErrorCallback: (() => void) | null = null;
   private onEndedCallback: (() => void) | null = null;
@@ -61,10 +63,14 @@ export class AudioEngine {
     this.analyser.fftSize = 128;
     this.freqData = new Uint8Array(new ArrayBuffer(this.analyser.frequencyBinCount));
 
+    this.masterGain = this.ctx.createGain();
+    this.masterGain.gain.setValueAtTime(this.currentVolume, this.ctx.currentTime);
+    this.masterGain.connect(this.ctx.destination);
+
     this.musicGain = this.ctx.createGain();
     this.musicGain.gain.setValueAtTime(0, this.ctx.currentTime);
     this.musicGain.connect(this.analyser);
-    this.analyser.connect(this.ctx.destination);
+    this.analyser.connect(this.masterGain);
 
     this.staticFilter = this.ctx.createBiquadFilter();
     this.staticFilter.type = 'bandpass';
@@ -75,7 +81,7 @@ export class AudioEngine {
     this.staticGain.gain.setValueAtTime(0, this.ctx.currentTime);
 
     this.staticFilter.connect(this.staticGain);
-    this.staticGain.connect(this.ctx.destination);
+    this.staticGain.connect(this.masterGain);
 
     this.staticBuffer = this.createPinkNoiseBuffer(this.ctx);
 
@@ -294,9 +300,22 @@ export class AudioEngine {
     gain.gain.setValueAtTime(0.08, now);
     gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.006);
     osc.connect(gain);
-    gain.connect(ctx.destination);
+    gain.connect(this.masterGain || ctx.destination);
     osc.start(now);
     osc.stop(now + 0.006);
+  }
+
+  public setVolume(vol: number): void {
+    const normalized = Math.max(0, Math.min(1, vol > 1 ? vol / 100 : vol));
+    this.currentVolume = normalized;
+    if (this.masterGain && this.ctx) {
+      this.masterGain.gain.cancelScheduledValues(this.ctx.currentTime);
+      this.masterGain.gain.setValueAtTime(normalized, this.ctx.currentTime);
+    }
+  }
+
+  public getVolume(): number {
+    return this.currentVolume;
   }
 
   public getFrequencyData(): Uint8Array<ArrayBuffer> {
@@ -332,6 +351,7 @@ export class AudioEngine {
       this.ctx.close().catch(() => {});
       this.ctx = null;
     }
+    this.masterGain = null;
     this.analyser = null;
     this.musicGain = null;
     this.staticGain = null;
