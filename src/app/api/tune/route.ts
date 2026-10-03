@@ -32,6 +32,20 @@ function cleanSongTitle(title: string): string {
     .trim();
 }
 
+function isUrlExpired(url: string | null): boolean {
+  if (!url) return false;
+  if (!url.includes('hdnea=')) return false; // Las URLs de iTunes son permanentes y nunca expiran
+  const match = url.match(/exp=(\d+)/);
+  if (!match) return false;
+  const expSec = parseInt(match[1], 10);
+  const nowSec = Math.floor(Date.now() / 1000);
+  return nowSec >= expSec - 90; // Expira en menos de 90 segundos o ya expiró
+}
+
+function getCacheControlHeader(_playlist?: Track[]): string {
+  return 'no-cache, no-store, must-revalidate';
+}
+
 function loadCountryRawData(countryCode: string): Record<string, [string, string][]> {
   const code = countryCode.toUpperCase();
   return COUNTRY_CATALOGS[code] || COUNTRY_CATALOGS['US'] || {};
@@ -47,8 +61,36 @@ async function searchTrackPreview(
   artist?: string;
 } | null> {
   const clean = cleanSongTitle(title);
+
+  // 1. Intento principal: iTunes Search API (Devuelve URLs permanentes de Apple CDN que NUNCA expiran y con soporte CORS total)
   try {
-    // 1. Intento principal: Artista + Título limpio
+    const itunesRes = await fetch(
+      `https://itunes.apple.com/search?term=${encodeURIComponent(`${artist} ${clean}`)}&media=music&entity=song&limit=1`,
+      { headers: { 'User-Agent': 'EraTuner/1.0' } }
+    );
+    if (itunesRes.ok) {
+      const itunesData = (await itunesRes.json()) as {
+        results?: Array<{
+          trackName?: string;
+          artistName?: string;
+          previewUrl?: string;
+          artworkUrl100?: string;
+        }>;
+      };
+      const item = itunesData.results?.[0];
+      if (item?.previewUrl) {
+        return {
+          previewUrl: item.previewUrl,
+          artworkUrl: item.artworkUrl100 ? item.artworkUrl100.replace('100x100', '600x600') : null,
+          title: item.trackName || title,
+          artist: item.artistName || artist,
+        };
+      }
+    }
+  } catch {}
+
+  // 2. Fallback: Deezer (en caso de que iTunes no tenga el tema)
+  try {
     let res = await fetch(
       `https://api.deezer.com/search?q=${encodeURIComponent(`${artist} ${clean}`)}&limit=1`
     );
@@ -62,7 +104,7 @@ async function searchTrackPreview(
     };
     let item = data.data?.[0];
 
-    // 2. Fallback: solo título limpio si la primera búsqueda no trajo preview
+    // Fallback: solo título limpio si la primera búsqueda no trajo preview
     if (!item?.preview && clean.length > 2) {
       res = await fetch(
         `https://api.deezer.com/search?q=${encodeURIComponent(clean)}&limit=1`
@@ -87,6 +129,7 @@ async function searchTrackPreview(
       };
     }
   } catch {}
+
   return null;
 }
 
@@ -114,6 +157,12 @@ export async function GET(request: Request) {
 
     const cacheKey = `${countryCode}-${yearNum}`;
     let cached = memoryCache.get(cacheKey);
+
+    // Si algún tema en caché tiene una URL con token expirado (ej. token temporal de Deezer de 15m), invalidar caché para renovarlo
+    if (cached?.playlist && cached.playlist.some((t) => isUrlExpired(t.previewUrl))) {
+      memoryCache.delete(cacheKey);
+      cached = undefined;
+    }
 
     if (!cached) {
       // 1. Cargar el JSON del país
@@ -217,7 +266,7 @@ export async function GET(request: Request) {
       if (foundIdx === 0) {
         return Response.json(cached, {
           headers: {
-            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+            'Cache-Control': getCacheControlHeader(cached.playlist),
           },
         });
       }
@@ -233,14 +282,14 @@ export async function GET(request: Request) {
           },
           {
             headers: {
-              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+              'Cache-Control': getCacheControlHeader(reordered),
             },
           }
         );
       }
 
       // 2. Si NO está en la playlist del año (ej. Sweet Child O' Mine en 1987),
-      // resolver la canción objetivo en Deezer al instante:
+      // resolver la canción objetivo al instante (iTunes -> Deezer):
       const targetPreview = await searchTrackPreview(rawTargetArtist, rawTargetTitle);
       const injectedTrack: Track = {
         title: targetPreview?.title || rawTargetTitle,
@@ -265,7 +314,7 @@ export async function GET(request: Request) {
         },
         {
           headers: {
-            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+            'Cache-Control': getCacheControlHeader(customPlaylist),
           },
         }
       );
@@ -273,7 +322,7 @@ export async function GET(request: Request) {
 
     return Response.json(cached, {
       headers: {
-        'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+        'Cache-Control': getCacheControlHeader(cached.playlist),
       },
     });
   } catch (error) {

@@ -74,87 +74,67 @@ export function RankingVisor() {
   const displayItems = ranking.slice(0, 8);
 
   return (
-    <div className="w-full flex flex-col justify-between h-full select-none">
-      {/* Visor LCD Más Escuchadas */}
-      <div className="w-full bg-[#07070d] rounded-xl border border-white/5 shadow-[inset_0_3px_10px_rgba(0,0,0,0.95)] p-3.5 relative flex flex-col justify-between flex-1">
-        {/* Reflejo de cristal */}
-        <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/[0.04] to-transparent pointer-events-none rounded-t-xl" />
+    <div className="w-full bg-[#07070d] rounded-xl border border-white/5 shadow-[inset_0_3px_10px_rgba(0,0,0,0.95)] p-3.5 relative flex flex-col justify-between h-full select-none">
+      {/* Reflejo de cristal */}
+      <div className="absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-white/[0.04] to-transparent pointer-events-none rounded-t-xl" />
 
-        {/* Título Principal */}
-        <div className="text-center pb-2.5 border-b border-amber-500/15">
-          <span className="text-[#ff9933] font-mono font-bold text-xs sm:text-sm tracking-[0.2em] [text-shadow:0_0_10px_rgba(255,140,0,0.7)]">
-            MÁS ESCUCHADAS
-          </span>
-        </div>
-
-        {/* Encabezado de columnas */}
-        <div className="flex items-center text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-wider py-1.5 border-b border-white/5">
-          <span className="w-5 text-center">#</span>
-          <span className="flex-1 px-1">TÍTULO · ARTISTA</span>
-          <span className="w-10 text-right">PLAYS</span>
-        </div>
-
-        {/* Filas del Top */}
-        <div className="flex flex-col justify-around flex-1 py-1 gap-1">
-          {displayItems.map((item, index) => {
-            const isPlaying = isPlayingCurrentTrack(item, currentTrack);
-            return (
-              <button
-                key={index}
-                type="button"
-                onClick={() => handleTrackClick(item)}
-                className={`w-full flex items-center text-left py-0.5 px-1 rounded transition-colors group ${
-                  isPlaying
-                    ? 'bg-amber-500/15 text-white'
-                    : 'hover:bg-white/[0.04] text-[#ffaa44]'
-                }`}
-              >
-                {/* Ranking # */}
-                <span className="w-5 text-center font-mono font-bold text-xs text-amber-500/80">
-                  {index + 1}
-                </span>
-
-                {/* Título y Artista */}
-                <div className="flex-1 min-w-0 px-1 truncate flex items-center gap-1.5">
-                  {isPlaying && (
-                    <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping inline-block flex-shrink-0" />
-                  )}
-                  <span
-                    className={`font-mono text-xs truncate uppercase font-medium ${
-                      isPlaying
-                        ? 'text-white [text-shadow:0_0_8px_#ff9900]'
-                        : 'group-hover:text-amber-200'
-                    }`}
-                  >
-                    {item.title} <span className="text-zinc-400 font-normal">· {item.artist}</span>
-                  </span>
-                </div>
-
-                {/* Contador de Plays */}
-                <span className="w-10 text-right font-mono text-[10px] sm:text-[11px] text-amber-400/90 font-bold">
-                  {item.play_count}
-                </span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Ranuras acústicas vintage del altavoz (estilo Dieter Rams con fresado metálico) */}
-      <div className="flex flex-col gap-2.5 py-4 px-2">
-        {[0, 1, 2, 3].map((i) => (
-          <div
-            key={i}
-            className="h-1 bg-[#090a10] rounded-full shadow-[inset_0_1px_2px_rgba(0,0,0,0.95),0_1px_0_rgba(255,255,255,0.06)] border-b border-white/[0.04]"
-          />
-        ))}
-      </div>
-
-      {/* Marca serigrafiada / grabada del equipo: REWIND RADIO */}
-      <div className="text-center pb-1">
-        <span className="text-xs font-mono font-bold text-zinc-400/80 tracking-[0.28em] uppercase [text-shadow:0_1px_0_rgba(255,255,255,0.08),0_-1px_1px_rgba(0,0,0,0.8)]">
-          REWIND RADIO
+      {/* Título Principal */}
+      <div className="text-center pb-2.5 border-b border-amber-500/15">
+        <span className="text-[#ff9933] font-mono font-bold text-xs sm:text-sm tracking-[0.2em] [text-shadow:0_0_10px_rgba(255,140,0,0.7)]">
+          MÁS ESCUCHADAS
         </span>
+      </div>
+
+      {/* Encabezado de columnas */}
+      <div className="flex items-center text-[10px] font-mono font-bold text-zinc-500 uppercase tracking-wider py-1.5 border-b border-white/5">
+        <span className="w-5 text-center">#</span>
+        <span className="flex-1 px-1">TÍTULO · ARTISTA</span>
+        <span className="w-10 text-right">PLAYS</span>
+      </div>
+
+      {/* Filas del Top */}
+      <div className="flex flex-col justify-around flex-1 py-1 gap-1">
+        {displayItems.map((item, index) => {
+          const isPlaying = isPlayingCurrentTrack(item, currentTrack);
+          return (
+            <button
+              key={index}
+              type="button"
+              onClick={() => handleTrackClick(item)}
+              className={`w-full flex items-center text-left py-0.5 px-1 rounded transition-colors group ${
+                isPlaying
+                  ? 'bg-amber-500/15 text-white'
+                  : 'hover:bg-white/[0.04] text-[#ffaa44]'
+              }`}
+            >
+              {/* Ranking # */}
+              <span className="w-5 text-center font-mono font-bold text-xs text-amber-500/80">
+                {index + 1}
+              </span>
+
+              {/* Título y Artista */}
+              <div className="flex-1 min-w-0 px-1 truncate flex items-center gap-1.5">
+                {isPlaying && (
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping inline-block flex-shrink-0" />
+                )}
+                <span
+                  className={`font-mono text-xs truncate uppercase font-medium ${
+                    isPlaying
+                      ? 'text-white [text-shadow:0_0_8px_#ff9900]'
+                      : 'group-hover:text-amber-200'
+                  }`}
+                >
+                  {item.title} <span className="text-zinc-400 font-normal">· {item.artist}</span>
+                </span>
+              </div>
+
+              {/* Contador de Plays */}
+              <span className="w-10 text-right font-mono text-[10px] sm:text-[11px] text-amber-400/90 font-bold">
+                {item.play_count}
+              </span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );

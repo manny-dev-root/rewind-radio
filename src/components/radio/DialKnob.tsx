@@ -53,7 +53,7 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
       const cy = rect.top + rect.height / 2;
       const dist = Math.hypot(e.clientX - cx, e.clientY - cy);
 
-      if (dist >= 38) {
+      if (dist >= 44) {
         const angleRad = Math.atan2(e.clientX - cx, -(e.clientY - cy));
         const angleDeg = angleRad * (180 / Math.PI); // 0 arriba, -180 a +180
         if (angleDeg >= -145 && angleDeg <= 145) {
@@ -133,7 +133,7 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
 
   return (
     <div className="flex flex-col items-center select-none relative group">
-      {/* Contenedor principal del Dial con marcas radiales alrededor */}
+      {/* Contenedor principal del Dial con marcas radiales alrededor (más grande e imponente) */}
       <div
         ref={containerRef}
         onPointerDown={handlePointerDown}
@@ -141,13 +141,13 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
         onPointerUp={handlePointerUp}
         onWheel={handleWheel}
         title={`Girar ${label} (arrastrar o hacer clic en una marca)`}
-        className="w-40 h-40 sm:w-44 sm:h-44 md:w-48 md:h-48 relative flex items-center justify-center cursor-grab active:cursor-grabbing"
+        className="w-48 h-48 sm:w-52 sm:h-52 md:w-56 md:h-56 relative flex items-center justify-center cursor-grab active:cursor-grabbing"
       >
         {/* Anillo de Marcas Radiales */}
         <div className="absolute inset-0 pointer-events-none z-20">
           {marks.map((m) => {
-            const rTick = 56; // radio en px para rayitas
-            const rText = 72; // radio en px para etiquetas
+            const rTick = 72; // radio en px para rayitas
+            const rText = 89; // radio en px para etiquetas
 
             return (
               <div
@@ -168,7 +168,7 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
                     updateIndex(m.index);
                   }}
                   title={`Seleccionar ${values[m.index]}`}
-                  className="absolute w-6 h-6 pointer-events-auto cursor-pointer flex items-center justify-center outline-none group/tick z-30"
+                  className="absolute w-7 h-7 pointer-events-auto cursor-pointer flex items-center justify-center outline-none group/tick z-30"
                   style={{
                     transform: `rotate(${m.angle}deg) translateY(-${rTick}px)`,
                   }}
@@ -176,10 +176,10 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
                   <div
                     className={`rounded-full transition-all duration-100 ${
                       m.isSelected
-                        ? 'w-1 h-3.5 bg-[#ffaa33] [box-shadow:0_0_8px_#ff9900,0_0_14px_#ff6600]'
+                        ? 'w-1.5 h-4 bg-[#ffaa33] [box-shadow:0_0_10px_#ff9900,0_0_18px_#ff6600]'
                         : m.isMajor
-                        ? 'w-[2px] h-2.5 bg-amber-500/60 group-hover/tick:bg-amber-300 group-hover/tick:h-3.5'
-                        : 'w-[1.5px] h-1.5 bg-zinc-600/70 group-hover/tick:bg-zinc-300'
+                        ? 'w-[2.5px] h-3 bg-amber-500/65 group-hover/tick:bg-amber-300 group-hover/tick:h-4'
+                        : 'w-[1.5px] h-2 bg-zinc-600/70 group-hover/tick:bg-zinc-300'
                     }`}
                   />
                 </button>
@@ -199,9 +199,9 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
                       updateIndex(m.index);
                     }}
                     title={`Seleccionar ${values[m.index]}`}
-                    className={`absolute px-1 py-0.5 pointer-events-auto text-[10px] sm:text-[11px] font-mono font-bold cursor-pointer transition-all duration-100 z-30 outline-none rounded hover:bg-white/10 ${
+                    className={`absolute px-1.5 py-0.5 pointer-events-auto text-[11px] sm:text-xs font-mono font-bold cursor-pointer transition-all duration-100 z-30 outline-none rounded hover:bg-white/10 ${
                       m.isSelected
-                        ? 'text-[#ffaa33] [text-shadow:0_0_8px_rgba(255,140,0,0.85)] scale-110 font-black'
+                        ? 'text-[#ffaa33] [text-shadow:0_0_10px_rgba(255,140,0,0.85)] scale-110 font-black'
                         : 'text-zinc-500 hover:text-zinc-200'
                     }`}
                     style={{
@@ -216,22 +216,22 @@ export function DialKnob({ values, currentIndex, onChange, label }: DialKnobProp
           })}
         </div>
 
-        {/* Perilla circular central con bisel metálico estriado */}
-        <div className="w-24 h-24 sm:w-26 sm:h-26 md:w-28 md:h-28 rounded-full p-2 bg-[#1b1d2a] shadow-[0_10px_25px_rgba(0,0,0,0.9),inset_0_1px_1px_rgba(255,255,255,0.2)] border border-white/10 flex items-center justify-center relative z-10 pointer-events-none">
+        {/* Perilla circular central con bisel metálico estriado (agrandada) */}
+        <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 rounded-full p-2.5 bg-[#1b1d2a] shadow-[0_12px_28px_rgba(0,0,0,0.95),inset_0_1px_1px_rgba(255,255,255,0.2)] border border-white/10 flex items-center justify-center relative z-10 pointer-events-none">
           {/* Cuerpo rotativo de la perilla: salta discretamente de ángulo con suavidad */}
           <div
-            className="absolute inset-1.5 rounded-full bg-gradient-to-b from-[#2e3042] via-[#20212e] to-[#12131b] shadow-[inset_0_2px_4px_rgba(255,255,255,0.12),0_2px_6px_rgba(0,0,0,0.7)] pointer-events-none transition-transform duration-100 ease-out"
+            className="absolute inset-2 rounded-full bg-gradient-to-b from-[#2e3042] via-[#20212e] to-[#12131b] shadow-[inset_0_2px_5px_rgba(255,255,255,0.15),0_3px_8px_rgba(0,0,0,0.7)] pointer-events-none transition-transform duration-100 ease-out"
             style={{
               transform: `rotate(${currentAngle}deg)`,
             }}
           >
             {/* Puntero/Muesca luminosa ámbar que apunta a la marca radial activa */}
-            <div className="w-1.5 h-3.5 bg-[#ffaa33] rounded-full mx-auto mt-0.5 [box-shadow:0_0_8px_#ff9900,0_0_14px_#ff6600]" />
+            <div className="w-2 h-4 sm:w-2 sm:h-4.5 bg-[#ffaa33] rounded-full mx-auto mt-0.5 [box-shadow:0_0_10px_#ff9900,0_0_18px_#ff6600]" />
           </div>
 
-          {/* Pantalla LED digital central con el valor actual */}
-          <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#080810] border border-amber-500/30 shadow-[inset_0_2px_8px_rgba(0,0,0,0.98),0_1px_2px_rgba(255,255,255,0.06)] flex flex-col items-center justify-center pointer-events-none z-10">
-            <span className="text-[#ffaa33] font-mono font-bold text-xs sm:text-sm md:text-base tracking-wider [text-shadow:0_0_10px_rgba(255,140,0,0.85)]">
+          {/* Pantalla LED digital central con el valor actual (más amplia y nítida) */}
+          <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-[#080810] border border-amber-500/30 shadow-[inset_0_2px_10px_rgba(0,0,0,0.98),0_1px_2px_rgba(255,255,255,0.06)] flex flex-col items-center justify-center pointer-events-none z-10">
+            <span className="text-[#ffaa33] font-mono font-bold text-sm sm:text-base md:text-lg tracking-wider [text-shadow:0_0_12px_rgba(255,140,0,0.85)]">
               {currentValue}
             </span>
           </div>

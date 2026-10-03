@@ -86,99 +86,19 @@ export function cleanSongTitle(title: string): string {
     .trim();
 }
 
-/**
- * Consulta a la API de iTunes para un término específico buscando hasta 5 resultados
- * para maximizar la probabilidad de encontrar uno con previewUrl funcional.
- */
-async function queryItunes(
-  query: string,
-  countryCode?: string,
-  signal?: AbortSignal
-): Promise<{
-  previewUrl?: string;
-  artworkUrl100?: string;
-  trackViewUrl?: string;
-  trackName?: string;
-  artistName?: string;
-} | null> {
-  const countryParam = countryCode ? `&country=${countryCode}` : '';
-  const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}${countryParam}&media=music&entity=song&limit=5`;
-
-  try {
-    const res = await fetch(itunesUrl, { signal });
-    if (!res.ok) return null;
-
-    const data = (await res.json()) as {
-      results?: Array<{
-        previewUrl?: string;
-        artworkUrl100?: string;
-        trackViewUrl?: string;
-        trackName?: string;
-        artistName?: string;
-      }>;
-    };
-
-    const items = data.results || [];
-    const item = items.find((it) => Boolean(it.previewUrl));
-    return item?.previewUrl ? item : null;
-  } catch (err: unknown) {
-    if ((err as { name?: string })?.name === 'AbortError') {
-      throw err;
-    }
-    return null;
-  }
+export function isUrlExpired(url: string | null): boolean {
+  if (!url) return false;
+  if (!url.includes('hdnea=')) return false;
+  const match = url.match(/exp=(\d+)/);
+  if (!match) return false;
+  const expSec = parseInt(match[1], 10);
+  const nowSec = Math.floor(Date.now() / 1000);
+  return nowSec >= expSec - 30;
 }
 
 /**
- * Resuelve una canción histórica consultando iTunes con múltiples niveles de búsqueda.
- */
-async function resolveEraTrack(
-  hit: EraHit,
-  countryCode: string,
-  signal?: AbortSignal
-): Promise<Track | null> {
-  const cacheKey = `${countryCode}:${hit.artist.toLowerCase()}:::${hit.title.toLowerCase()}`;
-  const cached = trackPreviewCache.get(cacheKey);
-  if (cached) return cached;
-
-  const cleanedTitle = cleanSongTitle(hit.title);
-
-  // 1. Intento principal: Artista + Título limpio en el catálogo global de Apple Music
-  let item = await queryItunes(`${hit.artist} ${cleanedTitle}`, undefined, signal);
-
-  // 2. Si no apareció, intentar con el título original completo en catálogo global
-  if (!item && cleanedTitle !== hit.title) {
-    item = await queryItunes(`${hit.artist} ${hit.title}`, undefined, signal);
-  }
-
-  // 3. Si no apareció, probar en el catálogo específico del país
-  if (!item) {
-    item = await queryItunes(`${hit.artist} ${cleanedTitle}`, countryCode, signal);
-  }
-
-  // 4. Último intento: solo título limpio global (si el artista tenía ortografía diferente)
-  if (!item) {
-    item = await queryItunes(cleanedTitle, undefined, signal);
-  }
-
-  if (!item || !item.previewUrl) return null;
-
-  const track: Track = {
-    title: hit.title,
-    artist: hit.artist,
-    previewUrl: item.previewUrl,
-    artworkUrl: item.artworkUrl100 ? item.artworkUrl100.replace('100x100', '600x600') : null,
-    releaseYear: String(hit.year),
-    trackViewUrl: item.trackViewUrl || null,
-  };
-
-  trackPreviewCache.set(cacheKey, track);
-  return track;
-}
-
-/**
- * Obtiene la playlist histórica curada para un país y año.
- * Garantiza que cada canción tenga su propio audio único y nunca se repita la misma canción.
+ * Obtiene la playlist histórica curada para un país y año desde /api/tune.
+ * Si el navegador devuelve una respuesta de caché con URLs expiradas, fuerza la renovación.
  */
 export async function fetchCuratedTracks(
   countryCode: string,
@@ -191,9 +111,19 @@ export async function fetchCuratedTracks(
     const targetParams = target
       ? `&targetTitle=${encodeURIComponent(target.title)}&targetArtist=${encodeURIComponent(target.artist)}`
       : '';
-    const res = await fetch(`/api/tune?year=${year}&country=${code}${targetParams}`, { signal });
+    let res = await fetch(`/api/tune?year=${year}&country=${code}${targetParams}`, { signal });
     if (res.ok) {
-      const data = (await res.json()) as TuneResponse;
+      let data = (await res.json()) as TuneResponse;
+      // Si la respuesta vino de la caché del navegador con tokens de audio expirados, forzar recarga fresca
+      if (data?.playlist?.some((t) => isUrlExpired(t.previewUrl))) {
+        res = await fetch(`/api/tune?year=${year}&country=${code}${targetParams}&_t=${Date.now()}`, {
+          signal,
+          cache: 'no-store',
+        });
+        if (res.ok) {
+          data = (await res.json()) as TuneResponse;
+        }
+      }
       if (data && Array.isArray(data.playlist) && data.playlist.length > 0) {
         return data;
       }
