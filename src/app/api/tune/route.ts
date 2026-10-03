@@ -40,7 +40,12 @@ function loadCountryRawData(countryCode: string): Record<string, [string, string
 async function searchTrackPreview(
   artist: string,
   title: string
-): Promise<{ previewUrl: string; artworkUrl: string | null } | null> {
+): Promise<{
+  previewUrl: string;
+  artworkUrl: string | null;
+  title?: string;
+  artist?: string;
+} | null> {
   const clean = cleanSongTitle(title);
   try {
     // 1. Intento principal: Artista + Título limpio
@@ -48,7 +53,12 @@ async function searchTrackPreview(
       `https://api.deezer.com/search?q=${encodeURIComponent(`${artist} ${clean}`)}&limit=1`
     );
     let data = (await res.json()) as {
-      data?: Array<{ preview?: string; album?: { cover_big?: string } }>;
+      data?: Array<{
+        title?: string;
+        artist?: { name?: string };
+        preview?: string;
+        album?: { cover_big?: string };
+      }>;
     };
     let item = data.data?.[0];
 
@@ -58,7 +68,12 @@ async function searchTrackPreview(
         `https://api.deezer.com/search?q=${encodeURIComponent(clean)}&limit=1`
       );
       data = (await res.json()) as {
-        data?: Array<{ preview?: string; album?: { cover_big?: string } }>;
+        data?: Array<{
+          title?: string;
+          artist?: { name?: string };
+          preview?: string;
+          album?: { cover_big?: string };
+        }>;
       };
       item = data.data?.[0];
     }
@@ -67,6 +82,8 @@ async function searchTrackPreview(
       return {
         previewUrl: item.preview,
         artworkUrl: item.album?.cover_big || null,
+        title: item.title,
+        artist: item.artist?.name,
       };
     }
   } catch {}
@@ -78,8 +95,8 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const rawYear = searchParams.get('year');
     const countryCode = searchParams.get('country')?.trim().toUpperCase() ?? '';
-    const targetTitle = searchParams.get('targetTitle')?.trim().toLowerCase() ?? '';
-    const targetArtist = searchParams.get('targetArtist')?.trim().toLowerCase() ?? '';
+    const rawTargetTitle = searchParams.get('targetTitle')?.trim() ?? '';
+    const rawTargetArtist = searchParams.get('targetArtist')?.trim() ?? '';
     const yearNum = Number(rawYear);
 
     if (!rawYear || isNaN(yearNum) || yearNum < YEAR_MIN || yearNum > YEAR_MAX) {
@@ -96,115 +113,165 @@ export async function GET(request: Request) {
     }
 
     const cacheKey = `${countryCode}-${yearNum}`;
-    const cached = memoryCache.get(cacheKey);
-    if (cached) {
-      // Si se solicitó una canción objetivo del ranking, ubicarla en posición 0
-      let responseData = cached;
-      if (targetTitle && cached.playlist && cached.playlist.length > 0) {
-        const playlist = cached.playlist;
-        const foundIdx = playlist.findIndex((t) => {
-          const tNorm = cleanSongTitle(t.title).toLowerCase();
-          return tNorm.includes(targetTitle) || targetTitle.includes(tNorm);
-        });
-        if (foundIdx > 0) {
-          const match = playlist[foundIdx];
-          responseData = {
-            ...cached,
-            track: match,
-            playlist: [match, ...playlist.filter((_, i) => i !== foundIdx)],
-          };
+    let cached = memoryCache.get(cacheKey);
+
+    if (!cached) {
+      // 1. Cargar el JSON del país
+      const countryData = await loadCountryRawData(countryCode);
+      let hits = countryData[String(yearNum)] || [];
+
+      if (hits.length === 0) {
+        const availableYears = Object.keys(countryData)
+          .map(Number)
+          .filter((y) => !isNaN(y) && countryData[String(y)]?.length > 0);
+        if (availableYears.length > 0) {
+          availableYears.sort((a, b) => Math.abs(a - yearNum) - Math.abs(b - yearNum));
+          hits = countryData[String(availableYears[0])] || [];
         }
       }
 
-      return Response.json(responseData, {
-        headers: {
-          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
-        },
-      });
-    }
+      // Si no hay datos en el JSON del país, recurrir a los seed tracks
+      if (hits.length === 0) {
+        const seedTracks = getSeedTracks(countryCode, yearNum) || [];
+        const primaryTrack: Track = seedTracks[0] || {
+          title: 'SIN DATOS PARA ESTE AÑO',
+          artist: '',
+          previewUrl: null,
+          artworkUrl: null,
+          releaseYear: String(yearNum),
+        };
 
-    // 1. Cargar el JSON del país
-    const countryData = await loadCountryRawData(countryCode);
-    let hits = countryData[String(yearNum)] || [];
+        cached = {
+          track: primaryTrack,
+          playlist: seedTracks,
+          source: 'seed-cache',
+        };
+      } else {
+        // 2. Tomar las 10 canciones del año
+        const targetHits = hits.slice(0, 10);
 
-    if (hits.length === 0) {
-      const availableYears = Object.keys(countryData)
-        .map(Number)
-        .filter((y) => !isNaN(y) && countryData[String(y)]?.length > 0);
-      if (availableYears.length > 0) {
-        availableYears.sort((a, b) => Math.abs(a - yearNum) - Math.abs(b - yearNum));
-        hits = countryData[String(availableYears[0])] || [];
+        // 3. Resolver en paralelo en el servidor (sin problemas de CORS ni rate limits)
+        const seenUrls = new Set<string>();
+        const resolvedPromises = targetHits.map(async ([artist, title]) => {
+          const res = await searchTrackPreview(artist, title);
+          if (res?.previewUrl && !seenUrls.has(res.previewUrl)) {
+            seenUrls.add(res.previewUrl);
+            return {
+              title: res.title || title,
+              artist: res.artist || artist,
+              previewUrl: res.previewUrl,
+              artworkUrl: res.artworkUrl,
+              releaseYear: String(yearNum),
+            } as Track;
+          }
+          return null;
+        });
+
+        const settled = await Promise.all(resolvedPromises);
+        const validPlaylist = settled.filter((t): t is Track => t !== null);
+
+        // Si fallaran todas las búsquedas de red, usar seed cache
+        const finalPlaylist =
+          validPlaylist.length > 0 ? validPlaylist : (getSeedTracks(countryCode, yearNum) || []);
+
+        const primaryTrack: Track = finalPlaylist[0] || {
+          title: 'SIN DATOS PARA ESTE AÑO',
+          artist: '',
+          previewUrl: null,
+          artworkUrl: null,
+          releaseYear: String(yearNum),
+        };
+
+        cached = {
+          track: primaryTrack,
+          playlist: finalPlaylist,
+          source: 'api',
+        };
       }
+
+      // Guardar en caché de memoria la lista canónica
+      memoryCache.set(cacheKey, cached);
     }
 
-    // Si no hay datos en el JSON del país, recurrir a los seed tracks
-    if (hits.length === 0) {
-      const seedTracks = getSeedTracks(countryCode, yearNum) || [];
-      const primaryTrack: Track = seedTracks[0] || {
-        title: 'SIN DATOS PARA ESTE AÑO',
-        artist: '',
-        previewUrl: null,
-        artworkUrl: null,
+    // Si se solicitó una canción objetivo (por ejemplo al hacer click en el ranking):
+    if (rawTargetTitle && cached.playlist && cached.playlist.length > 0) {
+      const playlist = cached.playlist;
+      const targetTitleClean = cleanSongTitle(rawTargetTitle).toLowerCase();
+      const targetArtistClean = rawTargetArtist.toLowerCase();
+
+      // 1. Buscar si la canción ya existe dentro de la playlist
+      const foundIdx = playlist.findIndex((t) => {
+        const tTitle = cleanSongTitle(t.title).toLowerCase();
+        const tArtist = t.artist.toLowerCase();
+        const titleMatch =
+          tTitle === targetTitleClean ||
+          tTitle.includes(targetTitleClean) ||
+          targetTitleClean.includes(tTitle);
+        const artistMatch =
+          !targetArtistClean ||
+          tArtist.includes(targetArtistClean) ||
+          targetArtistClean.includes(tArtist);
+        return titleMatch && (artistMatch || targetTitleClean.length > 5);
+      });
+
+      if (foundIdx === 0) {
+        return Response.json(cached, {
+          headers: {
+            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+          },
+        });
+      }
+
+      if (foundIdx > 0) {
+        const match = playlist[foundIdx];
+        const reordered = [match, ...playlist.filter((_, i) => i !== foundIdx)];
+        return Response.json(
+          {
+            ...cached,
+            track: match,
+            playlist: reordered,
+          },
+          {
+            headers: {
+              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+            },
+          }
+        );
+      }
+
+      // 2. Si NO está en la playlist del año (ej. Sweet Child O' Mine en 1987),
+      // resolver la canción objetivo en Deezer al instante:
+      const targetPreview = await searchTrackPreview(rawTargetArtist, rawTargetTitle);
+      const injectedTrack: Track = {
+        title: targetPreview?.title || rawTargetTitle,
+        artist: targetPreview?.artist || rawTargetArtist,
+        previewUrl: targetPreview?.previewUrl ?? null,
+        artworkUrl: targetPreview?.artworkUrl ?? null,
         releaseYear: String(yearNum),
       };
 
-      const data: TuneResponse = {
-        track: primaryTrack,
-        playlist: seedTracks,
-        source: 'seed-cache',
-      };
+      const customPlaylist = [
+        injectedTrack,
+        ...playlist
+          .filter((t) => cleanSongTitle(t.title).toLowerCase() !== targetTitleClean)
+          .slice(0, 9),
+      ];
 
-      return Response.json(data, {
-        headers: {
-          'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+      return Response.json(
+        {
+          ...cached,
+          track: injectedTrack,
+          playlist: customPlaylist,
         },
-      });
+        {
+          headers: {
+            'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
+          },
+        }
+      );
     }
 
-    // 2. Tomar las 10 canciones del año
-    const targetHits = hits.slice(0, 10);
-
-    // 3. Resolver en paralelo en el servidor (sin problemas de CORS ni rate limits)
-    const seenUrls = new Set<string>();
-    const resolvedPromises = targetHits.map(async ([artist, title]) => {
-      const res = await searchTrackPreview(artist, title);
-      if (res?.previewUrl && !seenUrls.has(res.previewUrl)) {
-        seenUrls.add(res.previewUrl);
-        return {
-          title,
-          artist,
-          previewUrl: res.previewUrl,
-          artworkUrl: res.artworkUrl,
-          releaseYear: String(yearNum),
-        } as Track;
-      }
-      return null;
-    });
-
-    const settled = await Promise.all(resolvedPromises);
-    const validPlaylist = settled.filter((t): t is Track => t !== null);
-
-    // Si fallaran todas las búsquedas de red, usar seed cache
-    const finalPlaylist = validPlaylist.length > 0 ? validPlaylist : (getSeedTracks(countryCode, yearNum) || []);
-
-    const primaryTrack: Track = finalPlaylist[0] || {
-      title: 'SIN DATOS PARA ESTE AÑO',
-      artist: '',
-      previewUrl: null,
-      artworkUrl: null,
-      releaseYear: String(yearNum),
-    };
-
-    const data: TuneResponse = {
-      track: primaryTrack,
-      playlist: finalPlaylist,
-      source: 'api',
-    };
-
-    // Guardar en caché de memoria
-    memoryCache.set(cacheKey, data);
-
-    return Response.json(data, {
+    return Response.json(cached, {
       headers: {
         'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=604800',
       },

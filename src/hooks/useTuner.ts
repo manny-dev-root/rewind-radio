@@ -207,11 +207,13 @@ export function useTuner(): void {
       abortControllerRef.current.abort();
     }
 
+    const delay = targetTrack ? 60 : DEBOUNCE_MS;
+
     debounceTimerRef.current = setTimeout(() => {
       const controller = new AbortController();
       abortControllerRef.current = controller;
       performTune(currentYear, currentCountry, targetTrack, controller.signal);
-    }, DEBOUNCE_MS);
+    }, delay);
 
     return () => {
       if (debounceTimerRef.current) {

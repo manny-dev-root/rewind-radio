@@ -66,6 +66,7 @@ export function RankingVisor() {
     useEraStore.setState({
       currentCountry: track.country,
       currentYear: track.year,
+      trackIndex: 0,
       targetTrack: { title: track.title, artist: track.artist },
     });
   };
